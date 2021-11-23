@@ -1,0 +1,22 @@
+{
+  "name": "workflow-frontend",
+  "version": "1.0.0",
+  "description": "Kit de inicio para desarrollo web con HTML, SCSS, JS",
+  "main": "index.html",
+  "repository": {
+    "url": "https://github.com/jlcallalle/gulp-workflow",
+    "type": "git"
+  },
+  "author": "Jorge Callalle Torres <jlcallalle@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "sass-mediaqueries": "^1.6.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "prettier": "2.3.2"
+  }
+}
