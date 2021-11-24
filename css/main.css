@@ -6,6 +6,8 @@
 /* FONT PATH
  * -------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Raleway:wght@400;700&display=swap");
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -3046,7 +3048,7 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth;
 }
@@ -3062,7 +3064,7 @@ html {
 
 body {
   overflow-x: hidden;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 /* Mixins
@@ -3101,16 +3103,159 @@ body {
 }
 
 .btn-example {
-  border: 1px solid #A2B440;
-  color: #A2B440;
+  border: 1px solid #19CE74;
+  color: #19CE74;
   font-size: 22px;
   border-radius: 0;
   padding: 8px 30px;
 }
 .btn-example:hover {
-  border: 1px solid #A2B440;
-  color: #A2B440;
+  border: 1px solid #19CE74;
+  color: #19CE74;
   opacity: 0.8;
+}
+
+.home {
+  background-position: top center;
+}
+
+.header-top {
+  color: white;
+  background-color: #2274FF;
+  padding: 5px 0;
+  font-size: 14px;
+}
+.header-top a {
+  color: white;
+}
+.header-top a.link-contacto {
+  margin-right: 14px;
+}
+
+.header-top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.box-contactenos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link-accesos {
+  margin-left: 18px;
+}
+.link-accesos a {
+  margin-right: 12px;
+}
+
+.box-clima {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.box-clima .dato-clima {
+  margin-right: 28px;
+}
+.box-clima .dato-clima .item-cloud {
+  margin-right: 12px;
+}
+
+.item-normalidad {
+  margin: 0 16px;
+}
+
+.event-clima a {
+  margin-left: 2px;
+}
+
+.logo-brand img {
+  max-width: 127px;
+  margin-right: 62px;
+}
+
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.lista-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.lista-nav li {
+  list-style: none;
+  margin-right: 43px;
+}
+.lista-nav li a {
+  color: #5F6268;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.box-search {
+  margin-right: 22px;
+}
+
+.btn-ingresar {
+  background-color: #FFA300;
+  color: white;
+  font-size: 14px;
+  border-radius: 100px;
+  padding: 0.8rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.btn-ingresar i {
+  margin-right: 11px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.btn-ingresar:hover {
+  background-color: #E59300;
+  color: white;
 }
 
 .home-box {

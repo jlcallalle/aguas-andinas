@@ -1,0 +1,116 @@
+.home  {
+    //background-image: url(../images/home.png);
+    background-position: top center;
+    // background-position: center 55px;
+}
+.header-top {
+    color: white;
+    background-color: $blue;
+    padding: 5px 0;
+    font-size: 14px;
+    a {
+        color: white;
+        &.link-contacto {
+            margin-right: 14px;
+        }
+    }
+}
+
+.header-top-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-contactenos {
+    display: flex;
+}
+
+.link-accesos {
+   margin-left: 18px;
+   a {
+    margin-right: 12px;
+   }
+}
+
+.box-clima {
+    display: flex;
+    align-items: center;
+    .dato-clima {
+        margin-right: 28px;
+        .item-cloud {
+            margin-right: 12px;
+        }
+    }
+}
+
+.item-normalidad {
+    margin: 0 16px;
+}
+
+.event-clima {
+    a {
+        margin-left: 2px;
+    }
+}
+
+
+.logo-brand {
+    img {
+        max-width: 127px;
+        margin-right: 62px;
+    }
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-right {
+    display: flex;
+}
+
+.lista-nav {
+    display: flex;
+    li {
+        list-style: none;
+        margin-right: 43px;
+        a {
+            color: $black-light;
+            font-size: 14px;
+            font-weight: 700;
+        }
+    }
+}
+
+.box-search {
+    margin-right: 22px;
+}
+
+.btn-ingresar {
+    background-color: $orange;
+    color: white;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    i {
+        margin-right: 11px;
+        position: relative;
+        display: flex;
+    }
+    &:hover {
+        background-color: $orange-hover;
+        color:white;
+    }
+}
