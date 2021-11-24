@@ -12,6 +12,11 @@ var MyApp = {
 $(function () {
     console.log('ready..');    
     MyApp.toggeMenu();
+
+    $('.carousel').carousel({
+        interval: 2000
+    })
+
     /* if ($('.page-detalle').length) {
         MyApp.evento();
     } */

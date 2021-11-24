@@ -1,4 +1,4 @@
-.btn-example {
+/* .btn-example {
     border:1px solid $green;
     color: $green;
     font-size: 22px;
@@ -8,5 +8,36 @@
         border:1px solid $green;
         color: $green;
         opacity: 0.8;
+    }
+} */
+
+.btn-ingresar {
+    background-color: $orange;
+    color: white;
+    font-size: 14px;
+    border-radius: 100px;
+    padding: 0.8rem 1.6rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    i {
+        margin-right: 11px;
+        position: relative;
+        display: flex;
+    }
+    &:hover {
+        background-color: $orange-hover;
+        color:white;
+    }
+}
+
+.btn-banner {
+    background-color: $green;
+    color: white;
+    border-radius: 8px;
+    padding: 1rem 5.34em;
+    &:hover {
+        background-color: $green-dark;
+        color:white;
     }
 }

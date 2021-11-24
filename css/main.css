@@ -7,7 +7,7 @@
  * -------------------------- */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Raleway:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Raleway:wght@400;700;900&display=swap");
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -3102,17 +3102,53 @@ body {
   width: 1px;
 }
 
-.btn-example {
-  border: 1px solid #19CE74;
-  color: #19CE74;
-  font-size: 22px;
-  border-radius: 0;
-  padding: 8px 30px;
+/* .btn-example {
+    border:1px solid $green;
+    color: $green;
+    font-size: 22px;
+    border-radius: 0;
+    padding: 8px 30px;
+    &:hover {
+        border:1px solid $green;
+        color: $green;
+        opacity: 0.8;
+    }
+} */
+.btn-ingresar {
+  background-color: #FFA300;
+  color: white;
+  font-size: 14px;
+  border-radius: 100px;
+  padding: 0.8rem 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
-.btn-example:hover {
-  border: 1px solid #19CE74;
-  color: #19CE74;
-  opacity: 0.8;
+.btn-ingresar i {
+  margin-right: 11px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.btn-ingresar:hover {
+  background-color: #E59300;
+  color: white;
+}
+
+.btn-banner {
+  background-color: #19CE74;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 5.34em;
+}
+.btn-banner:hover {
+  background-color: #009669;
+  color: white;
 }
 
 .home {
@@ -3170,6 +3206,8 @@ body {
 }
 .box-clima .dato-clima .item-cloud {
   margin-right: 12px;
+  position: relative;
+  top: 2px;
 }
 
 .item-normalidad {
@@ -3217,6 +3255,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
 }
 .lista-nav li {
   list-style: none;
@@ -3232,30 +3271,106 @@ body {
   margin-right: 22px;
 }
 
-.btn-ingresar {
-  background-color: #FFA300;
-  color: white;
-  font-size: 14px;
-  border-radius: 100px;
-  padding: 0.8rem 1.6rem;
+.banner-info {
+  padding: 12px 0 0 0;
+}
+.banner-info h1 {
+  color: #2274FF;
+  font-size: 50px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 900;
+}
+.banner-info p {
+  color: #5F6268;
+}
+.banner-info .cta-banner {
+  margin-top: 25px;
+}
+
+/* Slider */
+.box-items-slider {
+  margin-top: 60px;
+  position: relative;
+  height: 90px;
+  z-index: 1;
+}
+
+.box-items-slider-inner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
+  position: absolute;
+}
+
+.item-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #E7F0FF;
+  text-align: center;
+  margin-right: 29px;
+  width: 160px;
+  height: 90px;
 }
-.btn-ingresar i {
-  margin-right: 11px;
+.item-slider span {
+  color: #003287;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.carousel-indicators {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  right: -65px;
+  bottom: -100px;
+}
+.carousel-indicators li {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin: 0px 5px;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+.carousel-indicators .active {
+  width: 16px;
+  height: 16px;
+  margin: 0px 5px;
+  background-color: #fff;
+}
+
+.box-bg {
+  position: absolute;
+  width: 37%;
+  height: 480px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.68%, #80D7EA), color-stop(97.86%, #1F5BC1));
+  background: linear-gradient(180deg, #80D7EA 13.68%, #1F5BC1 97.86%);
+  z-index: 10;
+  top: 0;
+  right: 0;
+}
+
+.box-slider {
+  z-index: 100;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
-.btn-ingresar:hover {
-  background-color: #E59300;
-  color: white;
+
+.slider .container-fluid {
+  position: relative;
 }
 
 .home-box {
