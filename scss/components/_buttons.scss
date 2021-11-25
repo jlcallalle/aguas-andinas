@@ -1,16 +1,3 @@
-/* .btn-example {
-    border:1px solid $green;
-    color: $green;
-    font-size: 22px;
-    border-radius: 0;
-    padding: 8px 30px;
-    &:hover {
-        border:1px solid $green;
-        color: $green;
-        opacity: 0.8;
-    }
-} */
-
 .btn-ingresar {
     background-color: $orange;
     color: white;
@@ -47,4 +34,16 @@
     background-color: $green;
     border-color: #109954;;
     padding: 0 30px;
+}
+
+.btn-consultar {
+    color: white;
+    width: 214px;
+    background-color: $orange ;
+    border-radius: 8px;
+    padding: 0.8rem 4.4rem;
+    &:hover {
+        background-color: #E69300;
+        color:white;
+    }
 }

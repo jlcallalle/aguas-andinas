@@ -1,6 +1,7 @@
 .home  {
-    // background-image: url(../images/home.png);
+    //background-image: url(../images/home.png);
     background-position: top center;
+    background-repeat: no-repeat;
     // background-position: center 55px;
     // background-position: 31px 0;
     height: 1500px;
@@ -68,3 +69,59 @@ section.section-ayuda {
         font-size: 16px
     }
 }
+
+
+
+.section-factibilidad {
+    margin-top: 50px;
+    .container-fluid {
+        position: relative;
+    }
+}
+
+.bg-bg-fac {
+    background-color: #E7F0FF;
+    width: 45%;
+    height: 585px;
+    top:0;
+    left: 0;
+    position: absolute;
+}
+
+.box-factibilidad {
+    z-index: 10;
+    position: relative;
+    margin-top: 63px;
+    h2 {
+        font-family: $fontRaleway;
+        font-weight: bold;
+        font-size: 38px;
+        color: $blue-dark;
+    }
+    img {
+        margin-top: 20px;
+    }
+}
+
+
+.box-detalle {
+    margin-top: 72px;
+    padding: 0 0 0 5rem;
+}
+.item-fact {
+    margin-bottom: 66px;
+    h3 {
+        font-family: Raleway;
+        font-weight: bold;
+        font-size: 28px;
+        margin-bottom: 14px;
+        color: $blue;
+    }
+    p {
+        font-family: Inter;
+        font-size: 16px;
+        line-height: 23px;
+        margin-bottom: 26px;
+    }
+}
+

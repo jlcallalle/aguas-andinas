@@ -3102,18 +3102,6 @@ body {
   width: 1px;
 }
 
-/* .btn-example {
-    border:1px solid $green;
-    color: $green;
-    font-size: 22px;
-    border-radius: 0;
-    padding: 8px 30px;
-    &:hover {
-        border:1px solid $green;
-        color: $green;
-        opacity: 0.8;
-    }
-} */
 .btn-ingresar {
   background-color: #FFA300;
   color: white;
@@ -3156,6 +3144,18 @@ body {
   background-color: #19CE74;
   border-color: #109954;
   padding: 0 30px;
+}
+
+.btn-consultar {
+  color: white;
+  width: 214px;
+  background-color: #FFA300;
+  border-radius: 8px;
+  padding: 0.8rem 4.4rem;
+}
+.btn-consultar:hover {
+  background-color: #E69300;
+  color: white;
 }
 
 .header-top {
@@ -3378,6 +3378,7 @@ body {
 
 .home {
   background-position: top center;
+  background-repeat: no-repeat;
   height: 1500px;
 }
 
@@ -3453,6 +3454,59 @@ section.section-ayuda {
   color: #003287;
   font-weight: bold;
   font-size: 16px;
+}
+
+.section-factibilidad {
+  margin-top: 50px;
+}
+.section-factibilidad .container-fluid {
+  position: relative;
+}
+
+.bg-bg-fac {
+  background-color: #E7F0FF;
+  width: 45%;
+  height: 585px;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.box-factibilidad {
+  z-index: 10;
+  position: relative;
+  margin-top: 63px;
+}
+.box-factibilidad h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 38px;
+  color: #003287;
+}
+.box-factibilidad img {
+  margin-top: 20px;
+}
+
+.box-detalle {
+  margin-top: 72px;
+  padding: 0 0 0 5rem;
+}
+
+.item-fact {
+  margin-bottom: 66px;
+}
+.item-fact h3 {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 28px;
+  margin-bottom: 14px;
+  color: #2274FF;
+}
+.item-fact p {
+  font-family: Inter;
+  font-size: 16px;
+  line-height: 23px;
+  margin-bottom: 26px;
 }
 
 .home-box {
