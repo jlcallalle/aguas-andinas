@@ -3178,6 +3178,18 @@ body {
   top: 2px;
 }
 
+.btn-noticia {
+  background-color: #19CE74;
+  color: white;
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 0.8rem 3.8rem;
+}
+.btn-noticia:hover {
+  background-color: #009669;
+  color: white;
+}
+
 .header-top {
   color: white;
   background-color: #2274FF;
@@ -3310,7 +3322,13 @@ body {
   margin-top: 25px;
 }
 
-/* Slider */
+.home {
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 3500px;
+}
+
+/* section slider */
 .box-items-slider {
   margin-top: 60px;
   position: relative;
@@ -3356,8 +3374,9 @@ body {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  right: -65px;
+  right: -85px;
   bottom: -100px;
+  bottom: -70px;
 }
 .carousel-indicators li {
   display: inline-block;
@@ -3392,14 +3411,12 @@ body {
   position: relative;
 }
 
+.slider .carousel-indicators {
+  bottom: -100px;
+  right: -65px;
+}
 .slider .container-fluid {
   position: relative;
-}
-
-.home {
-  background-position: top center;
-  background-repeat: no-repeat;
-  height: 3500px;
 }
 
 section.section-ayuda {
@@ -3693,6 +3710,62 @@ section.section-trabajos {
   background-position: 0 0;
   width: 756px;
   margin-left: 25px;
+}
+
+.section-slider {
+  margin-top: 40px;
+}
+.section-slider h2 {
+  color: #003287;
+  font-family: "Raleway", sans-serif;
+  font-size: 37px;
+  text-align: left;
+  font-weight: bold;
+  line-height: 50px;
+}
+.section-slider .resume {
+  color: #003287;
+  font-size: 21px;
+  margin-bottom: 11px;
+  line-height: 30px;
+}
+.section-slider .fecha {
+  color: #5F6268;
+  font-weight: bold;
+}
+.section-slider p {
+  color: #5F6268;
+  line-height: 25px;
+  margin-top: 17px;
+}
+.section-slider .cta-noticia {
+  margin-top: 32px;
+}
+.section-slider .container-fluid {
+  position: relative;
+}
+
+.box-slider-noticia {
+  z-index: 100;
+  position: relative;
+  margin-top: 100px;
+}
+.box-slider-noticia .carousel-indicators li {
+  background-color: transparent;
+  border: 2px solid #003287;
+}
+.box-slider-noticia .carousel-indicators .active {
+  background-color: #003287;
+}
+
+.box-bg-news {
+  position: absolute;
+  width: 44%;
+  height: 520px;
+  background-color: #D2FFE9;
+  z-index: 10;
+  top: 0;
+  right: 0;
 }
 
 .home-box {

@@ -67,3 +67,15 @@
         top: 2px;
     }
 }
+
+.btn-noticia {
+    background-color: $green;
+    color: white;
+    border-radius: 8px;
+    font-size: 16px;
+    padding: 0.8rem 3.8rem;
+    &:hover {
+        background-color: $green-dark;
+        color:white;
+    }
+}
