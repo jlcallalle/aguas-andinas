@@ -1,32 +1,28 @@
 .home  {
-    //background-image: url(../images/home.png);
+    // background-image: url(../images/home.png);
     background-position: top center;
     background-repeat: no-repeat;
     // background-position: center 55px;
     // background-position: 31px 0;
-    height: 1500px;
+    height: 3500px;
 }
 
 section.section-ayuda {
     margin-top: 116px;
 }
-.subtitle {
+.title-section {
     color: $blue-dark;
     font-family: $fontRaleway;
     font-size: 37px;
-    width: 100%;
     text-align: center;
     font-weight: bold;
 }
 
-.box-pregunta {
-    margin-top: 6px;
-    margin: 4px auto 0;
-}
-
 .box-pregunta  {
+    margin-top: 6px;
+    margin: 10px auto;
+    max-width: 540px;
     .input-busqueda {
-        width: 430px;
         height: 60px;
         background-color: $gray-light;
         border-top-left-radius: 5px;
@@ -35,21 +31,18 @@ section.section-ayuda {
         padding: 0.375rem 0.75rem;
         font-size: 14px;
         color: $black-light;
+        &:focus {
+            box-shadow: inset 0 -1px 0 #ddd;
+        }
     }
 }
-
-.btn-busqueda {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-}
-
 
 .box-items-pregunta {
     display: flex;
     justify-content: space-between;
     width: 100%;
     max-width: 920px;
-    margin: 25px auto 0;
+    margin: 40px auto 0;
 }
 
 .item-ayuda {
@@ -74,6 +67,7 @@ section.section-ayuda {
 
 .section-factibilidad {
     margin-top: 50px;
+    padding-bottom: 55px;
     .container-fluid {
         position: relative;
     }
@@ -109,19 +103,151 @@ section.section-ayuda {
     padding: 0 0 0 5rem;
 }
 .item-fact {
-    margin-bottom: 66px;
+    margin-bottom: 72px;
+    &:last-child {
+       margin-bottom: 0;
+    }
     h3 {
         font-family: Raleway;
         font-weight: bold;
         font-size: 28px;
-        margin-bottom: 14px;
+        margin-bottom: 0.8rem;
         color: $blue;
     }
     p {
         font-family: Inter;
         font-size: 16px;
         line-height: 23px;
-        margin-bottom: 26px;
+        margin-bottom: 1.60rem;
     }
 }
 
+
+section.section-trabajos {
+    margin-top: 66px;
+}
+
+.subtitle-section {
+    text-align: center;
+    color: $black-light;
+}
+
+.box-busqueda-mapa  {
+    margin-top: 6px;
+    margin: 22px auto;
+    max-width: 504px;
+    .input-mapa {
+        height: 60px;
+        background-color: white;
+        border-top-left-radius: 100px;
+        border-bottom-left-radius: 100px;
+        border: 1px solid $gray-dark;
+        padding: 0.375rem 1rem;
+        font-size: 14px;
+        color: $black-light;
+        &:focus {
+            box-shadow: inset 0 -1px 0 #ddd;
+        }
+    }
+}
+
+.box-mapa-all {
+    margin: 17px 0;
+}
+
+.lista-tipo {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    li {
+        text-align: center;
+        // width: 25%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       /*  margin: 0 34px 0 0;
+        padding: 0 34px 0 0; */
+        a {
+            color: $blue-dark;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding-right: 15px;
+            text-align: left;
+            max-width: 230px;
+            line-height: 20px;
+            i {
+                margin-right: 18px;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            &.active {
+                color:$blue;
+                svg path {
+                    fill: $blue;
+                }
+            }
+        }
+        > span {
+            color: $gray;
+        }
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+        /* &:after {
+            content: '|';
+            position: relative;
+        } */
+    }
+}
+
+.resultado-mapa {
+    display: flex;
+    margin-top: 36px;
+}
+
+.item-mapa {
+    border:1px solid $gray;
+    color: $blue-dark;
+    font-size: 14px;
+    display: flex;
+    border-radius: 5px;
+    padding: 8px 16px 8px 8px;
+    width: 368px;
+    margin-bottom: 20px;
+    .icon {
+        width: 86px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2px;
+    }
+}
+.item-dato {
+    width: 100%;
+    .item-title {
+        font-weight: bold;
+    }
+    .item-texto {
+        display: flex;
+        flex-direction: column;
+    }
+    .row-text {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.mapa {
+    background-image: url(../images/mapa.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 756px;
+    margin-left: 25px;
+}
