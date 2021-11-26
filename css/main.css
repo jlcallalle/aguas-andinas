@@ -3190,6 +3190,26 @@ body {
   color: white;
 }
 
+.btn-ver-mas {
+  color: #2274FF;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.btn-mostrar-noticias {
+  color: white;
+  background-color: #FFA300;
+  border-radius: 8px;
+  padding: 0.7rem 2.4rem;
+  font-size: 16px;
+  font-weight: bold;
+}
+.btn-mostrar-noticias:hover {
+  background-color: #E69300;
+  color: white;
+}
+
 .header-top {
   color: white;
   background-color: #2274FF;
@@ -3325,7 +3345,6 @@ body {
 .home {
   background-position: top center;
   background-repeat: no-repeat;
-  height: 3500px;
 }
 
 /* section slider */
@@ -3766,6 +3785,192 @@ section.section-trabajos {
   z-index: 10;
   top: 0;
   right: 0;
+}
+
+.section-noticias {
+  margin-top: 72px;
+  position: relative;
+  z-index: 10;
+}
+.section-noticias .row > div {
+  margin-bottom: 60px;
+}
+
+.item-noticia {
+  border-bottom: 2px solid #BFC1C5;
+  padding: 0 0 19px 0;
+}
+.item-noticia h3 {
+  color: #003287;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 1.5rem;
+}
+.item-noticia .fecha-noticia {
+  color: #19CE74;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.item-noticia p {
+  font-size: 14px;
+  color: #5F6268;
+  line-height: 23px;
+  margin-bottom: 1.5rem;
+}
+
+.row-mostrar-noticias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  border-top: 2px solid #8FB9FF;
+}
+
+.cta-mas-noticias {
+  margin: 0 auto;
+  position: relative;
+  top: -24px;
+}
+
+.footer {
+  height: 1850px;
+  background-color: #0D45A5;
+}
+
+.footer-inner {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(13.93%, #FFFFFF), color-stop(32.41%, #80D7EA), color-stop(60.31%, #1F5BC1), color-stop(82.29%, #0D45A5));
+  background: linear-gradient(180deg, #FFFFFF 13.93%, #80D7EA 32.41%, #1F5BC1 60.31%, #0D45A5 82.29%);
+  height: 2365px;
+  position: relative;
+  z-index: 1;
+  top: -400px;
+  padding-top: 518px;
+}
+
+.box-politica {
+  position: relative;
+}
+.box-politica h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 37px;
+  color: #003287;
+  max-width: 450px;
+  line-height: 50px;
+  margin-bottom: 26px;
+}
+.box-politica .info-politica p {
+  color: #003287;
+  font-size: 21px;
+  line-height: 30px;
+  max-width: 650px;
+  margin-bottom: 30px;
+}
+.box-politica .lista-texto {
+  padding: 0 0 0 17px;
+  margin-top: 45px;
+  max-width: 850px;
+}
+.box-politica .lista-texto li {
+  color: #FFFFFF;
+  margin-bottom: 24px;
+}
+.box-politica .lista-texto h4 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.box-politica .lista-texto p {
+  color: #FFFFFF;
+  line-height: 25px;
+  font-size: 16px;
+}
+
+.arte-footer {
+  position: absolute;
+  top: -157px;
+  right: -185px;
+}
+
+.row-mostrar-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 80px;
+  border-top: 2px solid white;
+}
+
+.cta-mas-footer {
+  margin: 0 auto;
+  position: relative;
+  top: -24px;
+}
+
+.row-redes {
+  margin-top: 32px;
+  color: white;
+}
+
+ul.lista-datos {
+  list-style: none;
+  margin-top: 32px;
+  padding: 0 5px;
+}
+ul.lista-datos li {
+  margin-bottom: 0;
+  font-size: 21px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+ul.lista-datos i {
+  margin-right: 9px;
+  width: 30px;
+  /* background: red; */
+  /* display: inline-block; */
+}
+
+.box-footer-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  text-align: right;
+  margin-top: 3.4rem;
+}
+.box-footer-links p {
+  font-size: 21px;
+}
+
+ul.lista-redes {
+  list-style: none;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+ul.lista-redes li {
+  margin-right: 30px;
+  display: inline;
+}
+ul.lista-redes li:last-child {
+  margin-right: 0;
 }
 
 .home-box {

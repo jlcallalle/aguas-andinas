@@ -79,3 +79,24 @@
         color:white;
     }
 }
+
+.btn-ver-mas {
+    color: $blue;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+.btn-mostrar-noticias {
+    color: white;
+    background-color: $orange;
+    border-radius: 8px;
+    padding: 0.7rem 2.4rem;
+    font-size: 16px;
+    font-weight: bold;
+    &:hover {
+        background-color: #E69300;
+        color:white;
+    }
+}
