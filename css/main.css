@@ -3258,11 +3258,34 @@ body {
 }
 .box-clima .dato-clima {
   margin-right: 28px;
+  position: relative;
+  z-index: 101;
 }
 .box-clima .dato-clima .item-cloud {
   margin-right: 12px;
   position: relative;
   top: 2px;
+}
+.box-clima .dato-clima .item-cloud:hover {
+  text-decoration: none;
+}
+.box-clima .dato-clima .texto-clima {
+  cursor: pointer;
+}
+
+.mostrar-clima-detalle {
+  width: 350px;
+  height: 195px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  background-image: url(../images/tiempo.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: none;
+}
+.mostrar-clima-detalle.active {
+  display: block;
 }
 
 .item-normalidad {
@@ -3271,11 +3294,16 @@ body {
 
 .event-clima a {
   margin-left: 2px;
+  position: relative;
+  top: 2px;
+}
+.event-clima a:hover {
+  text-decoration: none;
 }
 
 .logo-brand img {
   max-width: 127px;
-  margin-right: 62px;
+  margin-right: 39px;
 }
 
 .header-inner {
@@ -3288,7 +3316,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 25px 0;
+  position: relative;
 }
 
 .header-nav {
@@ -3306,24 +3334,24 @@ body {
   display: flex;
 }
 
-.lista-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0;
-}
-.lista-nav li {
-  list-style: none;
-  margin-right: 43px;
-}
-.lista-nav li a {
-  color: #5F6268;
-  font-size: 14px;
-  font-weight: 700;
-}
-
 .box-search {
   margin-right: 22px;
+}
+
+.mostrar-busqueda {
+  width: 1110px;
+  height: 121px;
+  position: absolute;
+  top: 102px;
+  left: 0;
+  background-image: url(../images/buscador.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 101;
+  display: none;
+}
+.mostrar-busqueda.active {
+  display: block;
 }
 
 .banner-info {
@@ -3340,6 +3368,138 @@ body {
 }
 .banner-info .cta-banner {
   margin-top: 25px;
+}
+
+.down-submenu-mobile {
+  position: absolute;
+  display: none;
+  top: 0;
+  right: 10px;
+  width: 40px;
+  height: 47px;
+  font-size: 25px;
+  text-align: center;
+  line-height: 48px;
+}
+
+.lista-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  height: 108px;
+}
+.lista-nav > li {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+.lista-nav > li > a {
+  color: #5F6268;
+  font-size: 14px;
+  font-weight: 700;
+  padding-right: 1.4rem;
+  padding-top: 0.5rem;
+  padding-left: 1.4rem;
+}
+.lista-nav > li > a:hover {
+  text-decoration: none;
+}
+.lista-nav > li:hover {
+  background-color: #E7F0FF;
+}
+.lista-nav > li:hover > .child-menu {
+  display: block;
+}
+.lista-nav .child-menu {
+  display: none;
+  font-size: 14px;
+  color: #5F6268;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.1);
+  background-color: white;
+  color: white;
+  z-index: 20;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  top: 108px;
+  background-repeat: no-repeat;
+  min-height: 340px;
+  border: 1px solid #F3F4F5;
+  -webkit-box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+}
+
+.menu-columns {
+  color: gray;
+  list-style: none;
+  padding: 20px 25px;
+  font-size: 14px;
+}
+.menu-columns .first-cold {
+  max-width: 25%;
+  min-width: 225px;
+}
+.menu-columns .first-cold .submenu-terciario {
+  max-width: 250px;
+  padding: 0 30px 0 0;
+}
+.menu-columns .first-cold .submenu-terciario li:first-child {
+  width: 102px;
+  color: #2274FF;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  margin-bottom: 14px;
+}
+.menu-columns .first-cold .submenu-terciario li:first-child.title-large {
+  width: 170px;
+}
+.menu-columns .first-cold .submenu-terciario li:last-child {
+  margin-top: 15px;
+}
+
+.submenu-terciario {
+  list-style: none;
+}
+.submenu-terciario > li {
+  margin-bottom: 42px;
+}
+.submenu-terciario > li:last-child {
+  margin-bottom: 0;
+}
+.submenu-terciario > li > a {
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 7px;
+  display: block;
+}
+
+.submenu-cuarto {
+  list-style: none;
+}
+.submenu-cuarto > li {
+  margin-bottom: 9px;
+}
+.submenu-cuarto > li > a {
+  color: gray;
+}
+.submenu-cuarto.menu-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: underline;
 }
 
 .home {
@@ -3426,7 +3586,7 @@ body {
 }
 
 .box-slider {
-  z-index: 100;
+  z-index: 11;
   position: relative;
 }
 
