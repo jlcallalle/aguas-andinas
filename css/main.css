@@ -3280,17 +3280,72 @@ body {
 
 .mostrar-clima-detalle {
   width: 350px;
-  height: 195px;
+  height: 196px;
+  background: #E7F0FF;
+  -webkit-box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.17);
+          box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.17);
+  border-radius: 5px;
   position: absolute;
   top: 32px;
   left: 0;
-  background-image: url(../images/tiempo.png);
+  /* background-image: url(../images/tiempo.png);
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center; */
+  padding: 20px 28px 20px 20px;
   display: none;
 }
 .mostrar-clima-detalle.active {
   display: block;
+}
+.mostrar-clima-detalle .box-texto-clima {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mostrar-clima-detalle .box-texto-clima .numero-grados {
+  color: #2274FF;
+  font-weight: 300;
+  font-size: 43px;
+  line-height: 23px;
+}
+.mostrar-clima-detalle .box-info-clima .lista-clima {
+  list-style: none;
+}
+.mostrar-clima-detalle .box-info-clima .lista-clima li {
+  color: #003287;
+  font-size: 11px;
+  line-height: 17px;
+}
+.mostrar-clima-detalle .box-info-clima .lista-clima li:first-child {
+  font-weight: bold;
+}
+
+.box-enlace-clima {
+  border-top: 1px solid #8FB9FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+.box-enlace-clima p {
+  color: #2274FF;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 17px;
+  width: 200px;
 }
 
 .item-normalidad {
