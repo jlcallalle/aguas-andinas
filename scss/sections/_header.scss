@@ -3,29 +3,26 @@
     background-color: $blue;
     padding: 5px 0;
     font-size: 14px;
+    display: none;
+    @include min-screen($tl){
+        display: block;
+    }
+   
     a {
         color: white;
         &.link-contacto {
             margin-right: 14px;
         }
     }
-}
-
-.header-top-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    .header-top-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 .box-contactenos {
     display: flex;
-}
-
-.link-accesos {
-   margin-left: 18px;
-   a {
-    margin-right: 12px;
-   }
 }
 
 .box-clima {
@@ -49,6 +46,14 @@
     }
 }
 
+.link-accesos {
+    margin-left: 18px;
+    a {
+     margin-right: 12px;
+    }
+ }
+ 
+
 .mostrar-clima-detalle {
     width: 350px;
     height: 195px;
@@ -63,10 +68,6 @@
         display: block;
     }
 }
-
-
-
-
 
 .item-normalidad {
     margin: 0 16px;
@@ -91,6 +92,8 @@
     }
 }
 
+
+/* NAV */
 .header-inner {
     display: flex;
     justify-content: space-between;
@@ -101,12 +104,23 @@
 
 .header-nav {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    @include min-screen($tl){
+      flex-direction: row;
+      align-items: center;
+      width: auto;
+    }
 }
 
 .header-right {
-    display: flex;
+    display: none;
+    @include min-screen($tl){
+        display: flex;
+    }
 }
+
 
 .box-search {
     margin-right: 22px;
@@ -128,54 +142,58 @@
     }
 }
 
-
-.banner-info {
-    padding: 12px 0 0 0;
-  h1 {
-    color: $blue;
-    font-size: 50px;    
-    font-family: $fontRaleway;
-    font-weight: 900;
-  }
-  p {
-      color: $black-light;
-  }
-  .cta-banner {
-    margin-top: 25px;
-  }   
-}
-
-
-.down-submenu-mobile {
-    position: absolute;
+/* Nav Menu */
+.nav-menu {
     display: none;
-    top: 0;
-    right: 10px;
-    width: 40px;
-    height: 47px;
-    font-size: 25px;
-    text-align: center;
-    line-height: 48px;
+    width: 100%;
+    @include min-screen($tl){
+        display: block;
+    }
+    &.active {
+        display: block;
+    }
 }
 
 
+.arrow-top {
+    background-image: url(../images/arrow-top.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 20px;
+    height: 12px;
+    display: block;
+}
 .lista-nav {
     display: flex;
+    flex-direction: column;
     margin:0;
-    height: 108px;
+    @include min-screen($tl){
+        height: 108px;
+        flex-direction: row;
+    }
     > li {
         list-style: none;
         //margin-right: 43px;
         align-items: center;
         display: flex;
         height: 100%;
+        position: relative;
+        @include min-screen($tl){
+            position: static;
+        }
         > a {
-            color: $black-light;
-            font-size: 14px;
+            color: $blue;
+            font-size: 16px;
             font-weight: 700;
             padding-right: 1.4rem;
             padding-top: 0.5rem;
             padding-left: 1.4rem;
+            padding-bottom: 0.5rem;
+            @include min-screen($tl){
+                color: $black-light;
+                font-size: 14px;
+                padding-bottom: 0;
+            }
             &:hover {
                 text-decoration: none;
             }
@@ -183,7 +201,9 @@
         &:hover {
             background-color: #E7F0FF;
             > .child-menu {
-                display: block;
+                @include min-screen($tl){
+                    display: block;
+                }
             }
         }
     }
@@ -196,34 +216,51 @@
         position: absolute;
         left: 0;
         width: 100%;
-        background-color: rgba(255,0,0,0.1);
         background-color: white;
         color: white;
         z-index: 20;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        top:108px;
+        top:40px;
+        @include min-screen($tl){
+            min-height: 340px;
+            border: 1px solid #F3F4F5;
+            box-shadow: 0px 3px 7px rgb(0 0 0 / 9%);
+            border-radius: 8px;
+            padding-top: 25px;
+            padding-bottom: 25px;
+            top:108px;
+        }
 
-        // background-image: url(../images/submenu.png);
-        background-repeat: no-repeat;
-        // background-position: 0 0;
-        // background-position: 0 -105px;
-        min-height: 340px;
-        border: 1px solid #F3F4F5;
-        box-shadow: 0px 3px 7px rgb(0 0 0 / 9%);
-        border-radius: 8px;
-
-      }
+    }
+    .active-submenu  {
+        .child-menu {
+            display: block;
+        }
+    }
 }
 
 .menu-columns {
     color: gray;
     list-style: none;
-    padding: 20px 25px;
+    padding: 14px 10px;
     font-size: 14px;
+    @include min-screen($tl){
+        padding: 20px 25px;
+    }
+    > .col {
+        flex-basis: content;
+        margin-bottom: 15px;
+        @include min-screen($tl){
+            flex-basis: 0;
+            margin-bottom: 0;
+        }
+    }
     .first-cold {
         max-width: 25%;
         min-width: 225px;
+        display: none;
+        @include min-screen($tl){
+            display: block;
+        }
         .submenu-terciario {
             max-width: 250px;
             padding: 0 30px 0 0;
@@ -251,7 +288,10 @@
 .submenu-terciario {
     list-style: none;
     > li {
-        margin-bottom: 42px;
+        margin-bottom: 20px;
+        @include min-screen($tl){
+            margin-bottom: 42px;
+        }
         &:last-child {
             margin-bottom: 0;
         }
@@ -279,3 +319,132 @@
         }
     }
 }
+
+
+/* banner */
+.banner-info {
+    padding: 12px 0 0 0;
+  h1 {
+    color: $blue;
+    font-size: 25px;    
+    font-family: $fontRaleway;
+    font-weight: 900;
+    @include min-screen($tl){
+        font-size: 50px;   
+    }
+  }
+  p {
+      color: $black-light;
+  }
+  .cta-banner {
+    margin-top: 25px;
+  }   
+}
+
+
+/* Menu Nav Mobil */
+
+.down-submenu-mobile {
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    text-align: center;
+    line-height: 48px;
+    @include min-screen($tl){
+        display: none;
+    }
+  }
+
+.c-hamburger {
+    display: block;
+    position: absolute;
+    //right: 10px;
+    right: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: none;
+    border: 0;
+    cursor: pointer;
+    transition: background 0.2s;
+    @include min-screen($tl){
+        display: none;
+    }
+  }
+  .c-hamburger:focus {
+    outline: 0;
+  }
+  .c-hamburger span {
+    display: block;
+    position: absolute;
+    top: 20.625px;
+    left: 8.4375px;
+    right: 8.4375px;
+    height: 3.6px;
+    background: $blue-dark;
+  }
+  .c-hamburger span::before,
+  .c-hamburger span::after {
+    position: absolute;
+    display: block;
+    left: 0;
+    width: 100%;
+    height: 3.6px;
+    background-color: $blue-dark;
+    content: "";
+  }
+  .c-hamburger span::before {
+    top: -9.375px;
+  }
+  .c-hamburger span::after {
+    bottom: -9.375px;
+  }
+  .c-hamburger--htx {
+    background-color: transparent;
+  }
+  .c-hamburger--htx:hover {
+    background-color: transparent;
+  }
+  .c-hamburger--htx span {
+    transition: background 0 0.2s;
+  }
+  .c-hamburger--htx span::before,
+  .c-hamburger--htx span::after {
+    transition-duration: 0.2s, 0.2s;
+    transition-delay: 0.2s, 0s;
+  }
+  .c-hamburger--htx span::before {
+    transition-property: top, transform;
+  }
+  .c-hamburger--htx span::after {
+    transition-property: bottom, transform;
+  }
+  .c-hamburger--htx.is-active {
+    background-color: transparent;
+  }
+  .c-hamburger--htx.is-active:hover {
+    background-color: transparent;
+  }
+  .c-hamburger--htx.is-active span {
+    background: 0;
+  }
+  .c-hamburger--htx.is-active span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+  .c-hamburger--htx.is-active span::after {
+    bottom: 0;
+    transform: rotate(-45deg);
+  }
+  .c-hamburger--htx.is-active span::before,
+  .c-hamburger--htx.is-active span::after {
+    transition-delay: 0, 0.2s;
+  }

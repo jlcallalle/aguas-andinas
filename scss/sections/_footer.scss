@@ -1,0 +1,134 @@
+
+.footer {
+    height: 1850px;
+    background-color: #0D45A5;
+}
+.footer-inner {
+    background: linear-gradient(180deg, #FFFFFF 13.93%, #80D7EA 32.41%, #1F5BC1 60.31%, #0D45A5 82.29%);
+    height: 2365px;
+    position: relative;
+    z-index: 1;
+    top: -400px;
+    padding-top: 518px;
+}
+
+.box-politica {
+    position: relative;
+    h2 {
+        font-family: $fontRaleway;
+        font-weight: bold;
+        font-size: 37px;
+        color: $blue-dark;
+        max-width: 450px;
+        line-height: 50px;
+        margin-bottom: 26px;
+    }
+    .info-politica { 
+        p {
+            color: $blue-dark;
+            font-size: 21px;
+            line-height: 30px;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+    }
+    .lista-texto {
+        padding: 0 0 0 17px;
+        margin-top: 45px;
+        max-width: 850px;
+        li {
+            color: #FFFFFF;
+            margin-bottom: 24px;
+        }
+        h4 {
+            font-size: 16px;
+            line-height: 25px;
+            font-weight: bold;
+            margin-bottom: 0;
+        }
+        p {
+            color: #FFFFFF;
+            line-height: 25px;
+            font-size: 16px;
+        }
+    }
+}
+
+.arte-footer {
+    position: absolute;
+    top: -157px;
+    right: -185px;
+    display: none;
+    @include min-screen($tl){ 
+       display: block;
+    }
+}
+
+.row-mostrar-footer {
+    display: flex;
+    margin-top: 80px;
+    border-top: 2px solid white;
+}
+.cta-mas-footer {
+    margin: 0 auto;
+    position: relative;
+    top: -24px;
+}
+
+.row-redes {
+    margin-top: 32px;
+    color: white;
+}
+
+.lista-datos {
+    list-style: none;
+    margin-top: 32px;
+    padding: 0 5px;
+    li {
+        margin-bottom: 0;
+        font-size: 21px;
+        line-height: 40px;
+        display: flex;
+    }
+     i {
+        margin-right: 9px;
+        width: 30px;
+        /* background: red; */
+        /* display: inline-block; */
+    }
+}
+
+.box-footer-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: right;
+    margin-top: 3.4rem;
+    p {
+        font-size: 21px;
+    }
+}
+
+.lista-redes {
+    list-style: none;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    li {
+        margin-right: 30px;
+        display: inline;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.box-footer-info {
+    img {
+        max-width: 150px;
+        @include min-screen($tl){ 
+            max-width: none;
+        }
+    }
+}

@@ -18,7 +18,9 @@
 
 .box-items-slider-inner {
     display: flex;
-    position: absolute;
+    @include min-screen($tl){
+        position: absolute; 
+    }
 }
 
 .item-slider {
@@ -28,9 +30,15 @@
     justify-content: center;
     background-color: #E7F0FF;
     text-align: center;
-    margin-right: 29px;
+    margin-right: 14px;
     width: 160px;
     height: 90px;
+    @include min-screen($tl){
+        margin-right: 29px;
+    }
+    &:last-child {
+        margin-right: 0;
+    }
     span {
         color: $blue-dark;
         font-size: 14px;
@@ -43,7 +51,7 @@
 .carousel-indicators {
     justify-content: flex-end;
     right: -85px;
-    bottom: -100px;
+    //bottom: -100px;
     bottom: -70px;
     li  {
         display: inline-block;
@@ -71,26 +79,45 @@
     z-index: 10;
     top: 0;
     right: 0;
+    display: none;
+    @include min-screen($tl){
+        display: block;
+    }
 }
 
 .box-slider {
     z-index: 11;
     position: relative;
+    margin-top: 40px;
+    @include min-screen($tl){ 
+        margin-top: 0;
+    }
 }
 
 .slider {
     .carousel-indicators {
-        bottom: -100px;
-        right: -65px;
+        bottom: 0;
+        right: -50px;
+        @include min-screen($tl){ 
+            bottom: -100px;
+            right: -65px;
+        }
     }
     .container-fluid {
         position: relative;
     }
 }
 
+.row-slider {
+    // border:2px solid blue;
+}
+
 // section ayuda
 section.section-ayuda {
-    margin-top: 116px;
+    margin-top: 50px;
+    @include min-screen($tl){ 
+        margin-top: 116px;
+    }
 }
 .title-section {
     color: $blue-dark;
@@ -162,12 +189,18 @@ section.section-ayuda {
     top:0;
     left: 0;
     position: absolute;
+    display: none;
+    @include min-screen($tl){
+        display: block;
+    }
 }
 
 .box-factibilidad {
     z-index: 10;
     position: relative;
-    margin-top: 63px;
+    @include min-screen($tl){
+        margin-top: 63px;
+    }
     h2 {
         font-family: $fontRaleway;
         font-weight: bold;
@@ -176,13 +209,21 @@ section.section-ayuda {
     }
     img {
         margin-top: 20px;
+        display: none;
+        @include min-screen($tl){
+            display: block;
+        }
     }
 }
 
 
 .box-detalle {
-    margin-top: 72px;
+    margin-top: 20px;
+    padding: 0;
+    @include min-screen($tl){
+        margin-top: 72px;
     padding: 0 0 0 5rem;
+    }
 }
 .item-fact {
     margin-bottom: 72px;
@@ -206,7 +247,10 @@ section.section-ayuda {
 
 
 section.section-trabajos {
-    margin-top: 66px;
+    margin-top: 50px;
+    @include min-screen($tl){ 
+        margin-top: 66px;
+    }
 }
 
 .subtitle-section {
@@ -392,6 +436,10 @@ section.section-trabajos {
     z-index: 10;
     top: 0;
     right: 0;
+    display: none;
+    @include min-screen($tl){
+        display: block;
+    }
 }
 
 
@@ -442,128 +490,5 @@ section.section-trabajos {
     top: -24px;
 }
 
-.footer {
-    height: 1850px;
-    background-color: #0D45A5;
-}
-.footer-inner {
-    background: linear-gradient(180deg, #FFFFFF 13.93%, #80D7EA 32.41%, #1F5BC1 60.31%, #0D45A5 82.29%);
-    //height: 1930px;
-    //height: 1800px;
-    height: 2365px;
-    position: relative;
-    z-index: 1;
-    top: -400px;
-    padding-top: 518px;
-}
-
-.box-politica {
-    position: relative;
-    h2 {
-        font-family: $fontRaleway;
-        font-weight: bold;
-        font-size: 37px;
-        color: $blue-dark;
-        max-width: 450px;
-        line-height: 50px;
-        margin-bottom: 26px;
-    }
-    .info-politica { 
-        p {
-            color: $blue-dark;
-            font-size: 21px;
-            line-height: 30px;
-            max-width: 650px;
-            margin-bottom: 30px;
-        }
-    }
-    .lista-texto {
-        padding: 0 0 0 17px;
-        margin-top: 45px;
-        max-width: 850px;
-        li {
-            color: #FFFFFF;
-            margin-bottom: 24px;
-        }
-        h4 {
-            font-size: 16px;
-            line-height: 25px;
-            font-weight: bold;
-            margin-bottom: 0;
-        }
-        p {
-            color: #FFFFFF;
-            line-height: 25px;
-            font-size: 16px;
-        }
-    }
-}
-
-.arte-footer {
-    position: absolute;
-    top: -157px;
-    right: -185px;
-}
-
-.row-mostrar-footer {
-    display: flex;
-    margin-top: 80px;
-    border-top: 2px solid white;
-}
-.cta-mas-footer {
-    margin: 0 auto;
-    position: relative;
-    top: -24px;
-}
 
 
-
-
-.row-redes {
-    margin-top: 32px;
-    color: white;
-}
-
-ul.lista-datos {
-    list-style: none;
-    margin-top: 32px;
-    padding: 0 5px;
-    li {
-        margin-bottom: 0;
-        font-size: 21px;
-        line-height: 40px;
-        display: flex;
-    }
-     i {
-        margin-right: 9px;
-        width: 30px;
-        /* background: red; */
-        /* display: inline-block; */
-    }
-}
-
-.box-footer-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    text-align: right;
-    margin-top: 3.4rem;
-    p {
-        font-size: 21px;
-    }
-}
-
-ul.lista-redes {
-    list-style: none;
-    margin-top: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-    li {
-        margin-right: 30px;
-        display: inline;
-        &:last-child {
-            margin-right: 0;
-        }
-    }
-}

@@ -30,12 +30,19 @@ $(function () {
     $('.btn-mostrar-noticias').on('click', function(e) {
         e.preventDefault();
     });
-    
+
+    $('.c-hamburger').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('is-active');
+        $("#navigation").toggleClass("active");
+    });
+
+    $(".down-submenu-mobile").on("click", function () {
+        $(this).parent().toggleClass("active-submenu");
+    });
+
     /* if ($('.page-detalle').length) {
         MyApp.evento();
     } */
 
-    /* $(".link").click(function(e){
-        e.preventDefault();
-    }); */
 });
