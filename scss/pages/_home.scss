@@ -1,5 +1,5 @@
 .home  {
-    // background-image: url(../images/home.png);
+    //background-image: url(../images/home.png);
     background-position: top center;
     background-repeat: no-repeat;
     // background-position: center 55px;
@@ -333,6 +333,126 @@ section.section-trabajos {
     }
 }
 
+/* .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    border-color: white;;
+}
+ */
+.lista-tipo-tab {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 36px;
+    border-bottom: none;
+    &.nav-tabs {
+        .nav-link {
+            color: $blue-dark;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            text-align: left;
+            padding: 0;
+            &:last-child {
+                padding-right: 0;
+            }
+            &.active {
+                border-color: white;;
+                color:$blue;
+                svg path {
+                    fill: $blue;
+                }
+                .box-tab {
+                    span {
+                        color:$blue;
+                    }
+                }
+            }
+            &:focus, &:hover {
+                border-color: white;
+            }
+           
+
+            .box-tab {
+                color: $blue-dark;
+                display: flex;
+                align-items: center;
+                font-size: 16px;
+                font-weight: bold;
+                padding-right: 15px;
+                text-align: left;
+                max-width: 230px;
+                line-height: 20px;
+                i {
+                    margin-right: 18px;
+                }
+                &:last-child {
+                    padding-right: 0;
+                }
+                &.active {
+                    color:$blue;
+                    svg path {
+                        fill: $blue;
+                    }
+                }
+                + span {
+                    color: $gray;
+                    font-weight: normal;
+                }
+            }
+
+            
+        }
+        .nav-item {
+            &.show {
+                .nav-link {
+                    border-color: white;
+                    &.active {
+                        border-color: white;
+                    }
+                }
+            }
+        }
+    }
+
+    li {
+        text-align: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            color: $blue-dark;
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            font-weight: bold;
+            padding-right: 15px;
+            text-align: left;
+            max-width: 230px;
+            line-height: 20px;
+            i {
+                margin-right: 18px;
+            }
+            &:last-child {
+                padding-right: 0;
+            }
+            &.active {
+                color:$blue;
+                svg path {
+                    fill: $blue;
+                }
+            }
+        }
+        > span {
+            color: $gray;
+        }
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+        }
+    }
+}
+
 .resultado-mapa {
     display: flex;
     margin-top: 36px;
@@ -344,9 +464,10 @@ section.section-trabajos {
     font-size: 14px;
     display: flex;
     border-radius: 5px;
-    padding: 8px 16px 8px 8px;
+    padding: 10px 22px 10px 8px;
     width: 368px;
-    margin-bottom: 20px;
+    margin-bottom: 22px;
+    position: relative;
     .icon {
         width: 86px;
         display: flex;
@@ -354,11 +475,21 @@ section.section-trabajos {
         justify-content: center;
         margin-right: 2px;
     }
+    .close {
+        position: absolute;
+        right: 4px;
+        top: 2px;
+        font-size: 18px;
+        &:focus {
+            outline: none;
+        }
+    }
 }
 .item-dato {
     width: 100%;
     .item-title {
         font-weight: bold;
+        line-height: 14px;
     }
     .item-texto {
         display: flex;
