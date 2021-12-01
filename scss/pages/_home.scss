@@ -1,8 +1,10 @@
 .home  {
     //background-image: url(../images/home.png);
+    // background-image: url(../images/home-pago.png);
     background-position: top center;
     background-repeat: no-repeat;
     // background-position: center 55px;
+    background-position: 247px 55px;
     // background-position: 31px 0;
     //height: 6000px;
 }
@@ -513,17 +515,23 @@ section.section-trabajos {
 }
 
 .box-lugares-pago {
-    background: #FFFFFF;
+    // background: #FFFFFF;
     border: 1px solid $gray;
     border-radius: 5px;
-    height: 150px;
-    padding: 10px 80px 20px 80px;
+    // height: 150px;
+    //padding: 10px 80px 27px 80px;
+    // padding: 10px 20px 55px 80px;
+    padding: 10px 20px 35px 80px;
     .box-lugares-pago-inner {
-        border-bottom: 1px dashed #B7C0CE;
+        //border-bottom: 1px dashed #B7C0CE;
+        height: 100%;
+    }
+    .box-pago-agencia {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 100%;
+        height: 110px;
+        border-bottom: 1px dashed #B7C0CE;
     }
     .texto-lugares {
         color: $blue-dark;
@@ -535,7 +543,7 @@ section.section-trabajos {
         display: flex;
         width: 50%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 }
 
@@ -549,8 +557,10 @@ section.section-trabajos {
     width: 190px;
     height: 60px;
     padding: 8px;
-    &:hover {
+    &:hover, &.active {
         text-decoration: none;
+        background: #E7F0FF;
+        border: 2px solid $blue ;
     }
     i {
         margin-right: 19px; 
@@ -574,6 +584,51 @@ section.section-trabajos {
     
 }
 
+.box-punto-pago {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display:none;
+    &.active {
+        display: block;
+    }
+}
+
+.content-slider-pago {
+    padding: 0 60px;
+    margin-top: 30px;
+}
+
+.slider-pago {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    li {
+        width: 160px;
+        height: 90px;
+        background: #FFFFFF;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.active {
+            background: #E7F0FF;
+            border: 3px solid #2274FF;
+        }
+        a {
+            span {
+                color: $blue-dark;
+                font-weight: 900;
+                font-size: 18px;
+                line-height: 22px
+            }
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}
 
 .section-slider {
     margin-top: 40px;

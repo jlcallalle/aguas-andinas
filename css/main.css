@@ -3982,6 +3982,7 @@ body {
 .home {
   background-position: top center;
   background-repeat: no-repeat;
+  background-position: 247px 55px;
 }
 
 /* section slider */
@@ -4577,14 +4578,14 @@ section.section-trabajos {
 }
 
 .box-lugares-pago {
-  background: #FFFFFF;
   border: 1px solid #BFC1C5;
   border-radius: 5px;
-  height: 150px;
-  padding: 10px 80px 20px 80px;
+  padding: 10px 20px 35px 80px;
 }
 .box-lugares-pago .box-lugares-pago-inner {
-  border-bottom: 1px dashed #B7C0CE;
+  height: 100%;
+}
+.box-lugares-pago .box-pago-agencia {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4594,7 +4595,8 @@ section.section-trabajos {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100%;
+  height: 110px;
+  border-bottom: 1px dashed #B7C0CE;
 }
 .box-lugares-pago .texto-lugares {
   color: #003287;
@@ -4610,9 +4612,8 @@ section.section-trabajos {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .btn-filtro-lugar {
@@ -4632,8 +4633,10 @@ section.section-trabajos {
   height: 60px;
   padding: 8px;
 }
-.btn-filtro-lugar:hover {
+.btn-filtro-lugar:hover, .btn-filtro-lugar.active {
   text-decoration: none;
+  background: #E7F0FF;
+  border: 2px solid #2274FF;
 }
 .btn-filtro-lugar i {
   margin-right: 19px;
@@ -4653,6 +4656,63 @@ section.section-trabajos {
   font-size: 10px;
   line-height: 13px;
   margin: 0;
+}
+
+.box-punto-pago {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  display: none;
+}
+.box-punto-pago.active {
+  display: block;
+}
+
+.content-slider-pago {
+  padding: 0 60px;
+  margin-top: 30px;
+}
+
+.slider-pago {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.slider-pago li {
+  width: 160px;
+  height: 90px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.slider-pago li.active {
+  background: #E7F0FF;
+  border: 3px solid #2274FF;
+}
+.slider-pago li a span {
+  color: #003287;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 22px;
+}
+.slider-pago li a:hover {
+  text-decoration: none;
 }
 
 .section-slider {

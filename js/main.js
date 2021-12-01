@@ -27,6 +27,8 @@ $(function () {
         $('.mostrar-busqueda').toggleClass('active');
     });
 
+  
+
     $('.btn-mostrar-noticias').on('click', function(e) {
         e.preventDefault();
     });
@@ -39,6 +41,12 @@ $(function () {
 
     $(".down-submenu-mobile").on("click", function () {
         $(this).parent().toggleClass("active-submenu");
+    });
+
+    $('.mostrar-lugares').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.box-punto-pago').toggleClass('active');
     });
 
     /* if ($('.page-detalle').length) {
