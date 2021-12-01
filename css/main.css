@@ -4515,6 +4515,11 @@ section.section-trabajos {
   margin-bottom: 22px;
   position: relative;
 }
+@media only screen and (min-width: 830px) {
+  .item-mapa {
+    max-height: 85px;
+  }
+}
 .item-mapa .icon {
   width: 86px;
   display: -webkit-box;
@@ -4569,6 +4574,85 @@ section.section-trabajos {
   background-position: 0 0;
   width: 756px;
   margin-left: 25px;
+}
+
+.box-lugares-pago {
+  background: #FFFFFF;
+  border: 1px solid #BFC1C5;
+  border-radius: 5px;
+  height: 150px;
+  padding: 10px 80px 20px 80px;
+}
+.box-lugares-pago .box-lugares-pago-inner {
+  border-bottom: 1px dashed #B7C0CE;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+}
+.box-lugares-pago .texto-lugares {
+  color: #003287;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+.box-lugares-pago .filtro-lugares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.btn-filtro-lugar {
+  background: #FFFFFF;
+  border: 2px solid #B7C0CE;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 190px;
+  height: 60px;
+  padding: 8px;
+}
+.btn-filtro-lugar:hover {
+  text-decoration: none;
+}
+.btn-filtro-lugar i {
+  margin-right: 19px;
+}
+.btn-filtro-lugar .texto-filtro {
+  padding: 0 5px 0 0;
+}
+.btn-filtro-lugar .texto-filtro .title-filtro {
+  color: #5F6268;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+.btn-filtro-lugar .texto-filtro p {
+  color: #5F6268;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 13px;
+  margin: 0;
 }
 
 .section-slider {
