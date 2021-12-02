@@ -3353,6 +3353,9 @@ body {
   margin: 0 16px;
 }
 
+.event-clima {
+  position: relative;
+}
 .event-clima a {
   margin-left: 2px;
   position: relative;
@@ -3360,6 +3363,60 @@ body {
 }
 .event-clima a:hover {
   text-decoration: none;
+}
+
+.box-estado-clima {
+  display: none;
+  width: 362px;
+  position: absolute;
+  z-index: 12;
+  left: -160px;
+  top: 37px;
+  padding: 18px 0 0 0;
+  background: #FFFFFF;
+  border: 0.5px solid #BDBDBD;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+}
+.box-estado-clima.active {
+  display: block;
+}
+.box-estado-clima .title-estado {
+  color: #003287;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  padding: 0 23px;
+}
+
+.row-estado {
+  padding: 8px 36px 8px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row-estado:hover {
+  background: #E7F0FF;
+  border-radius: 5px;
+}
+.row-estado i {
+  margin-right: 19px;
+}
+.row-estado .texto-estado .subtitle-estado {
+  color: #5F6268;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 23px;
+}
+.row-estado .texto-estado p {
+  color: #5F6268;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 13px;
 }
 
 .logo-brand img {
@@ -3563,6 +3620,9 @@ body {
   .lista-nav > li:hover > .child-menu {
     display: block;
   }
+}
+.lista-nav > li:hover > a {
+  color: #2274FF;
 }
 .lista-nav .child-menu {
   display: none;

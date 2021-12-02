@@ -22,6 +22,11 @@ $(function () {
         $('.mostrar-clima-detalle').toggleClass('active');
     });
 
+    $('.event-clima').on('click', function(e) {
+        e.preventDefault();
+        $('.box-estado-clima').toggleClass('active');
+    });
+
     $('.item-lupa').on('click', function(e) {
         e.preventDefault();
         $('.mostrar-busqueda').toggleClass('active');
