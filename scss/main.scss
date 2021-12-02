@@ -3,6 +3,9 @@
 // Sass Libraries /
 @import "../node_modules/sass-mediaqueries/media-queries"; 
 @import "../node_modules/font-awesome/css/font-awesome"; 
+/* @import '../node_modules/liferay-font-awesome/css/font-awesome'; */
+
+
 
 // Configuration
 @import 'base/variables';
@@ -20,6 +23,7 @@
 
 //Pages
 @import 'pages/home';
+@import 'pages/iniciar-sesion';
 
 $bg-coral: coral;
 $bg-gray: #2d2d2d;

@@ -27,7 +27,6 @@ $(function () {
         $('.mostrar-busqueda').toggleClass('active');
     });
 
-  
 
     $('.btn-mostrar-noticias').on('click', function(e) {
         e.preventDefault();
@@ -49,8 +48,13 @@ $(function () {
         $('.box-punto-pago').toggleClass('active');
     });
 
-    /* if ($('.page-detalle').length) {
-        MyApp.evento();
-    } */
+    // overlay menu list 
+      $( ".lista-nav li" ).hover(
+        function() {
+            $(this).parent().siblings().addClass('hover');
+        }, function() {
+            $(this).parent().siblings().removeClass('hover');
+        }
+      );
 
 });

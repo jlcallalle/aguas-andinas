@@ -13,6 +13,7 @@
     "@fortawesome/fontawesome-free": "^5.15.3",
     "font-awesome": "^4.7.0",
     "jquery": "^3.5.1",
+    "liferay-font-awesome": "^3.5.0",
     "sass-mediaqueries": "^1.6.1",
     "slick-carousel": "^1.8.1"
   },

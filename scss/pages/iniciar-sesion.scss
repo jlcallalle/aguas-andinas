@@ -1,0 +1,55 @@
+.page {
+    // background-image: url(../images/page-login.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    // height: 1650px;
+    .footer {
+        height: auto;
+    }
+    .main {
+        // background-color: #F3F4F6;
+        height: 1450px;
+        padding: 50px 0 50px 0;
+        .container {
+            max-width: 980px;
+        }
+    }
+
+    .breadcrumb {
+        background-color: transparent;
+        padding: 0.2rem 0.2rem;
+        margin-bottom: 0.3rem;
+        li {
+            color: $blue;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+}
+
+.section-login {
+    h2 {
+        font-family: $fontRaleway;
+        font-weight: bold;
+        font-size: 27px;
+        line-height: 32px;
+        color: $blue-dark;
+        display: block;
+        width: 100%;
+    }
+}
+
+.content-page {
+    display: flex;
+}
+
+.content-page {
+    h3 {
+        color:$blue-dark;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
