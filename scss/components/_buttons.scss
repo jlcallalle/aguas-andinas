@@ -99,4 +99,17 @@
         background-color: #E69300;
         color:white;
     }
+
+}
+.btn-mostrar-politicas {
+    color: white;
+    background-color: $orange;
+    border-radius: 8px;
+    padding: 0.7rem 2.4rem;
+    font-size: 16px;
+    font-weight: bold;
+    &:hover {
+        background-color: #E69300;
+        color:white;
+    }
 }

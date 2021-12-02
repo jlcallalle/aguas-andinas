@@ -62,4 +62,32 @@ $(function () {
         }
       );
 
+      //mostrar politica footer
+        // var total = $('.lista-texto li').length;
+        $('.lista-texto li').each(function(index) {
+            if (index >= 4) {
+                $(this).addClass('hide');
+            }
+        });
+
+        $('.btn-mostrar-data').on('click', function(e) {
+            e.preventDefault();
+            $('.lista-texto li').removeClass('hide');
+            $(this).hide();
+        });
+
+        // listado noticias 
+        $('.listado-noticias > div').each(function(index) {
+            console.log(index);
+            if (index >= 8) {
+                $(this).addClass('hide');
+            }
+        });
+
+        $('.btn-mostrar-noticias').on('click', function(e) {
+            e.preventDefault();
+            $('.listado-noticias .col-12').removeClass('hide');
+            $(this).hide();
+        });
+
 });
