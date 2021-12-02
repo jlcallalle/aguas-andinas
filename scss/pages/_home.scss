@@ -473,6 +473,9 @@ section.section-trabajos {
     @include min-screen($tl){
         max-height: 85px;
     }
+    &:last-child {
+        margin-bottom: 0;
+    }
     .icon {
         width: 86px;
         display: flex;
@@ -512,18 +515,18 @@ section.section-trabajos {
     background-position: 0 0;
     width: 756px;
     margin-left: 25px;
+    @include min-screen($tl){
+        min-height: 474px;;
+    }
 }
 
 .box-lugares-pago {
     // background: #FFFFFF;
     border: 1px solid $gray;
     border-radius: 5px;
-    // height: 150px;
-    //padding: 10px 80px 27px 80px;
-    // padding: 10px 20px 55px 80px;
+    margin-top: 22px;
     padding: 10px 20px 35px 80px;
     .box-lugares-pago-inner {
-        //border-bottom: 1px dashed #B7C0CE;
         height: 100%;
     }
     .box-pago-agencia {

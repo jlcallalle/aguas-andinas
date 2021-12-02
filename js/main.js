@@ -12,31 +12,39 @@ var MyApp = {
 $(function () {
     console.log('ready..');    
     MyApp.toggeMenu();
-
-    $('.carousel').carousel({
-        interval: 2000
-    })
-
+    // Mostrar panel clima grados
     $('.texto-clima').on('click', function(e) {
         e.preventDefault();
         $('.mostrar-clima-detalle').toggleClass('active');
     });
 
+    // Mostrar panel estado operacional
     $('.event-clima').on('click', function(e) {
         e.preventDefault();
         $('.box-estado-clima').toggleClass('active');
     });
 
+    // mostrar buscador
     $('.item-lupa').on('click', function(e) {
         e.preventDefault();
         $('.mostrar-busqueda').toggleClass('active');
     });
 
-
-    $('.btn-mostrar-noticias').on('click', function(e) {
+    // mapa cerrar item 
+       $('.item-mapa button').on('click', function(e) {
         e.preventDefault();
+        $(this).parent().addClass('hide');
+    });
+    
+
+    // mapa mostrar lugares de pago
+    $('.mostrar-lugares').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+        $('.box-punto-pago').toggleClass('active');
     });
 
+    // movil nav
     $('.c-hamburger').on('click', function(e) {
         e.preventDefault();
         $(this).toggleClass('is-active');
@@ -47,47 +55,41 @@ $(function () {
         $(this).parent().toggleClass("active-submenu");
     });
 
-    $('.mostrar-lugares').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('active');
-        $('.box-punto-pago').toggleClass('active');
-    });
-
-    // overlay menu list 
-      $( ".lista-nav li" ).hover(
+   
+    //  menu hover overlay 
+    $( ".lista-nav li" ).hover(
         function() {
             $(this).parent().siblings().addClass('hover');
         }, function() {
             $(this).parent().siblings().removeClass('hover');
         }
-      );
+    );
 
-      //mostrar politica footer
-        // var total = $('.lista-texto li').length;
-        $('.lista-texto li').each(function(index) {
-            if (index >= 4) {
-                $(this).addClass('hide');
-            }
-        });
+    // mostrar listado noticias 
+     $('.listado-noticias > div').each(function(index) {
+        if (index >= 8) {
+            $(this).addClass('hide');
+        }
+    });
 
-        $('.btn-mostrar-data').on('click', function(e) {
-            e.preventDefault();
-            $('.lista-texto li').removeClass('hide');
-            $(this).hide();
-        });
+    $('.btn-mostrar-noticias').on('click', function(e) {
+        e.preventDefault();
+        $('.listado-noticias .col-12').removeClass('hide');
+        $('.row-mostrar-noticias').hide();
+        $(this).hide();
+    });
 
-        // listado noticias 
-        $('.listado-noticias > div').each(function(index) {
-            console.log(index);
-            if (index >= 8) {
-                $(this).addClass('hide');
-            }
-        });
+    // footer mostrar politicas
+    $('.lista-texto li').each(function(index) {
+        if (index >= 4) {
+            $(this).addClass('hide');
+        }
+    });
 
-        $('.btn-mostrar-noticias').on('click', function(e) {
-            e.preventDefault();
-            $('.listado-noticias .col-12').removeClass('hide');
-            $(this).hide();
-        });
+    $('.btn-mostrar-politicas').on('click', function(e) {
+        e.preventDefault();
+        $('.lista-texto li').removeClass('hide');
+        $(this).hide();
+    });
 
 });
