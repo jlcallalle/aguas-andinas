@@ -3107,6 +3107,66 @@ body {
   display: none !important;
 }
 
+/* Custom Class Bootstrap */
+.form-control-lg {
+  padding: 1rem 1rem;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  display: inline-block;
+  height: 21px;
+  position: relative;
+  width: 54px;
+}
+.switch input {
+  display: none;
+}
+
+.slider {
+  background-color: #cccccc63;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  background-color: #19CE74;
+  bottom: 0;
+  content: "";
+  height: 21px;
+  left: 4px;
+  position: absolute;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 21px;
+  border: 1px solid #FFFFFF;
+  -webkit-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
+}
+
+input:checked + .slider {
+  background-color: #D2FFE9;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+          transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .btn-ingresar {
   background-color: #FFA300;
   color: white;
@@ -3226,6 +3286,33 @@ body {
 .btn-mostrar-politicas:hover {
   background-color: #E69300;
   color: white;
+}
+
+.btn-login {
+  color: white;
+  font-size: 16px;
+  background: #19CE74;
+  border-radius: 8px;
+}
+.btn-login:hover {
+  background-color: #009669;
+}
+
+.btn-lg {
+  padding: 0.8rem 1rem;
+}
+
+.btn-registrame {
+  border: 1px solid #2274FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #2274FF;
+  font-weight: bold;
+}
+.btn-registrame:hover {
+  color: #2274FF;
 }
 
 .header-top {
@@ -4944,7 +5031,8 @@ section.section-trabajos {
   height: auto;
 }
 .page .main {
-  height: 1450px;
+  background-color: #F3F4F6;
+  height: 1050px;
   padding: 50px 0 50px 0;
 }
 .page .main .container {
@@ -4976,13 +5064,62 @@ section.section-trabajos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 70px 46px;
+  background-color: white;
 }
-
+.content-page .layout-formulario {
+  width: 59%;
+  border-right: 1px dashed #B7C0CE;
+  padding-right: 53px;
+}
 .content-page h3 {
   color: #003287;
   font-weight: bold;
   font-size: 16px;
   line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.formulario-login .form-group {
+  margin-bottom: 2rem;
+}
+.formulario-login .form-control {
+  /* padding: 1rem 1rem; */
+  font-size: 16px;
+  /*         line-height: 1.5;
+          border-radius: 0.3rem; */
+  border: 1px solid #B7C0CE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.box-switch {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 56px;
+  margin-top: 70px;
+}
+.box-switch .custom-control-label {
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+.box-switch .custom-control-label:before, .box-switch .custom-control-label:after {
+  display: none;
+}
+
+.dual-btn {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .home-box {

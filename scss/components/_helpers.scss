@@ -19,3 +19,64 @@
 .hide {
   display: none!important;
 }
+
+/* Custom Class Bootstrap */
+$input-padding-y-lg : 1rem;
+$input-padding-x-lg:  1rem;
+.form-control-lg {
+  padding: $input-padding-y-lg $input-padding-x-lg;;
+}
+
+
+/* The switch - the box around the slider */
+
+.switch {
+  display: inline-block;
+  height: 21px;
+  position: relative;
+  width: 54px;
+  input {
+    display:none;
+  }
+}
+
+.slider {
+  background-color: #cccccc63;
+  // background-color: #ccc;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #19CE74;
+  bottom: 0;
+  content: "";
+  height: 21px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 21px;
+  border: 1px solid #FFFFFF;
+  box-shadow: 2px 0px 3px rgb(0 0 0 / 10%)
+}
+
+input:checked + .slider {
+  background-color: #D2FFE9;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

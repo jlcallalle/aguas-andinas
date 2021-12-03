@@ -113,3 +113,30 @@
         color:white;
     }
 }
+
+.btn-login {
+    color:white;
+    font-size: 16px;
+    background: #19CE74;
+    border-radius: 8px;
+    &:hover {
+        background-color: $green-dark;
+    }
+}
+
+.btn-lg {
+    padding: 0.8rem 1rem;
+}
+
+
+.btn-registrame {
+    border: 1px solid #2274FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 15px;
+    color: $blue;
+    font-weight: bold;
+    &:hover {
+        color: $blue;
+    }
+}
