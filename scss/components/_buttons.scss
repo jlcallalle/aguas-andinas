@@ -133,10 +133,63 @@
     border: 1px solid #2274FF;
     box-sizing: border-box;
     border-radius: 8px;
-    font-size: 15px;
+    font-size: 16px;
     color: $blue;
     font-weight: bold;
+    width: 100%;
+    @include min-screen($tl){
+        width: 215px;
+    }
     &:hover {
         color: $blue;
+    }
+}
+
+
+.btn-facebook {
+    background-color: #2F80ED;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #2274FF;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    &:hover {
+        color:white;
+    }
+    i {
+        margin-right: 13px;
+    }
+}
+
+.btn-google {
+    background-color: #DD5D5D;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #DD5D5D;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    &:hover {
+        // background-color: #C94747;
+        color:white;
+    }
+    i {
+        margin-right: 13px;
+    }
+}
+.btn-twitter{
+    background-color: #71CCFF;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #71CCFF;
+    border-radius: 8px;
+    padding: 1rem 1rem;
+    i {
+        margin-right: 13px;
+    }
+    &:hover {
+        color:white;
     }
 }

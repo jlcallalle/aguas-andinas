@@ -3112,19 +3112,18 @@ body {
   padding: 1rem 1rem;
 }
 
-/* The switch - the box around the slider */
-.switch {
+/* form switch toggle */
+.box-switch .switch {
   display: inline-block;
   height: 21px;
   position: relative;
   width: 54px;
 }
-.switch input {
+.box-switch .switch input {
   display: none;
 }
-
-.slider {
-  background-color: #cccccc63;
+.box-switch .slider {
+  background-color: #E7F0FF;
   bottom: 0;
   cursor: pointer;
   left: 0;
@@ -3134,9 +3133,9 @@ body {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
-
-.slider:before {
+.box-switch .slider:before {
   background-color: #19CE74;
+  background-color: #B7C0CE;
   bottom: 0;
   content: "";
   height: 21px;
@@ -3149,21 +3148,21 @@ body {
   -webkit-box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
           box-shadow: 2px 0px 3px rgba(0, 0, 0, 0.1);
 }
-
-input:checked + .slider {
+.box-switch input:checked + .slider {
   background-color: #D2FFE9;
 }
-
-input:checked + .slider:before {
+.box-switch input:checked + .slider:before {
   -webkit-transform: translateX(26px);
           transform: translateX(26px);
+  background-color: #19CE74;
 }
-
-.slider.round {
+.box-switch .slider.round {
   border-radius: 34px;
 }
-
-.slider.round:before {
+.box-switch .slider.round:before {
+  border-radius: 50%;
+}
+.box-switch .slider.round:before {
   border-radius: 50%;
 }
 
@@ -3307,12 +3306,66 @@ input:checked + .slider:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
-  font-size: 15px;
+  font-size: 16px;
   color: #2274FF;
   font-weight: bold;
+  width: 100%;
+}
+@media only screen and (min-width: 830px) {
+  .btn-registrame {
+    width: 215px;
+  }
 }
 .btn-registrame:hover {
   color: #2274FF;
+}
+
+.btn-facebook {
+  background-color: #2F80ED;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #2274FF;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+}
+.btn-facebook:hover {
+  color: white;
+}
+.btn-facebook i {
+  margin-right: 13px;
+}
+
+.btn-google {
+  background-color: #DD5D5D;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #DD5D5D;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+}
+.btn-google:hover {
+  color: white;
+}
+.btn-google i {
+  margin-right: 13px;
+}
+
+.btn-twitter {
+  background-color: #71CCFF;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #71CCFF;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+}
+.btn-twitter i {
+  margin-right: 13px;
+}
+.btn-twitter:hover {
+  color: white;
 }
 
 .header-top {
@@ -4017,7 +4070,7 @@ input:checked + .slider:before {
   background-color: #0D45A5;
 }
 
-.footer-inner {
+.home .footer-inner {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(13.93%, #FFFFFF), color-stop(32.41%, #80D7EA), color-stop(60.31%, #1F5BC1), color-stop(82.29%, #0D45A5));
   background: linear-gradient(180deg, #FFFFFF 13.93%, #80D7EA 32.41%, #1F5BC1 60.31%, #0D45A5 82.29%);
   height: 2365px;
@@ -4097,8 +4150,8 @@ input:checked + .slider:before {
 }
 
 .row-redes {
-  margin-top: 32px;
   color: white;
+  padding: 32px 0;
 }
 
 .lista-datos {
@@ -5032,8 +5085,12 @@ section.section-trabajos {
 }
 .page .main {
   background-color: #F3F4F6;
-  height: 1050px;
-  padding: 50px 0 50px 0;
+  padding: 20px 0 50px 0;
+}
+@media only screen and (min-width: 830px) {
+  .page .main {
+    padding: 50px 0 50px 0;
+  }
 }
 .page .main .container {
   max-width: 980px;
@@ -5064,13 +5121,26 @@ section.section-trabajos {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 70px 46px;
+  padding: 20px;
   background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
-.content-page .layout-formulario {
-  width: 59%;
-  border-right: 1px dashed #B7C0CE;
-  padding-right: 53px;
+@media only screen and (min-width: 830px) {
+  .content-page {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 70px 46px 135px 46px;
+  }
+}
+@media only screen and (min-width: 830px) {
+  .content-page .layout-formulario {
+    width: 60%;
+  }
 }
 .content-page h3 {
   color: #003287;
@@ -5079,27 +5149,59 @@ section.section-trabajos {
   line-height: 25px;
   margin-bottom: 23px;
 }
+@media only screen and (min-width: 830px) {
+  .content-page .layout-redes {
+    padding: 0 40px;
+    width: 40%;
+  }
+}
+.content-page .layout-redes h3 {
+  margin-bottom: 10px;
+}
+
+.box-redes-login a {
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 830px) {
+  .box-redes-login a {
+    margin-bottom: 40px;
+  }
+}
 
 .formulario-login .form-group {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 830px) {
+  .formulario-login .form-group {
+    margin-bottom: 2rem;
+  }
 }
 .formulario-login .form-control {
-  /* padding: 1rem 1rem; */
   font-size: 16px;
-  /*         line-height: 1.5;
-          border-radius: 0.3rem; */
   border: 1px solid #B7C0CE;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 8px;
 }
 
+@media only screen and (min-width: 830px) {
+  .form-group-all {
+    border-right: 1px dashed #B7C0CE;
+    padding-right: 53px;
+  }
+}
+
 .box-switch {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 56px;
-  margin-top: 70px;
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 830px) {
+  .box-switch {
+    margin-bottom: 56px;
+    margin-top: 70px;
+  }
 }
 .box-switch .custom-control-label {
   margin-bottom: 0;
@@ -5111,15 +5213,27 @@ section.section-trabajos {
 
 .dual-btn {
   margin-top: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+@media only screen and (min-width: 830px) {
+  .dual-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+.dual-btn a {
+  margin-bottom: 20px;
+}
+@media only screen and (min-width: 830px) {
+  .dual-btn a {
+    margin-bottom: 0;
+  }
 }
 
 .home-box {

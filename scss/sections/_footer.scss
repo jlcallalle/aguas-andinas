@@ -3,13 +3,15 @@
     height: 1850px;
     background-color: #0D45A5;
 }
-.footer-inner {
-    background: linear-gradient(180deg, #FFFFFF 13.93%, #80D7EA 32.41%, #1F5BC1 60.31%, #0D45A5 82.29%);
-    height: 2365px;
-    position: relative;
-    z-index: 1;
-    top: -400px;
-    padding-top: 518px;
+.home {
+    .footer-inner {
+        background: linear-gradient(180deg, #FFFFFF 13.93%, #80D7EA 32.41%, #1F5BC1 60.31%, #0D45A5 82.29%);
+        height: 2365px;
+        position: relative;
+        z-index: 1;
+        top: -400px;
+        padding-top: 518px;
+    }
 }
 
 .box-politica {
@@ -71,6 +73,7 @@
     display: flex;
     margin-top: 80px;
     border-top: 2px solid white;
+    //margin-bottom: 32px;
 }
 .cta-mas-footer {
     margin: 0 auto;
@@ -79,8 +82,9 @@
 }
 
 .row-redes {
-    margin-top: 32px;
+    //margin-top: 32px;
     color: white;
+    padding: 32px 0;
 }
 
 .lista-datos {
