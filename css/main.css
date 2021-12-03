@@ -3103,6 +3103,31 @@ body {
   width: 1px;
 }
 
+input::-webkit-input-placeholder {
+  color: #B7C0CE !important;
+  font-size: 16px;
+}
+
+input::-moz-placeholder {
+  color: #B7C0CE !important;
+  font-size: 16px;
+}
+
+input:-ms-input-placeholder {
+  color: #B7C0CE !important;
+  font-size: 16px;
+}
+
+input::-ms-input-placeholder {
+  color: #B7C0CE !important;
+  font-size: 16px;
+}
+
+input::placeholder {
+  color: #B7C0CE !important;
+  font-size: 16px;
+}
+
 .hide {
   display: none !important;
 }
@@ -5089,7 +5114,7 @@ section.section-trabajos {
 }
 @media only screen and (min-width: 830px) {
   .page .main {
-    padding: 50px 0 50px 0;
+    padding: 50px 0 100px 0;
   }
 }
 .page .main .container {
@@ -5234,6 +5259,70 @@ section.section-trabajos {
   .dual-btn a {
     margin-bottom: 0;
   }
+}
+
+.page.page-recupera-contrasena {
+  /* background-image: url(../images/page-recupera-contrasena.jpg);
+  background-position: top center; 
+  background-repeat: no-repeat; */
+}
+.page.page-recupera-contrasena .main .container {
+  max-width: 580px;
+}
+
+.content-page-clave {
+  padding: 20px;
+  background-color: white;
+  padding: 20px 30px 60px 30px;
+}
+@media only screen and (min-width: 830px) {
+  .content-page-clave {
+    padding: 44px 80px 70px 80px;
+  }
+}
+.content-page-clave h3 {
+  color: #003287;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+@media only screen and (min-width: 830px) {
+  .form-group-clave {
+    margin-top: 45px;
+  }
+}
+
+.box-recapcha {
+  margin: 0 0 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 830px) {
+  .box-recapcha {
+    margin: 70px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.box-recapcha .texto-capcha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #5F6268;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .home-box {

@@ -2,16 +2,14 @@
     // background-image: url(../images/page-login.jpg);
     background-position: top center;
     background-repeat: no-repeat;
-    // height: 1650px;
     .footer {
         height: auto;
     }
     .main {
         background-color: #F3F4F6;
-        // height: 1050px;
         padding: 20px 0 50px 0;
         @include min-screen($tl){
-            padding: 50px 0 50px 0;
+            padding: 50px 0 100px 0;
         }
         .container {
             max-width: 980px;
@@ -95,7 +93,7 @@
     }
     .form-control {
         font-size: 16px;
-        border: 1px solid #B7C0CE;
+        border: 1px solid $gray-dark;
         box-sizing: border-box;
         border-radius: 8px;
     }

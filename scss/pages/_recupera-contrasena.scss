@@ -1,0 +1,51 @@
+.page.page-recupera-contrasena  {
+    /* background-image: url(../images/page-recupera-contrasena.jpg);
+    background-position: top center; 
+    background-repeat: no-repeat; */
+    .main {
+        .container {
+            max-width: 580px;
+        }
+    }
+}
+
+
+.content-page-clave {
+    padding: 20px;
+    background-color: white;
+    padding: 20px 30px 60px 30px;
+    @include min-screen($tl){
+        padding: 44px 80px 70px 80px;
+    }
+    h3 {
+        color:$blue-dark;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 23px;
+        
+    }
+}
+
+.form-group-clave {
+    @include min-screen($tl){
+        margin-top: 45px;
+    }
+}
+
+.box-recapcha {
+    margin:0 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    @include min-screen($tl){
+        margin:70px 0;
+        flex-direction: row;
+    }
+    .texto-capcha {
+        display: flex;
+        align-items: center;
+        color: $black-light;
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
