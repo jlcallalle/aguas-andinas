@@ -3345,52 +3345,56 @@ input::placeholder {
   color: #2274FF;
 }
 
-.btn-facebook {
-  background-color: #2F80ED;
+.btn-redes {
   color: white;
   font-size: 16px;
   font-weight: bold;
-  border: 1px solid #2274FF;
   border-radius: 8px;
-  padding: 1rem 1rem;
+  padding: 0.5rem;
+  display: block;
+  width: 50px;
+  height: 50px;
 }
-.btn-facebook:hover {
+@media only screen and (min-width: 830px) {
+  .btn-redes {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+  }
+}
+.btn-redes:hover {
   color: white;
 }
-.btn-facebook i {
-  margin-right: 13px;
+.btn-redes i {
+  font-size: 20px;
+}
+@media only screen and (min-width: 830px) {
+  .btn-redes i {
+    margin-right: 13px;
+  }
+}
+.btn-redes span {
+  display: none;
+}
+@media only screen and (min-width: 830px) {
+  .btn-redes span {
+    display: block;
+  }
+}
+
+.btn-facebook {
+  background-color: #2F80ED;
+  border: 1px solid #2274FF;
 }
 
 .btn-google {
   background-color: #DD5D5D;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
   border: 1px solid #DD5D5D;
-  border-radius: 8px;
-  padding: 1rem 1rem;
-}
-.btn-google:hover {
-  color: white;
-}
-.btn-google i {
-  margin-right: 13px;
 }
 
 .btn-twitter {
   background-color: #71CCFF;
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
   border: 1px solid #71CCFF;
-  border-radius: 8px;
-  padding: 1rem 1rem;
-}
-.btn-twitter i {
-  margin-right: 13px;
-}
-.btn-twitter:hover {
-  color: white;
 }
 
 .header-top {
@@ -5298,7 +5302,32 @@ section.section-trabajos {
   margin-bottom: 10px;
 }
 
+.box-redes-login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+@media only screen and (min-width: 830px) {
+  .box-redes-login {
+    display: block;
+  }
+}
 .box-redes-login a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 1rem;
 }
 @media only screen and (min-width: 830px) {

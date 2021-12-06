@@ -76,7 +76,16 @@
 }
 
 .box-redes-login  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    @include min-screen($tl){
+        display: block;
+    }
     a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin-bottom: 1rem;
         @include min-screen($tl){
             margin-bottom: 40px;
