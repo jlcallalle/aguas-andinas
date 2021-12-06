@@ -1,11 +1,16 @@
 .page.page-recupera-contrasena  {
-    /* background-image: url(../images/page-recupera-contrasena.jpg);
+   /*  background-image: url(../images/page-recupera-contrasena2.jpg);
     background-position: top center; 
-    background-repeat: no-repeat; */
+    background-position: 212px 4px; */ 
+    background-repeat: no-repeat;
     .main {
+        // background-color: transparent;
         .container {
             max-width: 580px;
         }
+    }
+    .content-page-clave {
+        // background-color: transparent;
     }
 }
 
@@ -48,4 +53,87 @@
         font-size: 16px;
         line-height: 25px;
     }
+}
+
+/* Olvide mi contraseña 2 - Page Correo*/
+
+.box-icono-correo {
+    text-align: center;
+}
+
+.content-correo {
+    // border:1px solid coral;
+    .box-top-correo {
+        border-bottom: 1px dashed #979797;
+        padding-top: 10px;
+        padding-bottom: 18px;
+        h4 {
+            color:$blue-dark;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: left;
+            span {
+                font-weight: bold;
+            }
+        }
+        p {
+            color: $black-light;
+            font-size: 15px;
+            line-height: 25px;
+            span {
+                color: $green;
+            }
+        }
+    }
+    .box-texto-correo {
+        border-bottom: 1px dashed #979797;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        .title-correo {
+            color:$black-light;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 25px
+        }
+        p {
+            color: $gray-dark;
+            font-size: 14px;
+            line-height: 25px;
+            font-style: italic;
+        }
+    }
+}
+
+.lista-realizar {
+    margin-top: 24px;
+    li {
+        list-style: none;
+        display: flex;
+        margin-bottom: 30px;
+        i {
+            color:$gray-dark;
+            border: 2px solid $gray-dark;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            display: block;
+            margin-right: 46px;
+            text-align: center;
+        }
+        span {
+            color:$blue-dark;
+            font-size: 14px;
+            line-height: 22px;  
+        }
+        .box-circle {
+            width: 50px; 
+            @include min-screen($tl){
+                width: 74px; 
+            }
+        }
+    }
+}
+
+.box-btn-correo {
+    margin-top: 42px;
 }

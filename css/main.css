@@ -3319,6 +3319,7 @@ input::placeholder {
   border-radius: 8px;
 }
 .btn-login:hover {
+  color: white;
   background-color: #009669;
 }
 
@@ -3793,6 +3794,7 @@ input::placeholder {
   .lista-nav > li > a {
     color: #5F6268;
     font-size: 14px;
+    padding-top: 0;
     padding-bottom: 0;
   }
 }
@@ -5405,14 +5407,14 @@ section.section-trabajos {
 }
 
 .page.page-recupera-contrasena {
-  /* background-image: url(../images/page-recupera-contrasena.jpg);
-  background-position: top center; 
-  background-repeat: no-repeat; */
+  /*  background-image: url(../images/page-recupera-contrasena2.jpg);
+   background-position: top center; 
+   background-position: 212px 4px; */
+  background-repeat: no-repeat;
 }
 .page.page-recupera-contrasena .main .container {
   max-width: 580px;
 }
-
 .content-page-clave {
   padding: 20px;
   background-color: white;
@@ -5466,6 +5468,89 @@ section.section-trabajos {
   color: #5F6268;
   font-size: 16px;
   line-height: 25px;
+}
+
+/* Olvide mi contraseña 2 - Page Correo*/
+.box-icono-correo {
+  text-align: center;
+}
+
+.content-correo .box-top-correo {
+  border-bottom: 1px dashed #979797;
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+.content-correo .box-top-correo h4 {
+  color: #003287;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+.content-correo .box-top-correo h4 span {
+  font-weight: bold;
+}
+.content-correo .box-top-correo p {
+  color: #5F6268;
+  font-size: 15px;
+  line-height: 25px;
+}
+.content-correo .box-top-correo p span {
+  color: #19CE74;
+}
+.content-correo .box-texto-correo {
+  border-bottom: 1px dashed #979797;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.content-correo .box-texto-correo .title-correo {
+  color: #5F6268;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+.content-correo .box-texto-correo p {
+  color: #B7C0CE;
+  font-size: 14px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.lista-realizar {
+  margin-top: 24px;
+}
+.lista-realizar li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.lista-realizar li i {
+  color: #B7C0CE;
+  border: 2px solid #B7C0CE;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  display: block;
+  margin-right: 46px;
+  text-align: center;
+}
+.lista-realizar li span {
+  color: #003287;
+  font-size: 14px;
+  line-height: 22px;
+}
+.lista-realizar li .box-circle {
+  width: 50px;
+}
+@media only screen and (min-width: 830px) {
+  .lista-realizar li .box-circle {
+    width: 74px;
+  }
+}
+
+.box-btn-correo {
+  margin-top: 42px;
 }
 
 .home-box {
