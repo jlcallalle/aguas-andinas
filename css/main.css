@@ -4255,10 +4255,15 @@ input::placeholder {
 
 /* section slider */
 .box-items-slider {
-  margin-top: 60px;
+  margin-top: 30px;
   position: relative;
   height: 90px;
   z-index: 1;
+}
+@media only screen and (min-width: 830px) {
+  .box-items-slider {
+    margin-top: 60px;
+  }
 }
 
 .box-items-slider-inner {
@@ -4288,7 +4293,7 @@ input::placeholder {
           justify-content: center;
   background-color: #E7F0FF;
   text-align: center;
-  margin-right: 14px;
+  margin-right: 10px;
   width: 160px;
   height: 90px;
 }
@@ -4420,6 +4425,14 @@ section.section-ayuda {
   width: 100%;
   max-width: 920px;
   margin: 40px auto 0;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+@media only screen and (min-width: 830px) {
+  .box-items-pregunta {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
 }
 
 .item-ayuda {
@@ -4436,12 +4449,17 @@ section.section-ayuda {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 160px;
-  height: 210px;
+  width: 50%;
   background: #F3F4F5;
   border-radius: 3px;
   text-align: center;
   padding: 8px;
+}
+@media only screen and (min-width: 830px) {
+  .item-ayuda {
+    height: 210px;
+    width: 160px;
+  }
 }
 .item-ayuda span {
   color: #003287;
@@ -4509,7 +4527,12 @@ section.section-ayuda {
 }
 
 .item-fact {
-  margin-bottom: 72px;
+  margin-bottom: 32px;
+}
+@media only screen and (min-width: 830px) {
+  .item-fact {
+    margin-bottom: 72px;
+  }
 }
 .item-fact:last-child {
   margin-bottom: 0;
@@ -4529,7 +4552,7 @@ section.section-ayuda {
 }
 
 section.section-trabajos {
-  margin-top: 50px;
+  margin-top: 20px;
 }
 @media only screen and (min-width: 830px) {
   section.section-trabajos {
@@ -4769,6 +4792,18 @@ section.section-trabajos {
   display: -ms-flexbox;
   display: flex;
   margin-top: 36px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 830px) {
+  .resultado-mapa {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .item-mapa {
@@ -4780,13 +4815,14 @@ section.section-trabajos {
   display: flex;
   border-radius: 5px;
   padding: 10px 22px 10px 8px;
-  width: 368px;
+  width: 100%;
   margin-bottom: 22px;
   position: relative;
 }
 @media only screen and (min-width: 830px) {
   .item-mapa {
     max-height: 85px;
+    width: 368px;
   }
 }
 .item-mapa:last-child {
@@ -4844,12 +4880,15 @@ section.section-trabajos {
   background-image: url(../images/mapa.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
-  width: 756px;
-  margin-left: 25px;
+  width: 100%;
+  margin-top: 25px;
+  min-height: 474px;
 }
 @media only screen and (min-width: 830px) {
   .mapa {
-    min-height: 474px;
+    width: 756px;
+    margin-left: 25px;
+    margin-top: 0;
   }
 }
 
@@ -4857,7 +4896,12 @@ section.section-trabajos {
   border: 1px solid #BFC1C5;
   border-radius: 5px;
   margin-top: 22px;
-  padding: 10px 20px 35px 80px;
+  padding: 10px;
+}
+@media only screen and (min-width: 830px) {
+  .box-lugares-pago {
+    padding: 10px 20px 35px 80px;
+  }
 }
 .box-lugares-pago .box-lugares-pago-inner {
   height: 100%;
@@ -4872,8 +4916,20 @@ section.section-trabajos {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 110px;
   border-bottom: 1px dashed #B7C0CE;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+@media only screen and (min-width: 830px) {
+  .box-lugares-pago .box-pago-agencia {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: 110px;
+  }
 }
 .box-lugares-pago .texto-lugares {
   color: #003287;
@@ -4891,6 +4947,20 @@ section.section-trabajos {
           align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px;
+}
+@media only screen and (min-width: 830px) {
+  .box-lugares-pago .filtro-lugares {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 0;
+  }
 }
 
 .btn-filtro-lugar {
@@ -4909,6 +4979,15 @@ section.section-trabajos {
   width: 190px;
   height: 60px;
   padding: 8px;
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 830px) {
+  .btn-filtro-lugar {
+    margin-bottom: 0;
+  }
+}
+.btn-filtro-lugar:last-child {
+  margin-bottom: 0;
 }
 .btn-filtro-lugar:hover, .btn-filtro-lugar.active {
   text-decoration: none;
@@ -4945,8 +5024,13 @@ section.section-trabajos {
 }
 
 .content-slider-pago {
-  padding: 0 60px;
+  padding: 0 20px;
   margin-top: 30px;
+}
+@media only screen and (min-width: 830px) {
+  .content-slider-pago {
+    padding: 0 60px;
+  }
 }
 
 .slider-pago {
@@ -5025,10 +5109,30 @@ section.section-trabajos {
   position: relative;
 }
 
+.row-slider {
+  display: block;
+}
+@media only screen and (min-width: 830px) {
+  .row-slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .box-slider-noticia {
   z-index: 100;
   position: relative;
-  margin-top: 100px;
+  margin-top: 60px;
+}
+@media only screen and (min-width: 830px) {
+  .box-slider-noticia {
+    margin-top: 100px;
+  }
+}
+.box-slider-noticia .carousel-indicators {
+  bottom: 0;
+  right: -50px;
 }
 .box-slider-noticia .carousel-indicators li {
   background-color: transparent;
@@ -5060,7 +5164,12 @@ section.section-trabajos {
   z-index: 10;
 }
 .section-noticias .row > div {
-  margin-bottom: 60px;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 830px) {
+  .section-noticias .row > div {
+    margin-bottom: 60px;
+  }
 }
 
 .item-noticia {
@@ -5072,7 +5181,12 @@ section.section-trabajos {
   font-size: 21px;
   font-weight: bold;
   line-height: 25px;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media only screen and (min-width: 830px) {
+  .item-noticia h3 {
+    margin-bottom: 1.5rem;
+  }
 }
 .item-noticia .fecha-noticia {
   color: #19CE74;

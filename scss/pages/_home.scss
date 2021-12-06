@@ -12,10 +12,13 @@
 
 /* section slider */
 .box-items-slider {
-    margin-top: 60px;
+    margin-top: 30px;
     position: relative;
     height: 90px;
     z-index: 1;
+    @include min-screen($tl){
+        margin-top: 60px;
+    }
 }
 
 .box-items-slider-inner {
@@ -32,7 +35,7 @@
     justify-content: center;
     background-color: #E7F0FF;
     text-align: center;
-    margin-right: 14px;
+    margin-right:10px;
     width: 160px;
     height: 90px;
     @include min-screen($tl){
@@ -154,6 +157,10 @@ section.section-ayuda {
     width: 100%;
     max-width: 920px;
     margin: 40px auto 0;
+    flex-wrap: wrap;
+    @include min-screen($tl){ 
+        flex-wrap: nowrap;
+    }
 }
 
 .item-ayuda {
@@ -161,12 +168,15 @@ section.section-ayuda {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 160px;
-    height: 210px;
+    width: 50%;
     background: #F3F4F5;
     border-radius: 3px;
     text-align: center;
     padding: 8px;
+    @include min-screen($tl){ 
+        height: 210px;
+        width: 160px;
+    }
     span {
         color: #003287;
         font-weight: bold;
@@ -228,7 +238,10 @@ section.section-ayuda {
     }
 }
 .item-fact {
-    margin-bottom: 72px;
+    margin-bottom: 32px;
+    @include min-screen($tl){
+        margin-bottom: 72px;
+    }
     &:last-child {
        margin-bottom: 0;
     }
@@ -249,7 +262,7 @@ section.section-ayuda {
 
 
 section.section-trabajos {
-    margin-top: 50px;
+    margin-top: 20px;
     @include min-screen($tl){ 
         margin-top: 66px;
     }
@@ -458,6 +471,10 @@ section.section-trabajos {
 .resultado-mapa {
     display: flex;
     margin-top: 36px;
+    flex-direction: column;
+    @include min-screen($tl){
+        flex-direction: row;
+    }
 }
 
 .item-mapa {
@@ -467,11 +484,12 @@ section.section-trabajos {
     display: flex;
     border-radius: 5px;
     padding: 10px 22px 10px 8px;
-    width: 368px;
+    width: 100%;
     margin-bottom: 22px;
     position: relative;
     @include min-screen($tl){
         max-height: 85px;
+        width: 368px;
     }
     &:last-child {
         margin-bottom: 0;
@@ -513,10 +531,13 @@ section.section-trabajos {
     background-image: url(../images/mapa.jpg);
     background-repeat: no-repeat;
     background-position: 0 0;
-    width: 756px;
-    margin-left: 25px;
+    width: 100%;
+    margin-top: 25px;
+    min-height: 474px;;
     @include min-screen($tl){
-        min-height: 474px;;
+        width: 756px;
+        margin-left: 25px;
+        margin-top: 0;
     }
 }
 
@@ -525,7 +546,10 @@ section.section-trabajos {
     border: 1px solid $gray;
     border-radius: 5px;
     margin-top: 22px;
-    padding: 10px 20px 35px 80px;
+    padding: 10px;
+    @include min-screen($tl){
+        padding: 10px 20px 35px 80px;
+    }
     .box-lugares-pago-inner {
         height: 100%;
     }
@@ -533,8 +557,12 @@ section.section-trabajos {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        height: 110px;
         border-bottom: 1px dashed #B7C0CE;
+        flex-direction: column;
+        @include min-screen($tl){
+            flex-direction: row;
+            height: 110px;
+        }
     }
     .texto-lugares {
         color: $blue-dark;
@@ -547,6 +575,12 @@ section.section-trabajos {
         width: 50%;
         align-items: center;
         justify-content: space-around;
+        flex-direction: column;
+        padding: 20px;
+        @include min-screen($tl){
+            flex-direction: row;
+            padding: 0;
+        }
     }
 }
 
@@ -560,6 +594,13 @@ section.section-trabajos {
     width: 190px;
     height: 60px;
     padding: 8px;
+    margin-bottom: 15px;
+    @include min-screen($tl){
+        margin-bottom: 0;
+    }
+    &:last-child {
+        margin-bottom:0;
+    }
     &:hover, &.active {
         text-decoration: none;
         background: #E7F0FF;
@@ -597,8 +638,11 @@ section.section-trabajos {
 }
 
 .content-slider-pago {
-    padding: 0 60px;
+    padding: 0 20px;
     margin-top: 30px;
+    @include min-screen($tl){
+        padding: 0 60px;
+    }
 }
 
 .slider-pago {
@@ -666,12 +710,24 @@ section.section-trabajos {
     }
 }
 
+.row-slider {
+    display: block;
+    @include min-screen($tl){
+        display: flex;
+    }
+}
+
 .box-slider-noticia {
     z-index: 100;
     position: relative;
-    margin-top: 100px;
+    margin-top: 60px;
+    @include min-screen($tl){
+        margin-top: 100px;
+    }
 
     .carousel-indicators {
+        bottom: 0;
+        right: -50px;
         li  {
             background-color: transparent;
             border: 2px solid $blue-dark;
@@ -704,7 +760,10 @@ section.section-trabajos {
     z-index: 10;
     .row {
         > div {
-            margin-bottom: 60px;
+            margin-bottom: 30px;
+            @include min-screen($tl){
+                margin-bottom: 60px;
+            }
         }
     }
 }
@@ -717,7 +776,10 @@ section.section-trabajos {
         font-size: 21px;
         font-weight: bold;
         line-height: 25px;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1rem;
+        @include min-screen($tl){
+            margin-bottom: 1.5rem;
+        }
     }
     .fecha-noticia {
         color: $green;
