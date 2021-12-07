@@ -3406,6 +3406,25 @@ input::placeholder {
 }
 .btn-restablecer:hover {
   color: white;
+  background-color: #19CE74;
+}
+
+.btn-medium {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background: #19CE74;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+}
+.btn-medium:hover {
+  color: white;
+  background-color: #009669;
+}
+@media only screen and (min-width: 830px) {
+  .btn-medium {
+    padding: 0.8rem 3rem;
+  }
 }
 
 .header-top {
@@ -5565,7 +5584,6 @@ section.section-trabajos {
 
 .page.page-restablecer-contrasena {
   background-position: top center;
-  background-repeat: no-repeat;
 }
 .page.page-restablecer-contrasena .main .container {
   max-width: 780px;
@@ -5604,6 +5622,14 @@ section.section-trabajos {
 }
 .form-eye .form-control {
   border-right: 0;
+  font-size: 16px;
+  color: #5F6268;
+}
+.form-eye .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.15);
 }
 .form-eye .input-group-addon {
   padding: 0.5rem 1rem;
@@ -5621,6 +5647,9 @@ section.section-trabajos {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.form-eye .fa-eye {
+  color: #2274FF;
+}
 
 .box-btn-restablecer {
   margin-top: 42px;
@@ -5636,6 +5665,34 @@ section.section-trabajos {
 
 .togglePassword {
   color: #B7C0CE;
+}
+
+.box-icono-check {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.texto-exitoso {
+  margin-top: 20px;
+  padding: 0 1rem;
+}
+@media only screen and (min-width: 830px) {
+  .texto-exitoso {
+    padding: 0 5.3rem;
+    margin-top: 40px;
+  }
+}
+.texto-exitoso p {
+  color: #003287;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.box-btn-oficina {
+  margin-top: 35px;
+  text-align: center;
 }
 
 .home-box {

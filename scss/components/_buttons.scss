@@ -197,5 +197,23 @@
     border-radius: 8px;
     &:hover {
         color:white;
+        background-color: $green;
+    }
+}
+
+
+.btn-medium {
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    background: #19CE74;
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    &:hover {
+        color:white;
+        background-color: $green-dark;
+    }
+    @include min-screen($tl){
+      padding: 0.8rem 3rem;
     }
 }

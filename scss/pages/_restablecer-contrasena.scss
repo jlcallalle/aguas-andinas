@@ -1,11 +1,10 @@
 
 .page.page-restablecer-contrasena {
-    // background-image: url(../images/page-recupera-contrasena3.jpg);
+    //background-image: url(../images/page-restablecer-exito.jpg);
     background-position: top center; 
     // background-position: 212px 4px;
-    background-repeat: no-repeat;
     .main {
-       // background-color: transparent;
+       //background-color: transparent;
         .container {
             max-width: 780px;
         }
@@ -49,6 +48,13 @@
     }
     .form-control {
         border-right: 0;
+        font-size: 16px;
+        color: $black-light;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.15);
+        }
     }
     .input-group-addon {
         padding: 0.5rem 1rem;
@@ -59,6 +65,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+    }
+    .fa-eye {
+        color:$blue;
     }
 }
 
@@ -77,4 +86,30 @@
 
 .togglePassword {
     color: #B7C0CE;
+}
+
+.box-icono-check {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.texto-exitoso {
+    margin-top: 20px;
+    padding: 0 1rem;
+    @include min-screen($tl){
+        padding: 0 5.3rem;
+        margin-top: 40px;
+    }
+    p {
+        color: $blue-dark;
+        font-size: 21px;
+        line-height: 25px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.box-btn-oficina {
+    margin-top: 35px;
+    text-align: center;
 }
