@@ -189,3 +189,13 @@
     background-color: #71CCFF;
     border: 1px solid #71CCFF;
 }
+
+.btn-restablecer {
+    color:white;
+    font-size: 16px;
+    background: $gray-dark;
+    border-radius: 8px;
+    &:hover {
+        color:white;
+    }
+}

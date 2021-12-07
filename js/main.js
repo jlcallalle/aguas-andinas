@@ -92,4 +92,23 @@ $(function () {
         $(this).hide();
     });
 
+     // show hide input password
+    $('[data-toggle="password"]').each(function () {
+        var input = $(this);
+        var eye_btn = $(this).parent().find('.input-group-addon');
+        eye_btn.addClass('input-password-hide');
+        eye_btn.on('click', function (event) {
+            event.preventDefault(); 
+            if (eye_btn.hasClass('input-password-hide')) {
+                eye_btn.removeClass('input-password-hide').addClass('input-password-show');
+                eye_btn.find('.togglePassword').removeClass('fa-eye-slash').addClass('fa-eye')
+                 input.attr('type', 'text');
+            } else {
+                console.log('b');
+                eye_btn.removeClass('input-password-show').addClass('input-password-hide');
+                eye_btn.find('.togglePassword').removeClass('fa-eye').addClass('fa-eye-slash')
+                input.attr('type', 'password');
+            }
+        });
+    });
 });

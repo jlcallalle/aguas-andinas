@@ -3398,6 +3398,16 @@ input::placeholder {
   border: 1px solid #71CCFF;
 }
 
+.btn-restablecer {
+  color: white;
+  font-size: 16px;
+  background: #B7C0CE;
+  border-radius: 8px;
+}
+.btn-restablecer:hover {
+  color: white;
+}
+
 .header-top {
   color: white;
   background-color: #2274FF;
@@ -5551,6 +5561,81 @@ section.section-trabajos {
 
 .box-btn-correo {
   margin-top: 42px;
+}
+
+.page.page-restablecer-contrasena {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.page.page-restablecer-contrasena .main .container {
+  max-width: 780px;
+}
+.box-top-restablecer {
+  padding-top: 10px;
+  padding-bottom: 18px;
+}
+.box-top-restablecer h4 {
+  color: #003287;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+  margin-bottom: 18px;
+}
+.box-top-restablecer h4 span {
+  font-weight: bold;
+}
+.box-top-restablecer p {
+  color: #5F6268;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: bold;
+  padding: 0 0 0 0;
+}
+@media only screen and (min-width: 830px) {
+  .box-top-restablecer p {
+    padding: 0 12rem 0 0;
+  }
+}
+
+.form-eye label {
+  color: #5F6268;
+  font-size: 16px;
+  line-height: 25px;
+}
+.form-eye .form-control {
+  border-right: 0;
+}
+.form-eye .input-group-addon {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.box-btn-restablecer {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.parrafo-italic {
+  color: #5F6268;
+  font-size: 16px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.togglePassword {
+  color: #B7C0CE;
 }
 
 .home-box {

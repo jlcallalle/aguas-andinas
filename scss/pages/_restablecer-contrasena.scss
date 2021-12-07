@@ -1,0 +1,80 @@
+
+.page.page-restablecer-contrasena {
+    // background-image: url(../images/page-recupera-contrasena3.jpg);
+    background-position: top center; 
+    // background-position: 212px 4px;
+    background-repeat: no-repeat;
+    .main {
+       // background-color: transparent;
+        .container {
+            max-width: 780px;
+        }
+    }
+    .content-page-clave {
+       // background-color: transparent;
+    }
+}
+
+
+.box-top-restablecer {
+    padding-top: 10px;
+    padding-bottom: 18px;
+    h4 {
+        color:$blue-dark;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: left;
+        margin-bottom: 18px;
+        span {
+            font-weight: bold;
+        }
+    }
+    p {
+        color: $black-light;
+        font-size: 16px;
+        line-height: 25px;
+        font-weight: bold;
+        padding: 0 0 0 0;
+        @include min-screen($tl){
+            padding: 0 12rem 0 0;
+        }
+    }
+}
+
+.form-eye {
+    label {
+        color: $black-light;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .form-control {
+        border-right: 0;
+    }
+    .input-group-addon {
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba(0,0,0,.15);
+        border-left: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.box-btn-restablecer {
+    margin-top: 42px;
+    text-align: center;
+}
+
+.parrafo-italic {
+    color: $black-light;
+    font-size: 16px;
+    line-height: 25px;  
+    font-style: italic;
+}
+
+.togglePassword {
+    color: #B7C0CE;
+}
