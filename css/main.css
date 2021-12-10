@@ -5734,7 +5734,7 @@ section.section-trabajos {
 }
 @media only screen and (min-width: 830px) {
   .form-boleta {
-    padding: 28px 100px 108px 100px;
+    padding: 28px 60px 60px 60px;
     margin-top: 28px;
   }
 }
@@ -5760,8 +5760,10 @@ section.section-trabajos {
   font-size: 12px;
 }
 
-.margin-input {
-  margin-top: 46px;
+@media only screen and (min-width: 830px) {
+  .margin-input {
+    margin-top: 31px;
+  }
 }
 
 .input-group-busqueda .input-group-text {
@@ -5782,6 +5784,14 @@ section.section-trabajos {
 
 .box-row {
   margin: 0 0 23px 0;
+}
+.box-row .col-md-6 {
+  margin-bottom: 15px;
+}
+@media only screen and (min-width: 830px) {
+  .box-row .col-md-6 {
+    margin-bottom: auto;
+  }
 }
 
 .line-top {
@@ -5805,22 +5815,27 @@ section.section-trabajos {
   bottom: 10px;
   right: 10px;
   margin-top: 0;
-}
-.form-control-lg + .valid-feedback.feedback-icon,
-.form-control-lg + .invalid-feedback.feedback-icon {
   bottom: 18px;
   right: 26px;
 }
 
+/* .form-control-lg  + {
+    .valid-feedback.feedback-icon,
+    .invalid-feedback.feedback-icon {
+        bottom: 18px;
+        right: 26px;
+    }
+}
+ */
 span.bigcheck-target {
   font-family: FontAwesome;
   margin-right: 10px;
+  color: #5F6268;
 }
 
 input[type=checkbox].bigcheck {
-  /*  position: relative;
-   left: -999em;  */
-  display: none;
+  position: relative;
+  left: -999em;
 }
 
 input[type=checkbox].bigcheck + span.bigcheck-target:after {
@@ -5836,19 +5851,33 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   display: -ms-flexbox;
   display: flex;
   /* align-items: center; */
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 .box-check label i {
   font-size: 15px;
-  color: #2274FF;
+  color: #2F80ED;
   font-style: normal;
 }
 
 .box-boleta-recapcha {
-  max-width: 500px;
-  margin: 0 auto;
+  max-width: 350px;
+  margin: 30px auto;
+}
+
+.row-check {
+  margin-top: 50px;
+}
+
+.texto-informa {
+  margin-top: 20px;
+}
+.texto-informa p {
+  text-align: center;
+  color: #BFC1C5;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.texto-informa p span {
+  display: block;
 }
 
 .home-box {

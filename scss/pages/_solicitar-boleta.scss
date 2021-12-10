@@ -35,7 +35,8 @@
 .form-boleta {
     padding: 20px 10px;
     @include min-screen($tl){
-        padding: 28px 100px 108px 100px;
+        //padding: 28px 100px 60px 100px;
+        padding: 28px 60px 60px 60px;
         margin-top: 28px;
     }
     /* .form-group {
@@ -70,7 +71,10 @@
 }
 
 .margin-input {
-    margin-top: 46px;
+   
+    @include min-screen($tl){
+        margin-top: 31px;
+    }
 }
 
 .input-group-busqueda{
@@ -93,6 +97,12 @@
 
 .box-row {
     margin: 0 0 23px 0;
+    .col-md-6 {
+        margin-bottom: 15px;
+        @include min-screen($tl){
+           margin-bottom: auto;
+        }
+    }
 }
 .line-top {
     border-bottom: 1px dashed  $gray;
@@ -110,6 +120,7 @@
 }
 
 
+
 .valid-feedback.feedback-icon,
 .invalid-feedback.feedback-icon {
     position: absolute;
@@ -117,23 +128,29 @@
     bottom: 10px;
     right: 10px;
     margin-top: 0;
-    
-   .form-control-lg  + &  {
+
+    bottom: 18px;
+    right: 26px;
+}
+
+/* .form-control-lg  + {
+    .valid-feedback.feedback-icon,
+    .invalid-feedback.feedback-icon {
         bottom: 18px;
         right: 26px;
     }
 }
-
-
+ */
 
 span.bigcheck-target {
     font-family: FontAwesome;  
     margin-right: 10px;
+    color: $black-light ;
 }
 input[type='checkbox'].bigcheck {     
-   /*  position: relative;
-    left: -999em;  */
-    display: none;
+    position: relative;
+    left: -999em; 
+    // display: none;
 }
 
 input[type='checkbox'].bigcheck + span.bigcheck-target:after {
@@ -147,15 +164,33 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
 .box-check label {
     display: flex;
     /* align-items: center; */
-    justify-content: center;
+    //justify-content: center;
     i {
         font-size: 15px;
-        color: $blue;
+        color: #2F80ED;
         font-style: normal;
     }
 }
 
 .box-boleta-recapcha {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 350px;
+    margin: 30px auto;
 }
+
+.row-check {
+    margin-top: 50px;;
+}
+
+.texto-informa {
+    margin-top: 20px;
+    p {
+        text-align: center;
+        color:$gray;
+        font-size: 14px;
+        margin-bottom: 0;
+        span {
+            display: block;
+        }
+    }
+}
+
