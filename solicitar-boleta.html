@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>Login</title>
+  <title>Solicitar boleta</title>
   <script type="text/javascript">
     var onloadCallback = function() {
-      grecaptcha.render('html_elemento', {
-        'sitekey' : '6LeUmO4ZAAAAAI_5ei3kBDcFvEFlVbDuaKSGaK4a'
+      grecaptcha.render('html_capcha', {
+        'sitekey' : '6LdXPJIdAAAAAJfCr1ad3Xrh1GANl9vVes6RKmUJ'
       });
     };
   </script>
@@ -878,9 +878,7 @@
                       </div>
                     </div>
                     <div class="box-boleta-recapcha row justify-content-md-center">
-                      <div id="html_elemento"></div>
-                      <br/>
-                      
+                      <div id="html_capcha"></div>
                       <button type="submit" class="btn btn-block btn-lg btn-login mt-4">Recibir boleta digital</button>
                     </div>
                   </div>
