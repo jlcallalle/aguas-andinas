@@ -5741,13 +5741,12 @@ section.section-trabajos {
 
 .box-form-boleta {
   display: block;
-  /*  label {
-       color:$blue-dark;
-       font-weight: bold;
-       font-size: 16px;
-       line-height: 25px;
-       margin-bottom: 20px;
-   } */
+}
+.box-form-boleta .form-group label {
+  color: #003287;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .list-input {
@@ -5878,6 +5877,56 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 }
 .texto-informa p span {
   display: block;
+}
+
+/* Boleta Exitoso */
+.page.page-restablecer-exito {
+  background-position: top center;
+}
+.page.page-restablecer-exito .main .container {
+  max-width: 780px;
+}
+.content-mensaje {
+  padding: 30px 30px 100px 30px;
+  max-width: 780px;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 830px) {
+  .content-mensaje {
+    padding: 60px 30px 200px 30px;
+  }
+}
+
+.texto-exito {
+  padding: 30px 50px;
+  color: #5F6268;
+}
+@media only screen and (min-width: 830px) {
+  .texto-exito {
+    padding: 60px 100px;
+  }
+}
+.texto-exito span {
+  font-weight: bold;
+}
+
+.box-mensaje .alert {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.box-btn-volver {
+  text-align: center;
+}
+.box-btn-volver a {
+  text-decoration: underline;
 }
 
 .home-box {

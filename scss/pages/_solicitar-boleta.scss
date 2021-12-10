@@ -49,15 +49,17 @@
 
 .box-form-boleta {
     display: block;
-
-   /*  label {
-        color:$blue-dark;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 25px;
-        margin-bottom: 20px;
-    } */
-    
+    .form-group  {
+        label {
+            color:$blue-dark;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 25px;
+            //margin-bottom: 20px;
+        }
+        
+    }
+ 
 }
 
 .list-input {
@@ -194,3 +196,55 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
     }
 }
 
+
+
+/* Boleta Exitoso */
+
+.page.page-restablecer-exito {
+    //background-image: url(../images/page-restablecer-exito.jpg);
+    background-position: top center; 
+    // background-position: 212px 4px;
+    .main {
+       //background-color: transparent;
+        .container {
+            max-width: 780px;
+        }
+    }
+    .content-page-clave {
+       // background-color: transparent;
+    }
+}
+
+.content-mensaje {
+    padding: 30px 30px 100px 30px;
+    max-width: 780px;
+    margin: 0 auto;
+    @include min-screen($tl){
+        padding: 60px 30px 200px 30px;
+    }
+}
+
+.texto-exito {
+    padding: 30px 50px;
+    @include min-screen($tl){
+        padding: 60px 100px;
+    }
+    color:$black-light;
+    span {
+        font-weight: bold;
+    }
+}
+
+.box-mensaje {
+    .alert {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.box-btn-volver {
+    text-align: center;
+    a {
+        text-decoration: underline;
+    }
+}
