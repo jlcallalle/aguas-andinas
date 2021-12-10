@@ -127,7 +127,7 @@
 
 .btn-lg {
     padding: 0.8rem 1rem;
-}
+} 
 
 
 .btn-registrame {
@@ -215,5 +215,17 @@
     }
     @include min-screen($tl){
       padding: 0.8rem 3rem;
+    }
+}
+
+
+.btn-agregar {
+    background-color: $blue;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    &:hover {
+        background-color: $blue-dark;
+        color:white;
     }
 }

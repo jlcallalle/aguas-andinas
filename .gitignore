@@ -175,7 +175,7 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/windows,linux,osx,macos,node,git,visualstudiocode
 
-note
+note.txt
 prepros.config
 package-lock.json
 dropdown
