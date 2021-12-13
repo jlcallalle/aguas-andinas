@@ -27,18 +27,11 @@
 @import 'pages/recupera-contrasena';
 @import 'pages/restablecer-contrasena';
 @import 'pages/solicitar-boleta';
-
-$bg-coral: coral;
-$bg-gray: #2d2d2d;
+@import 'pages/registro-usuario';
 
 .home-box {
 	display:flex;
 	@include min-screen($tl){
 		display: grid;
 	}
-}
-
-.title-second {
-	font-size: 18px;
-	color: #707071;
 }

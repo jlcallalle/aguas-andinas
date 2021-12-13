@@ -229,3 +229,20 @@
         color:white;
     }
 }
+
+.btn-empresa {
+    background-color: $blue;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    @include min-screen($tl){
+        width: 215px;
+    }
+    /* &:hover {
+        background-color: $blue-dark;
+        color:white;
+    } */
+}

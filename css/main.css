@@ -3076,6 +3076,15 @@ body {
   padding: 0 20px;
 }
 
+/* Sass map  Bootstrap */
+.mt-0 {
+  margin-top: 0 !important;
+}
+
+.ml-1 {
+  margin-left: 0.25rem !important;
+}
+
 @font-face {
   font-family: "FontAwesome";
   src: url("../fonts/font-awesome/fontawesome-webfont.eot?v=4.7.0");
@@ -3438,6 +3447,26 @@ input::placeholder {
 .btn-agregar:hover {
   background-color: #003287;
   color: white;
+}
+
+.btn-empresa {
+  background-color: #2274FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  /* &:hover {
+      background-color: $blue-dark;
+      color:white;
+  } */
+}
+@media only screen and (min-width: 830px) {
+  .btn-empresa {
+    width: 215px;
+  }
 }
 
 .header-top {
@@ -5314,6 +5343,8 @@ section.section-trabajos {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 @media only screen and (min-width: 830px) {
   .content-page {
@@ -5336,10 +5367,14 @@ section.section-trabajos {
   line-height: 25px;
   margin-bottom: 23px;
 }
+.content-page .layout-redes {
+  margin-top: 20px;
+}
 @media only screen and (min-width: 830px) {
   .content-page .layout-redes {
     padding: 0 40px;
     width: 40%;
+    margin-top: 0;
   }
 }
 .content-page .layout-redes h3 {
@@ -5929,6 +5964,137 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   text-decoration: underline;
 }
 
+.page-registro-usuario .content-page {
+  padding: 20px;
+}
+@media only screen and (min-width: 830px) {
+  .page-registro-usuario .content-page {
+    padding: 30px 46px 80px 46px;
+  }
+}
+
+/* Sass map  Bootstrap */
+.box-button {
+  margin-top: 2rem;
+}
+
+.row-texto-form {
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+@media only screen and (min-width: 830px) {
+  .row-texto-form {
+    margin-top: 5rem;
+  }
+}
+.row-texto-form p {
+  color: #5F6268;
+  text-align: center;
+  font-size: 14px;
+}
+
+.box-steps {
+  width: 100%;
+}
+
+/* Steps */
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+}
+.step .step-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  /*  flex-grow: 1; */
+  position: relative;
+  text-align: center;
+}
+.step .step-item:not(:first-child)::before {
+  background-color: #D9D9D6;
+  content: "";
+  height: 0.125rem;
+  left: -50%;
+  position: absolute;
+  top: 0.7375rem;
+  width: 100%;
+  z-index: 0;
+}
+.step .step-item.active a::before {
+  background: #fff;
+  border: 3px solid #2274FF;
+}
+.step .step-item.active a span {
+  color: #2274FF;
+}
+.step .step-item.active p {
+  color: #2274FF;
+}
+.step .step-item p {
+  color: #5F6268;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.step .step-item .step-item-link {
+  color: #69707a;
+  position: relative;
+  display: inline-block;
+  padding-top: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  z-index: 1;
+}
+.step .step-item .step-item-link span {
+  color: white;
+  position: absolute;
+  top: 4px;
+  z-index: 11;
+  left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+.step .step-item .step-item-link:before {
+  background-color: #BFC1C5;
+  border: 0.125rem solid #fff;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+/*  
+ .step .step-item.active a::before {
+   background: #fff;
+   border: 0.125rem solid $blue;
+ } */
+/*  .step .step-item .step-item-link.disabled {
+   pointer-events: none;
+   cursor: default;
+ } */
+/*   .step .step-item.active ~ .step-item .step-item-link {
+    color: #d4dae3;
+  }
+  .step .step-item.active ~ .step-item .step-item-link::before {
+    background: #d4dae3;
+  }
+  .step .step-item.active ~ .step-item::before {
+    background: #d4dae3;
+  } */
 .home-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5939,9 +6105,4 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
     display: -ms-grid;
     display: grid;
   }
-}
-
-.title-second {
-  font-size: 18px;
-  color: #707071;
 }
