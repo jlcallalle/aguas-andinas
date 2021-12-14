@@ -28,10 +28,3 @@
 @import 'pages/restablecer-contrasena';
 @import 'pages/solicitar-boleta';
 @import 'pages/registro-usuario';
-
-.home-box {
-	display:flex;
-	@include min-screen($tl){
-		display: grid;
-	}
-}

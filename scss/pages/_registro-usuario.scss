@@ -1,14 +1,109 @@
 .page-registro-usuario {
+     /*  background-image: url(../images/page-nuevo-cliente-0.jpg);
+      background-position: 0 0;
+      background-repeat: no-repeat; */
+
+    .main {
+        // background-color: transparent;
+        padding: 10px 0 100px 0;
+    }
+
+
     .content-page {
         padding: 20px;
         @include min-screen($tl){
-            padding: 30px 46px 80px 46px;
+            padding: 30px 46px 70px 46px;
         }
     }
 }
 
-/* Sass map  Bootstrap */
+.content-page-tab {
+     background-color: white;
+     // background-color: transparent;
+     margin-top: 20px;
+     @include min-screen($tl){
+        margin-top: 42px;
+    }
+    .layout-formulario {
+        @include min-screen($tl){
+            width: 60%;
+        }
+    }
+    h3 {
+        color:$blue-dark;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 25px;
+        margin-bottom: 23px;
+    }
 
+    .layout-redes  {
+        margin-top: 20px;
+        @include min-screen($tl){
+            padding: 0 40px;
+            width: 40%;
+            margin-top: 0;
+        }
+        h3 {
+            margin-bottom: 10px;
+            @include min-screen($tl){
+                margin-bottom: 23px;
+            }
+           
+        }
+    }
+    .layout-texto-portal  {
+        margin-top: 20px;
+        @include min-screen($tl){
+            padding: 0 40px;
+            width: 40%;
+            margin-top: 0;
+        }
+        .title-portal {
+            color:$blue;
+            font-weight: bold;
+            font-size: 28px;
+            margin-bottom: 10px;
+            @include min-screen($tl){
+                margin-bottom: 23px;
+            }
+        }
+    }
+}
+
+.box-registro-tab {
+    .nav-tabs {
+        border-bottom: none;
+        .nav-link {
+            width: 50%;
+            background-color: #EBEBEB;
+            border: none;
+            padding: 10px;
+            color: $black-light;
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 0;
+            border-radius: 0;
+            text-align: center;
+            @include min-screen($tl){
+                margin-bottom: 23px;
+                font-size: 21px;
+                padding: 20px 36px;
+                text-align-last: left;
+            }
+
+            padding: 10px;
+            
+
+            &.active {
+                color:$blue-dark;
+                background-color: white;
+            }
+        }
+    }
+    
+ }
+ 
 .box-button {
     margin-top:2rem;
 }
@@ -23,22 +118,27 @@
     p {
         color: $black-light;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 
 .box-steps {
     @include min-screen($tl){
-        width: 80%;
+        /* width: 80%; */
+        width: 64%;
         margin: 0 auto;
     }
 }
-/* Steps */
 
 .step {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
+    margin-bottom: 1rem;
+    @include min-screen($tl){
+        margin-bottom: 3rem;
+    }
     .step-item {
         flex: 1 1 0;  
        /*  flex-grow: 1; */
@@ -55,14 +155,12 @@
             z-index: 0;
         } 
         &:nth-child(2)::before {
-            /* width: 80%;
-            left: -40%; */
-            width: 70%;
-            left: -35%;
+            width: 65%;
+            left: -32%;
         } 
         &:nth-child(3)::before {
-            width: 70%;
-            left: -35%;
+            width: 65%;
+            left: -32%;
         } 
         &.active {
            a {
@@ -119,25 +217,31 @@
             }
         }
       }
-  }
-  
+ }
 
-/*   .step .step-item.active a::before {
-    background: #fff;
-    border: 0.125rem solid $blue;
-  } 
-   */
- /*  .step .step-item .step-item-link.disabled {
-    pointer-events: none;
-    cursor: default;
-  } */
+ /* Page registro 2*/
 
-/*   .step .step-item.active ~ .step-item .step-item-link {
-    color: #d4dae3;
-  }
-  .step .step-item.active ~ .step-item .step-item-link::before {
-    background: #d4dae3;
-  }
-  .step .step-item.active ~ .step-item::before {
-    background: #d4dae3;
-  } */
+
+
+.row-layout {
+    display: flex;
+    flex-direction: column;
+    @include min-screen($tl){
+       flex-direction: row;
+    }
+}
+
+.content-nav {
+    padding: 20px;
+    @include min-screen($tl){
+        padding: 30px 46px;
+    }
+}
+
+.content-portal {
+    .row-layout {
+        @include min-screen($tl){
+            margin-top: 100px;
+        }
+    }
+}
