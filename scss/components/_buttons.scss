@@ -242,3 +242,10 @@
         width: 215px;
     }
 }
+
+.btn-empresa {
+    &:hover {
+        background-color: #0B4CBB;
+        color:white;
+    }
+}

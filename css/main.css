@@ -3465,6 +3465,11 @@ input::placeholder {
   }
 }
 
+.btn-empresa:hover {
+  background-color: #0B4CBB;
+  color: white;
+}
+
 .header-top {
   color: white;
   background-color: #2274FF;
@@ -6035,12 +6040,17 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   color: #2274FF;
   font-weight: bold;
   font-size: 28px;
+  font-family: "Raleway", sans-serif;
   margin-bottom: 10px;
 }
 @media only screen and (min-width: 830px) {
   .content-page-tab .layout-texto-portal .title-portal {
     margin-bottom: 23px;
   }
+}
+.content-page-tab .layout-texto-portal p {
+  color: #5F6268;
+  font-size: 16px;
 }
 
 .box-registro-tab .nav-tabs {
@@ -6224,6 +6234,14 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 
 @media only screen and (min-width: 830px) {
   .content-portal .row-layout {
-    margin-top: 100px;
+    margin-top: 40px;
   }
+}
+.content-portal .layout-formulario {
+  padding-top: 40px;
+  border-right: 1px dashed #b7c0ce;
+  margin-top: 20px;
+}
+.content-portal .layout-formulario .form-group-all {
+  border-right: none;
 }

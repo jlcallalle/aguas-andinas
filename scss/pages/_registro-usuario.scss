@@ -63,10 +63,15 @@
             color:$blue;
             font-weight: bold;
             font-size: 28px;
+            font-family: $fontRaleway;
             margin-bottom: 10px;
             @include min-screen($tl){
                 margin-bottom: 23px;
             }
+        }
+        p {
+            color:$black-light;
+            font-size: 16px;
         }
     }
 }
@@ -241,7 +246,15 @@
 .content-portal {
     .row-layout {
         @include min-screen($tl){
-            margin-top: 100px;
+            margin-top: 40px;
+        }
+    }
+    .layout-formulario {
+        padding-top: 40px;
+        border-right: 1px dashed #b7c0ce;
+        margin-top: 20px;
+        .form-group-all {
+            border-right: none;
         }
     }
 }
