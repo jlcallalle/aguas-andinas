@@ -5994,8 +5994,11 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   font-size: 14px;
 }
 
-.box-steps {
-  width: 100%;
+@media only screen and (min-width: 830px) {
+  .box-steps {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
 
 /* Steps */
@@ -6024,6 +6027,16 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   top: 0.7375rem;
   width: 100%;
   z-index: 0;
+}
+.step .step-item:nth-child(2)::before {
+  /* width: 80%;
+  left: -40%; */
+  width: 70%;
+  left: -35%;
+}
+.step .step-item:nth-child(3)::before {
+  width: 70%;
+  left: -35%;
 }
 .step .step-item.active a::before {
   background: #fff;
@@ -6077,11 +6090,11 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   z-index: 1;
 }
 
-/*  
- .step .step-item.active a::before {
-   background: #fff;
-   border: 0.125rem solid $blue;
- } */
+/*   .step .step-item.active a::before {
+    background: #fff;
+    border: 0.125rem solid $blue;
+  } 
+   */
 /*  .step .step-item .step-item-link.disabled {
    pointer-events: none;
    cursor: default;
