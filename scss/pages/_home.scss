@@ -46,9 +46,15 @@
     }
     span {
         color: $blue-dark;
-        font-size: 14px;
+        font-size: 13px;
         font-weight: bold;
         margin-top: 2px;
+        @include min-screen($tl){
+            font-size: 14px;
+        }
+    }
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -127,9 +133,12 @@ section.section-ayuda {
 .title-section {
     color: $blue-dark;
     font-family: $fontRaleway;
-    font-size: 37px;
+    font-size: 25px;
     text-align: center;
     font-weight: bold;
+    @include min-screen($tl){ 
+        font-size: 37px;
+    }
 }
 
 .box-pregunta  {
@@ -180,7 +189,14 @@ section.section-ayuda {
     span {
         color: #003287;
         font-weight: bold;
-        font-size: 16px
+        font-size: 13px;
+        @include min-screen($tl){ 
+            margin-top: 18px;
+            font-size: 16px;
+        }
+    }
+    &:hover {
+        text-decoration: none;
     }
 }
 
@@ -216,8 +232,11 @@ section.section-ayuda {
     h2 {
         font-family: $fontRaleway;
         font-weight: bold;
-        font-size: 38px;
+        font-size: 25px;
         color: $blue-dark;
+        @include min-screen($tl){
+            font-size: 38px;
+        }
     }
     img {
         margin-top: 20px;
@@ -234,7 +253,7 @@ section.section-ayuda {
     padding: 0;
     @include min-screen($tl){
         margin-top: 72px;
-    padding: 0 0 0 5rem;
+        padding: 0 0 0 5rem;
     }
 }
 .item-fact {
@@ -248,9 +267,12 @@ section.section-ayuda {
     h3 {
         font-family: Raleway;
         font-weight: bold;
-        font-size: 28px;
+        font-size: 22px;
         margin-bottom: 0.8rem;
         color: $blue;
+        @include min-screen($tl){
+            font-size: 28px;
+        }
     }
     p {
         font-family: Inter;
@@ -659,9 +681,14 @@ section.section-trabajos {
         display: flex;
         justify-content: center;
         align-items: center;
+        position: relative;
+        cursor: pointer;
         &.active {
             background: #E7F0FF;
             border: 3px solid #2274FF;
+            i {
+                display: block;
+            }
         }
         a {
             span {
@@ -673,6 +700,12 @@ section.section-trabajos {
             &:hover {
                 text-decoration: none;
             }
+        }
+        i {
+            display: none;
+            position: absolute;
+            top: -10px;
+            right: -10px;
         }
     }
 }
@@ -726,8 +759,13 @@ section.section-trabajos {
     }
 
     .carousel-indicators {
-        bottom: 0;
-        right: -50px;
+       /*  bottom: 0;
+        right: -50px; */
+
+        @include max-screen($tl){
+            right: -42px;
+        }
+    
         li  {
             background-color: transparent;
             border: 2px solid $blue-dark;

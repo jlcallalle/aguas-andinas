@@ -4189,11 +4189,16 @@ input::placeholder {
 .box-politica h2 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 37px;
+  font-size: 25px;
   color: #003287;
   max-width: 450px;
-  line-height: 50px;
   margin-bottom: 26px;
+}
+@media only screen and (min-width: 830px) {
+  .box-politica h2 {
+    font-size: 37px;
+    line-height: 50px;
+  }
 }
 .box-politica .info-politica p {
   color: #003287;
@@ -4264,11 +4269,16 @@ input::placeholder {
 }
 .lista-datos li {
   margin-bottom: 0;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media only screen and (min-width: 830px) {
+  .lista-datos li {
+    font-size: 21px;
+  }
 }
 .lista-datos i {
   margin-right: 9px;
@@ -4385,9 +4395,17 @@ input::placeholder {
 }
 .item-slider span {
   color: #003287;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: bold;
   margin-top: 2px;
+}
+@media only screen and (min-width: 830px) {
+  .item-slider span {
+    font-size: 14px;
+  }
+}
+.item-slider:hover {
+  text-decoration: none;
 }
 
 .carousel-indicators {
@@ -4468,9 +4486,14 @@ section.section-ayuda {
 .title-section {
   color: #003287;
   font-family: "Raleway", sans-serif;
-  font-size: 37px;
+  font-size: 25px;
   text-align: center;
   font-weight: bold;
+}
+@media only screen and (min-width: 830px) {
+  .title-section {
+    font-size: 37px;
+  }
 }
 
 .box-pregunta {
@@ -4542,7 +4565,16 @@ section.section-ayuda {
 .item-ayuda span {
   color: #003287;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 13px;
+}
+@media only screen and (min-width: 830px) {
+  .item-ayuda span {
+    margin-top: 18px;
+    font-size: 16px;
+  }
+}
+.item-ayuda:hover {
+  text-decoration: none;
 }
 
 .section-factibilidad {
@@ -4580,8 +4612,13 @@ section.section-ayuda {
 .box-factibilidad h2 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  font-size: 38px;
+  font-size: 25px;
   color: #003287;
+}
+@media only screen and (min-width: 830px) {
+  .box-factibilidad h2 {
+    font-size: 38px;
+  }
 }
 .box-factibilidad img {
   margin-top: 20px;
@@ -4618,9 +4655,14 @@ section.section-ayuda {
 .item-fact h3 {
   font-family: Raleway;
   font-weight: bold;
-  font-size: 28px;
+  font-size: 22px;
   margin-bottom: 0.8rem;
   color: #2274FF;
+}
+@media only screen and (min-width: 830px) {
+  .item-fact h3 {
+    font-size: 28px;
+  }
 }
 .item-fact p {
   font-family: Inter;
@@ -5139,10 +5181,15 @@ section.section-trabajos {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
+  cursor: pointer;
 }
 .slider-pago li.active {
   background: #E7F0FF;
   border: 3px solid #2274FF;
+}
+.slider-pago li.active i {
+  display: block;
 }
 .slider-pago li a span {
   color: #003287;
@@ -5152,6 +5199,12 @@ section.section-trabajos {
 }
 .slider-pago li a:hover {
   text-decoration: none;
+}
+.slider-pago li i {
+  display: none;
+  position: absolute;
+  top: -10px;
+  right: -10px;
 }
 
 .section-slider {
@@ -5209,8 +5262,13 @@ section.section-trabajos {
   }
 }
 .box-slider-noticia .carousel-indicators {
-  bottom: 0;
-  right: -50px;
+  /*  bottom: 0;
+   right: -50px; */
+}
+@media only screen and (max-width: 830px) {
+  .box-slider-noticia .carousel-indicators {
+    right: -42px;
+  }
 }
 .box-slider-noticia .carousel-indicators li {
   background-color: transparent;

@@ -19,11 +19,14 @@
     h2 {
         font-family: $fontRaleway;
         font-weight: bold;
-        font-size: 37px;
+        font-size: 25px;
         color: $blue-dark;
         max-width: 450px;
-        line-height: 50px;
         margin-bottom: 26px;
+        @include min-screen($tl){ 
+            font-size: 37px;
+            line-height: 50px;
+        }
     }
     .info-politica { 
         p {
@@ -93,9 +96,12 @@
     padding: 0 5px;
     li {
         margin-bottom: 0;
-        font-size: 21px;
+        font-size: 18px;
         line-height: 40px;
         display: flex;
+        @include min-screen($tl){ 
+            font-size: 21px;
+         }
     }
      i {
         margin-right: 9px;

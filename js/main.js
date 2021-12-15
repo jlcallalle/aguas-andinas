@@ -111,4 +111,12 @@ $(function () {
             }
         });
     });
+
+    // active carrousel pago
+    $('.slider-pago li').on('click', function(e) {
+        $('.slider-pago li').removeClass('active');;
+        $(this).addClass('active');;
+    });
+
+
 });
