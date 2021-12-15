@@ -6303,3 +6303,62 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 .content-portal .layout-formulario .form-group-all {
   border-right: none;
 }
+
+.page-cuenta-personas {
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*  .main {
+       background-color: transparent;
+   }
+   .content-page {
+       background-color: transparent;
+   } */
+}
+
+.box-form-cuenta {
+  display: block;
+}
+.box-form-cuenta .form-group label {
+  color: #003287;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.content-page-clave {
+  padding: 20px;
+  background-color: white;
+  padding: 20px 30px 60px 30px;
+}
+@media only screen and (min-width: 830px) {
+  .content-page-clave {
+    padding: 44px 40px 70px 40px;
+  }
+}
+.content-page-clave h3 {
+  color: #003287;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 23px;
+}
+
+.box-tabla .table thead th {
+  border-bottom: 2px dotted #dee2e6;
+  font-size: 14px;
+  color: #5F6268;
+  font-weight: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* .box-tabla .table thead th {
+    border-bottom: 2px dotted #dee2e6;
+    font-size: 14px;
+    color: #5F6268;
+    font-weight: normal;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+} */
