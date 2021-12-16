@@ -145,31 +145,51 @@
  */
 
 span.bigcheck-target {
-    font-family: FontAwesome;  
     margin-right: 10px;
-    color: $black-light ;
+   /*  color: $black-light ;
+    width: 32px;
+    height: 32px; */
 }
 input[type='checkbox'].bigcheck {     
     position: relative;
     left: -999em; 
-    // display: none;
 }
 
 input[type='checkbox'].bigcheck + span.bigcheck-target:after {
-    content: "\f096";
+    content: "";
+    //background-image: url('../images/icon-check-gray.svg');
+    width: 32px;
+    height: 32px;
+    display: block;
+    border:1px solid #5F6268;
+    border-radius: 20px;
 }
 input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
-    content: "\f046";
+   content: "";
+    background-image: url('../images/icon-check-blue.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    border: none;
+    border-radius: 0;
+  /*   width: 32px;
+    height: 32px; */
+    display: block;
 }
 
+.box-check {
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 6px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
 
 .box-check label {
     display: flex;
-    /* align-items: center; */
-    //justify-content: center;
+    align-items: center;
+    margin: 0;
     i {
-        font-size: 15px;
-        color: #2F80ED;
+        font-size: 12px;
+        color: #5F6268;
         font-style: normal;
     }
 }
@@ -180,7 +200,10 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
 }
 
 .row-check {
-    margin-top: 50px;;
+    margin-top: 20px;;
+    @include min-screen($tl){
+        margin-top: 50px;;
+    }
 }
 
 .texto-informa {
@@ -209,9 +232,6 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
         .container {
             max-width: 780px;
         }
-    }
-    .content-page-clave {
-       // background-color: transparent;
     }
 }
 

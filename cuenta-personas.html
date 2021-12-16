@@ -775,10 +775,10 @@
           <div class="row">
             <div class="col">
               <h2>Registro de usuarios</h2>
-              <div class="content-page-clave">
+              <div class="content-page-cuenta">
 
                 <div class="box-steps">
-                  <div class="step mb-5">
+                  <div class="step">
                     <div class="step-item active">
                         <a class="step-item-link" href="#!">
                           <span>1</span>
@@ -806,7 +806,7 @@
                 <div class="layout-cuenta">
                   <form action="" class="form-cuenta">
                     <div class="box-form-cuenta">
-                      <div class="row">
+                      <div class="row row-agregar">
                         <div class="form-group col-md-6">
                           <label for="inputCuenta">Agregar Cuenta</label>
                           <input type="text" class="form-control form-control-lg" id="inputCuenta" placeholder="Número de cuenta (*)">
@@ -848,13 +848,13 @@
                               </thead>
                               <!-- <tbody>
                                 <tr>
-                                  <th scope="row">1</th>
-                                  <td>Mark</td>
-                                  <td>Otto</td>
-                                  <td>@mdo</td>
-                                  <td>@mdo</td>
-                                  <td>@mdo</td>
-                                  <td>@mdo</td>
+                                  <td>1</td>
+                                  <td>2</td>
+                                  <td>3</td>
+                                  <td>4</td>
+                                  <td>5</td>
+                                  <td>6</td>
+                                  <td>7</td>
                                 </tr>
                               </tbody> -->
                             </table>
@@ -862,9 +862,18 @@
                         </div>
                       </div>
 
-                      <div class="box-boleta-recapcha row justify-content-md-center">
+                      <div class="box-persona-recapcha">
+                        <div class="box-check">
+                            <label>
+                                <input type="checkbox" class="bigcheck" name="cheese" value="yes"/>
+                                <span class="bigcheck-target"></span>
+                              <i>Acepto término y condiciones</i>
+                            </label>
+                        </div>
                         <div id="html_capcha"></div>
-                        <button type="submit" class="btn btn-block btn-lg btn-login mt-4">Continuar</button>
+                      </div>
+                      <div class="box-btn mt-4 d-flex justify-content-center">
+                        <button type="submit" class="btn btn-lg btn-verde ">Continuar</button>
                       </div>
                     </div>
                   </form>
