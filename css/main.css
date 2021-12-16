@@ -6380,9 +6380,9 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 
 .page-cuenta-personas {
   /*  page-cuenta-personas2.jpg */
-  /*      background-image: url(../images/page-cuenta-personas.jpg);
-       background-position: top center;
-       background-repeat: no-repeat; */
+  /*  background-image: url(../images/page-cuenta-personas2.jpg);
+   background-position: top center;
+   background-repeat: no-repeat; */
   /* .main {
       background-color: transparent;
   }
@@ -6487,4 +6487,13 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 
 .alert-heading {
   font-weight: bold;
+}
+
+.margin-texto {
+  margin-top: 50px;
+}
+@media only screen and (min-width: 830px) {
+  .margin-texto {
+    margin-top: 250px;
+  }
 }
