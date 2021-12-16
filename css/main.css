@@ -6350,14 +6350,15 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 }
 
 .page-cuenta-personas {
-  background-position: top center;
-  background-repeat: no-repeat;
-  /*  .main {
-       background-color: transparent;
-   }
-   .content-page {
-       background-color: transparent;
-   } */
+  /*      background-image: url(../images/page-cuenta-personas.jpg);
+       background-position: top center;
+       background-repeat: no-repeat; */
+  /* .main {
+      background-color: transparent;
+  }
+  .content-page {
+      background-color: transparent;
+  } */
 }
 
 .content-page-cuenta {
@@ -6405,7 +6406,7 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1.5rem 0.75rem;
+  padding: 1.8rem 0.75rem;
 }
 
 .box-persona-recapcha {
@@ -6432,6 +6433,5 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding: 44px 40px 70px 40px;
   }
 }
