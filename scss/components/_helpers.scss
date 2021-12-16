@@ -91,3 +91,24 @@ $input-padding-x-lg:  1rem;
     border-radius: 50%;
   }
 }
+
+.row {
+  select.form-control-lg {
+    color: #5F6268!important;
+    height: calc(2.875rem + 10px)!important;
+    height: 56px;
+    // border:1px solid red;
+  }
+}
+
+.texto-form {
+  color: $black-light;
+  font-size: 12px;
+}
+
+.title-input {
+   color: #003287;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+}

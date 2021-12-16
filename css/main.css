@@ -3202,6 +3202,24 @@ input::placeholder {
   border-radius: 50%;
 }
 
+.row select.form-control-lg {
+  color: #5F6268 !important;
+  height: calc(2.875rem + 10px) !important;
+  height: 56px;
+}
+
+.texto-form {
+  color: #5F6268;
+  font-size: 12px;
+}
+
+.title-input {
+  color: #003287;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+
 .btn-ingresar {
   background-color: #FFA300;
   color: white;
@@ -6528,3 +6546,14 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
     font-size: 24px;
   }
 }
+
+.page-datos-personales {
+  background-image: url(../images/page-datos-personales.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 2500px;
+}
+/* .content-page, .content-page-boleta {
+    background-color: transparent;
+}
+ */
