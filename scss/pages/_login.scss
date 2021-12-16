@@ -140,10 +140,12 @@
 
 .dual-btn {
     margin-top: 25px;
+    flex-direction: column;
     @include min-screen($tl){
         display: flex;
         align-items: center;
         justify-content: space-between;
+        flex-direction: row;
     }
     a {
         margin-bottom: 20px;

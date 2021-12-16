@@ -3328,6 +3328,7 @@ input::placeholder {
   font-size: 16px;
   background: #19CE74;
   border-radius: 8px;
+  font-weight: bold;
 }
 .btn-login:hover {
   color: white;
@@ -3481,6 +3482,26 @@ input::placeholder {
 .btn-verde:hover {
   color: white;
   background-color: #009669;
+}
+
+.btn-outline-primary {
+  border: 1px solid #2274FF;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #2274FF;
+  font-weight: bold;
+}
+
+.row-btn {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.btn-success {
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
 }
 
 .header-top {
@@ -5537,6 +5558,10 @@ section.section-trabajos {
 
 .dual-btn {
   margin-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media only screen and (min-width: 830px) {
   .dual-btn {
@@ -5549,6 +5574,10 @@ section.section-trabajos {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 .dual-btn a {
@@ -6350,6 +6379,7 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 }
 
 .page-cuenta-personas {
+  /*  page-cuenta-personas2.jpg */
   /*      background-image: url(../images/page-cuenta-personas.jpg);
        background-position: top center;
        background-repeat: no-repeat; */
@@ -6383,7 +6413,6 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   display: block;
 }
 .box-form-cuenta .row-agregar {
-  /*  padding: 0 70px; */
   padding: 0 20px 30px 20px;
 }
 @media only screen and (min-width: 830px) {
@@ -6418,7 +6447,6 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /* justify-content: space-between; */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -6434,4 +6462,29 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+/* Page cuenta persona 2*/
+.alert-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 750px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #d2ffe9;
+  border: none;
+  border-radius: 8px;
+}
+.alert-message i {
+  margin-right: 30px;
+}
+.alert-message .texto-mensaje {
+  color: #2274FF;
+}
+
+.alert-heading {
+  font-weight: bold;
 }
