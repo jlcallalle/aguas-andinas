@@ -79,15 +79,20 @@
     max-width: 750px;
     margin: 0 auto;
     align-items: center;
-    background-color: #d2ffe9;
     border:none;
     border-radius: 8px;
     i {
         margin-right: 30px;
     }
-    .texto-mensaje {
-        color:$blue;
-    }
+}
+
+.alert-success {
+ background-color: #d2ffe9;
+ color:$blue;
+}
+.alert-danger {
+    background-color: #C94747; 
+    color:white;
 }
 
 .alert-heading {
@@ -100,3 +105,30 @@
         margin-top: 250px;
     }
 }
+
+
+.box-preguntas {
+    max-width: 750px;
+    margin: 60px auto 40px auto;
+    .item-pregunta {
+        margin-bottom: 22px;
+        a {
+            color:$blue;
+        }
+        p {
+            span {
+                color:$blue;
+            }
+        }
+    }
+}
+
+.title-pregunta {
+    color:$blue-dark;
+    font-size: 20px;
+    font-weight: bold;
+    @include min-screen($tl){
+        font-size: 24px;
+    }
+}
+

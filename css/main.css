@@ -6474,15 +6474,21 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #d2ffe9;
   border: none;
   border-radius: 8px;
 }
 .alert-message i {
   margin-right: 30px;
 }
-.alert-message .texto-mensaje {
+
+.alert-success {
+  background-color: #d2ffe9;
   color: #2274FF;
+}
+
+.alert-danger {
+  background-color: #C94747;
+  color: white;
 }
 
 .alert-heading {
@@ -6495,5 +6501,30 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 @media only screen and (min-width: 830px) {
   .margin-texto {
     margin-top: 250px;
+  }
+}
+
+.box-preguntas {
+  max-width: 750px;
+  margin: 60px auto 40px auto;
+}
+.box-preguntas .item-pregunta {
+  margin-bottom: 22px;
+}
+.box-preguntas .item-pregunta a {
+  color: #2274FF;
+}
+.box-preguntas .item-pregunta p span {
+  color: #2274FF;
+}
+
+.title-pregunta {
+  color: #003287;
+  font-size: 20px;
+  font-weight: bold;
+}
+@media only screen and (min-width: 830px) {
+  .title-pregunta {
+    font-size: 24px;
   }
 }
