@@ -1,16 +1,66 @@
 .page-datos-personales {
     // border:3px solid red;
-      background-image: url(../images/page-datos-personales.jpg);
+ /*      background-image: url(../images/page-datos-personales.jpg);
       background-position: top center;
-      background-repeat: no-repeat;
-      height: 2500px;
+      background-position: 45px -10px;
+      background-repeat: no-repeat; */
       .main {
         // background-color: transparent;
     }
-
 }
 
-/* .content-page, .content-page-boleta {
-    background-color: transparent;
+.content-page-datos {
+    padding: 20px;
+    background-color: white;
+    @include min-screen($tl){
+        margin-top: 15px;
+        padding: 26px 40px 20px 40px;
+    }
+    .title-label {
+        margin-bottom: 22px;
+    }
+    .form-control {
+        // margin-bottom: 16px;
+    }
 }
- */
+
+ .form-datos-personales {
+    padding: 20px 10px;
+    @include min-screen($tl){
+        padding: 5px 60px 60px 60px;
+    }
+}
+
+ .title-label {
+    color: #003287;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px;
+ }
+
+ .main-title {
+    font-family: $fontRaleway;
+    font-weight: bold;
+    font-size: 27px;
+    line-height: 32px;
+    color: $blue-dark;
+    display: block;
+    width: 100%;
+}
+.texto-form {
+    p {
+        color:$black-light;
+        font-size: 12px;
+    }
+}
+.lista-switch {
+    margin-top: 34px;
+    .item-switch {
+        margin-bottom: 30px;
+        &:first-child {
+            border-bottom: 1px solid #B7C0CE;
+            padding-bottom: 26px;
+            margin-bottom: 36px;
+        }
+    }
+}

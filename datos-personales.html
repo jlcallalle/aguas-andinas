@@ -763,13 +763,12 @@
           </div>
         </div>
       </div>
-      <section class="section-login">
+      <section class="section-datos">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2>Registro de usuarios</h2>
-              <div class="content-page-cuenta">
-
+              <h2 class="main-title">Registro de usuarios</h2>
+              <div class="content-page-datos">
                 <div class="box-steps">
                   <div class="step">
                     <div class="step-item active">
@@ -792,14 +791,13 @@
                     </div>
                   </div>
                 </div>
+                <form action="" class="form-datos-personales" >
+                  <div class="box-form-datos-personales">
 
-                <form action="" class="form-boleta" >
-                  <div class="box-form-boleta">
-
-                    <div class="box-row">
+                    <div class="box-row" >
                       <div class="row form-group">
                         <div class="col-md-6">
-                          <label for="direccion" class="form-label">Completar datos personales</label>
+                          <label for="direccion" class="form-label title-label">Completar datos personales</label>
                           <input type="email" class="form-control form-control-lg is-valid" id="direccion" placeholder="Nombre">
                           <div class="valid-feedback feedback-icon">
                             <i class="fa fa-check"></i>
@@ -851,14 +849,79 @@
                            </div>
                          </div>
                        </div>
-
                     </div>
-                    
-                    <div class="box-boleta-recapcha row justify-content-center">
-                      <button type="submit" class="btn btn-block btn-lg btn-login mt-4">Recibir boleta digital</button>
-                      <div class="texto-informa">
-                        <p><span>Al enviar este formulario,</span> dejarás de recibir tu boleta y notificaciones en papel</p>
+
+                    <div class="box-row">
+                      <div class="title-label">Selecciona tus áreas de interés</div>
+                      <div class="lista-switch">
+
+                        <div class="item-switch">
+                          <div class="box-switch inline-switch">
+                            <label class="custom-control-label" for="emailwitches">Recibir documentos y boletas por email</label>
+                            <label class="switch custom-switch">
+                              <input type="checkbox" id="emailwitches" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="item-switch">
+                          <div class="box-switch inline-switch">
+                            <label class="custom-control-label" for="consumoSwitches">Mejorar el consumo y el correcto uso del agua</label>
+                            <label class="switch custom-switch">
+                              <input type="checkbox" id="consumoSwitches" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="item-switch">
+                          <div class="box-switch inline-switch">
+                            <label class="custom-control-label" for="eventoSwitches">Información sobre Eventos deportivos y culturales que se realicen en mi ciudad</label>
+                            <label class="switch custom-switch">
+                              <input type="checkbox" id="eventoSwitches" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+
+                        <div class="item-switch">
+                          <div class="box-switch inline-switch">
+                            <label class="custom-control-label" for="temasSwitches">Temas relacionados con la sustentabilidad</label>
+                            <label class="switch custom-switch">
+                              <input type="checkbox" id="temasSwitches" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="item-switch">
+                          <div class="box-switch inline-switch">
+                            <label class="custom-control-label" for="interesSwitches">Otros temas de interés</label>
+                            <label class="switch custom-switch">
+                              <input type="checkbox" id="interesSwitches" checked>
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="item-switch">
+                          <div class="box-switch inline-switch">
+                            <label class="custom-control-label" for="todosSwitches">Seleccionar todos</label>
+                            <label class="switch custom-switch">
+                              <input type="checkbox" id="todosSwitches">
+                              <span class="slider round"></span>
+                            </label>
+                          </div>
+                        </div>
+
+
                       </div>
+                    </div>
+
+                    <div class="box-btn mt-5 d-flex justify-content-center">
+                      <button type="submit" class="btn btn-lg btn-verde ">Finalzar</button>
+                    </div>
+                    <div class="d-flex mt-5 justify-content-center color-black-light">
+                      <p>Recuerda que puedes ajustar las notificaciones desde la configuración de perfil</p>
                     </div>
                   </div>
                 </form>

@@ -122,19 +122,12 @@
     }
 }
 
-.box-switch {
+.space-switch {
     display: flex;
     margin-bottom: 20px;
     @include min-screen($tl){
         margin-bottom: 56px;
         margin-top: 70px;
-    }
-    .custom-control-label {
-        margin-bottom: 0;
-        margin-left: 20px;
-        &:before, &:after {
-            display: none;
-        }
     }
 }
 

@@ -35,16 +35,9 @@
 .form-boleta {
     padding: 20px 10px;
     @include min-screen($tl){
-        //padding: 28px 100px 60px 100px;
         padding: 28px 60px 60px 60px;
         margin-top: 28px;
     }
-    /* .form-group {
-        margin-bottom: 1rem;
-        @include min-screen($tl){
-            margin-bottom: 2rem;
-        }
-    } */
 }
 
 .box-form-boleta {
