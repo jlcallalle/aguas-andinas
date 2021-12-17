@@ -24,6 +24,10 @@
     background-color: white;
     margin-top: 15px;
     // height: 1750px;
+    .alert-success {
+        background-color: $green;
+        color:white;
+    }
 }
 .banner-boleta {
     img {
@@ -259,5 +263,13 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
     text-align: center;
     a {
         text-decoration: underline;
+    }
+}
+
+.col-invisible {
+    .invisible {
+        @include max-screen($tl){
+           display: none;
+        }
     }
 }

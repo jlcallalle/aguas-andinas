@@ -5902,6 +5902,10 @@ section.section-trabajos {
   background-color: white;
   margin-top: 15px;
 }
+.content-page-boleta .alert-success {
+  background-color: #19CE74;
+  color: white;
+}
 
 .banner-boleta img {
   width: 100%;
@@ -6136,6 +6140,12 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 }
 .box-btn-volver a {
   text-decoration: underline;
+}
+
+@media only screen and (max-width: 830px) {
+  .col-invisible .invisible {
+    display: none;
+  }
 }
 
 .page-registro-usuario {
