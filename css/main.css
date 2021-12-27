@@ -3068,6 +3068,12 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* Form Validacion */
+.form-control.is-valid {
+  border-color: #19CE74;
+  color: #19CE74;
+}
+
 /* Mixins
   =============== */
 .contenedor {

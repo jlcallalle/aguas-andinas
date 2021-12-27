@@ -10,10 +10,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>Cuenta personas registro</title>
+  <title>Login portal nuevos cliente 1</title>
 </head>
 
-<body class="page page-datos-personales">
+<body class="page page-registro-usuario">
   <div class="wrapper">
     <div class="header-top">
       <div class="container">
@@ -763,170 +763,216 @@
           </div>
         </div>
       </div>
-      <section class="section-datos">
+      <section class="section-login">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="main-title">Registro de usuarios</h2>
-              <div class="content-page-datos">
-                <div class="box-steps">
-                  <div class="step">
-                    <div class="step-item active">
-                        <a class="step-item-link" href="#!">
-                          <span>1</span>
-                        </a>
-                        <p>Registro</p>
+              <div class="content-page-tab">
+
+                <div class="box-registro-tab">
+                  <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                      <a class="nav-item nav-link" id="nav-usuario-tab" data-toggle="tab" href="#nav-usuario" role="tab" aria-controls="nav-usuario" aria-selected="false">Registro de usuario</a>
+                      <a class="nav-item nav-link active" id="nav-nuevo-cliente-tab" data-toggle="tab" href="#nav-nuevo-cliente" role="tab" aria-controls="nav-nuevo-cliente" aria-selected="true">Portal nuevos clientes</a>
                     </div>
-                    <div class="step-item active">
-                        <a class="step-item-link" href="#!">
-                          <span>2</span>
-                        </a>
-                        <p>Agregar Cuentas</p>
+                  </nav>
+                  <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade" id="nav-usuario" role="tabpanel" aria-labelledby="nav-usuario-tab">
+                      <div class="content-nav">
+                       <div class="row-steps">
+                          <div class="box-steps">
+                            <div class="step">
+                              <div class="step-item active">
+                                  <a class="step-item-link" href="#!">
+                                    <span>1</span>
+                                  </a>
+                                  <p>Registro</p>
+                              </div>
+                              <div class="step-item ">
+                                  <a class="step-item-link" href="#!">
+                                    <span>2</span>
+                                  </a>
+                                  <p>Agregar Cuentas</p>
+                              </div>
+                              <div class="step-item">
+                                  <a class="step-item-link" href="#!">
+                                    <span>3</span>
+                                  </a>
+                                  <p>Datos de Usuario</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div class="row-layout">
+                          <div class="layout-formulario">
+                            <form class="formulario-login">
+                              <h3>Registro con tus redes sociales</h3>
+                              <div class="form-group-all">
+                                <div class="form-group">
+                                  <input type="text" class="form-control form-control-lg"
+                                    placeholder="Nombre de usuario">
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control form-control-lg" placeholder="Contraseña">
+                                </div>
+                                <div class="form-group">
+                                  <input type="password" class="form-control form-control-lg" placeholder="Repetir Contraseña">
+                                </div>
+                                <div class="form-group">
+                                  <input type="email" class="form-control form-control-lg" placeholder="Correo electrónico">
+                                </div>
+                                <div class="dual-btn">
+                                  <a href="recupera-contrasena.html" class="btn btn-lg  btn-empresa" >Persona Natural</a>
+                                  <a href="" class="btn btn-lg btn-registrame">Institución/Empresa</a>
+                                </div>
+                                <div class="box-button mt-4">
+                                  <button type="submit" class="btn btn-block btn-lg btn-login">Registrame</button>
+                                </div>
+                              </div>
+                            </form>
+                          </div>
+                          
+                          <div class="layout-redes">
+                            <h3>Ingresa con tus redes sociales</h3>
+                            <div class="box-redes-login">
+                              <a href="" class="btn btn-redes btn-facebook btn-lg">
+                                <i class="fa fa-facebook"></i>
+                                <span>Facebook</span>
+                              </a>
+                              <a href="" class="btn btn-redes btn-google btn-lg">
+                                <i class="fa fa-google"></i>
+                                <span>Google</span>
+                              </a>
+                              <a href="" class="btn btn-redes btn-twitter btn-lg">
+                                <i class="fa fa-twitter"></i>
+                                <span>Twitter</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+        
+                        <div class="row-texto-form">
+                          <p>Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de aguasandinas.cl</p>
+                          <p>¿Ya tienes una cuenta? <a href="">Iniciar sesión</a></p>
+                        </div>
+                      </div>
                     </div>
-                    <div class="step-item">
-                        <a class="step-item-link" href="#!">
-                          <span>3</span>
-                        </a>
-                        <p>Datos de Usuario</p>
+                    <div class="tab-pane fade show active" id="nav-nuevo-cliente" role="tabpanel" aria-labelledby="nav-nuevo-cliente-tab">
+                      <div class="content-nav content-portal">
+                        <div class="row-steps">
+                           <div class="box-steps">
+                             <div class="step">
+                               <div class="step-item">
+                                   <a class="step-item-link" href="#!">
+                                     <span>1</span>
+                                   </a>
+                                   <p>Registro</p>
+                               </div>
+                               <div class="step-item active">
+                                   <a class="step-item-link" href="#!">
+                                     <span>2</span>
+                                   </a>
+                                   <p>Agregar Cuentas</p>
+                               </div>
+                               <div class="step-item">
+                                   <a class="step-item-link" href="#!">
+                                     <span>3</span>
+                                   </a>
+                                   <p>Datos de Usuario</p>
+                               </div>
+                             </div>
+                           </div>
+                         </div>
+                         
+                         <div class="row-layout-nuevos-clientes">
+                          <form action="" class="form-datos-personales" >
+                            <div class="box-form-datos-personales">
+          
+                              <div class="box-row" >
+                                 <div class="row form-group">
+                                  <div class="col-md-6">
+                                    <label class="form-label title-label">Completar datos personales</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="11.111.111-1" disabled>
+                                  </div>
+                                  <div class="col-md-6 margin-input">
+                                    <input type="text" class="form-control form-control-lg is-valid" placeholder="Nombre Completo">
+                                    <div class="valid-feedback feedback-icon">
+                                      <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="invalid-feedback feedback-icon">
+                                        <i class="fa fa-times"></i>
+                                    </div>
+                                  </div>
+                                 </div>
+              
+                                 <div class="row form-group">
+                                   <div class="col-md-6">
+                                     <input type="text" class="form-control form-control-lg" placeholder="Teléfono Celular">
+                                   </div>
+                                  <div class="col-md-6">
+                                    <input type="email" class="form-control form-control-lg" placeholder="Correo electrónico">
+                                  </div>
+                                 </div>
+
+                                 <div class="row form-group mt-5">
+                                  <div class="col-md-6">
+                                    <label class="form-label title-label">Contraseña</label>
+                                    <div class="form-group form-eye">
+                                      <div class="input-group" id="show_hide_password">
+                                        <input type="password" class="form-control form-control-lg password" data-toggle="password" placeholder="Nueva contraseña">
+                                        <div class="input-group-addon">
+                                          <a href=""><i class="togglePassword fa fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6  margin-input">
+                                    <div class="form-group form-eye">
+                                      <div class="input-group" id="show_hide_password">
+                                        <input type="password" class="form-control form-control-lg password" data-toggle="password" placeholder="Confirma tu contraseña">
+                                        <div class="input-group-addon">
+                                          <a href=""><i class="togglePassword fa fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 
+                                 </div>
+              
+          
+                                 <div class="row">
+                                   <div class="col-md-8">
+                                     <div class="texto-form">
+                                      <p>La contraseña debe contener al menos una letra mayuscula y un número</p>
+                                     </div>
+                                   </div>
+                                 </div>
+                              </div>
+          
+                              <div class="box-btn mt-5 d-flex">
+                                <button type="submit" class="btn btn-lg btn-verde ">Siguiente</button>
+                              </div>
+                            </div>
+                          </form>
+                           
+                           <!-- <div class="layout-texto-portal">
+                             <div class="title-portal">
+                              Portal de nuevos clientes
+                             </div>
+                             <p>En esta nueva plataforma podrás gestionar todas la tramitaciones de documentos de entrada y salida para todos los procesos de nuevos clientes. Podrás gestionar solicitudes de factibilidad de servicio, revisión de proyectos, solicitar presupuestos, certificados de instalaciones, contratos y solicitar estudios para terrenos emplazados fuera de nuestra área de servicio</p>
+                           </div> -->
+                         </div>
+         
+                         <!-- <div class="row-texto-form">
+                           <p>Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de aguasandinas.cl</p>
+                           <p>¿Ya tienes una cuenta? <a href="">Iniciar sesión</a></p>
+                         </div> -->
+                       </div>
                     </div>
                   </div>
                 </div>
-                <form action="" class="form-datos-personales" >
-                  <div class="box-form-datos-personales">
 
-                    <div class="box-row" >
-                      <div class="row form-group">
-                        <div class="col-md-6">
-                          <label for="direccion" class="form-label title-label">Completar datos personales</label>
-                          <input type="email" class="form-control form-control-lg is-valid" id="direccion" placeholder="Nombre">
-                          <div class="valid-feedback feedback-icon">
-                            <i class="fa fa-check"></i>
-                          </div>
-                          <div class="invalid-feedback feedback-icon">
-                              <i class="fa fa-times"></i>
-                          </div>
-                        </div>
-                       </div>
-    
-                       <div class="row form-group">
-                        <div class="col-md-6">
-                          <input type="password" class="form-control form-control-lg" placeholder="Número de documento">
-                        </div>
-                        <div class="col-md-6">
-                          <input type="text" class="form-control form-control-lg" placeholder="Telefono Celular">
-                        </div>
-                       </div>
-
-                       <div class="row form-group">
-
-                        <div class="col-md-6 ">
-                          <div class="form-group">
-                            <select class="form-control form-control-lg" id="sel1">
-                              <option>Cantidad de integrantes en mi hogar</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                            </select>
-                          </div>
-                        </div>
-
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <select class="form-control form-control-lg" id="sel1">
-                              <option>Tipo de usuario</option>
-                              <option>2</option>
-                              <option>3</option>
-                              <option>4</option>
-                            </select>
-                          </div>
-                        </div>
-                       </div>
-
-                       <div class="row">
-                         <div class="col-md-6">
-                           <div class="texto-form">
-                            <p>Ingresar la cantidad de personas que viven en mi hogar, para que la visualización de tu consumo se vea evidenciada bajo los parámetros dictados</p>
-                           </div>
-                         </div>
-                       </div>
-                    </div>
-
-                    <div class="box-row">
-                      <div class="title-label">Selecciona tus áreas de interés</div>
-                      <div class="lista-switch">
-
-                        <div class="item-switch">
-                          <div class="box-switch inline-switch">
-                            <label class="custom-control-label" for="emailwitches">Recibir documentos y boletas por email</label>
-                            <label class="switch custom-switch">
-                              <input type="checkbox" id="emailwitches" checked>
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="item-switch">
-                          <div class="box-switch inline-switch">
-                            <label class="custom-control-label" for="consumoSwitches">Mejorar el consumo y el correcto uso del agua</label>
-                            <label class="switch custom-switch">
-                              <input type="checkbox" id="consumoSwitches" checked>
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="item-switch">
-                          <div class="box-switch inline-switch">
-                            <label class="custom-control-label" for="eventoSwitches">Información sobre Eventos deportivos y culturales que se realicen en mi ciudad</label>
-                            <label class="switch custom-switch">
-                              <input type="checkbox" id="eventoSwitches" checked>
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                        </div>
-
-                        <div class="item-switch">
-                          <div class="box-switch inline-switch">
-                            <label class="custom-control-label" for="temasSwitches">Temas relacionados con la sustentabilidad</label>
-                            <label class="switch custom-switch">
-                              <input type="checkbox" id="temasSwitches" checked>
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="item-switch">
-                          <div class="box-switch inline-switch">
-                            <label class="custom-control-label" for="interesSwitches">Otros temas de interés</label>
-                            <label class="switch custom-switch">
-                              <input type="checkbox" id="interesSwitches" checked>
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                        </div>
-                        <div class="item-switch">
-                          <div class="box-switch inline-switch">
-                            <label class="custom-control-label" for="todosSwitches">Seleccionar todos</label>
-                            <label class="switch custom-switch">
-                              <input type="checkbox" id="todosSwitches">
-                              <span class="slider round"></span>
-                            </label>
-                          </div>
-                        </div>
-
-
-                      </div>
-                    </div>
-
-                    <div class="box-btn mt-5 d-flex justify-content-center">
-                      <button type="submit" class="btn btn-lg btn-verde ">Finalzar</button>
-                    </div>
-                    <div class="d-flex mt-5 justify-content-center color-black-light">
-                      <p>Recuerda que puedes ajustar las notificaciones desde la configuración de perfil</p>
-                    </div>
-                  </div>
-                </form>
-
-               </div>
             </div>
           </div>
         </div>
