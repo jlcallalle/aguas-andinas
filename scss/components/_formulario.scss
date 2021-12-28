@@ -1,3 +1,18 @@
+
+.form-control {
+    border: 1px solid $gray-dark;
+}
+
+/* Custom Class Bootstrap */
+$input-padding-y-lg : 1rem;
+$input-padding-x-lg:  1rem;
+.form-control-lg {
+  padding: $input-padding-y-lg $input-padding-x-lg;
+  border-radius: 8px;
+  font-size: 16px;
+} 
+
+
 /* Form Validacion */
 .form-control.is-valid {
     border-color: $green;

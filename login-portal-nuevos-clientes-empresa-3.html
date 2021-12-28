@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
-  <title>Login portal nuevos cliente 2</title>
+  <title>Login portal nuevos cliente 3</title>
 </head>
 
 <body class="page page-registro-usuario">
@@ -888,62 +888,109 @@
                          <div class="row-layout-nuevos-clientes">
                           <form action="" class="form-datos-personales" >
                             <div class="box-form-datos-personales">
+          
                               <div class="box-row" >
                                  <div class="row form-group">
                                   <div class="col-md-6">
-                                    <label class="form-label title-label">Selecciona tu tipo de usuario</label>
-                                    <div class="box-custom-radio">
-                                      <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="defaultChecked1" name="defaultExample" >
-                                        <label class="custom-control-label" for="defaultChecked1">Contratista</label>
-                                      </div>
-  
-                                      <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="defaultChecked2" name="defaultExample" checked>
-                                        <label class="custom-control-label" for="defaultChecked2">Proyectista</label>
-                                      </div>
-  
-                                      <div class="custom-control custom-radio">
-                                        <input type="radio" class="custom-control-input" id="defaultChecked3" name="defaultExample" >
-                                        <label class="custom-control-label" for="defaultChecked3">  Persona Natural</label>
-                                      </div>
+                                    <label class="form-label title-label">Datos de la empresas</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="11.111.111-1" disabled>
+                                  </div>
+                                  <div class="col-md-6 margin-input">
+                                    <input type="text" class="form-control form-control-lg is-valid" placeholder="Nombre o Razón Social">
+                                    <div class="valid-feedback feedback-icon">
+                                      <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="invalid-feedback feedback-icon">
+                                        <i class="fa fa-times"></i>
                                     </div>
                                   </div>
                                  </div>
-
+              
                                  <div class="row form-group">
+                                   <div class="col-md-6">
+                                     <input type="text" class="form-control form-control-lg" placeholder="Teléfono Celular">
+                                   </div>
                                   <div class="col-md-6">
-                                    <label class="form-label title-label">Documentos solicitados</label>
-                                      <div class="texto-form">
-                                      <p>Tienes que subir una copia de tu certificado de título</p>
-                                     </div>
+                                    <input type="email" class="form-control form-control-lg" placeholder="Correo electrónico">
+                                  </div>
+                                 </div>
+
+                                 <div class="row form-group mt-4">
+                                  <div class="col-md-6">
+                                    <label class="form-label title-label">Dato del contacto</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="11.111.111-1" disabled>
+                                  </div>
+                                  <div class="col-md-6 margin-input">
+                                    <input type="text" class="form-control form-control-lg is-valid" placeholder="Nombre Completo">
+                                    <div class="valid-feedback feedback-icon">
+                                      <i class="fa fa-check"></i>
+                                    </div>
+                                    <div class="invalid-feedback feedback-icon">
+                                        <i class="fa fa-times"></i>
+                                    </div>
                                   </div>
                                  </div>
               
-                              </div>
+                                 <div class="row form-group">
+                                   <div class="col-md-6">
+                                     <input type="text" class="form-control form-control-lg" placeholder="Cargo">
+                                   </div>
+                                 </div>
 
-                              <div class="box-input-upload">
-                                <div class="custom-file">
-                                  <input type="file" id="customFile" class="custom-file-input" style="z-index: -5;">
-                                  <label class="custom-file-label" for="customFile" data-browse="Browse">  <span>  Deja aquí tu imagen de captura o <span>Busca en tu equipo</span></span> </label>
-                                </div>
-                                <ul class="lista-terminos">
-                                  <li>
-                                    Tamaño máximo permitido: 10 Mb
-                                  </li>
-                                  <li>
-                                    Formatos permitidos: pdf, doc, docx, xls, xlsx, ppt, pptx, dwg, jpg, jpeg, gif, tiff, bmp, png, flv, avi, mpeg, zip, rar
-                                  </li>
-                                </ul>
-                              </div>
 
-                              <div class="box-btn mt-5 d-flex justify-content-center">
-                                <button type="submit" class="btn btn-lg btn-empresa">Registrarme</button>
+                                 <div class="row form-group mt-5">
+                                  <div class="col-md-6">
+                                    <label class="form-label title-label">Contraseña</label>
+                                    <div class="form-group form-eye">
+                                      <div class="input-group" id="show_hide_password">
+                                        <input type="password" class="form-control form-control-lg password" data-toggle="password" placeholder="Nueva contraseña">
+                                        <div class="input-group-addon">
+                                          <a href=""><i class="togglePassword fa fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="col-md-6  margin-input">
+                                    <div class="form-group form-eye">
+                                      <div class="input-group" id="show_hide_password">
+                                        <input type="password" class="form-control form-control-lg password" data-toggle="password" placeholder="Confirma tu contraseña">
+                                        <div class="input-group-addon">
+                                          <a href=""><i class="togglePassword fa fa-eye-slash" aria-hidden="true"></i></a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 
+                                 </div>
+              
+          
+                                 <div class="row">
+                                   <div class="col-md-8">
+                                     <div class="texto-form">
+                                      <p>La contraseña debe contener al menos una letra mayuscula y un número</p>
+                                     </div>
+                                   </div>
+                                 </div>
                               </div>
-                              
+          
+                              <div class="box-btn mt-5 d-flex">
+                                <button type="submit" class="btn btn-lg btn-verde ">Siguiente</button>
+                              </div>
                             </div>
                           </form>
+                           
+                           <!-- <div class="layout-texto-portal">
+                             <div class="title-portal">
+                              Portal de nuevos clientes
+                             </div>
+                             <p>En esta nueva plataforma podrás gestionar todas la tramitaciones de documentos de entrada y salida para todos los procesos de nuevos clientes. Podrás gestionar solicitudes de factibilidad de servicio, revisión de proyectos, solicitar presupuestos, certificados de instalaciones, contratos y solicitar estudios para terrenos emplazados fuera de nuestra área de servicio</p>
+                           </div> -->
                          </div>
+         
+                         <!-- <div class="row-texto-form">
+                           <p>Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de aguasandinas.cl</p>
+                           <p>¿Ya tienes una cuenta? <a href="">Iniciar sesión</a></p>
+                         </div> -->
                        </div>
                     </div>
                   </div>
