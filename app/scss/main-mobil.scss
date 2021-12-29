@@ -1,0 +1,126 @@
+// Sass Libraries /
+@import "../../node_modules/sass-mediaqueries/media-queries"; 
+@import "../../node_modules/font-awesome/css/font-awesome"; 
+
+// Configuration
+@import 'base/variables';
+@import 'base/reset';
+@import 'base/mixins';
+@import 'base/fonts';
+
+
+body {
+    background-image: url(../images/mlogin.png);
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    height: 800px;
+}
+
+.logo-brand {
+    margin-top: 45px;
+    text-align: center;
+}
+
+.section-login {
+    margin-top: 32px;
+}
+
+.main-title {
+    color: $blue-dark;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.content-page {
+    padding: 10px 20px;
+}
+
+.form-group {
+    /* margin-bottom: 1.8rem; */
+    margin-bottom: 2rem;
+}
+
+.form-control {
+    padding: 0.8rem 1rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    height: 60px;
+    border-color: $gray-dark;
+    font-size: 16px;
+    color: $black-light;
+}
+
+.btn-verde {
+    color:white;
+    background-color: $green;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+.link {
+    display: block;
+    text-align: center;
+}
+
+.box-redes {
+    margin-top: 40px;
+}
+
+.box-redes-login  {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 24px;
+    padding: 0 20px;
+}
+
+.btn-redes {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    i {
+        font-size: 20px;
+    }
+}
+
+
+.btn-facebook {
+    background-color: #2F80ED;
+    border: 1px solid #2274FF;
+}
+
+.btn-google {
+    background-color: #DD5D5D;
+    border: 1px solid #DD5D5D;
+}
+.btn-twitter{
+    background-color: #71CCFF;
+    border: 1px solid #71CCFF;
+}
+
+.box-cuenta {
+    margin-top: 22px;
+    p {
+        color:#5F6268;
+        text-align: center;
+    }
+}
+.link-registro {
+    text-decoration: underline;
+}
