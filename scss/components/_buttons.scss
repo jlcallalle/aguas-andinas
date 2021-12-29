@@ -147,6 +147,20 @@
     }
 }
 
+.btn-blanco {
+    border: 1px solid #2274FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $blue;
+    font-weight: bold;
+    width: 100%;
+    &:hover {
+        color: $blue;
+    }
+}
+
+
 .btn-redes {
     color: white;
     font-size: 16px;
