@@ -5576,14 +5576,16 @@ section.section-trabajos {
   line-height: 22px;
 }
 
-.section-login h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: bold;
-  font-size: 27px;
-  line-height: 32px;
-  color: #003287;
-  display: block;
-  width: 100%;
+.section-login {
+  /* h2 {
+      font-family: $fontRaleway;
+      font-weight: bold;
+      font-size: 27px;
+      line-height: 32px;
+      color: $blue-dark;
+      display: block;
+      width: 100%;
+  } */
 }
 
 .content-page {
@@ -6698,13 +6700,14 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 }
 @media only screen and (min-width: 830px) {
   .content-page-datos {
-    margin-top: 15px;
-    padding: 26px 40px 20px 40px;
+    /* margin-top: 15px; */
+    padding: 44px 40px 20px 40px;
   }
 }
 .content-page-datos .title-label {
   margin-bottom: 22px;
 }
+
 .form-datos-personales {
   padding: 20px 10px;
 }
@@ -6765,15 +6768,9 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 }
 
 .page-descarga-boleta {
-  /* background-position: top center; */
+  /* background-position: top center; 
   background-position: 32px 0;
-  background-repeat: no-repeat;
-  /*     .header-top {
-          padding: 0;
-          .header-top-inner {
-              height: 40px;
-          }
-      } */
+  background-repeat: no-repeat;*/
 }
 .page-descarga-boleta .main {
   padding: 50px 0 0 0;
@@ -6881,7 +6878,16 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 .section-video {
   background-color: #E7F0FF;
   margin-top: 90px;
-  padding: 60px 0 75px 0;
+  padding: 40px 20px;
+}
+@media only screen and (min-width: 830px) {
+  .section-video {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    padding: 60px 0 75px 0;
+  }
 }
 
 .box-texto-video p {
@@ -6908,7 +6914,7 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   }
 }
 
-.section-datos {
+.section-datos-boleta {
   background-color: white;
 }
 
@@ -6957,3 +6963,10 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
     }
 }
  */
+/*  
+.header-top {
+    padding: 0;
+    .header-top-inner {
+        height: 40px;
+    }
+} */

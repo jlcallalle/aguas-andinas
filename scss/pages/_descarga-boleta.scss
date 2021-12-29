@@ -1,17 +1,11 @@
 .page-descarga-boleta {
      //  background-image: url(../images/page-descarga-boleta.jpg);
-      /* background-position: top center; */
+      /* background-position: top center; 
       background-position: 32px 0;
-      background-repeat: no-repeat;
+      background-repeat: no-repeat;*/
       .main {
           padding: 50px 0 0 0;
       }
-    /*     .header-top {
-            padding: 0;
-            .header-top-inner {
-                height: 40px;
-            }
-        } */
  }
  
  .content-page-boleta {
@@ -95,7 +89,11 @@
 .section-video {
     background-color: #E7F0FF;
     margin-top: 90px;
-    padding: 60px 0 75px 0;
+    padding:40px 20px;
+    @include min-screen($tl){
+        flex-direction: row;
+        padding: 60px 0 75px 0;
+    }
 }
 
 .box-texto-video {
@@ -120,7 +118,7 @@
     }
 }
 
-.section-datos {
+.section-datos-boleta {
     background-color: white;
 }
 .item-dato {
