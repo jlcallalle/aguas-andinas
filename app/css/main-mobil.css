@@ -3105,6 +3105,16 @@ a {
   text-align: center;
 }
 
+.title-nombre {
+  color: #003287;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+.title-nombre span {
+  font-weight: bold;
+}
+
 /* NAV */
 .header-inner {
   position: relative;
@@ -3282,6 +3292,7 @@ a {
   display: block;
   position: absolute;
   /* right: 0; */
+  top: 28px;
   right: 15px;
   overflow: hidden;
   margin: 0;
@@ -3422,6 +3433,8 @@ body {
 .page-recupera-contrasena {
   /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
   /*  background-image: url(../images/m-menu-principal.jpg); */
+  /*  background-image: url(../images/m-recuperar-contraseña-2.jpg);
+   background-position: center 46px; */
 }
 
 .wrapper {
@@ -3540,7 +3553,7 @@ body {
   text-decoration: underline;
 }
 
-/* PAGE RECUPERA TU CLAVE 1*/
+/* Page  Recupera tu clave -- 1*/
 .content-page-clave {
   padding: 15px 0;
 }
@@ -3584,4 +3597,86 @@ body {
   text-decoration: underline;
   text-align: center;
   display: block;
+}
+
+/* Page  Recupera tu clave -- 2 - Page Correo*/
+.box-icono-correo {
+  text-align: center;
+}
+
+.content-correo .box-top-correo {
+  border-bottom: 1px dashed #979797;
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.content-correo .box-top-correo .title-correo {
+  color: #003287;
+  font-size: 16px;
+  line-height: 25px;
+  text-align: left;
+}
+.content-correo .box-top-correo .title-correo span {
+  font-weight: bold;
+}
+.content-correo .box-top-correo p {
+  color: #5F6268;
+  font-size: 15px;
+  line-height: 25px;
+}
+.content-correo .box-top-correo p span {
+  color: #19CE74;
+}
+.content-correo .box-texto-correo {
+  border-bottom: 1px dashed #979797;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.content-correo .box-texto-correo .title-correo {
+  color: #5F6268;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
+}
+.content-correo .box-texto-correo p {
+  color: #B7C0CE;
+  font-size: 14px;
+  line-height: 25px;
+  font-style: italic;
+}
+
+.lista-realizar {
+  margin-top: 24px;
+  margin-bottom: 8px;
+}
+.lista-realizar li {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+.lista-realizar li:last-child {
+  margin-bottom: 0;
+}
+.lista-realizar li i {
+  color: #B7C0CE;
+  border: 2px solid #B7C0CE;
+  width: 30px;
+  height: 30px;
+  border-radius: 100px;
+  display: block;
+  margin-right: 46px;
+  text-align: center;
+}
+.lista-realizar li span {
+  color: #003287;
+  font-size: 14px;
+  line-height: 22px;
+}
+.lista-realizar li .box-circle {
+  width: 64px;
+}
+
+.box-btn-correo {
+  margin-top: 30px;
 }

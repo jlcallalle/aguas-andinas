@@ -19,6 +19,8 @@ body {
 .page-recupera-contrasena {
    /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
    /*  background-image: url(../images/m-menu-principal.jpg); */
+   /*  background-image: url(../images/m-recuperar-contraseña-2.jpg);
+    background-position: center 46px; */
 }
 
 .wrapper {
@@ -127,7 +129,7 @@ body {
     text-decoration: underline;
 }
 
-/* PAGE RECUPERA TU CLAVE 1*/
+/* Page  Recupera tu clave -- 1*/
 
 .content-page-clave {
     padding: 15px 0;
@@ -163,4 +165,88 @@ body {
     text-decoration: underline;
     text-align: center;
     display: block;
+}
+
+
+/* Page  Recupera tu clave -- 2 - Page Correo*/
+
+.box-icono-correo {
+    text-align: center;
+}
+
+.content-correo {
+    .box-top-correo {
+        border-bottom: 1px dashed #979797;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        .title-correo {
+            color:$blue-dark;
+            font-size: 16px;
+            line-height: 25px;
+            text-align: left;
+            span {
+                font-weight: bold;
+            }
+        }
+        p {
+            color: $black-light;
+            font-size: 15px;
+            line-height: 25px;
+            span {
+                color: $green;
+            }
+        }
+    }
+    .box-texto-correo {
+        border-bottom: 1px dashed #979797;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .title-correo {
+            color:$black-light;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 25px
+        }
+        p {
+            color: $gray-dark;
+            font-size: 14px;
+            line-height: 25px;
+            font-style: italic;
+        }
+    }
+}
+
+.lista-realizar {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    li {
+        list-style: none;
+        display: flex;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        i {
+            color:$gray-dark;
+            border: 2px solid $gray-dark;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            display: block;
+            margin-right: 46px;
+            text-align: center;
+        }
+        span {
+            color:$blue-dark;
+            font-size: 14px;
+            line-height: 22px;  
+        }
+        .box-circle {
+            width: 64px; 
+        }
+    }
+}
+
+.box-btn-correo {
+    margin-top: 30px;
 }
