@@ -3067,6 +3067,10 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+a {
+  color: #2274FF;
+}
+
 /* Mixins
   =============== */
 .contenedor {
@@ -3082,32 +3086,366 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+.main-title,
+.second-title,
+.third-title,
+.fourth-title,
+.fifth-title {
+  color: #003287;
+  font-weight: bold;
+}
+
+.main-title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.second-title {
+  font-size: 14px;
+  text-align: center;
+}
+
+/* NAV */
+.header-inner {
+  position: relative;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 100%;
+  height: 90px;
+  padding-top: 33px;
+}
+
+.header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 15px;
+}
+.header-left a {
+  margin-right: 15px;
+}
+
+/* Nav Menu */
+.nav-menu {
+  display: none;
+  width: 100%;
+  position: absolute;
+  background: #2274FF;
+  z-index: 100;
+  top: 0;
+  padding-top: 40px;
+  height: 100vh;
+}
+.nav-menu.active {
+  display: block;
+}
+.nav-menu.active .lista-nav > li > a {
+  color: white;
+}
+
+.arrow-top {
+  background-image: url(../images/arrow-top.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  width: 20px;
+  height: 12px;
+  display: block;
+}
+
+.lista-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+}
+.lista-nav > li {
+  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  position: relative;
+}
+.lista-nav > li:first-child a {
+  font-weight: normal;
+}
+.lista-nav > li:first-child .menu-columns {
+  padding-left: 5px;
+}
+.lista-nav > li > a {
+  color: #2274FF;
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 1.4rem;
+  padding-top: 0.5rem;
+  padding-left: 1.4rem;
+  padding-bottom: 0.5rem;
+}
+@media only screen and (min-width: 830px) {
+  .lista-nav > li > a {
+    color: #5F6268;
+    font-size: 14px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+.lista-nav > li > a:hover {
+  text-decoration: none;
+}
+.lista-nav .child-menu {
+  background-color: #2274FF;
+  display: none;
+  font-size: 14px;
+  color: #5F6268;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  color: white;
+  z-index: 20;
+  top: 40px;
+}
+.lista-nav .active-submenu .child-menu {
+  display: block;
+}
+
+.menu-columns {
+  color: gray;
+  list-style: none;
+  padding: 10px 10px 10px 30px;
+  font-size: 14px;
+}
+.menu-columns > .col {
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
+  margin-bottom: 15px;
+}
+
+.submenu-terciario {
+  list-style: none;
+}
+.submenu-terciario > li {
+  margin-bottom: 10px;
+}
+.submenu-terciario > li:last-child {
+  margin-bottom: 0;
+}
+.submenu-terciario > li > a {
+  color: white;
+  margin-bottom: 7px;
+  display: block;
+}
+.submenu-terciario > li span {
+  color: white;
+  font-weight: bold;
+}
+
+.submenu-cuarto {
+  list-style: none;
+}
+.submenu-cuarto > li {
+  margin-bottom: 9px;
+}
+.submenu-cuarto > li > a {
+  color: gray;
+}
+.submenu-cuarto.menu-links a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-decoration: underline;
+}
+
+/* Menu Nav Mobil */
+.down-submenu-mobile {
+  position: absolute;
+  right: 10px;
+  color: white;
+}
+
+.c-hamburger {
+  display: block;
+  position: absolute;
+  /* right: 0; */
+  right: 15px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 45px;
+  height: 45px;
+  font-size: 0;
+  text-indent: -9999px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  border: 0;
+  cursor: pointer;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
+  z-index: 101;
+}
+
+.c-hamburger:focus {
+  outline: 0;
+}
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 20.625px;
+  left: 8.4375px;
+  right: 8.4375px;
+  height: 3.6px;
+  background: #003287;
+}
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3.6px;
+  background-color: #003287;
+  content: "";
+}
+
+.c-hamburger span::before {
+  top: -9.375px;
+}
+
+.c-hamburger span::after {
+  bottom: -9.375px;
+}
+
+.c-hamburger--htx {
+  background-color: transparent;
+}
+
+.c-hamburger--htx:hover {
+  background-color: transparent;
+}
+
+.c-hamburger--htx span {
+  -webkit-transition: background 0 0.2s;
+  transition: background 0 0.2s;
+}
+
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.2s, 0.2s;
+          transition-duration: 0.2s, 0.2s;
+  -webkit-transition-delay: 0.2s, 0s;
+          transition-delay: 0.2s, 0s;
+}
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+  transition-property: top, -webkit-transform;
+  transition-property: top, transform;
+  transition-property: top, transform, -webkit-transform;
+}
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+  transition-property: bottom, -webkit-transform;
+  transition-property: bottom, transform;
+  transition-property: bottom, transform, -webkit-transform;
+}
+
+.c-hamburger--htx.is-active {
+  background-color: transparent;
+}
+
+.c-hamburger--htx.is-active:hover {
+  background-color: transparent;
+}
+
+.c-hamburger--htx.is-active span {
+  background: 0;
+}
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0, 0.2s;
+          transition-delay: 0, 0.2s;
+}
+
+.logo-movil {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 1px solid white;
+  padding-bottom: 30px;
+}
+
+.c-hamburger.is-active span::before,
+.c-hamburger.is-active span::after {
+  background-color: white;
+}
+
+.box-icon-home {
+  padding: 0 22px;
+}
+
 body {
-  background-image: url(../images/mlogin.png);
   background-position: top center;
   background-repeat: no-repeat;
 }
 
+/* .page-recupera-contrasena {
+    background-image: url(../images/m-recuperar-contraseña-1.jpg);
+} */
 .wrapper {
   max-width: 375px;
   margin: 0 auto;
   height: 800px;
+  border: 1px solid lightgray;
 }
 
-.logo-brand {
+.page-login .logo-brand {
   margin-top: 45px;
   text-align: center;
 }
-
-.section-login {
+.page-login .section-login {
   margin-top: 32px;
-}
-
-.main-title {
-  color: #003287;
-  font-size: 14px;
-  text-align: center;
-  font-weight: bold;
 }
 
 .content-page {
@@ -3209,4 +3547,50 @@ body {
 
 .link-registro {
   text-decoration: underline;
+}
+
+/* PAGE RECUPERA TU CLAVE 1*/
+.content-page-clave {
+  padding: 15px 0;
+}
+
+.formulario-login p {
+  margin-bottom: 24px;
+}
+
+.box-recapcha {
+  margin-top: 45px;
+}
+
+.texto-capcha {
+  text-align: center;
+  color: #5F6268;
+  margin-bottom: 14px;
+}
+
+.box-captcha {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 42px;
+}
+
+.box-btn {
+  padding: 0 20px;
+}
+
+.box-volver {
+  margin-top: 53px;
+}
+
+.link-bold {
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  display: block;
 }

@@ -53,6 +53,11 @@ $(function () {
 
     $(".down-submenu-mobile").on("click", function () {
         $(this).parent().toggleClass("active-submenu");
+        /* $(this).find('i').toggleClass('fa-chevron-up', 'fa-chevron-down'); */
+        /* 
+        $(this).find('i').removeClass('fa-chevron-down');
+        $(this).find('i').addClass('fa-chevron-up'); 
+        */
     });
 
    

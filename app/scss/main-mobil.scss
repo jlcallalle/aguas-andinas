@@ -7,35 +7,36 @@
 @import 'base/reset';
 @import 'base/mixins';
 @import 'base/fonts';
+@import 'base/text';
 
+// Sections
+@import 'sections/header';
 
 body {
-    background-image: url(../images/mlogin.png);
     background-position: top center;
     background-repeat: no-repeat;
 }
+/* .page-recupera-contrasena {
+    background-image: url(../images/m-recuperar-contraseña-1.jpg);
+} */
 
 .wrapper {
     max-width: 375px;
     margin: 0 auto;
     height: 800px;
+    border:1px solid lightgray;
 }
 
-.logo-brand {
-    margin-top: 45px;
-    text-align: center;
+.page-login  {
+    .logo-brand {
+        margin-top: 45px;
+        text-align: center;
+    }
+    .section-login {
+        margin-top: 32px;
+    }
 }
 
-.section-login {
-    margin-top: 32px;
-}
-
-.main-title {
-    color: $blue-dark;
-    font-size: 14px;
-    text-align: center;
-    font-weight: bold;
-}
 
 .content-page {
     padding: 10px 20px;
@@ -123,4 +124,42 @@ body {
 }
 .link-registro {
     text-decoration: underline;
+}
+
+/* PAGE RECUPERA TU CLAVE 1*/
+
+.content-page-clave {
+    padding: 15px 0;
+}
+
+.formulario-login p {
+    margin-bottom: 24px;
+}
+
+.box-recapcha {
+    margin-top: 45px;
+}
+
+.texto-capcha {
+    text-align: center;
+    color: #5F6268;
+    margin-bottom: 14px;
+}
+.box-captcha {
+    transform:scale(0.8);
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+.box-btn {
+    padding: 0 20px;
+}
+.box-volver {
+    margin-top: 53px;
+}
+.link-bold {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
 }
