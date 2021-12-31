@@ -3433,8 +3433,9 @@ body {
 .page-recupera-contrasena {
   /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
   /*  background-image: url(../images/m-menu-principal.jpg); */
-  /*  background-image: url(../images/m-recuperar-contraseña-2.jpg);
-   background-position: center 46px; */
+  /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
+  /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
+  /*  background-position: center 46px; */
 }
 
 .wrapper {
@@ -3478,6 +3479,23 @@ body {
   font-size: 16px;
   font-weight: bold;
   padding: 1rem;
+}
+.btn-verde:hover {
+  color: white;
+  background-color: #009669;
+}
+
+.btn-restablecer {
+  color: white;
+  background: #B7C0CE;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem;
+}
+.btn-restablecer:hover {
+  color: white;
+  background-color: #BFC1C5;
 }
 
 .link {
@@ -3604,44 +3622,37 @@ body {
   text-align: center;
 }
 
-.content-correo .box-top-correo {
+.box-top-correo {
   border-bottom: 1px dashed #979797;
   padding-top: 10px;
   padding-bottom: 15px;
 }
-.content-correo .box-top-correo .title-correo {
-  color: #003287;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: left;
-}
-.content-correo .box-top-correo .title-correo span {
-  font-weight: bold;
-}
-.content-correo .box-top-correo p {
+.box-top-correo p {
   color: #5F6268;
   font-size: 15px;
   line-height: 25px;
 }
-.content-correo .box-top-correo p span {
+.box-top-correo p span {
   color: #19CE74;
 }
-.content-correo .box-texto-correo {
+
+.box-texto-correo {
   border-bottom: 1px dashed #979797;
   padding-top: 10px;
   padding-bottom: 10px;
 }
-.content-correo .box-texto-correo .title-correo {
-  color: #5F6268;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 25px;
-}
-.content-correo .box-texto-correo p {
+.box-texto-correo p {
   color: #B7C0CE;
   font-size: 14px;
   line-height: 25px;
   font-style: italic;
+}
+
+.title-correo {
+  color: #5F6268;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 25px;
 }
 
 .lista-realizar {
@@ -3679,4 +3690,55 @@ body {
 
 .box-btn-correo {
   margin-top: 30px;
+}
+
+/* Page  Recupera tu clave -- 3*/
+.form-eye label {
+  color: #5F6268;
+  font-size: 16px;
+  line-height: 25px;
+}
+.form-eye .form-control {
+  border-right: 0;
+  font-size: 16px;
+  color: #5F6268;
+}
+.form-eye .form-control:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: rgba(0, 0, 0, 0.15);
+}
+.form-eye .input-group-addon {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-left: 0;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.form-eye .fa-eye {
+  color: #2274FF;
+}
+
+.box-top-restablecer {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+.box-top-restablecer p {
+  color: #5F6268;
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: bold;
+}
+.box-top-restablecer p span {
+  color: #19CE74;
 }

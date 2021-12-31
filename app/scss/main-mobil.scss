@@ -19,8 +19,9 @@ body {
 .page-recupera-contrasena {
    /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
    /*  background-image: url(../images/m-menu-principal.jpg); */
-   /*  background-image: url(../images/m-recuperar-contraseña-2.jpg);
-    background-position: center 46px; */
+   /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
+   /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
+   /*  background-position: center 46px; */
 }
 
 .wrapper {
@@ -67,7 +68,26 @@ body {
     font-size: 16px;
     font-weight: bold;
     padding: 1rem;
+    &:hover {
+        color:white;
+        background-color: $green-dark;
+    }
 }
+
+
+.btn-restablecer {
+    color:white;
+    background: $gray-dark;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color:white;
+        background-color:$gray;
+    }
+}
+
 
 .link {
     display: block;
@@ -174,46 +194,39 @@ body {
     text-align: center;
 }
 
-.content-correo {
-    .box-top-correo {
-        border-bottom: 1px dashed #979797;
-        padding-top: 10px;
-        padding-bottom: 15px;
-        .title-correo {
-            color:$blue-dark;
-            font-size: 16px;
-            line-height: 25px;
-            text-align: left;
-            span {
-                font-weight: bold;
-            }
-        }
-        p {
-            color: $black-light;
-            font-size: 15px;
-            line-height: 25px;
-            span {
-                color: $green;
-            }
+
+.box-top-correo {
+    border-bottom: 1px dashed #979797;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    p {
+        color: $black-light;
+        font-size: 15px;
+        line-height: 25px;
+        span {
+            color: $green;
         }
     }
-    .box-texto-correo {
-        border-bottom: 1px dashed #979797;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        .title-correo {
-            color:$black-light;
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 25px
-        }
-        p {
-            color: $gray-dark;
-            font-size: 14px;
-            line-height: 25px;
-            font-style: italic;
-        }
+}
+
+.box-texto-correo {
+    border-bottom: 1px dashed #979797;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    p {
+        color: $gray-dark;
+        font-size: 14px;
+        line-height: 25px;
+        font-style: italic;
     }
+}
+
+
+.title-correo {
+    color:$black-light;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px
 }
 
 .lista-realizar {
@@ -249,4 +262,52 @@ body {
 
 .box-btn-correo {
     margin-top: 30px;
+}
+
+/* Page  Recupera tu clave -- 3*/
+
+ .form-eye {
+    label {
+        color: $black-light;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .form-control {
+        border-right: 0;
+        font-size: 16px;
+        color: $black-light;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.15);
+        }
+    }
+    .input-group-addon {
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba(0,0,0,.15);
+        border-left: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-eye {
+        color:$blue;
+    }
+}
+
+
+.box-top-restablecer {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    p {
+        color: $black-light;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: bold;
+        span {
+            color: $green;
+        }
+    }
 }
