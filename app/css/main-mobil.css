@@ -3490,9 +3490,10 @@ body {
   /*  background-position: center 46px; */
 }
 
-/* .page-registro-usuario {
-    background-image: url(../images/m-registro-mobile.jpg);
-} */
+.page-registro-usuario {
+  /* background-image: url(../images/m-registro-mobile4.jpg); */
+}
+
 /* .wrapper {
     max-width: 375px;
     margin: 0 auto;
@@ -3512,7 +3513,6 @@ body {
 }
 
 .form-group {
-  /* margin-bottom: 1.8rem; */
   margin-bottom: 2rem;
 }
 
@@ -3927,4 +3927,70 @@ body {
 .row-texto-form p {
   color: #5F6268;
   font-size: 14px;
+}
+
+/* registro mobile 2*/
+.alert-message {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+  border: none;
+  border-radius: 8px;
+}
+.alert-message i {
+  margin-bottom: 16px;
+}
+
+.alert-success {
+  background-color: #d2ffe9;
+  color: #2274FF;
+  margin-top: 25px;
+  padding: 2.6rem 1.4rem 2rem 1.4rem;
+}
+
+.alert-danger {
+  background-color: #C94747;
+  color: white;
+  margin-top: 20px;
+  padding: 2rem 1.4rem 1rem 1.4rem;
+}
+
+.alert-heading {
+  font-weight: bold;
+  text-align: center;
+}
+
+.texto-mensaje p {
+  font-size: 14px;
+}
+
+/* registro mobile 3*/
+.box-preguntas {
+  margin: 60px auto 40px auto;
+}
+.box-preguntas .item-pregunta {
+  margin-bottom: 35px;
+}
+.box-preguntas .item-pregunta a {
+  color: #2274FF;
+  display: block;
+}
+.box-preguntas .item-pregunta p {
+  color: #5F6268;
+}
+.box-preguntas .item-pregunta p span {
+  color: #2274FF;
+}
+
+.title-pregunta {
+  color: #003287;
+  font-size: 16px;
 }

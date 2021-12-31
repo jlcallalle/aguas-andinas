@@ -26,9 +26,9 @@ body {
    /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
    /*  background-position: center 46px; */
 }
-/* .page-registro-usuario {
-    background-image: url(../images/m-registro-mobile.jpg);
-} */
+.page-registro-usuario {
+    /* background-image: url(../images/m-registro-mobile4.jpg); */
+}
 
 /* .wrapper {
     max-width: 375px;
@@ -52,7 +52,6 @@ body {
 }
 
 .form-group {
-    /* margin-bottom: 1.8rem; */
     margin-bottom: 2rem;
 }
 
@@ -446,3 +445,65 @@ body {
         font-size: 14px;
     }
 }
+
+/* registro mobile 2*/
+.alert-message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border:none;
+    border-radius: 8px;
+    i {
+       margin-bottom: 16px;
+    }
+}
+
+.alert-success {
+    background-color: #d2ffe9;
+    color:$blue;
+    margin-top: 25px;
+    padding: 2.6rem 1.4rem 2rem 1.4rem;
+}
+.alert-danger {
+    background-color: #C94747; 
+    color:white;
+    margin-top: 20px;
+    padding: 2rem 1.4rem 1rem 1.4rem;
+}
+
+.alert-heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto-mensaje {
+    p {
+        font-size: 14px;
+    }
+}
+
+/* registro mobile 3*/
+
+.box-preguntas {
+    margin: 60px auto 40px auto;
+    .item-pregunta {
+        margin-bottom: 35px;
+        a {
+            color:$blue;
+            display: block;
+        }
+        p {
+            color: $black-light;
+            span {
+                color:$blue;
+            }
+        }
+    }
+}
+
+.title-pregunta {
+    color:$blue-dark;
+    font-size: 16px;
+}
+
