@@ -3431,6 +3431,7 @@ body {
 }
 
 .page-recupera-contrasena {
+  /*  background-image: url(../images/m-recuperar-contraseña-5.jpg); */
   /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
   /*  background-image: url(../images/m-menu-principal.jpg); */
   /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
@@ -3741,4 +3742,26 @@ body {
 }
 .box-top-restablecer p span {
   color: #19CE74;
+}
+
+/* Page  Recupera tu clave -- 5*/
+.content-page-correo-exito {
+  padding: 105px 0;
+}
+
+.box-icono-check {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.texto-exitoso {
+  margin-top: 20px;
+  padding: 0 1rem;
+}
+.texto-exitoso p {
+  color: #003287;
+  font-size: 21px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: bold;
 }

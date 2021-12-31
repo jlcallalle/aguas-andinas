@@ -17,6 +17,7 @@ body {
     background-repeat: no-repeat;
 }
 .page-recupera-contrasena {
+   /*  background-image: url(../images/m-recuperar-contraseña-5.jpg); */
    /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
    /*  background-image: url(../images/m-menu-principal.jpg); */
    /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
@@ -309,5 +310,27 @@ body {
         span {
             color: $green;
         }
+    }
+}
+
+
+/* Page  Recupera tu clave -- 5*/
+.content-page-correo-exito {
+    padding: 105px 0;
+}
+.box-icono-check {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.texto-exitoso {
+    margin-top: 20px;
+    padding: 0 1rem;
+    p {
+        color: $blue-dark;
+        font-size: 21px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
     }
 }
