@@ -2,23 +2,18 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main-mobil.css">
-  <title>Recuperar contraseña 1</title>
-
-  <script type="text/javascript">
-    var onloadCallback = function() {
-      grecaptcha.render('html_captcha', {
-        'sitekey' : '6LdXPJIdAAAAAJfCr1ad3Xrh1GANl9vVes6RKmUJ'
-      });
-    };
-  </script>
+  <title>Crear cuenta 2</title>
 </head>
 
-<body class="page page-recupera-contrasena">
+<body class="page page-registro-usuario">
   <div class="wrapper">
     <div class="header">
       <div class="container-header">
@@ -164,34 +159,105 @@
         </div>
       </div>
     </div>
-    <main class="main">
+    <main class="main ">
+      <div class="breadcrumb-breadgrond">
+        <div class="container">
+          <div class="row">
+            <div class="col col-page">
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Web</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Registro de usuarios</li>
+                </ol>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
       <section class="section-login">
         <div class="container">
           <div class="row">
             <div class="col">
-              <h2 class="main-title">Olvide mi contraseña</h2>
-              <div class="content-page-clave">
-                  <form action="" class="formulario-login">
-                    <p>Completa los siguientes datos </p>
+              <h2 class="main-title">Registro de usuarios</h2>
+              <div class="content-page-form">
+
+                <div class="box-steps">
+                  <div class="step">
+                    <div class="step-item active">
+                        <a class="step-item-link" href="#!">
+                          <span>1</span>
+                          <!-- <span>Registro</span> -->
+                        </a>
+                        <p>Registro</p>
+                    </div>
+                    <div class="step-item ">
+                        <a class="step-item-link" href="#!">
+                          <span>2</span>
+                          <!-- <span>Agregar Cuentas</span> -->
+                        </a>
+                        <p>Agregar Cuentas</p>
+                    </div>
+                    <div class="step-item">
+                        <a class="step-item-link" href="#!">
+                          <!-- <span>Datos de Usuario</span> -->
+                          <span>3</span>
+                        </a>
+                        <p>Datos de Usuario</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="layout-redes">
+                  <h3 class="second-title">Registro con tus redes sociales</h3>
+                  <div class="box-redes-login">
+                    <a href="" class="btn btn-redes btn-facebook btn-lg">
+                      <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="" class="btn btn-redes btn-google btn-lg">
+                      <i class="fa fa-google"></i>
+                    </a>
+                    <a href="" class="btn btn-redes btn-twitter btn-lg">
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="layout-formulario">
+                  <form class="formulario-login">
+                    <h3 class="second-title">Registro con tus redes sociales</h3>
+                    <div class="form-group-all">
                       <div class="form-group">
-                        <input type="text" class="form-control form-control-lg" placeholder="RUT del titular">
+                        <input type="text" class="form-control form-control-lg"
+                          placeholder="Nombre de usuario">
                       </div>
-                      <div class="box-recapcha">
-                        <div class="texto-capcha">
-                          Validación captcha
-                        </div>
-                        <div class="box-captcha">
-                          <div id="html_captcha"></div>
-                        </div>
+                      <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" placeholder="Contraseña">
                       </div>
-                      <div class="box-btn">
-                        <!-- <button type="submit" class="btn btn-block btn-lg btn-verde">Reestablecer mi contraseña</button> -->
-                        <a href="http://localhost:8848/app/recuperar-contrasena-2.html" class="btn btn-block btn-lg btn-verde">Reestablecer mi contraseña</a>
+                      <div class="form-group">
+                        <input type="password" class="form-control form-control-lg" placeholder="Repetir Contraseña">
                       </div>
-                      <div class="box-volver">
-                        <a href="login.html" class="link-bold">Volver</a>
+                      <div class="form-group">
+                        <input type="email" class="form-control form-control-lg" placeholder="Correo electrónico">
                       </div>
+
+                      <h3 class="second-title">¿Que tipo de usuario eres?</h3>
+                      <div class="dual-btn">
+                        <a href="recupera-contrasena.html" class="btn btn-block btn-lg btn-azul">Persona Natural</a>
+                        <a href="" class="btn btn-block btn-lg btn-blanco">Institución/Empresa</a>
+                      </div>
+                      <div class="box-button mt-5">
+                        <button type="submit" class="btn btn-block btn-block btn-lg btn-verde">Registrame</button>
+                      </div>
+                    </div>
                   </form>
+                </div>
+                <div class="row-texto-form">
+                  <p>Al crear una cuenta, aceptas las Condiciones de Uso y el Aviso de Privacidad de aguasandinas.cl</p>
+                </div>
+                <div class="box-cuenta">
+                  <p>¿Ya tienes una cuenta? <a href="">Iniciar sesión</a></p>
+                </div>
+
               </div>
             </div>
           </div>
@@ -199,7 +265,9 @@
       </section>
     </main>
   </div>
+  </div>
 
+  <!--  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -210,9 +278,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
-  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
-        async defer>
-    </script>
 </body>
 
 </html>

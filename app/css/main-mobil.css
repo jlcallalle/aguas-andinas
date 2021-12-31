@@ -3102,7 +3102,7 @@ a {
 
 .second-title {
   font-size: 14px;
-  text-align: center;
+  /* text-align: center; */
 }
 
 .title-nombre {
@@ -3113,6 +3113,58 @@ a {
 }
 .title-nombre span {
   font-weight: bold;
+}
+
+/* Components */
+.btn-verde {
+  color: white;
+  background-color: #19CE74;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem;
+}
+.btn-verde:hover {
+  color: white;
+  background-color: #009669;
+}
+
+.btn-restablecer {
+  color: white;
+  background: #B7C0CE;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem;
+}
+.btn-restablecer:hover {
+  color: white;
+  background-color: #BFC1C5;
+}
+
+.btn-blanco {
+  border: 1px solid #2274FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #2274FF;
+  font-weight: bold;
+  padding: 1rem;
+}
+.btn-blanco:hover {
+  color: #2274FF;
+}
+
+.btn-azul {
+  background-color: #2274FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding: 1rem;
 }
 
 /* NAV */
@@ -3431,7 +3483,6 @@ body {
 }
 
 .page-recupera-contrasena {
-  /*  background-image: url(../images/m-recuperar-contraseña-5.jpg); */
   /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
   /*  background-image: url(../images/m-menu-principal.jpg); */
   /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
@@ -3439,13 +3490,15 @@ body {
   /*  background-position: center 46px; */
 }
 
-.wrapper {
-  max-width: 375px;
-  margin: 0 auto;
-  height: 800px;
-  border: 1px solid lightgray;
-}
-
+/* .page-registro-usuario {
+    background-image: url(../images/m-registro-mobile.jpg);
+} */
+/* .wrapper {
+    max-width: 375px;
+    margin: 0 auto;
+    height: 800px;
+    border:1px solid lightgray;
+} */
 .page-login .logo-brand {
   margin-top: 45px;
   text-align: center;
@@ -3473,32 +3526,6 @@ body {
   color: #5F6268;
 }
 
-.btn-verde {
-  color: white;
-  background-color: #19CE74;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 1rem;
-}
-.btn-verde:hover {
-  color: white;
-  background-color: #009669;
-}
-
-.btn-restablecer {
-  color: white;
-  background: #B7C0CE;
-  border-radius: 8px;
-  font-size: 16px;
-  font-weight: bold;
-  padding: 1rem;
-}
-.btn-restablecer:hover {
-  color: white;
-  background-color: #BFC1C5;
-}
-
 .link {
   display: block;
   text-align: center;
@@ -3515,11 +3542,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 24px;
-  padding: 0 20px;
+  margin-top: 19px;
+}
+.box-redes-login a {
+  margin-right: 35px;
 }
 
 .btn-redes {
@@ -3764,4 +3790,141 @@ body {
   line-height: 30px;
   text-align: center;
   font-weight: bold;
+}
+
+.breadcrumb {
+  background-color: transparent;
+  padding: 0.2rem 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.breadcrumb li {
+  color: #2274FF;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 600;
+}
+.breadcrumb li.active {
+  color: #2274FF;
+}
+.breadcrumb li.active:before {
+  color: #2274FF;
+}
+
+.step {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.step .step-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 0px;
+          flex: 1 1 0;
+  /*  flex-grow: 1; */
+  position: relative;
+  text-align: center;
+}
+.step .step-item:not(:first-child)::before {
+  background-color: #D9D9D6;
+  content: "";
+  height: 0.125rem;
+  left: -50%;
+  position: absolute;
+  top: 0.7375rem;
+  width: 100%;
+  z-index: 0;
+}
+.step .step-item:nth-child(2)::before {
+  width: 65%;
+  left: -32%;
+}
+.step .step-item:nth-child(3)::before {
+  width: 65%;
+  left: -32%;
+}
+.step .step-item.active a::before {
+  background: #fff;
+  border: 3px solid #2274FF;
+}
+.step .step-item.active a span {
+  color: #2274FF;
+}
+.step .step-item.active p {
+  color: #2274FF;
+}
+.step .step-item p {
+  color: #5F6268;
+  font-size: 14px;
+  margin-top: 12px;
+}
+.step .step-item .step-item-link {
+  color: #69707a;
+  position: relative;
+  display: inline-block;
+  padding-top: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  text-decoration: none;
+  z-index: 1;
+}
+.step .step-item .step-item-link span {
+  color: white;
+  position: absolute;
+  top: 4px;
+  z-index: 11;
+  left: 11px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: bold;
+}
+.step .step-item .step-item-link:before {
+  background-color: #BFC1C5;
+  border: 0.125rem solid #fff;
+  border-radius: 100%;
+  content: "";
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 1;
+}
+
+.dual-btn {
+  margin-top: 25px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.dual-btn a {
+  margin-bottom: 20px;
+}
+
+.content-page-form {
+  padding: 17px 20px;
+}
+
+.layout-formulario {
+  margin-top: 26px;
+}
+
+.form-group-all {
+  margin-top: 26px;
+}
+
+.row-texto-form {
+  margin-top: 60px;
+}
+.row-texto-form p {
+  color: #5F6268;
+  font-size: 14px;
 }

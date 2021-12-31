@@ -1,0 +1,51 @@
+
+.btn-verde {
+    color:white;
+    background-color: $green;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color:white;
+        background-color: $green-dark;
+    }
+}
+
+
+.btn-restablecer {
+    color:white;
+    background: $gray-dark;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color:white;
+        background-color:$gray;
+    }
+}
+
+
+.btn-blanco {
+    border: 1px solid #2274FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $blue;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color: $blue;
+    }
+}
+
+.btn-azul {
+    background-color: $blue;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+}
