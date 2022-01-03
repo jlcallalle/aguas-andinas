@@ -3247,6 +3247,27 @@ a {
   height: 60px;
 }
 
+/* form val*/
+.form-group {
+  position: relative;
+}
+
+.valid-feedback.feedback-icon,
+.invalid-feedback.feedback-icon {
+  position: absolute;
+  width: auto;
+  bottom: 10px;
+  right: 10px;
+  margin-top: 0;
+  bottom: 18px;
+  right: 26px;
+}
+
+.form-control.is-valid {
+  border-color: #19CE74;
+  color: #19CE74;
+}
+
 /* NAV */
 .header-inner {
   position: relative;
@@ -3576,12 +3597,12 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
 } */
-/* .wrapper {
-    max-width: 375px;
-    margin: 0 auto;
-    height: 800px;
-    border:1px solid lightgray;
-} */
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+}
+
 .page-login .logo-brand {
   margin-top: 45px;
   text-align: center;

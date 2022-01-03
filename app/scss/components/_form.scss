@@ -1,0 +1,22 @@
+
+/* form val*/
+.form-group {
+    position: relative;
+}
+.valid-feedback.feedback-icon,
+.invalid-feedback.feedback-icon {
+    position: absolute;
+    width: auto;
+    bottom: 10px;
+    right: 10px;
+    margin-top: 0;
+
+    bottom: 18px;
+    right: 26px;
+}
+
+
+.form-control.is-valid {
+    border-color: #19CE74;
+    color: #19CE74;
+}
