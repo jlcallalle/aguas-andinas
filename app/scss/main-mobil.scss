@@ -29,11 +29,11 @@ body {
    /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
    /*  background-position: center 46px; */
 }
-/* .page-registro-usuario {
-    background-image: url(../images/m-registro-formulario.jpg);
+.page-registro-usuario {
+   /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
     background-repeat: no-repeat;
     background-position: top center;
-} */
+}
 
 .wrapper {
     max-width: 375px;
@@ -538,4 +538,80 @@ body {
 
 .px-20 {
     padding: 0 20px;
+}
+
+.list-input {
+    margin-left: 15px;
+    margin-top: 7px;
+    margin: 7px 0 0 15px;
+    li {
+        color: $gray-dark;
+        font-size: 12px;
+    }
+}
+
+
+.input-group-busqueda{
+    padding: 0 30px;
+    margin-top: 10px;
+    .input-group-text {
+        background-color: transparent;
+        border: none;
+        border-color: white;
+    }
+     .input-busqueda {
+        border: none;
+        border-radius: 0;
+        color: $blue;
+        &::placeholder {
+            color: $blue;
+        }
+    }
+    .fa-search {
+        color: $blue;
+    }
+    .input-group-prepend {
+        background-color: white;
+    }
+}
+
+.box-check {
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 6px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box-check label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    i {
+        font-size: 12px;
+        color: #5F6268;
+        font-style: normal;
+    }
+}
+
+.row-tabla {
+    background-color: #E7F0FF;
+}
+.lista-tabla {
+    list-style: none;
+    padding: 26px 20px 10px 20px;
+    li {
+        color:$black-light;
+        font-size: 14px;
+        margin-bottom: 19px;
+    }
+}
+
+
+
+.box-persona-recapcha {
+    margin: 32px auto 42px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
 }
