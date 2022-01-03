@@ -6953,16 +6953,15 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   font-size: 20px;
 }
 
-/* .page {
-   background-image: url(../images/login-portal-cliente.jpg);
-    background-position: 0 center;
-    background-position: center 72px;
-    background-repeat: no-repeat;
-    .main, .content-page-tab {
-        background-color: transparent;
-    }
+.page {
+  background-image: url(../images/m-registro-formulario.jpg);
+  background-position: 0 center;
+  background-repeat: no-repeat;
 }
- */
+.page .main, .page .content-page-tab {
+  background-color: transparent;
+}
+
 /*  
 .header-top {
     padding: 0;

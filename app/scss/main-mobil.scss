@@ -8,6 +8,7 @@
 @import 'base/mixins';
 @import 'base/fonts';
 @import 'base/text';
+@import 'base/switch';
 
 /* Components */
 @import 'components/buttons'; 
@@ -20,15 +21,18 @@ body {
     background-repeat: no-repeat;
 }
 .page-recupera-contrasena {
+   /*  background-image: url(../images/m-registro-formulario.jpg); */
    /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
    /*  background-image: url(../images/m-menu-principal.jpg); */
    /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
    /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
    /*  background-position: center 46px; */
 }
-.page-registro-usuario {
-    /* background-image: url(../images/m-registro-mobile4.jpg); */
-}
+/* .page-registro-usuario {
+    background-image: url(../images/m-registro-formulario.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+} */
 
 /* .wrapper {
     max-width: 375px;
@@ -73,6 +77,10 @@ body {
 
 .box-redes {
     margin-top: 40px;
+}
+
+.layout-redes {
+    margin-bottom: 26px;
 }
 
 .box-redes-login  {
@@ -427,11 +435,13 @@ body {
 }
 
 .content-page-form {
+   /*  padding: 17px 20px; */
     padding: 17px 20px;
 }
 
 .layout-formulario {
-    margin-top: 26px;
+    //margin-top: 26px;
+    padding-bottom: 40px;
 }
 
 .form-group-all {
@@ -507,3 +517,21 @@ body {
     font-size: 16px;
 }
 
+.text-form {
+    color:$black-light;
+    font-size: 12px;
+}
+
+.lista-switch {
+    margin-top: 32px;
+    .item-switch {
+        margin-bottom: 18px;
+    }
+}
+
+.formulario-registro {
+    p {
+        color:$black-light;
+        font-size: 12px;
+    }
+}

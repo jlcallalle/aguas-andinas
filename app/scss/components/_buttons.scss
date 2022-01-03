@@ -49,3 +49,9 @@
     font-weight: bold;
     padding: 1rem;
 }
+
+    .form-group {
+        select.form-control-lg.form-control {
+            height: 60px;
+        }
+    }
