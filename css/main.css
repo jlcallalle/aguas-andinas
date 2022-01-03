@@ -6918,7 +6918,7 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   background-color: white;
 }
 
-.item-dato {
+.item-footer-dato {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6931,23 +6931,23 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
           justify-content: center;
 }
 @media only screen and (min-width: 830px) {
-  .item-dato {
+  .item-footer-dato {
     height: 158px;
   }
 }
-.item-dato i {
+.item-footer-dato i {
   margin-right: 15px;
 }
-.item-dato span {
+.item-footer-dato span {
   color: #003DA5;
   font-size: 16px;
 }
 @media only screen and (min-width: 830px) {
-  .item-dato span {
+  .item-footer-dato span {
     font-size: 20px;
   }
 }
-.item-dato span a {
+.item-footer-dato span a {
   display: block;
   color: #003DA5;
   font-size: 20px;
