@@ -19,7 +19,7 @@ $(function () {
     });
 
     // Mostrar panel estado operacional
-    $('.event-clima').on('click', function(e) {
+    $('.box-state').on('click', function(e) {
         e.preventDefault();
         $('.box-estado-clima').toggleClass('active');
     });

@@ -156,3 +156,82 @@ body {
     background-repeat: no-repeat;
     height: 780px;
 }
+
+// notificaciones 
+
+.box-estado-clima {
+    display: none;
+    width: 98%;
+    position: absolute;
+    // height: 490px;
+    z-index: 12;
+    left: 1%;
+    top: 80px;
+    padding: 10px 0 0  0;
+    background: #FFFFFF;
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    &.active {
+        display: block;
+    }
+    .title-estado {
+        color: $blue-dark;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        padding: 0 23px;
+    }
+}
+
+.row-estado {
+    // padding: 8px 23px 8px 23px;
+    padding: 8px 36px 8px 23px;
+    display: flex;
+    &:hover {
+        // cursor: pointer;
+        background: #E7F0FF;
+        border-radius: 5px;
+    }
+    i {
+        margin-right: 19px;
+    }
+    .texto-estado {
+        .subtitle-estado {
+            color: $black-light;
+            font-weight: bold;
+            font-size: 14px;
+            line-height: 23px;
+        }
+        p {
+            color: $black-light;
+            font-size: 14px;
+            line-height: 16px;
+            margin-bottom: 13px;
+        }
+    }
+
+}
+
+.estado-porcentaje {
+    display: flex;
+    width: 75px;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    i {
+        color:$black-light;
+        font-size: 14px;
+        font-weight: bold;
+    }
+}
+
+.row-botones {
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 25px;
+    border-top: 1px solid #BDBDBD;
+    display: flex;
+}
