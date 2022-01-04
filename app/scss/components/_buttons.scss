@@ -78,3 +78,27 @@
     background-color: #71CCFF;
     border: 1px solid #71CCFF;
 }
+
+.btn-home {
+    color:white;
+    background-color: $green;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    &:hover {
+        color:white;
+        background-color: $green-dark;
+    }
+    i {
+        margin-right: 10px;
+    }
+    span {
+        margin-right: 10px;
+    }
+}

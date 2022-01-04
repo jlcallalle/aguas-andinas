@@ -14,11 +14,12 @@
 
 .header-nav {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     width: 100%;
     height: 90px;
     padding-top: 33px;
+    justify-content:space-between;
 }
 
 .header-left {
@@ -270,3 +271,31 @@
     background-color: white;
   }
 
+
+
+.header-right {
+  display: flex;
+  padding-right: 86px;
+  padding-top: 8px;
+}
+
+.box-notification {
+  margin-right: 31px;
+  position: relative;
+}
+
+.circle-count {
+  width: 16px;
+  height: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 8px;
+  background-color: #EC7B82;
+  border-radius: 100%;
+  top: -2px;
+  left: -5px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

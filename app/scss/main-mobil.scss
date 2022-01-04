@@ -22,19 +22,11 @@
 @import 'pages/recupera-contrasena';
 @import 'pages/registro-mobile';
 @import 'pages/registro-mobile-natural';
-
-body {
-    background-position: top center;
-    background-repeat: no-repeat;
-    .page-registro-usuario {
-        /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
-     }
-}
+@import 'pages/home';
 
 .wrapper {
     max-width: 375px;
     margin: 0 auto;
     border:1px solid lightgray;
 }
-
 

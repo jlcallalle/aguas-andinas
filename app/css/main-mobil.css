@@ -3084,6 +3084,13 @@ a {
   text-align: center;
 }
 
+.link-home {
+  display: block;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
 .link-registro {
   text-decoration: underline;
 }
@@ -3297,6 +3304,36 @@ a {
   border: 1px solid #71CCFF;
 }
 
+.btn-home {
+  color: white;
+  background-color: #19CE74;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 1rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.btn-home:hover {
+  color: white;
+  background-color: #009669;
+}
+.btn-home i {
+  margin-right: 10px;
+}
+.btn-home span {
+  margin-right: 10px;
+}
+
 .form-group {
   margin-bottom: 2rem;
 }
@@ -3379,16 +3416,16 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  /* flex-direction: column; */
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
   width: 100%;
   height: 90px;
   padding-top: 33px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-left {
@@ -3678,6 +3715,41 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 .c-hamburger.is-active span::before,
 .c-hamburger.is-active span::after {
   background-color: white;
+}
+
+.header-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 86px;
+  padding-top: 8px;
+}
+
+.box-notification {
+  margin-right: 31px;
+  position: relative;
+}
+
+.circle-count {
+  width: 16px;
+  height: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 8px;
+  background-color: #EC7B82;
+  border-radius: 100%;
+  top: -2px;
+  left: -5px;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .content-page {
@@ -4276,8 +4348,184 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
-body .page-registro-usuario {
-  /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
+body.home {
+  background-image: url(../images/home-app.jpg);
+  background-position: 0 -12px;
+}
+
+.precio-deuda {
+  color: #2274FF;
+  font-size: 51px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  margin-bottom: 15px;
+}
+
+.texto-deuda {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 3px;
+}
+
+.dias-boleta {
+  color: #003287;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.dias-boleta span {
+  background-color: #FFA300;
+  width: 23px;
+  height: 23px;
+  border-radius: 5px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  font-weight: bold;
+  color: white;
+}
+
+.row-btn {
+  padding: 0 20px;
+  margin-bottom: 10px;
+}
+
+.box-element-wrap {
+  margin-top: 41px;
+  border: 1px solid #DCE2EC;
+  border-radius: 5px;
+  padding: 16px 13px;
+}
+
+.item-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.item-element .box-mapa {
+  margin-right: 10px;
+  position: relative;
+}
+
+.text-mapa {
+  padding-top: 11px;
+}
+.text-mapa h5 {
+  font-size: 14px;
+  color: #003287;
+  font-weight: bold;
+}
+.text-mapa p {
+  font-size: 14px;
+  color: #5F6268;
+  line-height: 22px;
+  margin-bottom: 0;
+}
+
+.flag-new {
+  background-color: #D2FFE9;
+  position: absolute;
+  width: 108px;
+  height: 31px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #19CE74;
+  top: -27px;
+  left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.flag-disponible {
+  background-color: #8FB9FF;
+  position: absolute;
+  width: 108px;
+  height: 31px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #2274FF;
+  top: -27px;
+  left: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  border-radius: 5px;
+}
+
+.box-boleta {
+  margin-right: 25px;
+  position: relative;
+  padding-top: 24px;
+  padding-left: 39px;
+}
+
+.text-boleta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.text-boleta a {
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.text-boleta a i {
+  margin-left: 30px;
+}
+
+.box-consumo-total {
+  background-color: #8FB9FF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 5px;
+  padding: 3px 15px;
+}
+.box-consumo-total .detalle-consumo {
+  color: #2274FF;
+  font-size: 12px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.box-consumo-total .cantidad-consumo {
+  color: #003287;
+  font-size: 36px;
 }
 
 .wrapper {
