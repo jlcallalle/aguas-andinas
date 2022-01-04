@@ -3071,10 +3071,23 @@ a {
   color: #2274FF;
 }
 
+.px-20 {
+  padding: 0 20px;
+}
+
+.link {
+  display: block;
+  text-align: center;
+}
+
+.link-registro {
+  text-decoration: underline;
+}
+
 /* Mixins
   =============== */
 .contenedor {
-  max-width: 1180px;
+  max-width: 375px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -3102,7 +3115,6 @@ a {
 
 .second-title {
   font-size: 14px;
-  /* text-align: center; */
 }
 
 .title-nombre {
@@ -3243,11 +3255,62 @@ a {
   padding: 1rem;
 }
 
+.btn-redes {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  padding: 0.5rem;
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+.btn-redes i {
+  font-size: 20px;
+}
+
+.btn-facebook {
+  background-color: #2F80ED;
+  border: 1px solid #2274FF;
+}
+
+.btn-google {
+  background-color: #DD5D5D;
+  border: 1px solid #DD5D5D;
+}
+
+.btn-twitter {
+  background-color: #71CCFF;
+  border: 1px solid #71CCFF;
+}
+
+.form-group {
+  margin-bottom: 2rem;
+}
+
+.form-control {
+  padding: 0.8rem 1rem;
+  line-height: 1.5;
+  border-radius: 8px;
+  height: 60px;
+  border-color: #B7C0CE;
+  font-size: 16px;
+  color: #5F6268;
+}
+
 .form-group select.form-control-lg.form-control {
   height: 60px;
 }
 
-/* form val*/
 .form-group {
   position: relative;
 }
@@ -3296,38 +3359,14 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   display: block;
 }
 
-.box-check {
-  background-color: #F9F9F9;
-  padding: 10px 20px 10px 6px;
-  border-radius: 8px;
-  margin-bottom: 20px;
+.page-login .logo-brand {
+  margin-top: 45px;
+  text-align: center;
+}
+.page-login .section-login {
+  margin-top: 32px;
 }
 
-.box-check label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0;
-}
-.box-check label i {
-  font-size: 12px;
-  color: #5F6268;
-  font-style: normal;
-}
-
-.box-boleta-recapcha {
-  max-width: 350px;
-  margin: 30px auto;
-}
-
-.row-check {
-  margin-top: 20px;
-}
-
-/* NAV */
 .header-inner {
   position: relative;
 }
@@ -3642,19 +3681,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.page-recupera-contrasena {
-  /*  background-image: url(../images/m-registro-formulario.jpg); */
-  /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
-  /*  background-image: url(../images/m-menu-principal.jpg); */
-  /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
-  /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
-  /*  background-position: center 46px; */
-}
-
 .page-registro-usuario {
   /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
-  background-repeat: no-repeat;
-  background-position: top center;
 }
 
 .wrapper {
@@ -3663,35 +3691,8 @@ body {
   border: 1px solid lightgray;
 }
 
-.page-login .logo-brand {
-  margin-top: 45px;
-  text-align: center;
-}
-.page-login .section-login {
-  margin-top: 32px;
-}
-
 .content-page {
   padding: 10px 20px;
-}
-
-.form-group {
-  margin-bottom: 2rem;
-}
-
-.form-control {
-  padding: 0.8rem 1rem;
-  line-height: 1.5;
-  border-radius: 8px;
-  height: 60px;
-  border-color: #B7C0CE;
-  font-size: 16px;
-  color: #5F6268;
-}
-
-.link {
-  display: block;
-  text-align: center;
 }
 
 .box-redes {
@@ -3715,54 +3716,12 @@ body {
   margin-right: 35px;
 }
 
-.btn-redes {
-  color: white;
-  font-size: 16px;
-  font-weight: bold;
-  border-radius: 8px;
-  padding: 0.5rem;
-  width: 50px;
-  height: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1rem;
-}
-.btn-redes i {
-  font-size: 20px;
-}
-
-.btn-facebook {
-  background-color: #2F80ED;
-  border: 1px solid #2274FF;
-}
-
-.btn-google {
-  background-color: #DD5D5D;
-  border: 1px solid #DD5D5D;
-}
-
-.btn-twitter {
-  background-color: #71CCFF;
-  border: 1px solid #71CCFF;
-}
-
 .box-cuenta {
   margin-top: 22px;
 }
 .box-cuenta p {
   color: #5F6268;
   text-align: center;
-}
-
-.link-registro {
-  text-decoration: underline;
 }
 
 /* Page  Recupera tu clave -- 1*/
@@ -3784,7 +3743,7 @@ body {
   margin-bottom: 14px;
 }
 
-.box-captcha {
+.iframe-captcha {
   -webkit-transform: scale(0.8);
           transform: scale(0.8);
   display: -webkit-box;
@@ -3812,6 +3771,10 @@ body {
 }
 
 /* Page  Recupera tu clave -- 2 - Page Correo*/
+.content-page-clave-correo {
+  padding: 0 0 15px 0;
+}
+
 .box-icono-correo {
   text-align: center;
 }
@@ -4077,7 +4040,6 @@ body {
 }
 
 .content-page-form {
-  /*  padding: 17px 20px; */
   padding: 17px 20px;
 }
 
@@ -4180,10 +4142,6 @@ body {
   font-size: 12px;
 }
 
-.px-20 {
-  padding: 0 20px;
-}
-
 .list-input {
   margin-left: 15px;
   margin-top: 7px;
@@ -4281,4 +4239,30 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+.box-check {
+  background-color: #F9F9F9;
+  padding: 10px 20px 10px 6px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.box-check label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.box-check label i {
+  font-size: 12px;
+  color: #5F6268;
+  font-style: normal;
+}
+
+.row-check {
+  margin-top: 20px;
 }

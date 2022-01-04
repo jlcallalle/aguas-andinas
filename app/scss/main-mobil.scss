@@ -21,18 +21,8 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
 }
-.page-recupera-contrasena {
-   /*  background-image: url(../images/m-registro-formulario.jpg); */
-   /*  background-image: url(../images/m-recuperar-contraseña-1.jpg); */
-   /*  background-image: url(../images/m-menu-principal.jpg); */
-   /*  background-image: url(../images/m-recuperar-contraseña-2.jpg); */
-   /*  background-image: url(../images/m-recuperar-contraseña-3.jpg); */
-   /*  background-position: center 46px; */
-}
 .page-registro-usuario {
    /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
-    background-repeat: no-repeat;
-    background-position: top center;
 }
 
 .wrapper {
@@ -41,38 +31,8 @@ body {
     border:1px solid lightgray;
 }
 
-.page-login  {
-    .logo-brand {
-        margin-top: 45px;
-        text-align: center;
-    }
-    .section-login {
-        margin-top: 32px;
-    }
-}
-
 .content-page {
     padding: 10px 20px;
-}
-
-.form-group {
-    margin-bottom: 2rem;
-}
-
-.form-control {
-    padding: 0.8rem 1rem;
-    line-height: 1.5;
-    border-radius: 8px;
-    height: 60px;
-    border-color: $gray-dark;
-    font-size: 16px;
-    color: $black-light;
-}
-
-
-.link {
-    display: block;
-    text-align: center;
 }
 
 .box-redes {
@@ -92,37 +52,6 @@ body {
     }
 }
 
-.btn-redes {
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 0.5rem;
-    width: 50px;
-    height: 50px;;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-    i {
-        font-size: 20px;
-    }
-}
-
-
-.btn-facebook {
-    background-color: #2F80ED;
-    border: 1px solid #2274FF;
-}
-
-.btn-google {
-    background-color: #DD5D5D;
-    border: 1px solid #DD5D5D;
-}
-.btn-twitter{
-    background-color: #71CCFF;
-    border: 1px solid #71CCFF;
-}
 
 .box-cuenta {
     margin-top: 22px;
@@ -131,9 +60,7 @@ body {
         text-align: center;
     }
 }
-.link-registro {
-    text-decoration: underline;
-}
+
 
 /* Page  Recupera tu clave -- 1*/
 
@@ -141,8 +68,10 @@ body {
     padding: 15px 0;
 }
 
-.formulario-login p {
-    margin-bottom: 24px;
+.formulario-login {
+    p {
+        margin-bottom: 24px;
+    }
 }
 
 .box-recapcha {
@@ -154,18 +83,22 @@ body {
     color: #5F6268;
     margin-bottom: 14px;
 }
-.box-captcha {
+
+.iframe-captcha {
     transform:scale(0.8);
     display: flex;
     justify-content: center;
     margin-bottom: 42px;
 }
+
 .box-btn {
     padding: 0 20px;
 }
+
 .box-volver {
     margin-top: 53px;
 }
+
 .link-bold {
     font-weight: bold;
     text-decoration: underline;
@@ -173,13 +106,15 @@ body {
     display: block;
 }
 
-
 /* Page  Recupera tu clave -- 2 - Page Correo*/
+
+.content-page-clave-correo {
+    padding: 0 0 15px 0;
+}
 
 .box-icono-correo {
     text-align: center;
 }
-
 
 .box-top-correo {
     border-bottom: 1px dashed #979797;
@@ -206,7 +141,6 @@ body {
         font-style: italic;
     }
 }
-
 
 .title-correo {
     color:$black-light;
@@ -252,7 +186,7 @@ body {
 
 /* Page  Recupera tu clave -- 3*/
 
- .form-eye {
+.form-eye {
     label {
         color: $black-light;
         font-size: 16px;
@@ -283,7 +217,6 @@ body {
     }
 }
 
-
 .box-top-restablecer {
     padding-top: 10px;
     padding-bottom: 15px;
@@ -297,7 +230,6 @@ body {
         }
     }
 }
-
 
 /* Page  Recupera tu clave -- 5*/
 .content-page-correo-exito {
@@ -319,7 +251,6 @@ body {
         font-weight: bold;
     }
 }
-
 
 .breadcrumb {
     background-color: transparent;
@@ -425,7 +356,6 @@ body {
       }
  }
 
- 
 .dual-btn {
     margin-top: 25px;
     flex-direction: column;
@@ -435,12 +365,10 @@ body {
 }
 
 .content-page-form {
-   /*  padding: 17px 20px; */
     padding: 17px 20px;
 }
 
 .layout-formulario {
-    //margin-top: 26px;
     padding-bottom: 40px;
 }
 
@@ -494,7 +422,6 @@ body {
 }
 
 /* registro mobile 3*/
-
 .box-preguntas {
     margin: 60px auto 40px auto;
     .item-pregunta {
@@ -536,9 +463,7 @@ body {
     }
 }
 
-.px-20 {
-    padding: 0 20px;
-}
+// page mobil natural
 
 .list-input {
     margin-left: 15px;
@@ -549,7 +474,6 @@ body {
         font-size: 12px;
     }
 }
-
 
 .input-group-busqueda{
     padding: 0 30px;
@@ -596,6 +520,7 @@ body {
 .row-tabla {
     background-color: #E7F0FF;
 }
+
 .lista-tabla {
     list-style: none;
     padding: 26px 20px 10px 20px;
@@ -607,11 +532,32 @@ body {
 }
 
 
-
 .box-persona-recapcha {
     margin: 32px auto 42px auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
+}
+
+.box-check {
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 6px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box-check label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    i {
+        font-size: 12px;
+        color: #5F6268;
+        font-style: normal;
+    }
+}
+
+.row-check {
+    margin-top: 20px;;
 }

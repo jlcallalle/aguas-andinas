@@ -12,7 +12,6 @@
     }
 }
 
-
 .btn-restablecer {
     color:white;
     background: $gray-dark;
@@ -25,7 +24,6 @@
         background-color:$gray;
     }
 }
-
 
 .btn-blanco {
     border: 1px solid #2274FF;
@@ -50,8 +48,33 @@
     padding: 1rem;
 }
 
-    .form-group {
-        select.form-control-lg.form-control {
-            height: 60px;
-        }
+.btn-redes {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 0.5rem;
+    width: 50px;
+    height: 50px;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    i {
+        font-size: 20px;
     }
+}
+
+.btn-facebook {
+    background-color: #2F80ED;
+    border: 1px solid #2274FF;
+}
+
+.btn-google {
+    background-color: #DD5D5D;
+    border: 1px solid #DD5D5D;
+}
+.btn-twitter{
+    background-color: #71CCFF;
+    border: 1px solid #71CCFF;
+}

@@ -1,4 +1,13 @@
-/* NAV */
+.page-login  {
+  .logo-brand {
+      margin-top: 45px;
+      text-align: center;
+  }
+  .section-login {
+      margin-top: 32px;
+  }
+}
+
 .header-inner {
     position: relative;
 }
@@ -48,7 +57,6 @@
     height: 12px;
     display: block;
 }
-
 
 .lista-nav {
     display: flex;
@@ -250,20 +258,15 @@
     transition-delay: 0, 0.2s;
   }
 
-
   .logo-movil {
     text-align: center;
     margin-bottom: 20px;
     border-bottom: 1px solid white;
     padding-bottom: 42px;
-}
+  }
 
  .c-hamburger.is-active span::before,
  .c-hamburger.is-active span::after {
     background-color: white;
   }
 
-  
-  .box-icon-home {
-    // padding: 0 22px;
-}
