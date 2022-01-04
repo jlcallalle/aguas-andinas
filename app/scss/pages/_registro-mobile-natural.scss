@@ -1,0 +1,115 @@
+// page mobil natural
+.list-input {
+    margin-left: 15px;
+    margin-top: 7px;
+    margin: 7px 0 0 15px;
+    li {
+        color: $gray-dark;
+        font-size: 12px;
+    }
+}
+
+.input-group-busqueda {
+    padding: 0 30px;
+    margin-top: 10px;
+    .input-group-text {
+        background-color: transparent;
+        border: none;
+        border-color: white;
+    }
+     .input-busqueda {
+        border: none;
+        border-radius: 0;
+        color: $blue;
+        &::placeholder {
+            color: $blue;
+        }
+    }
+    .fa-search {
+        color: $blue;
+    }
+    .input-group-prepend {
+        background-color: white;
+    }
+}
+
+.box-check {
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 6px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    label {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        i {
+            font-size: 12px;
+            color: #5F6268;
+            font-style: normal;
+        }
+    }
+}
+
+.row-tabla {
+    background-color: #E7F0FF;
+}
+
+.lista-tabla {
+    list-style: none;
+    padding: 26px 20px 10px 20px;
+    li {
+        color:$black-light;
+        font-size: 14px;
+        margin-bottom: 19px;
+    }
+}
+
+.box-persona-recapcha {
+    margin: 32px auto 42px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.box-check {
+    background-color: #F9F9F9;
+    padding: 10px 20px 10px 6px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.box-check label {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    i {
+        font-size: 12px;
+        color: #5F6268;
+        font-style: normal;
+    }
+}
+
+.row-check {
+    margin-top: 20px;;
+}
+
+/* Popup */
+.modal  {
+    .modal-header {
+        /* padding: 10px 20px; */
+        padding: 15px 20px 0px 20px;
+        border-bottom: none;
+    }
+    .modal-body {
+        padding: 1rem 2rem;
+    }
+}
+
+.modal-title {
+    color:$blue-dark;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $fontRaleway;
+    text-align: center;
+}

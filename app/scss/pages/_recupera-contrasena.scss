@@ -1,0 +1,193 @@
+
+/* Page  Recupera tu clave -- 1*/
+
+.content-page-clave {
+    padding: 15px 0;
+}
+
+.formulario-login {
+    p {
+        margin-bottom: 24px;
+    }
+}
+
+.box-recapcha {
+    margin-top: 45px;
+}
+
+.texto-capcha {
+    text-align: center;
+    color: #5F6268;
+    margin-bottom: 14px;
+}
+
+.iframe-captcha {
+    /* transform:scale(0.8); */
+    display: flex;
+    justify-content: center;
+    margin-bottom: 42px;
+}
+
+.box-btn {
+    padding: 0 20px;
+}
+
+.box-volver {
+    margin-top: 53px;
+}
+
+.link-bold {
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    display: block;
+}
+
+
+/* Page  Recupera tu clave -- 2 - Page Correo*/
+
+.content-page-clave-correo {
+    padding: 0 0 15px 0;
+}
+
+.box-icono-correo {
+    text-align: center;
+}
+
+.box-top-correo {
+    border-bottom: 1px dashed #979797;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    p {
+        color: $black-light;
+        font-size: 15px;
+        line-height: 25px;
+        span {
+            color: $green;
+        }
+    }
+}
+
+.box-texto-correo {
+    border-bottom: 1px dashed #979797;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    p {
+        color: $gray-dark;
+        font-size: 14px;
+        line-height: 25px;
+        font-style: italic;
+    }
+}
+
+.title-correo {
+    color:$black-light;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 25px
+}
+
+.lista-realizar {
+    margin-top: 24px;
+    margin-bottom: 8px;
+    li {
+        list-style: none;
+        display: flex;
+        margin-bottom: 30px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        i {
+            color:$gray-dark;
+            border: 2px solid $gray-dark;
+            width: 30px;
+            height: 30px;
+            border-radius: 100px;
+            display: block;
+            margin-right: 46px;
+            text-align: center;
+        }
+        span {
+            color:$blue-dark;
+            font-size: 14px;
+            line-height: 22px;  
+        }
+        .box-circle {
+            width: 64px; 
+        }
+    }
+}
+
+.box-btn-correo {
+    margin-top: 30px;
+}
+
+
+/* Page  Recupera tu clave -- 3*/
+
+.form-eye {
+    label {
+        color: $black-light;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .form-control {
+        border-right: 0;
+        font-size: 16px;
+        color: $black-light;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.15);
+        }
+    }
+    .input-group-addon {
+        padding: 0.5rem 1rem;
+        border: 1px solid rgba(0,0,0,.15);
+        border-left: 0;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .fa-eye {
+        color:$blue;
+    }
+}
+
+.box-top-restablecer {
+    padding-top: 10px;
+    padding-bottom: 15px;
+    p {
+        color: $black-light;
+        font-size: 15px;
+        line-height: 25px;
+        font-weight: bold;
+        span {
+            color: $green;
+        }
+    }
+}
+
+
+/* Page  Recupera tu clave -- 5*/
+.content-page-correo-exito {
+    padding: 105px 0;
+}
+.box-icono-check {
+    text-align: center;
+    margin-top: 18px;
+}
+
+.texto-exitoso {
+    margin-top: 20px;
+    padding: 0 1rem;
+    p {
+        color: $blue-dark;
+        font-size: 21px;
+        line-height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+}

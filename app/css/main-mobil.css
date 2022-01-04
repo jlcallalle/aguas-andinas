@@ -3075,6 +3075,10 @@ a {
   padding: 0 20px;
 }
 
+.px-30 {
+  padding: 0 30px;
+}
+
 .link {
   display: block;
   text-align: center;
@@ -3676,21 +3680,6 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   background-color: white;
 }
 
-body {
-  background-position: top center;
-  background-repeat: no-repeat;
-}
-
-.page-registro-usuario {
-  /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
-}
-
-.wrapper {
-  max-width: 375px;
-  margin: 0 auto;
-  border: 1px solid lightgray;
-}
-
 .content-page {
   padding: 10px 20px;
 }
@@ -3744,8 +3733,7 @@ body {
 }
 
 .iframe-captcha {
-  -webkit-transform: scale(0.8);
-          transform: scale(0.8);
+  /* transform:scale(0.8); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4194,7 +4182,6 @@ body {
   border-radius: 8px;
   margin-bottom: 20px;
 }
-
 .box-check label {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4265,4 +4252,36 @@ body {
 
 .row-check {
   margin-top: 20px;
+}
+
+/* Popup */
+.modal .modal-header {
+  /* padding: 10px 20px; */
+  padding: 15px 20px 0px 20px;
+  border-bottom: none;
+}
+.modal .modal-body {
+  padding: 1rem 2rem;
+}
+
+.modal-title {
+  color: #003287;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+
+body {
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+body .page-registro-usuario {
+  /*  background-image: url(../images/m-registro-mobile-natural.jpg); */
+}
+
+.wrapper {
+  max-width: 375px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
 }

@@ -1,0 +1,211 @@
+.breadcrumb {
+    background-color: transparent;
+    padding: 0.2rem 0.2rem;
+    margin-bottom: 0.2rem;
+    li {
+        color: $blue;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 22px;
+        font-weight: 600;
+        &.active {
+            color: $blue;
+            &:before {
+                color: $blue;
+            }
+        }
+    }
+}
+
+.step {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin-bottom: 1rem;
+    .step-item {
+        flex: 1 1 0;  
+       /*  flex-grow: 1; */
+        position: relative;
+        text-align: center;
+        &:not(:first-child)::before {
+            background-color: #D9D9D6;
+            content: "";
+            height: 0.125rem;
+            left: -50%;
+            position: absolute;
+            top: 0.7375rem;
+            width: 100%;
+            z-index: 0;
+        } 
+        &:nth-child(2)::before {
+            width: 65%;
+            left: -32%;
+        } 
+        &:nth-child(3)::before {
+            width: 65%;
+            left: -32%;
+        } 
+        &.active {
+           a {
+               &::before {
+                background: #fff;
+                border: 3px solid $blue;
+               }
+               span {
+                   color:$blue;
+               }
+           }
+           p {
+               color:$blue;
+           }
+        }
+
+        p {
+            color: $black-light;
+            font-size: 14px;
+            margin-top: 12px;
+        }
+
+        .step-item-link {
+            color: #69707a;
+            position: relative;
+            display: inline-block;
+            padding-top: 1.25rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            text-decoration: none;
+            z-index: 1;
+            span {
+                color:white;
+                position: absolute;
+                top: 4px;
+                z-index: 11;
+                left: 11px;
+                display: flex;
+                font-weight: bold;
+            }
+            &:before {
+                background-color: $gray;
+                border: 0.125rem solid #fff;
+                border-radius: 100%;
+                content: "";
+                display: block;
+                height: 2rem;
+                width: 2rem;
+                left: 50%;
+                position: absolute;
+                top: 0;
+                transform: translateX(-50%);
+                z-index: 1;
+            }
+        }
+      }
+ }
+
+.dual-btn {
+    margin-top: 25px;
+    flex-direction: column;
+    a {
+        margin-bottom: 20px;
+    }
+}
+
+.content-page-form {
+    padding: 17px 20px;
+}
+
+.layout-formulario {
+    padding-bottom: 40px;
+}
+
+.form-group-all {
+    margin-top: 26px;
+}
+
+.row-texto-form {
+    margin-top: 60px;
+    p {
+        color: $black-light;
+        font-size: 14px;
+    }
+}
+
+
+/* registro mobile 2*/
+.alert-message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    border:none;
+    border-radius: 8px;
+    i {
+       margin-bottom: 16px;
+    }
+}
+
+.alert-success {
+    background-color: #d2ffe9;
+    color:$blue;
+    margin-top: 25px;
+    padding: 2.6rem 1.4rem 2rem 1.4rem;
+}
+.alert-danger {
+    background-color: #C94747; 
+    color:white;
+    margin-top: 20px;
+    padding: 2rem 1.4rem 1rem 1.4rem;
+}
+
+.alert-heading {
+    font-weight: bold;
+    text-align: center;
+}
+
+.texto-mensaje {
+    p {
+        font-size: 14px;
+    }
+}
+
+/* registro mobile 3*/
+.box-preguntas {
+    margin: 60px auto 40px auto;
+    .item-pregunta {
+        margin-bottom: 35px;
+        a {
+            color:$blue;
+            display: block;
+        }
+        p {
+            color: $black-light;
+            span {
+                color:$blue;
+            }
+        }
+    }
+}
+
+.title-pregunta {
+    color:$blue-dark;
+    font-size: 16px;
+}
+
+.text-form {
+    color:$black-light;
+    font-size: 12px;
+}
+
+.lista-switch {
+    margin-top: 32px;
+    .item-switch {
+        margin-bottom: 18px;
+    }
+}
+
+.formulario-registro {
+    p {
+        color:$black-light;
+        font-size: 12px;
+    }
+}
