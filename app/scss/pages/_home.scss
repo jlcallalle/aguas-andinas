@@ -1,10 +1,10 @@
 body {
     background-position: top center;
     background-repeat: no-repeat;
-    &.home {
+   /*  &.home {
          background-image: url(../images/home-app.jpg);
          background-position: 0 -12px;
-     }
+     } */
 }
 
 .precio-deuda {
@@ -149,4 +149,10 @@ body {
         color:#003287;
         font-size: 36px;
     }
+}
+.tab-grafica {
+    background-image: url(../images/tab-grafica.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    height: 780px;
 }

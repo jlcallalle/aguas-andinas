@@ -4347,10 +4347,10 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 body {
   background-position: top center;
   background-repeat: no-repeat;
-}
-body.home {
-  background-image: url(../images/home-app.jpg);
-  background-position: 0 -12px;
+  /*  &.home {
+        background-image: url(../images/home-app.jpg);
+        background-position: 0 -12px;
+    } */
 }
 
 .precio-deuda {
@@ -4526,6 +4526,13 @@ body.home {
 .box-consumo-total .cantidad-consumo {
   color: #003287;
   font-size: 36px;
+}
+
+.tab-grafica {
+  background-image: url(../images/tab-grafica.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 780px;
 }
 
 .wrapper {
