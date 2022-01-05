@@ -4411,10 +4411,10 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 body {
   background-position: top center;
   background-repeat: no-repeat;
-  /*  &.home {
-        background-image: url(../images/home-app.jpg);
-        background-position: 0 -12px;
-    } */
+  /* &.home {
+       background-image: url(../images/home-app.jpg);
+       background-position: 0 -12px;
+   } */
 }
 
 .precio-deuda {
@@ -4835,6 +4835,11 @@ body {
           justify-content: center;
 }
 
+.consumo-grafica {
+  /*  .nav-tabs .nav-link:hover {
+       border-color: transparent;
+   } */
+}
 .consumo-grafica .nav-link {
   color: #5F6268;
   font-size: 16px;
@@ -4851,9 +4856,6 @@ body {
 .consumo-grafica .nav-tabs .nav-link.active {
   border-color: #fff #fff #2274FF;
   border-bottom: 4px solid;
-}
-.consumo-grafica .nav-tabs .nav-link:focus, .consumo-grafica .nav-tabs .nav-link:hover {
-  border-color: transparent;
 }
 
 .box-compara {
@@ -4876,15 +4878,93 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20px;
+  margin-top: 26px;
 }
 
 .section-mapa {
-  margin-top: 30px;
+  margin-top: 36px;
 }
 
 .detalle-compra {
   padding: 0 20px;
+  margin-top: 15px;
+}
+
+.section-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
+  /*  padding: 10px; */
+  padding: 4px 0 0 0;
+  margin-top: 45px;
+  height: 75px;
+}
+
+.item-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20%;
+}
+.item-menu span {
+  font-size: 10px;
+  line-height: 30px;
+  position: relative;
+  top: -7px;
+}
+
+.item-general {
+  /* border: 1px solid red; */
+  width: 70px;
+  height: 70px;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item-general i {
+  position: absolute;
+  top: -40px;
+  width: 70px;
+  height: 70px;
+  border: 1px solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 100%;
+  -webkit-box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.08);
+          box-shadow: 0px -1px 7px rgba(0, 0, 0, 0.08);
+  background: #FFFFFF;
+  border: 1px solid #E7F0FF;
+}
+.item-general span {
+  color: #2274FF;
+  top: 5px;
+  position: relative;
 }
 
 .wrapper {
