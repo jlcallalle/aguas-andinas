@@ -159,7 +159,7 @@ body {
 
 // notificaciones 
 
-.box-estado-clima {
+.box-estado-operacional {
     display: none;
     width: 98%;
     position: absolute;
@@ -192,7 +192,7 @@ body {
     display: flex;
     &:hover {
         // cursor: pointer;
-        background: #E7F0FF;
+        background: #D2FFE9;
         border-radius: 5px;
     }
     i {
@@ -226,6 +226,11 @@ body {
         font-size: 14px;
         font-weight: bold;
     }
+    span {
+        font-size: 14px;
+        color: $black-light;
+        font-weight: bold;
+    }
 }
 
 .row-botones {
@@ -234,4 +239,78 @@ body {
     padding: 15px 25px;
     border-top: 1px solid #BDBDBD;
     display: flex;
+}
+
+
+.box-lista-notifica {
+    display: none;
+    width: 98%;
+    position: absolute;
+    // height: 490px;
+    z-index: 12;
+    left: 1%;
+    top: 80px;
+    padding: 10px 0 0  0;
+    background: #FFFFFF;
+    border: 0.5px solid #BDBDBD;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    &.active {
+        display: block;
+    }
+    .title-estado {
+        color: $blue-dark;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 30px;
+        margin-bottom: 15px;
+        padding: 0 23px;
+    }
+}
+
+.row-notifica {
+    // padding: 8px 23px 8px 23px;
+    padding: 8px 36px 8px 23px;
+    display: flex;
+    border-bottom: 1px solid #BDBDBD;
+    &:hover {
+        // cursor: pointer;
+        background: #D2FFE9;
+        border-radius: 5px;
+    }
+    i {
+        margin-right: 19px;
+    }
+    .texto-notifica {
+        .subtitle-notifica {
+            color: $black-light;
+            font-size: 14px;
+            line-height: 23px;
+            margin-bottom: 4px;
+            span {
+                font-weight: bold;
+            }
+        }
+        p {
+            color: $black-light;
+            font-size: 12px;
+            line-height: 16px;
+            margin-bottom: 13px;
+        }
+    }
+
+}
+
+.circle-notifica {
+    width: 45px;
+    height: 45px;
+    background: $blue;
+    border-radius: 100%;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 45px;
+    margin-right: 10px;
 }

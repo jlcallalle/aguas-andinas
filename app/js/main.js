@@ -12,18 +12,26 @@ var MyApp = {
 $(function () {
     console.log('ready..');    
     MyApp.toggeMenu();
+
+    // Mostrar panel estado operacional
+     $('.box-state').on('click', function(e) {
+        e.preventDefault();
+        $('.box-estado-operacional').toggleClass('active');
+    });
+
+     $('.box-notification').on('click', function(e) {
+        e.preventDefault();
+        $('.box-lista-notifica').toggleClass('active');
+    });
+
+
     // Mostrar panel clima grados
     $('.texto-clima').on('click', function(e) {
         e.preventDefault();
         $('.mostrar-clima-detalle').toggleClass('active');
     });
 
-    // Mostrar panel estado operacional
-    $('.box-state').on('click', function(e) {
-        e.preventDefault();
-        $('.box-estado-clima').toggleClass('active');
-    });
-
+   
     // mostrar buscador
     $('.item-lupa').on('click', function(e) {
         e.preventDefault();

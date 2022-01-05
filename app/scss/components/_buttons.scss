@@ -111,5 +111,8 @@
     font-size: 12px;
     color: white;
     font-weight: bold;
-    padding: 0.4rem;
+    padding: 0.4rem 0.6rem;
+    &:hover {
+        color:white;
+    }
 }

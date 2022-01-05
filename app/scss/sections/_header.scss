@@ -281,6 +281,11 @@
 
 .box-notification {
   margin-right: 31px;
+ /*  position: relative; */
+  cursor: pointer;
+}
+
+.icono-notifica {
   position: relative;
 }
 
@@ -298,4 +303,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.relative {
+  position: relative;
 }
