@@ -116,3 +116,33 @@
         color:white;
     }
 }
+
+.btn-convenio {
+    background-color: $blue-light;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #2274FF;
+    font-weight: bold;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    height: 60px;
+    align-items: center;
+    padding-left: 20px;
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+.group-append {
+    background-color: #2274FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    width: 90px;
+    height: 60px;
+}

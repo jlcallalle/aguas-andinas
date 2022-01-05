@@ -54,6 +54,7 @@ body {
     border: 1px solid #DCE2EC;
     border-radius: 5px;
     padding: 16px 13px;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.08);
 }
 
 .item-element {
@@ -121,6 +122,7 @@ body {
 .text-boleta {
     display: flex;
     a {
+        color:$blue-dark;
         font-size: 14px;
         font-weight: bold;
         display: flex;
@@ -187,9 +189,9 @@ body {
 }
 
 .row-estado {
-    // padding: 8px 23px 8px 23px;
     padding: 8px 36px 8px 23px;
     display: flex;
+    cursor: pointer;
     &:hover {
         // cursor: pointer;
         background: #D2FFE9;
@@ -237,8 +239,11 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 15px 25px;
-    // order-top: 1px solid #BDBDBD;
+    border-top: 1px solid #BDBDBD;
     display: flex;
+    .lista-notifica & {
+        border:none;
+    }
 }
 
 
@@ -350,3 +355,10 @@ body {
     margin-right: 10px;
 }
 
+.group-append {
+    width: 90px;
+    background-color: $blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
