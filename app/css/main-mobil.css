@@ -4644,24 +4644,24 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 15px 25px;
-  border-top: 1px solid #BDBDBD;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .box-lista-notifica {
+  /* background-image: url(../images/page-notificaciones.jpg);
+  background-repeat: no-repeat;
+  background-position: top center; */
   display: none;
   width: 98%;
   position: absolute;
   z-index: 12;
   left: 1%;
   top: 80px;
-  padding: 10px 0 0 0;
-  background: #FFFFFF;
+  padding: 17px 0 0 0;
+  background-color: #FFFFFF;
   border: 0.5px solid #BDBDBD;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -4669,13 +4669,19 @@ body {
 .box-lista-notifica.active {
   display: block;
 }
-.box-lista-notifica .title-estado {
+.box-lista-notifica .title-notifica {
   color: #003287;
   font-weight: bold;
   font-size: 14px;
   line-height: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 4px;
   padding: 0 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .row-notifica {
@@ -4685,9 +4691,8 @@ body {
   display: flex;
   border-bottom: 1px solid #BDBDBD;
 }
-.row-notifica:hover {
-  background: #D2FFE9;
-  border-radius: 5px;
+.row-notifica.reader {
+  background-color: #F2F4F4;
 }
 .row-notifica i {
   margin-right: 19px;
@@ -4695,7 +4700,7 @@ body {
 .row-notifica .texto-notifica .subtitle-notifica {
   color: #5F6268;
   font-size: 14px;
-  line-height: 23px;
+  line-height: 17px;
   margin-bottom: 4px;
 }
 .row-notifica .texto-notifica .subtitle-notifica span {
@@ -4705,13 +4710,53 @@ body {
   color: #5F6268;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 13px;
+  margin-bottom: 0;
+}
+
+.punto {
+  width: 6px;
+  height: 6px;
+  border: 1px solid #2274FF;
+  background-color: #2274FF;
+  border-radius: 20px;
+  position: unset;
+  display: block;
+  right: -20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 100%;
+  min-width: 6px;
+  position: relative;
+  top: 4px;
+}
+.reader .punto {
+  border: 1px solid #979797;
+  background-color: transparent;
 }
 
 .circle-notifica {
   width: 45px;
   height: 45px;
   background: #2274FF;
+  border-radius: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 45px;
+  margin-right: 10px;
+}
+
+.circle-check {
+  width: 45px;
+  height: 45px;
   border-radius: 100%;
   display: block;
   display: -webkit-box;
