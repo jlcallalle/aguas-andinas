@@ -1,0 +1,109 @@
+
+body {
+    background-position: top center;
+    background-repeat: no-repeat;
+   /*  &.page-educar-boleta {
+         background-image: url(../images/m-educar-boleta-1.jpg);
+     } */
+}
+
+.page-educar-boleta {
+    // border:1px solid red;
+}
+
+/* section videos */
+.section-video {
+    background-color: #E7F0FF;
+    padding: 30px 35px 35px 35px;
+}
+
+.box-texto-video {
+    p {
+        color:#5F6268;
+        line-height: 28px;
+    }
+}
+
+.box-img {
+    margin-bottom: 36px;
+    img {
+        width: 100%;
+    }
+}
+
+
+/* section boleta */ 
+.content-page-boleta {
+    background-color: white;
+    padding: 20px 30px 22px 30px;
+    border-radius: 8px;
+}
+
+.title-boleta {
+    color: $blue-dark;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $fontRaleway;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.title-litle {
+    color: $black-light;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.row-btn-boleta {
+    margin-top: 34px;
+    margin-bottom: 25px;
+    border-bottom: 1px dotted #979797;
+    padding-bottom: 20px;
+    a {
+        margin-bottom: 30px;
+    }
+}
+
+.form-descarga-boleta {
+    .list-input {
+        margin: 18px 0 10px 15px;
+        li {
+            font-size: 11px;
+        }
+    }
+}
+
+
+/* section datos*/
+.section-datos-boleta {
+    background-color: $gray-light;
+}
+
+.footer-dato {
+    width: 100%;
+    padding: 64px 30px  40px 44px;
+}
+
+.item-footer-dato {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    i {
+        margin-right: 15px;
+        width: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    span {
+        color: #003DA5;
+        font-size: 20px;
+        a {
+            display: block;
+            color: #003DA5;
+            font-size: 20px;
+
+        }
+    }
+}

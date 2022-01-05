@@ -3138,6 +3138,12 @@ a {
   font-weight: bold;
 }
 
+.title-small {
+  color: #2274FF;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .box-switch {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4408,15 +4414,6 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   text-align: center;
 }
 
-body {
-  background-position: top center;
-  background-repeat: no-repeat;
-  /* &.home {
-       background-image: url(../images/home-app.jpg);
-       background-position: 0 -12px;
-   } */
-}
-
 .precio-deuda {
   color: #2274FF;
   font-size: 51px;
@@ -4967,8 +4964,117 @@ body {
   position: relative;
 }
 
+body {
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*  &.page-educar-boleta {
+        background-image: url(../images/m-educar-boleta-1.jpg);
+    } */
+}
+
+/* section videos */
+.section-video {
+  background-color: #E7F0FF;
+  padding: 30px 35px 35px 35px;
+}
+
+.box-texto-video p {
+  color: #5F6268;
+  line-height: 28px;
+}
+
+.box-img {
+  margin-bottom: 36px;
+}
+.box-img img {
+  width: 100%;
+}
+
+/* section boleta */
+.content-page-boleta {
+  background-color: white;
+  padding: 20px 30px 22px 30px;
+  border-radius: 8px;
+}
+
+.title-boleta {
+  color: #003287;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.title-litle {
+  color: #5F6268;
+  font-size: 14px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.row-btn-boleta {
+  margin-top: 34px;
+  margin-bottom: 25px;
+  border-bottom: 1px dotted #979797;
+  padding-bottom: 20px;
+}
+.row-btn-boleta a {
+  margin-bottom: 30px;
+}
+
+.form-descarga-boleta .list-input {
+  margin: 18px 0 10px 15px;
+}
+.form-descarga-boleta .list-input li {
+  font-size: 11px;
+}
+
+/* section datos*/
+.section-datos-boleta {
+  background-color: #F3F4F5;
+}
+
+.footer-dato {
+  width: 100%;
+  padding: 64px 30px 40px 44px;
+}
+
+.item-footer-dato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+}
+.item-footer-dato i {
+  margin-right: 15px;
+  width: 51px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.item-footer-dato span {
+  color: #003DA5;
+  font-size: 20px;
+}
+.item-footer-dato span a {
+  display: block;
+  color: #003DA5;
+  font-size: 20px;
+}
+
 .wrapper {
   max-width: 375px;
   margin: 0 auto;
   border: 1px solid lightgray;
 }
+/*# sourceMappingURL=main-mobil.css.map */
