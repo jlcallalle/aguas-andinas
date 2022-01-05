@@ -362,3 +362,54 @@ body {
     align-items: center;
     justify-content: center;
 }
+
+.consumo-grafica {
+    .nav-link {
+        color:$black-light;
+        font-size: 16px;
+        font-weight: bold;
+        &.active {
+            color:$blue;
+        }
+    }
+    .nav-tabs .nav-item {
+        margin-bottom: -1px;
+        width: 50%;
+    }
+
+    .nav-tabs .nav-item.show .nav-link, 
+    .nav-tabs .nav-link.active {
+        border-color: #fff #fff #2274FF;
+        border-bottom: 4px solid;
+    }
+
+    .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+        border-color: transparent;
+    }
+
+}
+
+.box-compara {
+    margin-top: 10px;
+}
+
+.title-compara {
+    color:$blue-dark;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.row-select {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.section-mapa {
+    margin-top: 30px;
+}
+.detalle-compra {
+    padding: 0 20px;
+}
+

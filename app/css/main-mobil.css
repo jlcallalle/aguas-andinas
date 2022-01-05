@@ -4835,6 +4835,58 @@ body {
           justify-content: center;
 }
 
+.consumo-grafica .nav-link {
+  color: #5F6268;
+  font-size: 16px;
+  font-weight: bold;
+}
+.consumo-grafica .nav-link.active {
+  color: #2274FF;
+}
+.consumo-grafica .nav-tabs .nav-item {
+  margin-bottom: -1px;
+  width: 50%;
+}
+.consumo-grafica .nav-tabs .nav-item.show .nav-link,
+.consumo-grafica .nav-tabs .nav-link.active {
+  border-color: #fff #fff #2274FF;
+  border-bottom: 4px solid;
+}
+.consumo-grafica .nav-tabs .nav-link:focus, .consumo-grafica .nav-tabs .nav-link:hover {
+  border-color: transparent;
+}
+
+.box-compara {
+  margin-top: 10px;
+}
+
+.title-compara {
+  color: #003287;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.row-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 20px;
+}
+
+.section-mapa {
+  margin-top: 30px;
+}
+
+.detalle-compra {
+  padding: 0 20px;
+}
+
 .wrapper {
   max-width: 375px;
   margin: 0 auto;
