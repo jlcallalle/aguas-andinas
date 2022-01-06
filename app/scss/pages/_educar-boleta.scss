@@ -129,11 +129,16 @@ body {
     padding: 28px 39px;
 }
 .lista-cuenta {
+    list-style: none;
+    li {
+        margin-bottom: 20px;
+    }
     .title-cuenta {
         color:$black-light;
         font-size: 16px;
         color:#5F6268;
         font-weight: bold;
+        display: block;
     }
     .resultado-cuenta {
         color:$black-light;
@@ -143,25 +148,6 @@ body {
     .estado-cuenta {
         color: $orange;
         font-size: 16px;
-    }
-}
-
-.lista-cuenta {
-    list-style: none;
-    li {
-        margin-bottom: 20px;
-    }
-    .title-cuenta {
-        color: #5F6268;
-        font-size: 16px;
-        color: #5F6268;
-        font-weight: bold;
-        display: block;
-    }
-    .resultado-cuenta {
-        color: #5F6268;
-        font-size: 16px;
-        color: #5F6268;
     }
 }
 
