@@ -5138,11 +5138,16 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 .detalle-cuenta {
   /* padding: 28px 39px; */
   /* padding: 28px 39px 48px 39px; */
-  padding: 28px 39px 70px 39px;
+  /* padding: 28px 39px 70px 39px; */
+  padding: 28px 15px 70px 15px;
 }
 
 .lista-cuenta {
   list-style: none;
+  margin-bottom: 25px;
+  border: 1px solid #F3F4F5;
+  border-radius: 8px;
+  padding: 20px 15px;
 }
 .lista-cuenta li {
   margin-bottom: 20px;
@@ -5219,7 +5224,7 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   /* &.page-boleta {
-       background-image: url(../images/m-boleta-1.jpg);
+       background-image: url(../images/m-boleta-3.jpg);
        background-position: 0 0;
        .content-page {
           background-color: transparent; 
@@ -5237,6 +5242,7 @@ body {
   font-weight: bold;
   display: inline-block;
   line-height: 1;
+  text-align: center;
   width: 135px;
 }
 
@@ -5251,6 +5257,7 @@ body {
   display: inline-block;
   line-height: 1;
   text-align: center;
+  width: 135px;
 }
 
 .btn-carga {

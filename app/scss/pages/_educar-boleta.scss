@@ -115,10 +115,16 @@
 .detalle-cuenta {
     /* padding: 28px 39px; */
     /* padding: 28px 39px 48px 39px; */
-    padding: 28px 39px 70px 39px;
+    
+    /* padding: 28px 39px 70px 39px; */
+    padding: 28px 15px 70px 15px;
 }
 .lista-cuenta {
     list-style: none;
+    margin-bottom: 25px;
+    border: 1px solid $gray-light;
+    border-radius: 8px;
+    padding: 20px 15px;
     li {
         margin-bottom: 20px;
     }
