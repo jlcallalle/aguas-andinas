@@ -5237,6 +5237,20 @@ body {
   font-weight: bold;
   display: inline-block;
   line-height: 1;
+  width: 135px;
+}
+
+.badge-pagada {
+  color: #19CE74;
+  font-size: 16px;
+  background-color: #D2FFE9;
+  padding: 8px 25px;
+  height: 31px;
+  border-radius: 5px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 1;
+  text-align: center;
 }
 
 .btn-carga {
