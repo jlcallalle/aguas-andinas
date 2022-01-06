@@ -529,7 +529,7 @@
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                   <li class="breadcrumb-item"><a href="#">Web</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Registro de usuarios</li>
+                  <li class="breadcrumb-item active" aria-current="page">Desglose de boleta</li>
                 </ol>
               </nav>
             </div>
@@ -573,19 +573,17 @@
                 </div>
                 <form action="" class="form-descarga-boleta">
                   <div class="row row-btn-boleta">
-                    <div class="col">
-                      <a href="" class="btn btn-lg btn-block btn-blanco">Buscar por número de cuenta</a>
-                    </div>
-                    <div class="col">
-                      <a href="" class="btn btn-lg btn-block btn-azul">Buscar por dirección</a>
-                    </div>
-                    <div class="col">
-                      <a href="" class="btn btn-lg btn-block btn-blanco">Usar una boleta de ejemplo</a>
-                    </div>
+                    <a href="" class="btn btn-lg btn-block btn-blanco">Buscar por número de cuenta</a>
+                    <a href="" class="btn btn-lg btn-block btn-azul">Buscar por dirección</a>
+                    <a href="" class="btn btn-lg btn-block btn-blanco">Usar una boleta de ejemplo</a>
                   </div>
                   <div class="row d-block">
                     <div class="form-group">
-                      <input type="text" class="form-control form-control-lg" placeholder="Comuna">
+                      <select class="form-control form-control-lg">
+                        <option>Comuna</option>
+                        <option>comuna 1</option>
+                        <option>comuna 2</option>
+                      </select>
                     </div>
                     <div class="form-group">
                       <input type="text" class="form-control form-control-lg" placeholder="Calle">
@@ -597,10 +595,12 @@
                       <input type="text" class="form-control form-control-lg" placeholder="Departamento">
                     </div>
                    
-                    <div class="col">
+                    <div class="group-input">
                       <button type="submit" class="btn btn-lg btn-block btn-verde">Buscar</button>
                     </div>
                   </div>
+                  
+             
                 </form>
               </div>
             </div>

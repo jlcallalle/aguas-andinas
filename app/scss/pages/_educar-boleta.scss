@@ -2,9 +2,14 @@
 body {
     background-position: top center;
     background-repeat: no-repeat;
-   /*  &.page-educar-boleta {
+    /* &.page-educar-boleta {
          background-image: url(../images/m-educar-boleta-1.jpg);
-     } */
+         background-position: 0 57px;
+
+         .content-page-boleta {
+            background-color: transparent; 
+        }
+    } */
 }
 
 .page-educar-boleta {
@@ -14,7 +19,7 @@ body {
 /* section videos */
 .section-video {
     background-color: #E7F0FF;
-    padding: 30px 35px 35px 35px;
+    padding: 30px 35px 40px 35px;
 }
 
 .box-texto-video {
@@ -35,7 +40,8 @@ body {
 /* section boleta */ 
 .content-page-boleta {
     background-color: white;
-    padding: 20px 30px 22px 30px;
+    /* padding: 40px 20px 42px; */
+    padding: 40px 40px 42px;
     border-radius: 8px;
 }
 
@@ -45,7 +51,7 @@ body {
     font-weight: bold;
     font-family: $fontRaleway;
     text-align: center;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
 .title-litle {
@@ -59,17 +65,18 @@ body {
     margin-top: 34px;
     margin-bottom: 25px;
     border-bottom: 1px dotted #979797;
-    padding-bottom: 20px;
-    a {
+    padding-bottom: 50px;
+   /*  a {
         margin-bottom: 30px;
-    }
+    } */
 }
 
 .form-descarga-boleta {
     .list-input {
-        margin: 18px 0 10px 15px;
+        margin: 20px 0 20px 15px;
         li {
             font-size: 11px;
+            margin-bottom: 5px;
         }
     }
 }
@@ -82,7 +89,7 @@ body {
 
 .footer-dato {
     width: 100%;
-    padding: 64px 30px  40px 44px;
+    padding: 64px 30px 60px 44px;
 }
 
 .item-footer-dato {
@@ -96,14 +103,26 @@ body {
         align-items: center;
         justify-content: center;
     }
-    span {
+    > span {
         color: #003DA5;
         font-size: 20px;
         a {
             display: block;
             color: #003DA5;
             font-size: 20px;
-
         }
     }
+    .small  {
+        font-size: 16px;
+    }
+}
+
+.btn-block + .btn-block {
+    margin-top: 30px;
+   /*  border:1px solid orange; */
+}
+
+.group-input {
+    display: block;
+    width: 100%;
 }

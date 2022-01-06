@@ -4901,7 +4901,6 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
           box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
   /*  padding: 10px; */
   padding: 4px 0 0 0;
-  margin-top: 45px;
   height: 75px;
 }
 
@@ -4967,15 +4966,20 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 body {
   background-position: top center;
   background-repeat: no-repeat;
-  /*  &.page-educar-boleta {
-        background-image: url(../images/m-educar-boleta-1.jpg);
-    } */
+  /* &.page-educar-boleta {
+       background-image: url(../images/m-educar-boleta-1.jpg);
+       background-position: 0 57px;
+
+       .content-page-boleta {
+          background-color: transparent; 
+      }
+  } */
 }
 
 /* section videos */
 .section-video {
   background-color: #E7F0FF;
-  padding: 30px 35px 35px 35px;
+  padding: 30px 35px 40px 35px;
 }
 
 .box-texto-video p {
@@ -4993,7 +4997,8 @@ body {
 /* section boleta */
 .content-page-boleta {
   background-color: white;
-  padding: 20px 30px 22px 30px;
+  /* padding: 40px 20px 42px; */
+  padding: 40px 40px 42px;
   border-radius: 8px;
 }
 
@@ -5003,7 +5008,7 @@ body {
   font-weight: bold;
   font-family: "Raleway", sans-serif;
   text-align: center;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 
 .title-litle {
@@ -5017,17 +5022,18 @@ body {
   margin-top: 34px;
   margin-bottom: 25px;
   border-bottom: 1px dotted #979797;
-  padding-bottom: 20px;
-}
-.row-btn-boleta a {
-  margin-bottom: 30px;
+  padding-bottom: 50px;
+  /*  a {
+       margin-bottom: 30px;
+   } */
 }
 
 .form-descarga-boleta .list-input {
-  margin: 18px 0 10px 15px;
+  margin: 20px 0 20px 15px;
 }
 .form-descarga-boleta .list-input li {
   font-size: 11px;
+  margin-bottom: 5px;
 }
 
 /* section datos*/
@@ -5037,7 +5043,7 @@ body {
 
 .footer-dato {
   width: 100%;
-  padding: 64px 30px 40px 44px;
+  padding: 64px 30px 60px 44px;
 }
 
 .item-footer-dato {
@@ -5062,14 +5068,27 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.item-footer-dato span {
+.item-footer-dato > span {
   color: #003DA5;
   font-size: 20px;
 }
-.item-footer-dato span a {
+.item-footer-dato > span a {
   display: block;
   color: #003DA5;
   font-size: 20px;
+}
+.item-footer-dato .small {
+  font-size: 16px;
+}
+
+.btn-block + .btn-block {
+  margin-top: 30px;
+  /*  border:1px solid orange; */
+}
+
+.group-input {
+  display: block;
+  width: 100%;
 }
 
 .wrapper {
