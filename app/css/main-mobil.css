@@ -4832,25 +4832,25 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
           justify-content: center;
 }
 
-.consumo-grafica {
+.content-nav-tabs {
   /*  .nav-tabs .nav-link:hover {
        border-color: transparent;
    } */
 }
-.consumo-grafica .nav-link {
+.content-nav-tabs .nav-link {
   color: #5F6268;
   font-size: 16px;
   font-weight: bold;
 }
-.consumo-grafica .nav-link.active {
+.content-nav-tabs .nav-link.active {
   color: #2274FF;
 }
-.consumo-grafica .nav-tabs .nav-item {
+.content-nav-tabs .nav-tabs .nav-item {
   margin-bottom: -1px;
   width: 50%;
 }
-.consumo-grafica .nav-tabs .nav-item.show .nav-link,
-.consumo-grafica .nav-tabs .nav-link.active {
+.content-nav-tabs .nav-tabs .nav-item.show .nav-link,
+.content-nav-tabs .nav-tabs .nav-link.active {
   border-color: #fff #fff #2274FF;
   border-bottom: 4px solid;
 }
@@ -4967,9 +4967,8 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   /* &.page-educar-boleta {
-       background-image: url(../images/m-educar-boleta-1.jpg);
+       background-image: url(../images/m-educar-boleta-3.jpg);
        background-position: 0 57px;
-
        .content-page-boleta {
           background-color: transparent; 
       }
@@ -4997,8 +4996,7 @@ body {
 /* section boleta */
 .content-page-boleta {
   background-color: white;
-  /* padding: 40px 20px 42px; */
-  padding: 40px 40px 42px;
+  padding: 40px 30px 22px;
   border-radius: 8px;
 }
 
@@ -5089,6 +5087,59 @@ body {
 .group-input {
   display: block;
   width: 100%;
+}
+
+.detalle-cuenta {
+  padding: 28px 39px;
+}
+
+.lista-cuenta .title-cuenta {
+  color: #5F6268;
+  font-size: 16px;
+  color: #5F6268;
+  font-weight: bold;
+}
+.lista-cuenta .resultado-cuenta {
+  color: #5F6268;
+  font-size: 16px;
+  color: #5F6268;
+}
+.lista-cuenta .estado-cuenta {
+  color: #FFA300;
+  font-size: 16px;
+}
+
+.lista-cuenta {
+  list-style: none;
+}
+.lista-cuenta li {
+  margin-bottom: 20px;
+}
+.lista-cuenta .title-cuenta {
+  color: #5F6268;
+  font-size: 16px;
+  color: #5F6268;
+  font-weight: bold;
+  display: block;
+}
+.lista-cuenta .resultado-cuenta {
+  color: #5F6268;
+  font-size: 16px;
+  color: #5F6268;
+}
+
+.content-nav-tabs {
+  border-top: 1px dotted #979797;
+  padding-top: 31px;
+}
+.content-nav-tabs.tabs-cuenta .nav-link {
+  font-size: 14px;
+  padding: 0.5rem 0.8rem;
+}
+
+.link-descarga {
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .wrapper {

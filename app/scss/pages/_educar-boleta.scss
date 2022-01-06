@@ -3,9 +3,8 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     /* &.page-educar-boleta {
-         background-image: url(../images/m-educar-boleta-1.jpg);
+         background-image: url(../images/m-educar-boleta-3.jpg);
          background-position: 0 57px;
-
          .content-page-boleta {
             background-color: transparent; 
         }
@@ -40,8 +39,7 @@ body {
 /* section boleta */ 
 .content-page-boleta {
     background-color: white;
-    /* padding: 40px 20px 42px; */
-    padding: 40px 40px 42px;
+    padding: 40px 30px 22px;
     border-radius: 8px;
 }
 
@@ -125,4 +123,60 @@ body {
 .group-input {
     display: block;
     width: 100%;
+}
+
+.detalle-cuenta {
+    padding: 28px 39px;
+}
+.lista-cuenta {
+    .title-cuenta {
+        color:$black-light;
+        font-size: 16px;
+        color:#5F6268;
+        font-weight: bold;
+    }
+    .resultado-cuenta {
+        color:$black-light;
+        font-size: 16px;
+        color:#5F6268;
+    }
+    .estado-cuenta {
+        color: $orange;
+        font-size: 16px;
+    }
+}
+
+.lista-cuenta {
+    list-style: none;
+    li {
+        margin-bottom: 20px;
+    }
+    .title-cuenta {
+        color: #5F6268;
+        font-size: 16px;
+        color: #5F6268;
+        font-weight: bold;
+        display: block;
+    }
+    .resultado-cuenta {
+        color: #5F6268;
+        font-size: 16px;
+        color: #5F6268;
+    }
+}
+
+.content-nav-tabs {
+    border-top: 1px dotted #979797;
+    padding-top: 31px;
+    &.tabs-cuenta {
+        .nav-link {
+            font-size: 14px;
+            padding: 0.5rem 0.8rem;
+        }
+    }
+}
+
+.link-descarga {
+    font-weight: bold;
+    text-decoration: underline;
 }
