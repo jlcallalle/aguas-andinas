@@ -1,16 +1,3 @@
-
-body {
-    background-position: top center;
-    background-repeat: no-repeat;
-    /* &.page-educar-boleta {
-         background-image: url(../images/m-educar-boleta-4.jpg);
-         background-position: 0 57px;
-         .content-page-boleta {
-            background-color: transparent; 
-        }
-    } */
-}
-
 .page-educar-boleta {
     // border:1px solid red;
 }
@@ -126,7 +113,9 @@ body {
 }
 
 .detalle-cuenta {
-    padding: 28px 39px;
+    /* padding: 28px 39px; */
+    /* padding: 28px 39px 48px 39px; */
+    padding: 28px 39px 70px 39px;
 }
 .lista-cuenta {
     list-style: none;
