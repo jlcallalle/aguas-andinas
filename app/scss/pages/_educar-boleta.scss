@@ -3,7 +3,7 @@ body {
     background-position: top center;
     background-repeat: no-repeat;
     /* &.page-educar-boleta {
-         background-image: url(../images/m-educar-boleta-3.jpg);
+         background-image: url(../images/m-educar-boleta-4.jpg);
          background-position: 0 57px;
          .content-page-boleta {
             background-color: transparent; 
@@ -189,19 +189,6 @@ body {
     }
 }
 
-
-.btn-pregunta {
-    background-color: white;
-    border: none;
-    font-size: 14px;
-    font-weight: bold;
-    color: #2274FF;
-    text-align: left;
-    &:focus {
-        outline: none;
-    }
-}
-
 .item-respuesta {
     color:#53565A;
     font-size: 14px;
@@ -212,4 +199,15 @@ body {
     text-align: center;
     text-decoration: underline;
     display: block;
+}
+
+.row-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 15px;
+    .fa {
+        color:$blue;
+        font-size: 13px;
+    }
 }

@@ -3395,6 +3395,23 @@ a {
   height: 60px;
 }
 
+.btn-pregunta {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2274FF;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+.btn-pregunta:focus {
+  outline: none;
+}
+.btn-pregunta:not(.collapsed) + i:before {
+  content: "";
+}
+
 .form-group {
   margin-bottom: 2rem;
 }
@@ -4967,7 +4984,7 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
   /* &.page-educar-boleta {
-       background-image: url(../images/m-educar-boleta-3.jpg);
+       background-image: url(../images/m-educar-boleta-4.jpg);
        background-position: 0 57px;
        .content-page-boleta {
           background-color: transparent; 
@@ -5150,18 +5167,6 @@ body {
   border-bottom: 1px solid #E7F0FF;
 }
 
-.btn-pregunta {
-  background-color: white;
-  border: none;
-  font-size: 14px;
-  font-weight: bold;
-  color: #2274FF;
-  text-align: left;
-}
-.btn-pregunta:focus {
-  outline: none;
-}
-
 .item-respuesta {
   color: #53565A;
   font-size: 14px;
@@ -5172,6 +5177,23 @@ body {
   text-align: center;
   text-decoration: underline;
   display: block;
+}
+
+.row-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 15px;
+}
+.row-button .fa {
+  color: #2274FF;
+  font-size: 13px;
 }
 
 .wrapper {

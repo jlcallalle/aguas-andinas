@@ -146,3 +146,24 @@
     width: 90px;
     height: 60px;
 }
+
+.btn-pregunta {
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+    color: #2274FF;
+    text-align: left;
+    display: block;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+    &:not(.collapsed) {
+        + i{
+            &:before {
+                content: "\f077";
+            }
+        }
+    }
+}

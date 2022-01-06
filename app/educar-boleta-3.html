@@ -663,51 +663,116 @@
                   </div>
                   <div class="tab-pane fade" id="desglose" role="tabpanel" aria-labelledby="desglose-tab">
                     <div class="detalle-cuenta">
-                      <ul class="lista-cuenta">
-                        <li>
-                          <span class="title-cuenta">
-                            Número de boleta
-                          </span>
-                          <span class="resultado-cuenta">
-                            207409-05
-                          </span>
-                        </li>
-                        <li>
-                          <span class="title-cuenta">
-                            Mes
-                          </span>
-                          <span class="resultado-cuenta">
-                            may/2021
-                          </span>
-                        </li>
-                        <li>
-                          <span class="title-cuenta">
-                            Fecha de vencimiento
-                          </span>
-                          <span class="resultado-cuenta">
-                            28/05/2021
-                          </span>
-                        </li>
-                        <li>
-                          <span class="title-cuenta">
-                            Monto
-                          </span>
-                          <span class="resultado-cuenta">
-                            $12.600
-                          </span>
-                        </li>
-                        <li>
-                          <span class="title-cuenta">
-                            Estado
-                          </span>
-                          <span class="estado-cuenta">
-                            PENDIENTE
-                          </span>
-                        </li>
-                        <li>
-                          <a href="" class="link-descarga">Descargar</a>
-                        </li>
-                      </ul>
+                      <div class="lista-acordion">
+
+                        <div id="accordion">
+                          <div class="box-pregunta">
+                            <div class="item-header" >
+                              <h5 class="mb-2">
+                                <div class="row-button">
+                                  <button class="btn-pregunta" data-toggle="collapse" data-target="#pregunta-1" aria-expanded="true" aria-controls="pregunta-1">
+                                    ¿Qué es el cargo fijo?
+                                  </button>
+                                  <i class="fa fa-chevron-right"></i> <!-- <i class="fa fa-chevron-up"></i> -->
+                                </div>
+                              </h5>
+                            </div>
+                        
+                            <div id="pregunta-1" class="collapse show"  data-parent="#accordion">
+                              <div class="item-respuesta">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido 
+                              </div>
+                            </div>
+                          </div>
+                         
+                          <div class="box-pregunta">
+                            <div class="item-header" >
+                              <h5 class="mb-2">
+                                <div class="row-button">
+                                  <button class="btn-pregunta collapsed" data-toggle="collapse" data-target="#pregunta-2" aria-expanded="false" aria-controls="pregunta-2">
+                                    ¿Cual es el horario punta?
+                                  </button>
+                                  <i class="fa fa-chevron-right"></i>
+                                </div>
+                              </h5>
+                            </div>
+                            <div id="pregunta-2" class="collapse" data-parent="#accordion">
+                              <div class="item-respuesta">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="box-pregunta">
+                            <div class="item-header" >
+                              <h5 class="mb-2">
+                                <div class="row-button">
+                                  <button class="btn-pregunta collapsed" data-toggle="collapse" data-target="#pregunta-3" aria-expanded="false" aria-controls="pregunta-3">
+                                    ¿Qué es la recolección?
+                                  </button>
+                                  <i class="fa fa-chevron-right"></i>
+                                </div>
+                              </h5>
+                            </div>
+                            <div id="pregunta-3" class="collapse" data-parent="#accordion">
+                              <div class="item-respuesta">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido 
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="box-pregunta">
+                            <div class="item-header" >
+                              <h5 class="mb-2">
+                                <div class="row-button">
+                                  <button class="btn-pregunta collapsed" data-toggle="collapse" data-target="#pregunta-4" aria-expanded="false" aria-controls="pregunta-4">
+                                    ¿Qué es tratamiento?
+                                  </button>
+                                  <i class="fa fa-chevron-right"></i>
+                                </div>
+                              </h5>
+                            </div>
+                            <div id="pregunta-4" class="collapse" data-parent="#accordion">
+                              <div class="item-respuesta">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-pregunta">
+                            <div class="item-header" >
+                              <h5 class="mb-2">
+                                <div class="row-button">
+                                  <button class="btn-pregunta collapsed" data-toggle="collapse" data-target="#pregunta-5" aria-expanded="false" aria-controls="pregunta-5">¿Cómo medir la lectura de mi consumo?
+                                  </button>
+                                  <i class="fa fa-chevron-right"></i>
+                                </div>
+                              </h5>
+                            </div>
+                            <div id="pregunta-5" class="collapse" data-parent="#accordion">
+                              <div class="item-respuesta">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido 
+                              </div>
+                            </div>
+                          </div>
+                          <div class="box-pregunta">
+                            <div class="item-header" >
+                              <h5 class="mb-2">
+                                <div class="row-button">
+                                  <button class="btn-pregunta collapsed" data-toggle="collapse" data-target="#pregunta-6" aria-expanded="false" aria-controls="pregunta-6"> ¿Cómo saber si realizo sobreconsumo?
+                                  </button>
+                                  <i class="fa fa-chevron-right"></i>
+                                </div>
+                              </h5>
+                            </div>
+                            <div id="pregunta-6" class="collapse" data-parent="#accordion">
+                              <div class="item-respuesta">
+                                Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido 
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <a href="" class="link-center mt-4"> Ver Boleta </a>
+                      </div>
                     </div>
                   </div>
                 </div>
