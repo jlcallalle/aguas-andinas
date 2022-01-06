@@ -5142,6 +5142,38 @@ body {
   text-decoration: underline;
 }
 
+.box-pregunta {
+  border-top: 1px solid #E7F0FF;
+  padding: 10px 0;
+}
+.box-pregunta:last-child {
+  border-bottom: 1px solid #E7F0FF;
+}
+
+.btn-pregunta {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2274FF;
+  text-align: left;
+}
+.btn-pregunta:focus {
+  outline: none;
+}
+
+.item-respuesta {
+  color: #53565A;
+  font-size: 14px;
+}
+
+.link-center {
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+  display: block;
+}
+
 .wrapper {
   max-width: 375px;
   margin: 0 auto;
