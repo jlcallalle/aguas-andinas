@@ -4769,6 +4769,7 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
+  overflow: hidden;
 }
 .box-lista-notifica.active {
   display: block;
@@ -4795,6 +4796,26 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   display: flex;
   border-bottom: 1px solid #BDBDBD;
 }
+.row-notifica.hover-delete {
+  position: relative;
+}
+.row-notifica.hover-delete .circle-notifica {
+  position: relative;
+  left: -45px;
+}
+.row-notifica.hover-delete .texto-notifica {
+  position: relative;
+  left: -45px;
+}
+.row-notifica.hover-delete .punto {
+  position: relative;
+  left: -40px;
+}
+.row-notifica.hover-delete .delete {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .row-notifica.reader {
   background-color: #F2F4F4;
 }
@@ -4815,6 +4836,27 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   font-size: 12px;
   line-height: 16px;
   margin-bottom: 0;
+}
+.row-notifica .delete {
+  display: none;
+}
+
+.delete {
+  background: #EB5757;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 67px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
 }
 
 .punto {

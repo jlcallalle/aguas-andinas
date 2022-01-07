@@ -254,6 +254,7 @@
     border: 0.5px solid #BDBDBD;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+    overflow: hidden;
 
     &.active {
         display: block;
@@ -274,6 +275,24 @@
     padding: 8px 36px 8px 23px;
     display: flex;
     border-bottom: 1px solid #BDBDBD;
+    &.hover-delete {
+        position: relative;
+        .circle-notifica {
+            position: relative;
+            left: -45px;
+        }
+        .texto-notifica {
+            position: relative;
+            left: -45px;
+        }
+        .punto {
+            position: relative;
+            left: -40px;
+        }
+        .delete {
+            display: flex;
+        }
+    }
     &.reader {
         background-color: #F2F4F4;
     }
@@ -297,7 +316,21 @@
             margin-bottom: 0;
         }
     }
+    .delete {
+        display: none;
+    }
+}
 
+.delete {
+    background: #EB5757;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 
 .punto {
