@@ -3084,6 +3084,14 @@ a {
   text-align: center;
 }
 
+.link-subrayado {
+  color: #003287;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
+}
+
 .link-home {
   display: block;
   text-align: center;
@@ -5314,15 +5322,15 @@ body {
   color: #BFC1C5;
 }
 
-body {
-  background-position: top center;
-  background-repeat: no-repeat;
-  /* &.page-notificaciones {
-       background-image: url(../images/page-notificaciones-ph1.jpg);
-       background-position: 0 0;
-  } */
+/* body {
+    background-position: top center;
+    background-repeat: no-repeat;
+    &.page-notificaciones {
+         background-image: url(../images/page-notificaciones-mapa.jpg);
+         background-position: 0 0;
+    }
 }
-
+ */
 .section-notificaciones {
   margin-bottom: 140px;
 }
@@ -5390,5 +5398,19 @@ body {
   display: block;
   text-decoration: underline;
   font-weight: 600;
+}
+
+/* notificaciones mapa*/
+.texto-espera {
+  width: 100%;
+  margin-top: 4px;
+}
+.texto-espera span {
+  color: #5F6268;
+  font-size: 12px;
+}
+
+.mapa-notificaciones {
+  margin: 18px 0 22px 0;
 }
 /*# sourceMappingURL=main-mobil.css.map */

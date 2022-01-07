@@ -1,12 +1,12 @@
-body {
+/* body {
     background-position: top center;
     background-repeat: no-repeat;
-    /* &.page-notificaciones {
-         background-image: url(../images/page-notificaciones-ph1.jpg);
+    &.page-notificaciones {
+         background-image: url(../images/page-notificaciones-mapa.jpg);
          background-position: 0 0;
-    } */
+    }
 }
-
+ */
 .section-notificaciones {
     margin-bottom: 140px;
 }
@@ -61,4 +61,20 @@ body {
     display: block;
     text-decoration: underline;
     font-weight: 600;
+}
+
+
+/* notificaciones mapa*/
+
+.texto-espera {
+    width: 100%;
+    margin-top: 4px;
+    span {
+        color:$black-light;
+        font-size: 12px;
+    }
+}
+
+.mapa-notificaciones {
+   margin: 18px 0 22px 0;
 }

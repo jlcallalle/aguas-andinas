@@ -39,6 +39,14 @@ a {
 .link {
   display: block;
   text-align: center;
+
+}
+.link-subrayado {
+  color:$blue-dark;
+  display: block;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 12px;
 }
 
 .link-home {
