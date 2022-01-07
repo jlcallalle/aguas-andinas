@@ -13,9 +13,11 @@
 .box-redes-login  {
     display: flex;
     align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
     margin-top: 19px;
     a {
-        margin-right: 35px;
+        // margin-right: 35px;
     }
 }
 

@@ -3899,12 +3899,14 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 19px;
 }
-.box-redes-login a {
-  margin-right: 35px;
-}
-
 .box-cuenta {
   margin-top: 22px;
 }
