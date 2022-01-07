@@ -5311,4 +5311,82 @@ body {
   padding: 1rem;
   color: #BFC1C5;
 }
+
+body {
+  background-position: top center;
+  background-repeat: no-repeat;
+  /*  &.page-notificaciones {
+        background-image: url(../images/page-notificaciones-ph1.jpg);
+        background-position: 0 0;
+   } */
+}
+
+.section-notificaciones {
+  margin-bottom: 140px;
+}
+
+.row-detalle-notifica {
+  padding: 8px 36px 100px 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.row-detalle-notifica p {
+  color: #5F6268;
+  font-size: 10px;
+  line-height: 16px;
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+.row-detalle-notifica .texto-notifica {
+  margin-top: 10px;
+}
+.row-detalle-notifica .texto-notifica .subtitle-notifica {
+  color: #5F6268;
+  font-size: 14px;
+  line-height: 17px;
+  margin-bottom: 4px;
+}
+.row-detalle-notifica .texto-notifica .subtitle-notifica span {
+  font-weight: bold;
+}
+
+.circle-detalle-notifica {
+  width: 55px;
+  height: 55px;
+  background: #2274FF;
+  border-radius: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 55px;
+}
+
+.row-btn-notifica {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.link-regresar {
+  color: #2274FF;
+  font-size: 14px;
+  text-align: right;
+  display: block;
+  text-decoration: underline;
+  font-weight: 600;
+}
 /*# sourceMappingURL=main-mobil.css.map */
