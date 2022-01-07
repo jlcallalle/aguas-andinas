@@ -5322,15 +5322,6 @@ body {
   color: #BFC1C5;
 }
 
-/* body {
-    background-position: top center;
-    background-repeat: no-repeat;
-    &.page-notificaciones {
-         background-image: url(../images/page-notificaciones-mapa.jpg);
-         background-position: 0 0;
-    }
-}
- */
 .section-notificaciones {
   margin-bottom: 140px;
 }
@@ -5412,5 +5403,95 @@ body {
 
 .mapa-notificaciones {
   margin: 18px 0 22px 0;
+}
+
+body {
+  /*  background-position: top center;
+   background-repeat: no-repeat;
+   &.page-mapa {
+        background-image: url(../images/page-notificaciones-mapa-hidrata.jpg);
+        background-position: 0 0;
+   } */
+}
+
+.section-mapa-hidratacion {
+  background-image: url(../images/bg-mapa.jpg);
+  background-position: top center;
+  background-repeat: no-repeat;
+  height: 600px;
+  position: relative;
+}
+
+.btn-retorna {
+  width: 63px;
+  height: 60px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  top: 8px;
+  left: 14px;
+}
+
+.box-reporta {
+  background-color: white;
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 20px;
+  bottom: 102px;
+  position: absolute;
+  width: 90%;
+}
+
+.box-lista-reporte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.title-reporta {
+  color: #003287;
+  font-size: 12px;
+  margin-bottom: 9px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.item-reporte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.item-reporte span {
+  color: #5F6268;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main-mobil.css.map */

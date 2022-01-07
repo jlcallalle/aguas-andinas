@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main-mobil.css">
-  <title>Notificaciones Mapa</title>
+  <title>Notificaciones Mapa Punto de Hidratación</title>
 </head>
 
-<body class="page page-notificaciones">
+<body class="page page-mapa">
   <div class="wrapper">
     <div class="header">
       <div class="container-header">
@@ -342,47 +342,32 @@
     </div>
     <main class="main">
 
-      <div class="row-regresar">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <a href="#" class="link-regresar">Regresar</a>
-            </div>
+      <section class="section-mapa-hidratacion">
+        <a href="" class="btn-retorna">
+          <svg width="29" height="24" viewBox="0 0 29 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M1.50553 0.666687C1.12981 0.666687 0.769476 0.815943 0.503799 1.08162C0.238123 1.3473 0.0888672 1.70763 0.0888672 2.08335V21.9167C0.0888672 22.2924 0.238123 22.6527 0.503799 22.9184C0.769476 23.1841 1.12981 23.3334 1.50553 23.3334C1.88126 23.3334 2.24159 23.1841 2.50727 22.9184C2.77295 22.6527 2.9222 22.2924 2.9222 21.9167V2.08335C2.9222 1.70763 2.77295 1.3473 2.50727 1.08162C2.24159 0.815943 1.88126 0.666687 1.50553 0.666687V0.666687ZM28.3089 11.4617C28.2414 11.2878 28.1403 11.1289 28.0114 10.9942L22.3447 5.32752C22.2126 5.19543 22.0558 5.09065 21.8832 5.01917C21.7106 4.94768 21.5257 4.91089 21.3389 4.91089C20.9616 4.91089 20.5998 5.06076 20.333 5.32752C20.0663 5.59428 19.9164 5.95609 19.9164 6.33335C19.9164 6.71061 20.0663 7.07242 20.333 7.33919L23.5914 10.5834H7.1722C6.79648 10.5834 6.43614 10.7326 6.17047 10.9983C5.90479 11.264 5.75553 11.6243 5.75553 12C5.75553 12.3757 5.90479 12.7361 6.17047 13.0018C6.43614 13.2674 6.79648 13.4167 7.1722 13.4167H23.5914L20.333 16.6609C20.2003 16.7926 20.0949 16.9492 20.0229 17.1219C19.951 17.2945 19.914 17.4797 19.914 17.6667C19.914 17.8537 19.951 18.0389 20.0229 18.2115C20.0949 18.3841 20.2003 18.5408 20.333 18.6725C20.4647 18.8053 20.6214 18.9107 20.7941 18.9826C20.9667 19.0545 21.1519 19.0916 21.3389 19.0916C21.5259 19.0916 21.7111 19.0545 21.8837 18.9826C22.0563 18.9107 22.213 18.8053 22.3447 18.6725L28.0114 13.0059C28.1403 12.8711 28.2414 12.7123 28.3089 12.5384C28.4506 12.1935 28.4506 11.8066 28.3089 11.4617V11.4617Z" fill="#2274FF"/>
+          </svg>
+        </a>
+        <div class="box-reporta">
+          <div class="title-reporta">
+            ¿Reporta un problema?
           </div>
-        </div>
-      </div>
-
-      <section class="section-notificaciones">
-        <div class="container">
-          <div class="row">
-            <div class="row-detalle-notifica">
-              <div class="circle-detalle-notifica">
-                <img src="images/icon-vaso.svg" alt="">
-              </div>
-              <p>Hace 1 días</p>
-              <div class="texto-notifica">
-                <div class="subtitle-notifica">
-                  Hola <span>Oscar</span>, Hemos dispuesto un punto de abastecimiento cerca de ti, motivado por labores de mantenimiento de tuberías madres.
-                </div>
-              </div>
-              <div class="texto-espera">
-                <img src="images/icono-espera.svg" alt="">
-                <span>5 min en fila de espera para abastecer.</span>
-              </div>
-
-              <div class="mapa-notificaciones">
-                <img src="images/mapa-notificacion.jpg" alt="">
-              </div>
-
-             <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15615.172409417679!2d-77.06795844999999!3d-11.919482200000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1641577123349!5m2!1ses-419!2spe" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
-
-              <a href="" class="link-subrayado">Ver mapa</a>
-             
+          <div class="box-lista-reporte">
+            <div class="item-reporte">
+              <img src="images/reporte-casa.svg" alt="">
+              <span>Privado</span>
+            </div>
+            <div class="item-reporte">
+              <img src="images/reporte-publico.svg" alt="">
+              <span>Público</span>
+            </div>
+            <div class="item-reporte">
+              <img src="images/mis-reportes.svg" alt="">
+              <span>Mis reportes</span>
             </div>
           </div>
         </div>
       </section>
-
       <section class="section-menu">
         <a href="" class="item-menu">
           <i>
