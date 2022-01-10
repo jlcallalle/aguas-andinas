@@ -5544,7 +5544,6 @@ body.page-mapa {
 }
 
 .box-slider-map {
-  height: 548px;
   width: 266px;
   position: absolute;
   top: -19px;
@@ -5554,7 +5553,11 @@ body.page-mapa {
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   z-index: 10;
-  overflow-y: scroll;
+  /*  overflow-y: scroll; */
+  display: none;
+}
+.box-slider-map.open {
+  display: block;
 }
 
 /* Mapa open Hover */
@@ -5612,6 +5615,9 @@ body.page-mapa {
 .box-lista-filtro .item-lista.active {
   border: 2px solid #2274FF;
 }
+.box-lista-filtro .item-lista:last-child {
+  margin-bottom: 0;
+}
 
 .icon-lista {
   width: 23px;
@@ -5629,6 +5635,9 @@ body.page-mapa {
           justify-content: center;
   min-width: 23px;
   margin-right: 10px;
+}
+.icon-lista img {
+  width: 10px;
 }
 
 .texto-lista .title-filtro {

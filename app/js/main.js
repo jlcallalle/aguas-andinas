@@ -10,7 +10,7 @@ var MyApp = {
 }
 
 $(function () {
-    console.log('ready..');    
+    console.log('ready.. movil');    
     MyApp.toggeMenu();
 
     // Mostrar panel estado operacional
@@ -23,6 +23,18 @@ $(function () {
         e.preventDefault();
         $('.box-lista-notifica').toggleClass('active');
     });
+
+    $('.btn-retorna').on('click', function(e) {
+        e.preventDefault();
+        $('.box-slider-map').addClass('open');
+    });
+
+    $('.btn-retorna-return').on('click', function(e) {
+        e.preventDefault();
+        $('.box-slider-map').removeClass('open');
+    });
+
+
 
 
     // Mostrar panel clima grados

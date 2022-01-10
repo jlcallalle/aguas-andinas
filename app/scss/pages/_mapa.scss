@@ -104,7 +104,7 @@ body {
 }
 
 .box-slider-map {
-    height: 548px;
+    //height: 548px;
     width: 266px;
     position: absolute;
     top: -19px;
@@ -113,7 +113,11 @@ body {
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     z-index: 10;
-    overflow-y: scroll;
+   /*  overflow-y: scroll; */
+    display: none;
+    &.open {
+        display: block;
+    }
 }
 
 /* Mapa open Hover */
@@ -158,6 +162,9 @@ body {
         &.active {
             border:2px solid $blue;
         }
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -171,6 +178,9 @@ body {
     justify-content: center;
     min-width: 23px;
     margin-right: 10px;
+    img {
+        width: 10px;
+    }
   }
 
 .texto-lista {
