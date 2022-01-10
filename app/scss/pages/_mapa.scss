@@ -1,9 +1,13 @@
 body {
-   /*  background-position: top center;
+    background-position: top center;
     background-repeat: no-repeat;
     &.page-mapa {
-         background-image: url(../images/page-notificaciones-mapa-hidrata.jpg);
+         // background-image: url(../images/page-notificaciones-mapa-hidrata.jpg);
+       /*   background-image: url(../images/page-notificaciones-mapa-hidrata-slider.jpg); */
          background-position: 0 0;
+    }
+    /* .box-slider-map {
+        background-color: transparent;
     } */
 }
 
@@ -29,15 +33,33 @@ body {
     left: 14px;
 }
 
+.btn-retorna-return {
+    width: 63px;
+    height: 60px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 17px;
+    right: 20px;
+}
+
 .box-reporta {
     background-color: white;
     margin: 0 20px;
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
-    bottom: 102px;
+    /* padding: 10px 20px; */
+    padding: 4px 20px  10px 20px;
+    bottom: 105px;
     position: absolute;
     width: 90%;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    height: 90px;
 }
 
 .box-lista-reporte {
@@ -57,9 +79,132 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    &:hover {
+        text-decoration: none;
+    }
+    &.separa {
+        position: relative;
+        &:before {
+            content: '';
+            width: 2px;
+            height: 22px;
+            position: absolute;
+            background-color: #B7C0CE;
+            right: -25px;
+            top: 3px;
+        }
+    } 
+    &.item-mis-reportes {
+        margin-left: 10px;
+    }
     span {
         color:$black-light;
         font-size: 12px;
     }
 }
 
+.box-slider-map {
+    height: 548px;
+    width: 266px;
+    position: absolute;
+    top: -19px;
+    padding: 30px 15px;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    z-index: 10;
+    overflow-y: scroll;
+}
+
+/* Mapa open Hover */
+
+.box-filtro {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 42px;
+    justify-content: space-between;
+    input {
+        margin-bottom: 15px;
+        &:focus-visible, &:active {
+            outline: none;
+            border-color: $blue;
+            color:$blue;
+            background-color: #E7F0FF;
+        }
+        &.input-trabajos {
+            width: 127px;
+        }
+        &.input-grifos {
+            width: 90px;
+        }
+        &.input-sucursales {
+            width: 180px;
+        }
+        &.input-hidrata {
+            width: 160px;
+        }
+    }
+}
+
+.box-lista-filtro {
+    display: flex;
+    flex-direction: column;
+    .item-lista {
+        display: flex;
+        border:2px solid $gray;
+        border-radius: 5px;
+        padding: 12px 5px;
+        margin-bottom: 20px;
+        &.active {
+            border:2px solid $blue;
+        }
+    }
+}
+
+.icon-lista {
+    width: 23px;
+    height: 23px;
+    background: #2274FF;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 23px;
+    margin-right: 10px;
+  }
+
+.texto-lista {
+    .title-filtro {
+        color:$blue-dark;
+        font-size: 10px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }   
+    .row-tiempo {
+        .texto-tiempo {
+            color:$blue-dark;
+            font-size: 10px;
+            font-weight: bold;
+        }
+        .texto-minutos {
+            color:$blue-dark;
+            font-size: 10px;
+        }
+    }
+    .tipo-lista {
+        color:$blue-dark;
+        font-size: 10px;
+        margin-top: 5px;
+    }
+}
+
+
+.form-control-small {
+    padding: 0.25rem 0.8rem;
+    border-radius: 20px;
+    border:2px solid $gray;
+    color:  $gray;
+    font-size: 14px;
+    font-weight: bold;
+    height: 44px;
+}
