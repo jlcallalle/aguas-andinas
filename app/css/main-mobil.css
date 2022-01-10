@@ -5355,6 +5355,7 @@ body {
   font-size: 14px;
   line-height: 17px;
   margin-bottom: 4px;
+  text-align: justify;
 }
 .row-detalle-notifica .texto-notifica .subtitle-notifica span {
   font-weight: bold;
