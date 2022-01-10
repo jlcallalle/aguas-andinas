@@ -269,6 +269,12 @@
         display: flex;
         justify-content: space-between;
     }
+    .close {
+        position: absolute;
+        right: 5px;
+        top: 2px;
+    }
+
 }
 
 .row-notifica {

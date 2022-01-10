@@ -4798,6 +4798,11 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.box-lista-notifica .close {
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
 
 .row-notifica {
   padding: 8px 36px 8px 23px;
