@@ -5365,18 +5365,6 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   font-size: 13px;
 }
 
-body {
-  /*  background-position: top center;
-   background-repeat: no-repeat; */
-  /* &.page-boleta {
-       background-image: url(../images/m-boleta-3.jpg);
-       background-position: 0 0;
-       .content-page {
-          background-color: transparent; 
-      }
-  } */
-}
-
 .badge-pendiente {
   color: #FFA300;
   font-size: 16px;
@@ -5868,5 +5856,27 @@ body.page-mapa {
   font-size: 14px;
   font-weight: bold;
   height: 44px;
+}
+
+.page-pago {
+  /* border:1px solid red; */
+  background-image: url(../images/page-pago1.jpg);
+  background-position: 0 0;
+}
+.page-pago .content-page {
+  background-color: transparent;
+}
+
+.row-vence {
+  height: 26px;
+  background-color: #8FB9FF;
+  color: #2274FF;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.section-contenido {
+  height: 1330px;
 }
 /*# sourceMappingURL=main-mobil.css.map */
