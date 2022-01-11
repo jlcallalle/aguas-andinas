@@ -4818,7 +4818,7 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
 .row-notifica.hover-delete {
   position: relative;
 }
-.row-notifica.hover-delete .circle-notifica {
+.row-notifica.hover-delete .circle-notifica, .row-notifica.hover-delete .circle-foto, .row-notifica.hover-delete .circle-alert {
   position: relative;
   left: -45px;
 }
@@ -4919,9 +4919,67 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   margin-right: 10px;
 }
 
+.circle-foto {
+  width: 54px;
+  height: 54px;
+  background: #2274FF;
+  border-radius: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 54px;
+  margin-right: 10px;
+}
+
 .circle-check {
   width: 45px;
   height: 45px;
+  /*  background: $green; */
+  border-radius: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 45px;
+  margin-right: 10px;
+}
+
+.circle-alert {
+  width: 45px;
+  height: 45px;
+  background: #FF8B8B;
+  border-radius: 100%;
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 45px;
+  margin-right: 10px;
+}
+
+.circle-puente {
+  width: 45px;
+  height: 45px;
+  background: #FFD58B;
   border-radius: 100%;
   display: block;
   display: -webkit-box;
