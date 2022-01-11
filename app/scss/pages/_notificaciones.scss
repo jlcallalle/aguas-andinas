@@ -81,3 +81,75 @@
 .mapa-notificaciones {
    margin: 18px 0 22px 0;
 }
+
+/* Notificaciones 8 - section-zona */
+
+/* .page-notificaciones {
+    background-image: url(../images/pagina-mapa-zona.jpg);
+    background-position: 0 4px;
+    background-repeat: no-repeat;
+} */
+
+.content-zona {
+    padding-bottom: 130px;
+}
+
+.texto-parrafo {
+    color:$black-light;
+    font-size: 12px;
+}
+
+.box-trabajos-mapa {
+    margin: 0 10px;
+}
+.item-mapa {
+    margin-top: 25px;
+    border:1px solid $gray;
+    color: $blue-dark;
+    font-size: 14px;
+    display: flex;
+    border-radius: 5px;
+    /* padding: 10px 20px 10px 20px; */
+    padding: 10px 20px 10px 10px;
+    /* margin:25px 0 0 0; */
+    position: relative;
+    .icon {
+        width: 86px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2px;
+    }
+    .close {
+        position: absolute;
+        right: 4px;
+        top: 2px;
+        font-size: 18px;
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.item-dato {
+    width: 100%;
+    .item-title {
+        font-weight: bold;
+        line-height: 14px;
+    }
+    .item-texto {
+        display: flex;
+        flex-direction: column;
+    }
+    .row-text {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.form-lugar {
+    margin-top: 25px;
+    .form-group {
+        margin-bottom: 0.8rem;
+    }
+}
