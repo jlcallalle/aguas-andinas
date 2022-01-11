@@ -5861,7 +5861,7 @@ body.page-mapa {
 .page-pago {
   /* border:1px solid red; */
   background-image: url(../images/page-pago1.jpg);
-  background-position: 0 0;
+  background-position: top center;
 }
 .page-pago .content-page {
   background-color: transparent;
