@@ -27,7 +27,7 @@
 }
 
 .title-small {
-    color: #2274FF;
+    /* color: $blue ; */
     font-size: 16px;
     font-weight: bold;
 }
@@ -35,4 +35,38 @@
 .big-title {
     font-size: 18px;
     text-align: center;
+}
+
+/* Taiwind css */
+
+.text-xs {
+    font-size: 0.75rem; //12px
+}
+
+.text-sm {
+    font-size: 0.875rem; //14px
+}
+
+.text-lg {
+    font-size: 1.125rem; //18px
+}
+
+.text-base {
+    font-size: 1rem;
+}
+
+.text-green {
+    color: $green;
+}
+
+.text-gray {
+    color: $gray-dark;
+}
+
+.text-blue {
+    color: $blue;
+}
+
+.text-blue-dark {
+    color: $blue-dark ;
 }

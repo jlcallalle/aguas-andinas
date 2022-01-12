@@ -1,7 +1,9 @@
-/* .badge-pendiente {
+.badge-pendiente {
     color: $orange;
+    /* font-size: 16px; */
     background-color: $orange-light;
     padding: 8px 25px;
+    /* padding: 8px 40px; */
     height: 31px;
     border-radius: 5px;
     font-weight: bold;
@@ -15,6 +17,7 @@
     color: $green;
     background-color: #D2FFE9;
     padding: 8px 25px;
+    /*  padding: 8px 40px; */
     height: 31px;
     border-radius: 5px;
     font-weight: bold;
@@ -24,4 +27,14 @@
     min-width: 135px;
 }
 
- */
+.badge-recomendado {
+    color: $green;
+    background-color: #D2FFE9;
+    padding: 8px 12px;
+    height: 31px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1;
+    text-align: center;
+}
