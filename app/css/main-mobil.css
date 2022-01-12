@@ -6096,4 +6096,71 @@ body.page-mapa {
 .box-form .form-group {
   margin-bottom: 1rem;
 }
+
+.page-comprobante {
+  /*     border-top:1px solid red;
+      background-image: url(../images/page-comprobante_mobile_exito.jpg);
+      background-position: top center; */
+}
+
+.section-detalle-pago {
+  padding: 12px 14px;
+}
+
+.row-exito {
+  height: 33px;
+  background-color: #19CE74;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+.row-detalle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 18px;
+}
+.row-detalle img {
+  position: absolute;
+  top: -7px;
+  right: -11px;
+}
+
+.row-contenido {
+  border-top: 1px dashed #B7C0CE;
+  border-bottom: 1px dashed #B7C0CE;
+  padding: 45px 0 29px 0;
+}
+
+.table-flex {
+  font-size: 12px;
+}
+.table-flex .row {
+  margin-bottom: 10px;
+}
+
+.box-recibir-boleta {
+  border-top: 1px dashed #B7C0CE;
+  border-bottom: 1px dashed #B7C0CE;
+  padding: 28px 0;
+}
+
+.lista-boleta {
+  margin-top: 20px;
+}
+.lista-boleta .item-switch {
+  margin-bottom: 30px;
+}
+.lista-boleta i {
+  margin-right: 10px;
+}
 /*# sourceMappingURL=main-mobil.css.map */

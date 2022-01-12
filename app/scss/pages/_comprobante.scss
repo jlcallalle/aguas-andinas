@@ -1,0 +1,61 @@
+.page-comprobante {
+/*     border-top:1px solid red;
+    background-image: url(../images/page-comprobante_mobile_exito.jpg);
+    background-position: top center; */
+}
+
+.section-detalle-pago {
+    // height: 1000px;
+    padding: 12px 14px;
+}
+
+.row-exito {
+    height: 33px;
+    background-color: $green;
+    color:white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.row-detalle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding-bottom: 18px;
+    img {
+        position: absolute;
+        top: -7px;
+        right: -11px;
+    }
+}
+
+.row-contenido {
+    border-top: 1px dashed #B7C0CE;
+    border-bottom: 1px dashed #B7C0CE;
+    padding: 45px 0 29px 0;
+}
+
+.table-flex {
+    font-size: 12px;
+    .row {
+        margin-bottom: 10px;
+    }
+}
+
+.box-recibir-boleta {
+    border-top: 1px dashed #B7C0CE;
+    border-bottom: 1px dashed #B7C0CE;
+    padding: 28px 0;
+}
+
+.lista-boleta {
+    margin-top: 20px;
+    .item-switch {
+        margin-bottom: 30px;
+    }
+    i {
+        margin-right: 10px;
+    }
+}
