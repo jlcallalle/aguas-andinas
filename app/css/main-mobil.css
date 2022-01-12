@@ -5936,9 +5936,6 @@ body.page-mapa {
   /*  background-image: url(../images/page-pago1.jpg); */
   background-position: top center;
 }
-.page-pago .content-page {
-  background-color: transparent;
-}
 
 .row-vence {
   height: 26px;
@@ -5949,9 +5946,6 @@ body.page-mapa {
   text-align: center;
 }
 
-/* .section-pago {
-    height: 1330px;
-} */
 .slider-pago {
   list-style: none;
   display: -webkit-box;
@@ -6092,11 +6086,14 @@ body.page-mapa {
 
 .section-realizar-pago {
   margin-top: 30px;
-  /* background-color: rgba(255,0,0,0.1); */
   background: #FFFFFF;
   -webkit-box-shadow: 2px -2px 17px rgba(0, 0, 0, 0.12);
           box-shadow: 2px -2px 17px rgba(0, 0, 0, 0.12);
   padding: 15px;
   margin-bottom: 60px;
+}
+
+.box-form .form-group {
+  margin-bottom: 1rem;
 }
 /*# sourceMappingURL=main-mobil.css.map */
