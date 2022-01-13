@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/main-mobil.css">
+  <title>Lectura Medidor 2 </title>
+</head>
+
+<body class="page page-medidor">
+  <div class="wrapper">
+    <div class="header">
+      <div class="container-header">
+        <div class="row">
+          <div class="col">
+            <div class="header-inner">
+              <div class="header-nav">
+                <div class="header-left">
+                  <a class="logo-brand" href="index.html">
+                    <img src="images/m-logo-aguas.png" alt="">
+                  </a>
+                  <div class="box-search">
+                    <i>
+                      <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.5248 18.3109L16.8148 14.6309C18.2549 12.8353 18.9523 10.5562 18.7637 8.2622C18.575 5.9682 17.5145 3.83368 15.8004 2.29754C14.0862 0.761407 11.8487 -0.0595894 9.54777 0.00337096C7.24688 0.0663314 5.05757 1.00846 3.42999 2.63604C1.80241 4.26362 0.860277 6.45294 0.797316 8.75382C0.734356 11.0547 1.55535 13.2923 3.09149 15.0064C4.62763 16.7206 6.76215 17.781 9.05615 17.9697C11.3501 18.1584 13.6293 17.461 15.4248 16.0209L19.1048 19.7009C19.1978 19.7946 19.3084 19.869 19.4303 19.9198C19.5521 19.9706 19.6828 19.9967 19.8148 19.9967C19.9469 19.9967 20.0776 19.9706 20.1994 19.9198C20.3213 19.869 20.4319 19.7946 20.5248 19.7009C20.7051 19.5144 20.8058 19.2652 20.8058 19.0059C20.8058 18.7466 20.7051 18.4974 20.5248 18.3109ZM9.81485 16.0209C8.43038 16.0209 7.077 15.6104 5.92585 14.8412C4.77471 14.072 3.8775 12.9788 3.34769 11.6997C2.81788 10.4206 2.67925 9.01314 2.94935 7.65527C3.21945 6.2974 3.88613 5.05012 4.8651 4.07115C5.84407 3.09219 7.09135 2.4255 8.44921 2.1554C9.80708 1.88531 11.2145 2.02393 12.4936 2.55374C13.7727 3.08356 14.866 3.98076 15.6351 5.13191C16.4043 6.28305 16.8148 7.63643 16.8148 9.0209C16.8148 10.8774 16.0773 12.6579 14.7646 13.9706C13.4518 15.2834 11.6714 16.0209 9.81485 16.0209Z" fill="#003287"/>
+                      </svg>
+                    </i>
+                  </div>
+                </div>
+                <div class="header-right">
+                  <div class="box-notification">
+                    <div class="icono-notifica">
+                      <div class="circle-count">
+                        12
+                      </div>
+                      <i>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M18 13.18V10C17.9986 8.58312 17.4958 7.21247 16.5806 6.13077C15.6655 5.04908 14.3971 4.32615 13 4.09V3C13 2.73478 12.8946 2.48043 12.7071 2.29289C12.5196 2.10536 12.2652 2 12 2C11.7348 2 11.4804 2.10536 11.2929 2.29289C11.1054 2.48043 11 2.73478 11 3V4.09C9.60294 4.32615 8.33452 5.04908 7.41939 6.13077C6.50425 7.21247 6.00144 8.58312 6 10V13.18C5.41645 13.3863 4.911 13.7681 4.55294 14.2729C4.19488 14.7778 4.00174 15.3811 4 16V18C4 18.2652 4.10536 18.5196 4.29289 18.7071C4.48043 18.8946 4.73478 19 5 19H8.14C8.37028 19.8474 8.873 20.5954 9.5706 21.1287C10.2682 21.6621 11.1219 21.951 12 21.951C12.8781 21.951 13.7318 21.6621 14.4294 21.1287C15.127 20.5954 15.6297 19.8474 15.86 19H19C19.2652 19 19.5196 18.8946 19.7071 18.7071C19.8946 18.5196 20 18.2652 20 18V16C19.9983 15.3811 19.8051 14.7778 19.4471 14.2729C19.089 13.7681 18.5835 13.3863 18 13.18ZM8 10C8 8.93913 8.42143 7.92172 9.17157 7.17157C9.92172 6.42143 10.9391 6 12 6C13.0609 6 14.0783 6.42143 14.8284 7.17157C15.5786 7.92172 16 8.93913 16 10V13H8V10ZM12 20C11.651 19.9979 11.3086 19.9045 11.0068 19.7291C10.7051 19.5536 10.4545 19.3023 10.28 19H13.72C13.5455 19.3023 13.2949 19.5536 12.9932 19.7291C12.6914 19.9045 12.349 19.9979 12 20ZM18 17H6V16C6 15.7348 6.10536 15.4804 6.29289 15.2929C6.48043 15.1054 6.73478 15 7 15H17C17.2652 15 17.5196 15.1054 17.7071 15.2929C17.8946 15.4804 18 15.7348 18 16V17Z" fill="#003287"/>
+                        </svg>
+                      </i>
+                    </div>
+                    <div class="box-lista-notifica">
+                      <div class="title-notifica">
+                        <span>Notificaciones</span>
+                        <a href="#" >Configuraciones</a>
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      
+                      <div class="lista-notifica">
+                        <div class="row-notifica">
+                          <div class="circle-notifica">
+                            <img src="images/icon-ticket.svg" alt="">
+                            </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Oscar</span>, Te informamos que tu boleta ha sido entregada en tu domicilio, conoce los medios de...
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                        </div>
+                
+                        <div class="row-notifica reader hover-delete">
+                          <div class="circle-notifica">
+                            <img src="images/icon-ticket.svg" alt="">
+                          </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Oscar</span>, Tu boleta será emitida y enviada a tu domicilio en 5 días, te invitamos a que conozcas el detalle... 
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                          <div class="delete">
+                            <img src="images/icon-delete.svg" alt="">
+                          </div>
+                        </div>
+
+                        <div class="row-notifica">
+                          <div class="circle-notifica">
+                            <img src="images/icon-ticket.svg" alt="">
+                          </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Oscar</span>, Te informamos que tu fecha de facturación será el día 07-07-2021. Te invitamos a que...
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                        </div>
+
+                        <div class="row-notifica">
+                          <div class="circle-notifica">
+                            <img src="images/icon-agua.svg" alt="">
+                          </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Oscar</span>, Gracias a tu aporte se han podido ahorrar más de 2.000 litros de agua. sigue el siguiente enlace para...
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                        </div>
+
+                        <div class="row-notifica reader">
+                          <div class="circle-notifica">
+                            <img src="images/icon-mapa.svg" alt="">
+                          </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Oscar</span>, tu requerimiento <span> N° 185296376 </span>ha sido creado éxitosamente y en estos momentos...
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                        </div>
+
+                        <div class="row-notifica reader">
+                          <div class="circle-notifica">
+                            <img src="images/icon-agua.svg" alt="">
+                          </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Oscar</span>, gracias a tu reporte <span> N° 185296894 </span>se pudieron arreglar 2 grifos defectuosos cercanos a tí...
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                        </div>
+
+                        <div class="row-notifica reader">
+                          <div class="circle-check">
+                            <img src='images/icon-check-verde.svg'> 
+                          </div>
+                          <div class="texto-notifica">
+                            <div class="subtitle-notifica">
+                              Hola <span>Cumplidor</span>, te informamos que el servicio ha sido correctamente restaurado a toda...
+                            </div>
+                            <p>Hace 2 días</p>
+                          </div>
+                          <div class="punto"></div>
+                        </div>
+                        <div class="row-botones">
+                          <a href="" class="second-title">Más información</a>
+                          <a href="" class="btn btn-azul-small">Ver mapa de trabajos</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="box-state">
+                    <i>
+                      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2294 9.18689C12.6617 8.30633 11.919 7.15447 11 5.58594C10.081 7.15447 9.33831 8.30693 8.77057 9.18749C7.57844 11.038 7.13281 11.7304 7.13281 12.9339C7.13281 15.0663 8.8675 16.801 11 16.801C13.1325 16.801 14.8672 15.0663 14.8672 12.9339C14.8672 11.7279 14.4216 11.0361 13.2294 9.18689Z" fill="#19CE74"/>
+                        <path d="M11 0C4.95877 0 0 4.95816 0 11C0 17.0418 4.95877 22 11 22C17.0412 22 22 17.0418 22 11C22 4.95816 17.0412 0 11 0ZM11 18.0898C8.15624 18.0898 5.84375 15.7767 5.84375 12.9336C5.84375 11.3506 6.42155 10.4543 7.68797 8.48921C8.35768 7.44876 9.27536 6.02439 10.4398 3.97813C10.6689 3.57655 11.3311 3.57655 11.5602 3.97813C12.7246 6.02439 13.6423 7.44816 14.3133 8.48796C15.5784 10.4518 16.1562 11.3487 16.1562 12.9336C16.1562 15.7767 13.8438 18.0898 11 18.0898Z" fill="#19CE74"/>
+                      </svg>
+                    </i>
+
+                    <div class="box-estado-operacional">
+                      <div class="title-estado">
+                        Estado Operacional
+                        <button type="button" class="close" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                     
+                      <div class="lista-estado">
+                        <div class="row-estado">
+                          <i>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.9">
+                                <circle cx="13" cy="13.1602" r="11.75" fill="white" stroke="white" stroke-width="1.5">
+                                </circle>
+                                <path
+                                  d="M15.2294 11.347C14.6617 10.4665 13.919 9.31463 13 7.74609C12.081 9.31463 11.3383 10.4671 10.7706 11.3476C9.57844 13.1982 9.13281 13.8905 9.13281 15.094C9.13281 17.2265 10.8675 18.9612 13 18.9612C15.1325 18.9612 16.8672 17.2265 16.8672 15.094C16.8672 13.888 16.4216 13.1963 15.2294 11.347Z"
+                                  fill="#2274FF"></path>
+                                <path
+                                  d="M13 2.16016C6.95877 2.16016 2 7.11832 2 13.1602C2 19.202 6.95877 24.1602 13 24.1602C19.0412 24.1602 24 19.202 24 13.1602C24 7.11832 19.0412 2.16016 13 2.16016ZM13 20.25C10.1562 20.25 7.84375 17.9369 7.84375 15.0938C7.84375 13.5107 8.42155 12.6145 9.68797 10.6494C10.3577 9.60892 11.2754 8.18455 12.4398 6.13829C12.6689 5.7367 13.3311 5.7367 13.5602 6.13829C14.7246 8.18455 15.6423 9.60832 16.3133 10.6481C17.5785 12.6119 18.1562 13.5088 18.1562 15.0938C18.1562 17.9369 15.8438 20.25 13 20.25Z"
+                                  fill="#2274FF"></path>
+                              </g>
+                            </svg>
+                          </i>
+                          <div class="texto-estado">
+                            <div class="subtitle-estado">
+                              Normalidad
+                            </div>
+                            <p>Nuestro servicio se encuentra
+                              operando con normalidad</p>
+                          </div>
+                        </div>
+                        <div class="row-estado">
+                          <i>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <circle cx="13" cy="13.1602" r="11.75" fill="white" stroke="white" stroke-width="1.5">
+                                </circle>
+                                <path
+                                  d="M15.2294 11.347C14.6617 10.4665 13.919 9.31463 13 7.74609C12.081 9.31463 11.3383 10.4671 10.7706 11.3476C9.57844 13.1982 9.13281 13.8905 9.13281 15.094C9.13281 17.2265 10.8675 18.9612 13 18.9612C15.1325 18.9612 16.8672 17.2265 16.8672 15.094C16.8672 13.888 16.4216 13.1963 15.2294 11.347Z"
+                                  fill="#109954"></path>
+                                <path
+                                  d="M13 2.16016C6.95877 2.16016 2 7.11832 2 13.1602C2 19.202 6.95877 24.1602 13 24.1602C19.0412 24.1602 24 19.202 24 13.1602C24 7.11832 19.0412 2.16016 13 2.16016ZM13 20.25C10.1562 20.25 7.84375 17.9369 7.84375 15.0938C7.84375 13.5107 8.42155 12.6145 9.68797 10.6494C10.3577 9.60892 11.2754 8.18455 12.4398 6.13829C12.6689 5.7367 13.3311 5.7367 13.5602 6.13829C14.7246 8.18455 15.6423 9.60832 16.3133 10.6481C17.5784 12.6119 18.1562 13.5088 18.1562 15.0938C18.1562 17.9369 15.8438 20.25 13 20.25Z"
+                                  fill="#109954"></path>
+                              </g>
+                            </svg>
+                          </i>
+                          <div class="texto-estado">
+                            <div class="subtitle-estado">
+                              Alerta verde
+                            </div>
+                            <p>Hemos activado a todos nuestros equipos para monitorear y vigilar la operación</p>
+                          </div>
+                        </div>
+                        <div class="row-estado ">
+                          <i>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <circle cx="13" cy="13.1602" r="11.75" fill="white" stroke="white" stroke-width="1.5">
+                                </circle>
+                                <path
+                                  d="M15.2294 11.347C14.6617 10.4665 13.919 9.31463 13 7.74609C12.081 9.31463 11.3383 10.4671 10.7706 11.3476C9.57844 13.1982 9.13281 13.8905 9.13281 15.094C9.13281 17.2265 10.8675 18.9612 13 18.9612C15.1325 18.9612 16.8672 17.2265 16.8672 15.094C16.8672 13.888 16.4216 13.1963 15.2294 11.347Z"
+                                  fill="#109954"></path>
+                                <path
+                                  d="M13 2.16016C6.95877 2.16016 2 7.11832 2 13.1602C2 19.202 6.95877 24.1602 13 24.1602C19.0412 24.1602 24 19.202 24 13.1602C24 7.11832 19.0412 2.16016 13 2.16016ZM13 20.25C10.1562 20.25 7.84375 17.9369 7.84375 15.0938C7.84375 13.5107 8.42155 12.6145 9.68797 10.6494C10.3577 9.60892 11.2754 8.18455 12.4398 6.13829C12.6689 5.7367 13.3311 5.7367 13.5602 6.13829C14.7246 8.18455 15.6423 9.60832 16.3133 10.6481C17.5784 12.6119 18.1562 13.5088 18.1562 15.0938C18.1562 17.9369 15.8438 20.25 13 20.25Z"
+                                  fill="#109954"></path>
+                              </g>
+                            </svg>
+                          </i>
+                          <div class="texto-estado">
+                            <div class="subtitle-estado">
+                              Alerta temprana preventiva
+                            </div>
+                            <p>Hemos activado acciones y movilizado recursos según nuestro protocolo de emergencia, ante
+                              alguna posibilidad de contigencia en nuestro servicio</p>
+                          </div>
+                        </div>
+                        <div class="row-estado">
+                          <i>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <circle cx="13" cy="13.1602" r="11.75" fill="white" stroke="white" stroke-width="1.5">
+                                </circle>
+                                <path
+                                  d="M15.2294 11.347C14.6617 10.4665 13.919 9.31463 13 7.74609C12.081 9.31463 11.3383 10.4671 10.7706 11.3476C9.57844 13.1982 9.13281 13.8905 9.13281 15.094C9.13281 17.2265 10.8675 18.9612 13 18.9612C15.1325 18.9612 16.8672 17.2265 16.8672 15.094C16.8672 13.888 16.4216 13.1963 15.2294 11.347Z"
+                                  fill="#FFC700"></path>
+                                <path
+                                  d="M13 2.16016C6.95877 2.16016 2 7.11832 2 13.1602C2 19.202 6.95877 24.1602 13 24.1602C19.0412 24.1602 24 19.202 24 13.1602C24 7.11832 19.0412 2.16016 13 2.16016ZM13 20.25C10.1562 20.25 7.84375 17.9369 7.84375 15.0938C7.84375 13.5107 8.42155 12.6145 9.68797 10.6494C10.3577 9.60892 11.2754 8.18455 12.4398 6.13829C12.6689 5.7367 13.3311 5.7367 13.5602 6.13829C14.7246 8.18455 15.6423 9.60832 16.3133 10.6481C17.5784 12.6119 18.1562 13.5088 18.1562 15.0938C18.1562 17.9369 15.8438 20.25 13 20.25Z"
+                                  fill="#FFC700"></path>
+                              </g>
+                            </svg>
+                          </i>
+                          <div class="texto-estado">
+                            <div class="subtitle-estado">
+                              Alerta Amarilla
+                            </div>
+                            <p>La contigencia actual está afectando nuestra operación. Recomendamos juntar 15 litros de
+                              agua por persona para cubrir necesidades básicas</p>
+                          </div>
+                        </div>
+                        <div class="row-estado">
+                          <i>
+                            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g opacity="0.5">
+                                <circle cx="13" cy="13.1602" r="11.75" fill="white" stroke="white" stroke-width="1.5">
+                                </circle>
+                                <path
+                                  d="M15.2294 11.347C14.6617 10.4665 13.919 9.31463 13 7.74609C12.081 9.31463 11.3383 10.4671 10.7706 11.3476C9.57844 13.1982 9.13281 13.8905 9.13281 15.094C9.13281 17.2265 10.8675 18.9612 13 18.9612C15.1325 18.9612 16.8672 17.2265 16.8672 15.094C16.8672 13.888 16.4216 13.1963 15.2294 11.347Z"
+                                  fill="#B60606"></path>
+                                <path
+                                  d="M13 2.16016C6.95877 2.16016 2 7.11832 2 13.1602C2 19.202 6.95877 24.1602 13 24.1602C19.0412 24.1602 24 19.202 24 13.1602C24 7.11832 19.0412 2.16016 13 2.16016ZM13 20.25C10.1562 20.25 7.84375 17.9369 7.84375 15.0938C7.84375 13.5107 8.42155 12.6145 9.68797 10.6494C10.3577 9.60892 11.2754 8.18455 12.4398 6.13829C12.6689 5.7367 13.3311 5.7367 13.5602 6.13829C14.7246 8.18455 15.6423 9.60832 16.3133 10.6481C17.5784 12.6119 18.1562 13.5088 18.1562 15.0938C18.1562 17.9369 15.8438 20.25 13 20.25Z"
+                                  fill="#B60606"></path>
+                              </g>
+                            </svg>
+                          </i>
+                          <div class="texto-estado">
+                            <div class="subtitle-estado">
+                              Alerta Roja
+                            </div>
+                            <p>Nuestro servicio se ve afectado por la actual contigencia. Nuestros equiposse encuentran
+                              trabajando para resolverla a la brevedad.</p>
+                          </div>
+                        </div>
+                        <div class="row-botones">
+                          <a href="" class="second-title">Más información</a>
+                          <a href="" class="btn btn-azul-small">Ver mapa de trabajos</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                <button class="c-hamburger c-hamburger--htx">
+                  <span></span>
+                </button>
+                <nav class="nav-menu nav sort-pages modify-pages" id="navigation" role="navigation">
+                  <div class="logo-movil">
+                    <img src="images/logo-movil.png" alt="">
+                  </div>
+                  <div class="box-icon-home">
+                    <i>
+                      <svg width="19" height="21" viewBox="0 0 19 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M17.6219 6.66748L11.5408 1.40749C10.9834 0.915532 10.2617 0.643555 9.51381 0.643555C8.7659 0.643555 8.04423 0.915532 7.48678 1.40749L1.4057 6.66748C1.08378 6.95156 0.826882 7.30004 0.652124 7.68973C0.477365 8.07942 0.388753 8.50137 0.392186 8.92748V17.6675C0.392186 18.4631 0.712528 19.2262 1.28274 19.7888C1.85295 20.3514 2.62632 20.6675 3.43273 20.6675H15.5949C16.4013 20.6675 17.1747 20.3514 17.7449 19.7888C18.3151 19.2262 18.6354 18.4631 18.6354 17.6675V8.91748C18.6374 8.49305 18.5481 8.07302 18.3734 7.68517C18.1987 7.29731 17.9426 6.95044 17.6219 6.66748ZM11.5408 18.6675H7.48678V13.6675C7.48678 13.4023 7.59356 13.1479 7.78363 12.9604C7.9737 12.7728 8.23149 12.6675 8.50029 12.6675H10.5273C10.7961 12.6675 11.0539 12.7728 11.244 12.9604C11.4341 13.1479 11.5408 13.4023 11.5408 13.6675V18.6675ZM16.6084 17.6675C16.6084 17.9327 16.5016 18.1871 16.3115 18.3746C16.1215 18.5621 15.8637 18.6675 15.5949 18.6675H13.5679V13.6675C13.5679 12.8718 13.2475 12.1088 12.6773 11.5462C12.1071 10.9836 11.3337 10.6675 10.5273 10.6675H8.50029C7.69389 10.6675 6.92052 10.9836 6.35031 11.5462C5.78009 12.1088 5.45975 12.8718 5.45975 13.6675V18.6675H3.43273C3.16393 18.6675 2.90613 18.5621 2.71606 18.3746C2.52599 18.1871 2.41921 17.9327 2.41921 17.6675V8.91748C2.41939 8.7755 2.45022 8.63518 2.50964 8.50586C2.56905 8.37655 2.6557 8.26119 2.76381 8.16748L8.84489 2.91749C9.02984 2.75717 9.26762 2.66875 9.51381 2.66875C9.76 2.66875 9.99777 2.75717 10.1827 2.91749L16.2638 8.16748C16.3719 8.26119 16.4586 8.37655 16.518 8.50586C16.5774 8.63518 16.6082 8.7755 16.6084 8.91748V17.6675Z" fill="white"/>
+                      </svg>
+                    </i>
+                  </div>
+                  <ul class="lista-nav">
+                    <li>
+                      <a href="#;"> 
+                        <i>
+                          <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5062 10.8091C9.64585 10.8091 8.80816 10.8091 7.95034 10.8091C7.95034 10.8824 7.95034 10.946 7.95034 11.0088C7.95034 12.0769 7.95034 13.1441 7.95034 14.2122C7.95034 14.5215 7.87906 14.5907 7.56377 14.5907C6.01584 14.5907 4.4679 14.5907 2.92081 14.5907C2.61055 14.5907 2.54095 14.5239 2.54095 14.2275C2.54095 11.9085 2.54179 9.59041 2.5376 7.27147C2.5376 7.1144 2.59378 7.0113 2.71872 6.91143C4.80416 5.24331 6.8854 3.57035 8.96748 1.89901C9.18969 1.721 9.26935 1.72261 9.49408 1.90304C11.5485 3.55102 13.6012 5.20142 15.6607 6.84377C15.8477 6.99278 15.929 7.14582 15.9282 7.38343C15.9189 9.64921 15.9231 11.9142 15.9231 14.18C15.9231 14.5303 15.8602 14.5907 15.4946 14.5907C13.9593 14.5907 12.4239 14.5907 10.8886 14.5907C10.5859 14.5907 10.5079 14.5158 10.5079 14.2259C10.5079 13.1699 10.5079 12.1139 10.5079 11.058C10.5062 10.9806 10.5062 10.9049 10.5062 10.8091Z" fill="white"/>
+                            <path d="M2.99556 1.643C3.74605 1.643 4.46215 1.643 5.19503 1.643C5.19503 2.11823 5.19503 2.58137 5.19503 3.09123C5.27805 3.03002 5.3292 2.99458 5.37699 2.95672C6.47212 2.07393 7.56725 1.18953 8.66405 0.308344C8.76719 0.225381 8.88374 0.158527 8.99359 0.082008C9.15375 -0.0299519 9.31056 -0.0275355 9.46653 0.0908682C9.87573 0.401778 10.2984 0.697385 10.6916 1.02521C13.0814 3.0131 15.4646 5.00824 17.846 7.005C17.9374 7.08152 18.0204 7.19348 18.0523 7.30382C18.1009 7.47217 18.0187 7.61635 17.8586 7.70656C17.7051 7.79355 17.5223 7.7718 17.3647 7.64212C16.8381 7.20878 16.314 6.77302 15.7882 6.33807C13.6584 4.5749 11.5285 2.81174 9.3986 1.04937C9.34745 1.00749 9.29546 0.966411 9.23006 0.914861C9.13447 0.990575 9.03971 1.06226 8.94831 1.13798C6.35389 3.28616 3.75946 5.43514 1.1642 7.58171C1.08705 7.64615 0.999007 7.71059 0.904253 7.74039C0.719775 7.79919 0.523558 7.70897 0.435512 7.54788C0.352497 7.39484 0.389393 7.19428 0.538652 7.06541C0.884966 6.76497 1.23631 6.47017 1.58514 6.17295C2.01699 5.80485 2.44548 5.43434 2.88235 5.07188C2.9813 4.98972 3.01568 4.90434 3.01484 4.78271C3.00562 3.80407 3.00143 2.82462 2.9964 1.84518C2.99472 1.78074 2.99556 1.71791 2.99556 1.643Z" fill="white"/>
+                          </svg>                            
+                        </i> Cuenta N° 2739801
+                      </a>
+                      <span class="down-submenu-mobile">
+                        <i class="fa fa-chevron-down"></i>
+                      </span>
+                      <div class="child-menu">
+                        <div class="container">
+                          <ul class="row menu-columns">
+                            <li class="col item-cold">
+                              <ul class="submenu-terciario">
+                                <li>
+                                  <span>Estrella Solitaria 5624 - Ñuñoa</span>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#;">Mi Oficina Virtual</a>
+                      <span class="down-submenu-mobile">
+                        <i class="fa fa-chevron-down"></i>
+                      </span>
+                      <div class="child-menu">
+                        <div class="container">
+                          <ul class="row menu-columns">
+                            <li class="col item-cold">
+                              <ul class="submenu-terciario">
+                                <li>
+                                  <a href="">Pago de cuenta</a>
+                                </li>
+                                <li>
+                                  <a href="">Configuración de perfil</a>
+                                </li>
+                                <li>
+                                  <a href="">Ingresa lectura de tu medidor</a>
+                                </li>
+                                <li>
+                                  <a href="">Mi historial de pago</a>
+                                </li>
+                                <li>
+                                  <a href="">Mapa de la ciudad</a>
+                                </li>
+                                <li>
+                                  <a href="">Centro de ayuda</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <a href="#;">Solicitudes</a>
+                      <span class="down-submenu-mobile">
+                        <i class="fa fa-chevron-down"></i>
+                      </span>
+                      <div class="child-menu">
+                        <div class="container">
+                          <ul class="row menu-columns">
+                            <li class="col item-cold">
+                              <ul class="submenu-terciario">
+                                <li>
+                                  <a href="">Convenios de Pago</a>
+                                </li>
+                                <li>
+                                  <a href="">Reportar o Solicitar</a>
+                                </li>
+                                <li>
+                                  <a href="">Mis requerimientos</a>
+                                </li>
+                                <li>
+                                  <a href="">Simular facturaciòn</a>
+                                </li>
+                                <li>
+                                  <a href="">Cambio de titularr</a>
+                                </li>
+                                <li>
+                                  <a href="">Cambio a boleta o factura</a>
+                                </li>
+                                <li>
+                                  <a href="">Certificados</a>
+                                </li>
+                                <li>
+                                  <a href="">Estado de medidor</a>
+                                </li>
+                                <li>
+                                  <a href="">Calculadora de consumo</a>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <main class="main"> 
+      <!-- contenido --> 
+      <section class="section-medidor">
+
+        <div class="row-title-medidor ">
+          <div class="box-dato-personal">
+            <span class="title-small"> JULIO ESTEBAN BRITO ROJAS </span>
+            <span class="second-title"> ESTRELLA SOLITARIA 5626 - 701 - ÑUÑOA </span> 
+          </div>
+          <img src="images/icon-personal.svg" alt="">
+        </div>
+
+        <div class="content-medidor">
+          <div class="box-medidor">
+            <div class="circle-number">1</div>
+            <div class="title-small">Selecciona el metodo como quieres relizar tu búsqueda</div>
+          </div>
+  
+          <div class="box-input-cuenta">
+            
+            <div class="form-group-input">
+              <input type="text" class="form-control form-control-lg" id="inputCuenta" placeholder="N° de cuenta (*)">
+              <ul class="list-input">
+                <li>Ingresa el número de cuenta sin el dígito verificador</li>
+                <li>Los campos marcados con asterisco (*) son obligatorios</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="box-button mt-5">
+          <a href="" class="btn btn-block btn-block btn-lg btn-verde"> Buscar </a>
+        </div>
+
+        </div>
+
+
+      </section>
+     
+      <!-- fin contenido --> 
+      <section class="section-menu">
+        <a href="" class="item-menu">
+          <i>
+            <img src="images/icon-menu-home.svg">
+          </i>
+          <span>Home</span>
+        </a>
+        <a href="" class="item-menu">
+          <i>
+            <img src="images/icon-menu-pagar.svg">
+          </i>
+          <span>Pagar</span>
+        </a>
+        <a href="" class="item-menu item-general">
+          <i>
+            <img src="images/icon-menu-mapa.svg">
+          </i>
+          <span>Mapa</span>
+        </a>
+        <a href="" class="item-menu">
+          <i>
+            <img src="images/icon-menu-boletas.svg">
+          </i>
+          <span>Mis Boletas</span>
+        </a>
+        <a href="" class="item-menu">
+          <i>
+            <img src="images/icon-menu-ayuda.svg">
+          </i>
+          <span>Ayuda</span>
+        </a>
+      </section> 
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -6240,15 +6240,9 @@ body.page-mapa {
     border-top:1px solid blue;
     background-image: url(../images/page-lectura-medidor.jpg);
     background-position: top center;
-}
- */
-/* .section-medidor {
-    height: 800px;
-    border-top:1px solid green;
 } */
 .content-medidor {
-  /* padding: 0 46px; */
-  padding: 0 46px 50px 46px;
+  padding: 0 46px 80px 46px;
 }
 
 .row-title-medidor {
@@ -6315,5 +6309,11 @@ body.page-mapa {
 .box-input-medidor .input-group-prepend .input-group-text {
   background-color: transparent;
   border: none;
+  padding: 0.375rem 1.5rem;
+}
+
+.box-input-cuenta {
+  border-top: 1px dashed #B7C0CE;
+  padding-top: 25px;
 }
 /*# sourceMappingURL=main-mobil.css.map */
