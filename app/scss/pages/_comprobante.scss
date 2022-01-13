@@ -1,5 +1,5 @@
 .page-comprobante {
-/*     border-top:1px solid red;
+   /*  border-top:1px solid red;
     background-image: url(../images/page-comprobante_mobile_exito.jpg);
     background-position: top center; */
 }
@@ -47,7 +47,7 @@
 .box-recibir-boleta {
     border-top: 1px dashed #B7C0CE;
     border-bottom: 1px dashed #B7C0CE;
-    padding: 28px 0;
+    padding: 28px 0 20px 0;
 }
 
 .lista-boleta {
@@ -57,5 +57,17 @@
     }
     i {
         margin-right: 10px;
+        font-size: 18px;
+        color: $blue;
     }
+}
+
+.box-update-personal {
+    margin: 20px 0;
+    /* padding-bottom: 0; */
+    padding-bottom: 20px;
+}
+
+.input-group-info {
+    margin-bottom: 10px;
 }

@@ -217,3 +217,26 @@
     padding: 1rem;
     color: #BFC1C5;
 }
+
+.input-group-pago {
+    .input-group-prepend {
+        .input-group-text {
+            background-color: #19CE74;
+            border: 1px solid #109954;
+            border-top-right-radius: 5px !important;
+            border-bottom-right-radius: 5px!important;
+        }
+    }
+}
+
+.input-group-info {
+    margin-bottom: 20px;
+    .input-group-prepend {
+        .input-group-text {
+            background-color: $blue ;
+            border: 1px solid #004BCB;
+            border-top-right-radius: 5px !important;
+            border-bottom-right-radius: 5px!important;
+        }
+    }
+}

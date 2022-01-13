@@ -3533,6 +3533,23 @@ a {
   color: #BFC1C5;
 }
 
+.input-group-pago .input-group-prepend .input-group-text {
+  background-color: #19CE74;
+  border: 1px solid #109954;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
+.input-group-info {
+  margin-bottom: 20px;
+}
+.input-group-info .input-group-prepend .input-group-text {
+  background-color: #2274FF;
+  border: 1px solid #004BCB;
+  border-top-right-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
+}
+
 .badge-pendiente {
   color: #FFA300;
   /* font-size: 16px; */
@@ -6037,13 +6054,6 @@ body.page-mapa {
   border-radius: 5px;
 }
 
-.input-group-pago .input-group-prepend .input-group-text {
-  background-color: #19CE74;
-  border: 1px solid #109954;
-  border-top-right-radius: 5px !important;
-  border-bottom-right-radius: 5px !important;
-}
-
 .box-centro-ayuda {
   background-color: #D6F0FE;
   padding: 16px 24px 24px 24px;
@@ -6098,9 +6108,9 @@ body.page-mapa {
 }
 
 .page-comprobante {
-  /*     border-top:1px solid red;
-      background-image: url(../images/page-comprobante_mobile_exito.jpg);
-      background-position: top center; */
+  /*  border-top:1px solid red;
+   background-image: url(../images/page-comprobante_mobile_exito.jpg);
+   background-position: top center; */
 }
 
 .section-detalle-pago {
@@ -6151,7 +6161,7 @@ body.page-mapa {
 .box-recibir-boleta {
   border-top: 1px dashed #B7C0CE;
   border-bottom: 1px dashed #B7C0CE;
-  padding: 28px 0;
+  padding: 28px 0 20px 0;
 }
 
 .lista-boleta {
@@ -6162,5 +6172,17 @@ body.page-mapa {
 }
 .lista-boleta i {
   margin-right: 10px;
+  font-size: 18px;
+  color: #2274FF;
+}
+
+.box-update-personal {
+  margin: 20px 0;
+  /* padding-bottom: 0; */
+  padding-bottom: 20px;
+}
+
+.input-group-info {
+  margin-bottom: 10px;
 }
 /*# sourceMappingURL=main-mobil.css.map */
