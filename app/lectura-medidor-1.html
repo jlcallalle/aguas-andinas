@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main-mobil.css">
-  <title>Comprobante error </title>
+  <title>Lectura Medidor 1 </title>
 </head>
 
-<body class="page page-comprobante">
+<body class="page page-medidor">
   <div class="wrapper">
     <div class="header">
       <div class="container-header">
@@ -423,27 +423,52 @@
         </div>
       </div>
     </div>
-    <main class="main">
-      <div class="row-error row-title-explain">
-        <span>No pudimos procesar tu pago</span>
-        <img src="images/icon-check-circle.error.svg" alt="">
-      </div>
-      
-      <section class="section-detalle-pago-error">
-        <div class="row-center"> 
-          Ocurrió un problema al intentar procesar tu pago 
+    <main class="main"> 
+      <!-- contenido --> 
+      <section class="section-medidor">
+
+        <div class="row-title-medidor ">
+          <div class="box-dato-personal">
+            <span class="title-small"> JULIO ESTEBAN BRITO ROJAS </span>
+            <span class="second-title"> ESTRELLA SOLITARIA 5626 - 701 - ÑUÑOA </span> 
+          </div>
+          <img src="images/icon-personal.svg" alt="">
         </div>
-        <div class="box-pagar-error">
-          <img src="images/hoja-error.jpg" alt="">
+
+        <div class="content-medidor">
+          <div class="box-medidor">
+            <div class="circle-number">1</div>
+            <div class="title-small">Selecciona el metodo como quieres relizar tu búsqueda</div>
+          </div>
+  
+          <div class="box-input-medidor">
+            
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img src="images/icon-search.svg" alt=""></span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group mb-4">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"><img src="images/icon-map.svg" alt=""></span>
+              </div>
+              <input type="text" class="form-control form-control-lg" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+           
+            <!-- <div class="form-group">
+              <img src="images/icon-search.svg" alt="">
+              <input type="text" class="form-control form-control-lg"  placeholder="Búsqueda por N° de cuenta">
+            </div> -->
+          
+          </div>
         </div>
-        <div class="box-button px-5 mt-3">
-          <a href="" class="btn btn-block btn-block btn-lg btn-verde">Volver a pagar </a>
-          <a href="" class="btn btn-block btn-block link-bold mt-2">Volver a mi Oficina Virtual</a>
-        </div>
+
+
       </section>
-
      
-
+      <!-- fin contenido --> 
       <section class="section-menu">
         <a href="" class="item-menu">
           <i>
@@ -476,7 +501,6 @@
           <span>Ayuda</span>
         </a>
       </section> 
-      
     </main>
   </div>
 

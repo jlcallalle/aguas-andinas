@@ -1,0 +1,71 @@
+/* .page-medidor {
+    border-top:1px solid blue;
+    background-image: url(../images/page-lectura-medidor.jpg);
+    background-position: top center;
+}
+ */
+
+/* .section-medidor {
+    height: 800px;
+    border-top:1px solid green;
+} */
+
+.content-medidor {
+    /* padding: 0 46px; */
+    padding: 0 46px 50px 46px;
+}
+
+
+.row-title-medidor {
+    display: flex;
+    padding: 0 20px;
+    margin-top: 4px;
+}
+
+.box-dato-personal {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-medidor {
+    padding: 0 0 30px 0;
+    margin-top: 37px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.circle-number {
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    border-radius: 100%;
+    background: #8C98B2;
+    min-width: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-top: 5px;
+    margin-right: 13px;
+}
+
+.box-input-medidor {
+    border-top: 1px dashed #B7C0CE;
+    padding: 25px 0;
+    .input-group {
+        border: 2px solid #B7C0CE;
+        border-radius: 5px;
+    }
+    .form-control {
+        height: 90px;
+        border: none;
+        padding: .375rem 1.2rem;
+    }
+
+    .input-group-prepend .input-group-text {
+        background-color: transparent;
+        border: none;
+    }
+
+}
+
