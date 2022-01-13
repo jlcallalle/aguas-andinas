@@ -6107,14 +6107,18 @@ body.page-mapa {
   margin-bottom: 1rem;
 }
 
-.page-comprobante {
-  /*  border-top:1px solid red;
-   background-image: url(../images/page-comprobante_mobile_exito.jpg);
-   background-position: top center; */
+/* .page-comprobante {
+    border-top:1px solid blue;
+    background-image: url(../images/page-comprobante_mobile_error.jpg);
+    background-position: top center;
 }
-
+ */
 .section-detalle-pago {
   padding: 12px 14px;
+}
+
+.section-detalle-pago-error {
+  padding: 12px 14px 60px 14px;
 }
 
 .row-exito {
@@ -6178,11 +6182,57 @@ body.page-mapa {
 
 .box-update-personal {
   margin: 20px 0;
-  /* padding-bottom: 0; */
   padding-bottom: 20px;
 }
 
 .input-group-info {
   margin-bottom: 10px;
+}
+
+/* Page Error */
+.row-error {
+  height: 33px;
+  background-color: #FA4B6A;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+/* .section-detalle-pago {
+    height: 460px;
+}
+ */
+.row-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-bottom: 18px;
+  line-height: 30px;
+  padding: 0 20px;
+  margin-top: 7px;
+  text-align: center;
+}
+
+.box-pagar-error {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-top: 1px dashed #B7C0CE;
+  padding: 36px 0 0px 0;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=main-mobil.css.map */
