@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main-mobil.css">
-  <title>Lectura Medidor 1 </title>
+  <title>Lectura Medidor 5  </title>
 </head>
 
-<body class="page page-medidor">
+<body class="page page-comprobante ">
   <div class="wrapper">
     <div class="header">
       <div class="container-header">
@@ -151,6 +151,7 @@
                         </div>
                       </div>
                     </div>
+                   
                   </div>
                   <div class="box-state">
                     <i>
@@ -423,52 +424,79 @@
         </div>
       </div>
     </div>
-    <main class="main"> 
-      <!-- contenido --> 
-      <section class="section-medidor">
-
-        <div class="row-title-medidor ">
-          <div class="box-dato-personal">
-            <span class="title-small"> JULIO ESTEBAN BRITO ROJAS </span>
-            <span class="second-title"> ESTRELLA SOLITARIA 5626 - 701 - ÑUÑOA </span> 
+    <main class="main">
+      <div class="row-exito row-title-explain">
+        <span>Lectura de medidor ingresada con éxito</span>
+        <img src="images/icon-check-circle.svg" alt="">
+      </div>
+      
+      <section class="section-detalle-lectura">
+        <div class="row-detalle">
+          Detalle de la lectura cargada
+          <img src="images/exito.png" alt="">
+        </div>
+        <div class="row-contenido">
+          <div class="table-flex">
+            <div class="row">
+              <div class="col">Número de cuenta</div>
+              <div class="col"><strong> 2601966-4</strong></div>
+            </div>
+            <div class="row">
+              <div class="col">Dirección</div>
+              <div class="col"><strong>Celia solar 87 B/B - 1507</strong>  </div>
+            </div>
+            <div class="row">
+              <div class="col">Fecha de lectura</div>
+              <div class="col"><strong>05-05-2021</strong></div>
+            </div>
+            <div class="row">
+              <div class="col">Lectura</div>
+              <div class="col"><strong>522</strong></div>
+            </div>
+            <div class="row">
+              <div class="col">Consumo m3</div>
+              <div class="col"><strong>18.39</strong></div>
+            </div>
+            <div class="row">
+              <div class="col">Imagen Adjunta</div>
+              <div class="col"><strong>imagen.jpg</strong></div>
+            </div>
           </div>
-          <img src="images/icon-personal.svg" alt="">
         </div>
 
-        <div class="content-medidor">
-          <div class="box-medidor">
-            <div class="circle-number">1</div>
-            <div class="title-small">Selecciona el metodo como quieres relizar tu búsqueda</div>
-          </div>
-  
-          <div class="box-input-medidor">
-            
-            <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><img src="images/icon-search.svg" alt=""></span>
+        <div class="box-update-personal border-bottom">
+          <div class="d-flex title-small text-blue-dark  mb-2">
+            ¿Deseas suscribirte a nuestro boletín informativo?
+            <div class="item-switch pt-2">
+              <div class="box-switch inline-switch">
+                <label class="switch custom-switch">
+                  <input type="checkbox" id="eventoSwitches" checked>
+                  <span class="slider round"></span>
+                </label>
               </div>
-              <input type="text" class="form-control form-control-lg" placeholder="Búsqueda por cuenta"  aria-describedby="basic-addon1">
             </div>
+          </div>
 
-            <div class="input-group mb-4">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1"><img src="images/icon-map.svg" alt=""></span>
+          <form action="">
+              <div class="input-group input-group-info">
+                <input type="email" class="form-control input-busqueda" placeholder="Escribe tu correo electrónico" data-toggle="modal" data-target="#exampleModal">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <img src="images/arrow-right-white.svg" alt="">
+                  </div>
+                </div>
               </div>
-              <input type="text" class="form-control form-control-lg" placeholder="Búsqueda por dirección"  aria-describedby="basic-addon1">
-            </div>
-           
-            <!-- <div class="form-group">
-              <img src="images/icon-search.svg" alt="">
-              <input type="text" class="form-control form-control-lg"  placeholder="Búsqueda por N° de cuenta">
-            </div> -->
-          
-          </div>
+          </form>
         </div>
 
-
+        <div class="box-button px-5">
+          <a href="" class="btn btn-block btn-block btn-lg btn-verde"> Descargar Comprobante</a>
+          <a href="" class="btn btn-block btn-block link-bold mt-2">Volver a mi Oficina Virtual</a>
+        </div>
       </section>
+
      
-      <!-- fin contenido --> 
+
       <section class="section-menu">
         <a href="" class="item-menu">
           <i>
@@ -501,6 +529,7 @@
           <span>Ayuda</span>
         </a>
       </section> 
+      
     </main>
   </div>
 

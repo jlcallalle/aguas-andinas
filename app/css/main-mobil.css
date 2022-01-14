@@ -6210,10 +6210,14 @@ body.page-mapa {
 }
 
 .table-flex {
-  font-size: 12px;
+  /* font-size: 12px; */
+  font-size: 14px;
 }
 .table-flex .row {
   margin-bottom: 10px;
+}
+.table-flex strong {
+  color: #5F6268;
 }
 
 .box-recibir-boleta {
@@ -6288,6 +6292,14 @@ body.page-mapa {
   border-top: 1px dashed #B7C0CE;
   padding: 36px 0 0px 0;
   margin-top: 20px;
+}
+
+.section-detalle-lectura {
+  padding: 12px 14px 60px 14px;
+}
+
+.border-bottom {
+  border-bottom: 1px dashed #B7C0CE;
 }
 
 /* .page-medidor {
@@ -6472,8 +6484,10 @@ body.page-mapa {
   padding: 0 15px;
 }
 
-/* page 4*/
+/* lectura medidor 4*/
 .box-dato-lectura {
   margin-bottom: 20px;
 }
+
+/* lectura medidor 5**/
 /*# sourceMappingURL=main-mobil.css.map */
