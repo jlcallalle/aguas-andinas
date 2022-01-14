@@ -6490,4 +6490,57 @@ body.page-mapa {
 }
 
 /* lectura medidor 5**/
+/* .page-historial-pago {
+    border:1px solid red;
+    background-image: url(../images/page-historial-pago.jpg);
+    background-position: 0 0;
+} */
+.section-historial-pago {
+  /* height: 1000px; */
+  padding: 20px 10px;
+}
+
+.form-filtro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.form-select-sm {
+  font-size: 10px;
+  padding: 5px 12px;
+  border: 1px solid #B7C0CE;
+  border-radius: 5px;
+}
+
+.btn-sm {
+  font-size: 10px;
+  padding: 5px 12px;
+}
+
+.table-listado {
+  color: #5F6268;
+  margin-top: 20px;
+  background-color: white;
+}
+.table-listado thead tr {
+  /* color:#5F6268; */
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  border-bottom: 0;
+}
+.table-listado tbody tr {
+  font-size: 12px;
+}
+
+.borderless td, .borderless th {
+  border: none;
+}
 /*# sourceMappingURL=main-mobil.css.map */
