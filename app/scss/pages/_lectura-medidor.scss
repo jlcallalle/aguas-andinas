@@ -1,12 +1,17 @@
 /* .page-medidor {
     border-top:1px solid blue;
-    background-image: url(../images/page-lectura-medidor.jpg);
-    background-position: top center;
-} */
-
+    background-image: url(../images/page-lectura-medidor-3.jpg);
+    background-position: 0 -8px;
+    background-position: 0 58px;
+}
+ */
 
 .content-medidor {
     padding: 0 46px 80px 46px;
+}
+
+.content-medidor-detalle {
+    padding: 0 25px 80px 25px;
 }
 
 
@@ -67,4 +72,79 @@
 .box-input-cuenta {
     border-top: 1px dashed #B7C0CE;
     padding-top: 25px;
+}
+
+/* medidor 3 */
+
+.row-cuenta {
+    border-top: 1px dashed #B7C0CE;
+    border-bottom: 1px dashed #B7C0CE;
+    padding:20px 0 12px 0;
+}
+
+.table-flex-cuenta {
+    font-size: 14px;
+    .row {
+        margin-bottom: 10px;
+        border-bottom: 1px solid #F3F4F5;
+        padding-bottom: 6px;
+        &.title-table {
+            padding-top: 4px;
+            padding-bottom: 12px;
+           .col {
+             &:first-child {
+                color:$blue-dark;
+             }
+           }
+        }
+        .col {
+            &:first-child {
+                color:$blue;
+            }
+        }
+        &:last-child {
+            border-bottom: 0;
+        }
+    }
+}
+
+.box-nombre-persona {
+    display: flex;
+    margin-bottom: 10px;
+    .avatar {
+        margin-right: 10px;
+    }
+    .nombre-cargo {
+        .nombre {
+            
+        }
+        .cargo {
+
+        }
+    }
+}
+
+.box-persona-cuenta {
+    margin-top: 20px;
+}
+
+.perfil-persona {
+    margin-top: 13px;
+}
+
+.lista-dato-persona {
+    list-style: none;
+    li {
+        color:#5F6268;
+        font-size: 12px;
+        margin-bottom: 12px;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.link-celeste {
+    color:#2D9CDB;
+    font-size: 14px;
 }
