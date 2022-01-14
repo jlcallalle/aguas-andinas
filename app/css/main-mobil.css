@@ -6536,11 +6536,45 @@ body.page-mapa {
   font-size: 13px;
   border-bottom: 0;
 }
+.table-listado thead th {
+  border-bottom: none;
+}
 .table-listado tbody tr {
   font-size: 12px;
 }
 
 .borderless td, .borderless th {
   border: none;
+}
+
+/* .page-mapa-reporte {
+    border: 1px solid red;
+} */
+.input-search {
+  width: 270px;
+  height: 60px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+.input-search input {
+  font-size: 14px;
+}
+.input-search input.form-control {
+  border-right: 0;
+  border-top-left-radius: 100px !important;
+  border-bottom-left-radius: 100px;
+  padding: 0.8rem 1.4rem;
+}
+.input-search .input-group-text {
+  border-top-right-radius: 99px !important;
+  border-bottom-right-radius: 100px !important;
+  background-color: white;
+  border-left: none;
+  padding-right: 30px;
+}
+.input-search .fa-search {
+  color: #2274FF;
+  font-size: 22px;
 }
 /*# sourceMappingURL=main-mobil.css.map */

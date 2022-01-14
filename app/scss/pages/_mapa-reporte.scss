@@ -1,0 +1,30 @@
+/* .page-mapa-reporte {
+    border: 1px solid red;
+} */
+.input-search {
+    width: 270px;
+    height: 60px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    input {
+        font-size: 14px;
+        &.form-control {
+            border-right: 0;
+            border-top-left-radius: 100px!important;
+            border-bottom-left-radius: 100px;
+            padding: 0.8rem 1.4rem;
+        }
+    }
+    .input-group-text {
+        border-top-right-radius: 99px!important;
+        border-bottom-right-radius: 100px!important;
+        background-color: white;
+        border-left: none;
+        padding-right: 30px;
+    }
+    .fa-search {
+        color:$blue;
+        font-size: 22px;
+    }
+}
