@@ -17,7 +17,7 @@
 }
 
 .title-nombre {
-    color:$blue-dark;
+    color: $blue-dark;
     font-size: 16px;
     line-height: 25px;
     text-align: left;
@@ -27,7 +27,6 @@
 }
 
 .title-small {
-    /* color: $blue ; */
     font-size: 16px;
     font-weight: bold;
 }
@@ -37,7 +36,7 @@
     text-align: center;
 }
 
-/* Taiwind css */
+/* Tamaño fuente - Taiwind css */
 
 .text-xs {
     font-size: 0.75rem; //12px
@@ -54,6 +53,8 @@
 .text-base {
     font-size: 1rem;
 }
+
+// Color Texto
 
 .text-green {
     color: $green;

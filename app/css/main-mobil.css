@@ -3158,7 +3158,6 @@ a {
 }
 
 .title-small {
-  /* color: $blue ; */
   font-size: 16px;
   font-weight: bold;
 }
@@ -3168,7 +3167,7 @@ a {
   text-align: center;
 }
 
-/* Taiwind css */
+/* Tamaño fuente - Taiwind css */
 .text-xs {
   font-size: 0.75rem;
 }
@@ -3456,7 +3455,6 @@ a {
   background-color: white;
   border: none;
   font-size: 14px;
-  /* font-weight: bold; */
   color: #2274FF;
   text-align: left;
   display: block;
@@ -3552,10 +3550,8 @@ a {
 
 .badge-pendiente {
   color: #FFA300;
-  /* font-size: 16px; */
   background-color: #FFD58B;
   padding: 8px 25px;
-  /* padding: 8px 40px; */
   height: 31px;
   border-radius: 5px;
   font-weight: bold;
@@ -3569,7 +3565,6 @@ a {
   color: #19CE74;
   background-color: #D2FFE9;
   padding: 8px 25px;
-  /*  padding: 8px 40px; */
   height: 31px;
   border-radius: 5px;
   font-weight: bold;
@@ -3727,7 +3722,6 @@ label.custom-file-label:before {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* flex-direction: column; */
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -3810,9 +3804,6 @@ label.custom-file-label:before {
   color: #2274FF;
   font-size: 16px;
   font-weight: 700;
-  /* padding-right: 1.4rem;
-  padding-top: 0.5rem; */
-  /* padding-bottom: 0.5rem; */
   padding: 10px 10px 10px 0;
 }
 .lista-nav > li > a:hover {
@@ -3894,7 +3885,6 @@ label.custom-file-label:before {
 .c-hamburger {
   display: block;
   position: absolute;
-  /* right: 0; */
   top: 28px;
   right: 15px;
   overflow: hidden;
@@ -3937,7 +3927,6 @@ label.custom-file-label:before {
   display: block;
   left: 0;
   width: 100%;
-  /* height: 3.6px; */
   height: 4px;
   background-color: #003287;
   content: "";
@@ -4038,7 +4027,6 @@ label.custom-file-label:before {
 
 .box-notification {
   margin-right: 31px;
-  /*  position: relative; */
   cursor: pointer;
 }
 
@@ -4099,6 +4087,7 @@ label.custom-file-label:before {
           justify-content: space-evenly;
   margin-top: 19px;
 }
+
 .box-cuenta {
   margin-top: 22px;
 }
@@ -4127,7 +4116,6 @@ label.custom-file-label:before {
 }
 
 .iframe-captcha {
-  /* transform:scale(0.8); */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4650,7 +4638,6 @@ label.custom-file-label:before {
 
 /* Popup */
 .modal .modal-header {
-  /* padding: 10px 20px; */
   padding: 15px 20px 0px 20px;
   border-bottom: none;
 }
@@ -4948,9 +4935,6 @@ label.custom-file-label:before {
 }
 
 .box-lista-notifica {
-  /* background-image: url(../images/page-notificaciones.jpg);
-  background-repeat: no-repeat;
-  background-position: top center; */
   display: none;
   width: 98%;
   position: absolute;
@@ -5121,7 +5105,6 @@ label.custom-file-label:before {
 .circle-check {
   width: 45px;
   height: 45px;
-  /*  background: $green; */
   border-radius: 100%;
   display: block;
   display: -webkit-box;
@@ -5189,11 +5172,6 @@ label.custom-file-label:before {
           justify-content: center;
 }
 
-.content-nav-tabs {
-  /* .nav-tabs .nav-link:hover {
-      border:none;
-  } */
-}
 .content-nav-tabs .nav-link {
   color: #5F6268;
   font-size: 16px;
@@ -5257,7 +5235,6 @@ label.custom-file-label:before {
           justify-content: space-between;
   -webkit-box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.25);
-  /*  padding: 10px; */
   padding: 4px 0 0 0;
   height: 75px;
 }
@@ -5286,7 +5263,6 @@ label.custom-file-label:before {
 }
 
 .item-general {
-  /* border: 1px solid red; */
   width: 70px;
   height: 70px;
   position: relative;
@@ -5367,9 +5343,6 @@ label.custom-file-label:before {
   margin-bottom: 25px;
   border-bottom: 1px dotted #979797;
   padding-bottom: 50px;
-  /*  a {
-       margin-bottom: 30px;
-   } */
 }
 
 .form-descarga-boleta .list-input {
@@ -5427,7 +5400,6 @@ label.custom-file-label:before {
 
 .btn-block + .btn-block {
   margin-top: 30px;
-  /*  border:1px solid orange; */
 }
 
 .group-input {
@@ -5436,9 +5408,6 @@ label.custom-file-label:before {
 }
 
 .detalle-cuenta {
-  /* padding: 28px 39px; */
-  /* padding: 28px 39px 48px 39px; */
-  /* padding: 28px 39px 70px 39px; */
   padding: 28px 15px 70px 15px;
 }
 
@@ -5520,33 +5489,6 @@ label.custom-file-label:before {
   font-size: 13px;
 }
 
-/* .badge-pendiente {
-    color: $orange;
-    background-color: $orange-light;
-    padding: 8px 25px;
-    height: 31px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 1;
-    text-align: center;
-    min-width: 135px;
-}
-
-.badge-pagada {
-    color: $green;
-    background-color: #D2FFE9;
-    padding: 8px 25px;
-    height: 31px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    line-height: 1;
-    text-align: center;
-    min-width: 135px;
-}
-
- */
 .section-notificaciones {
   margin-bottom: 140px;
 }
@@ -5650,11 +5592,6 @@ label.custom-file-label:before {
 }
 
 /* Notificaciones 8 - section-zona */
-/* .page-notificaciones {
-    background-image: url(../images/pagina-mapa-zona.jpg);
-    background-position: 0 4px;
-    background-repeat: no-repeat;
-} */
 .content-zona {
   padding-bottom: 130px;
 }
@@ -5677,9 +5614,7 @@ label.custom-file-label:before {
   display: -ms-flexbox;
   display: flex;
   border-radius: 5px;
-  /* padding: 10px 20px 10px 20px; */
   padding: 10px 20px 10px 10px;
-  /* margin:25px 0 0 0; */
   position: relative;
 }
 .item-mapa .icon {
@@ -5809,7 +5744,6 @@ body.page-mapa {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  /* padding: 10px 20px; */
   padding: 4px 20px 10px 20px;
   bottom: 105px;
   position: absolute;
@@ -5884,7 +5818,6 @@ body.page-mapa {
           box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
   border-radius: 10px;
   z-index: 10;
-  /*  overflow-y: scroll; */
   display: none;
 }
 .box-slider-map.open {
@@ -6000,12 +5933,6 @@ body.page-mapa {
   font-size: 14px;
   font-weight: bold;
   height: 44px;
-}
-
-.page-pago {
-  /* border:1px solid red; */
-  /*  background-image: url(../images/page-pago1.jpg); */
-  background-position: top center;
 }
 
 .row-vence {
@@ -6161,12 +6088,6 @@ body.page-mapa {
   margin-bottom: 1rem;
 }
 
-/* .page-comprobante {
-    border-top:1px solid blue;
-    background-image: url(../images/page-comprobante_mobile_error.jpg);
-    background-position: top center;
-}
- */
 .section-detalle-pago {
   padding: 12px 14px;
 }
@@ -6210,7 +6131,6 @@ body.page-mapa {
 }
 
 .table-flex {
-  /* font-size: 12px; */
   font-size: 14px;
 }
 .table-flex .row {
@@ -6257,10 +6177,6 @@ body.page-mapa {
   padding: 0 10px;
 }
 
-/* .section-detalle-pago {
-    height: 460px;
-}
- */
 .row-center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6302,13 +6218,6 @@ body.page-mapa {
   border-bottom: 1px dashed #B7C0CE;
 }
 
-/* .page-medidor {
-    border-top:1px solid blue;
-    background-image: url(../images/page-lectura-medidor-3.jpg);
-    background-position: 0 -8px;
-    background-position: 0 58px;
-}
- */
 .content-medidor {
   padding: 0 46px 80px 46px;
 }
@@ -6489,14 +6398,7 @@ body.page-mapa {
   margin-bottom: 20px;
 }
 
-/* lectura medidor 5**/
-/* .page-historial-pago {
-    border:1px solid red;
-    background-image: url(../images/page-historial-pago.jpg);
-    background-position: 0 0;
-} */
 .section-historial-pago {
-  /* height: 1000px; */
   padding: 20px 10px;
 }
 
@@ -6530,7 +6432,6 @@ body.page-mapa {
   background-color: white;
 }
 .table-listado thead tr {
-  /* color:#5F6268; */
   text-align: center;
   font-weight: bold;
   font-size: 13px;
@@ -6547,9 +6448,6 @@ body.page-mapa {
   border: none;
 }
 
-/* .page-mapa-reporte {
-    border: 1px solid red;
-} */
 .input-search {
   width: 270px;
   height: 60px;
