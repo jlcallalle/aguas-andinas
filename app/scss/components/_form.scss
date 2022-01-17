@@ -4,15 +4,24 @@
     margin-bottom: 2rem;
 }
 
+.form-group-small {
+    margin-bottom: 1rem;
+}
+
 .form-control {
-    padding: 0.8rem 1rem;
     line-height: 1.5;
     border-radius: 8px;
-    height: 60px;
     border-color: $gray-dark;
     font-size: 16px;
     color: $black-light;
+    // height: 60px;
 }
+
+.form-control-lg {
+    height: 60px;
+    padding: 0.8rem 1rem;
+}
+
 .form-control-m {
     padding: 0.8rem 1rem;
     line-height: 1.5;
@@ -28,6 +37,11 @@
         height: 60px;
     }
 }
+
+select.form-control-lg.form-control {
+    height: 60px;
+}
+
 
 // form validation valid, invalid
 .form-group {
