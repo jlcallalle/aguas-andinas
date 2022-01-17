@@ -6157,13 +6157,13 @@ body.page-mapa {
   padding: 28px 0 20px 0;
 }
 
-.lista-boleta {
+.lista-switch {
   margin-top: 20px;
 }
-.lista-boleta .item-switch {
+.lista-switch .item-switch {
   margin-bottom: 30px;
 }
-.lista-boleta i {
+.lista-switch i {
   margin-right: 10px;
   font-size: 18px;
   color: #2274FF;
@@ -6551,11 +6551,27 @@ body.page-mapa {
   font-size: 14px;
   font-weight: bold;
   height: 44px;
+  outline: none;
 }
 .box-seleccion input.active {
   background-color: #D2FFE9;
   border: 2px solid #86ECB9;
   font-size: 14px;
+  color: #19CE74;
+}
+.box-seleccion input::-webkit-input-placeholder {
+  color: #19CE74;
+}
+.box-seleccion input::-moz-placeholder {
+  color: #19CE74;
+}
+.box-seleccion input:-ms-input-placeholder {
+  color: #19CE74;
+}
+.box-seleccion input::-ms-input-placeholder {
+  color: #19CE74;
+}
+.box-seleccion input::placeholder {
   color: #19CE74;
 }
 .box-seleccion .input-mediun {

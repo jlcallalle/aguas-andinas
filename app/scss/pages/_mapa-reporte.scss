@@ -51,6 +51,7 @@
     background-color: #E7F0FF;
     width: 32px;
     height: 32px;
+    min-width: 32px
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -83,10 +84,14 @@
         font-size: 14px;
         font-weight: bold;
         height: 44px;
+        outline: none;
         &.active {
             background-color: #D2FFE9;
             border: 2px solid #86ECB9;
             font-size: 14px;
+            color: #19CE74;
+        }
+        &::placeholder {
             color: #19CE74;
         }
     }
