@@ -6511,6 +6511,7 @@ body.page-mapa {
   background-color: #E7F0FF;
   width: 32px;
   height: 32px;
+  min-width: 32px;
   border-radius: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6559,19 +6560,19 @@ body.page-mapa {
   font-size: 14px;
   color: #19CE74;
 }
-.box-seleccion input::-webkit-input-placeholder {
+.box-seleccion input.active::-webkit-input-placeholder {
   color: #19CE74;
 }
-.box-seleccion input::-moz-placeholder {
+.box-seleccion input.active::-moz-placeholder {
   color: #19CE74;
 }
-.box-seleccion input:-ms-input-placeholder {
+.box-seleccion input.active:-ms-input-placeholder {
   color: #19CE74;
 }
-.box-seleccion input::-ms-input-placeholder {
+.box-seleccion input.active::-ms-input-placeholder {
   color: #19CE74;
 }
-.box-seleccion input::placeholder {
+.box-seleccion input.active::placeholder {
   color: #19CE74;
 }
 .box-seleccion .input-mediun {
