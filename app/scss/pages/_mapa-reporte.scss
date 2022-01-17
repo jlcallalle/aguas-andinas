@@ -29,11 +29,11 @@
 
 /* Mapa reporte - 1*/
 
-/* .page-reporte-1 {
-    background-image: url(../images/page-reporte-1.jpg);
+.page-reporte-2 {
+    background-image: url(../images/page-reporte-2.jpg);
     background-repeat: no-repeat;
     background-position: 0 20px;
-} */
+}
 
 
 .content-reporta {
@@ -59,4 +59,38 @@
 
 .form-reporte {
     padding: 15px 0;
+}
+
+.forn-icon {
+    img {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+    }
+}
+ 
+.box-seleccion {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: 16px;
+    padding: 17px 0;
+    input {
+        width: auto;
+        padding: 0.25rem 0.8rem;
+        border-radius: 20px;
+        border: 2px solid #BFC1C5;
+        color: #BFC1C5;
+        font-size: 14px;
+        font-weight: bold;
+        height: 44px;
+    }
+    .input-mediun {
+        width: 50%;
+    }
+    .input-large {
+        width: 70%;
+    }
+    .input-small {
+        width: 40%;
+    }
 }
