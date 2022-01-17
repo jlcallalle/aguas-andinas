@@ -3678,6 +3678,9 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   position: relative;
   height: 72px;
 }
+.custom-file.file-type-small {
+  height: 60px;
+}
 
 .custom-file-label {
   cursor: pointer;
@@ -3707,6 +3710,10 @@ input[type=checkbox].bigcheck:checked + span.bigcheck-target:after {
   color: #629DEB;
   display: block;
 }
+.file-type-small .custom-file-label {
+  border: 2px solid #B7C0CE;
+  background-color: white;
+}
 
 label.custom-file-label:before {
   margin-right: 2rem;
@@ -3715,6 +3722,10 @@ label.custom-file-label:before {
 
 .custom-file-input ~ .custom-file-label[data-browse]::after {
   visibility: hidden;
+}
+
+label.custom-file-label.icon-galeria:before {
+  display: none;
 }
 
 .page-login .logo-brand {
@@ -6527,6 +6538,10 @@ body.page-mapa {
 .form-reporte {
   padding: 15px 0;
 }
+.form-reporte p {
+  font-size: 14px;
+  color: #B7C0CE;
+}
 
 .forn-icon img {
   position: absolute;
@@ -6583,5 +6598,11 @@ body.page-mapa {
 }
 .box-seleccion .input-small {
   width: 40%;
+}
+
+.forn-icon-file img {
+  position: absolute;
+  top: 15px;
+  left: 20px;
 }
 /*# sourceMappingURL=main-mobil.css.map */

@@ -60,6 +60,10 @@
 
 .form-reporte {
     padding: 15px 0;
+    p {
+        font-size: 14px;
+        color:$gray-dark;
+    }
 }
 
 .forn-icon {
@@ -103,5 +107,13 @@
     }
     .input-small {
         width: 40%;
+    }
+}
+
+.forn-icon-file {
+    img {
+        position: absolute;
+        top: 15px;
+        left: 20px;
     }
 }

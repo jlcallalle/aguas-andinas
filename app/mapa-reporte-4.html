@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main-mobil.css">
-  <title>Mapa reporte 1</title>
+  <title>Mapa reporte 2</title>
 </head>
 
-<body class="page page-reporte-1">
+<body class="page page-reporte-2">
   <div class="wrapper">
     <div class="header">
       <div class="container-header">
@@ -449,59 +449,67 @@
       
       <section class="section-reporte">
         <div class="container">
-          
             <div class="content-reporta">
               <div class="title-number">
-                <div class="circle-title mr-2">1</div>
-                <div class="title-small text-blue-dark">Ingresa tu dirección</div>
+                <div class="circle-title mr-2">4</div>
+                <div class="title-small text-blue-dark">Descripción del problema</div>
+             
               </div>
 
               <form action="" class="form-reporte">
-                <div class="form-group form-group-small">
-                  <select class="form-control form-control-lg">
-                    <option>Comuna</option>
-                    <option>comuna 1 </option>
-                    <option>comuna 2 </option>
-                  </select>
+                <p>Por favor registra la mayor cantidad de antecedentes que nos permita ayudarte y determinar la causa del problema en vía publica. Para esto es fundamental que nos indiques lo siguiente:</p>
+                <textarea  class="form-control" name="" id="" cols="30" rows="6" placeholder="Descripción del problema (*)"></textarea>
+
+                <div class="form-row mt-3">
+                 
+                  <div class="form-group form-group-small forn-icon-file col-6">
+                    <div class="box-input-upload ">
+                      <div class="custom-file file-type-small">
+                        <input type="file" id="customFile" class="custom-file-input" style="z-index: -5;">
+                        <img src="images/icon-galeria.svg" alt=""  style="z-index: 10;">
+                        <label class="custom-file-label icon-galeria" for="customFile" data-browse="Browse"> 
+                           <span>Cámara</span> 
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group form-group-small forn-icon-file col-6">
+                    <div class="box-input-upload ">
+                      <div class="custom-file file-type-small">
+                        <input type="file" id="customFile" class="custom-file-input" style="z-index: -5;">
+                        <img src="images/icon-camara.svg" alt=""  style="z-index: 10;">
+                        <label class="custom-file-label icon-galeria" for="customFile" data-browse="Browse"> 
+                           <span>Cámara</span> 
+                        </label>
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
-                <div class="form-row">
-                  <div class="form-group form-group-small forn-icon col-8">
-                    <input type="text" class="form-control  form-control-lg" placeholder="Dirección" >
-                    <img src="images/icon-map-input.svg" alt="">
+
+                <div class="box-update-personal ">
+                  <div class="d-flex title-small text-blue-dark  mb-2">
+                    ¿Deseas enviar una copia a otro correo electronico ?
                   </div>
-                  <div class="form-group form-group-small col-4">
-                    <input type="text" class="form-control form-control-lg" placeholder="Dpto/Casa" >
-                  </div>
+        
+                  <form action="">
+                      <div class="input-group input-group-info">
+                        <input type="email" class="form-control form-control-lg input-busqueda" placeholder="Escribe tu correo electrónico" data-toggle="modal" data-target="#exampleModal">
+                        <div class="input-group-prepend">
+                          <div class="input-group-text">
+                            <img src="images/arrow-right-white.svg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                  </form>
                 </div>
+                
               </form>
 
-              <div class="box-ubicacion">
-                <div class="row-title">
-                  <div class="title-small text-blue-dark mr-5 pr-5">
-                    Utilizar mi ubicación para reportar
-                  </div>
-                </div>
-                <div class="item-switch">
-                  <div class="box-switch inline-switch">
-                    <label class="custom-control-label text-gray pr-3" for="consumoSwitches">
-                      Selecciona esta opción y reportaremos en base 
-                      a tu ubicación de tu GPS
-                    </label>
-                    <label class="switch custom-switch">
-                      <input type="checkbox" id="consumoSwitches">
-                      <span class="slider round"></span>
-                    </label>
-                  </div>
-                </div>
+              <div class="box-button px-5">
+                <a href="" class="btn btn-lg btn-block btn-verde">Reportar</a>
               </div>
-              
-              <div class="box-button px-5 mt-4">
-                <a href="" class="btn btn-lg btn-block btn-blanco">Siguiente</a>
-              </div>
-
             </div>
-          
         </div>
       </section>
 

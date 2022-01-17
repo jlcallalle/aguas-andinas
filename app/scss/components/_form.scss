@@ -96,6 +96,9 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
  .custom-file {
     position: relative;
     height: 72px;
+    &.file-type-small {
+        height: 60px;
+    }
 }
 
 .custom-file-label {
@@ -120,6 +123,10 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
             display: block;
         }
     }
+    .file-type-small & {
+        border:2px solid #B7C0CE;
+        background-color: white;
+    }
 }
 
 label.custom-file-label:before {
@@ -129,4 +136,8 @@ label.custom-file-label:before {
 
 .custom-file-input~.custom-file-label[data-browse]::after {
     visibility: hidden;
+}
+
+label.custom-file-label.icon-galeria:before {
+   display: none;
 }
