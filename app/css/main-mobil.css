@@ -6488,12 +6488,12 @@ body.page-mapa {
 }
 
 /* Mapa reporte - 1*/
-.page-reporte-2 {
-  background-image: url(../images/page-reporte-2.jpg);
-  background-repeat: no-repeat;
-  background-position: 0 20px;
+/* .page-reporte-2 {
+    background-image: url(../images/page-reporte-2.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 20px;
 }
-
+ */
 .content-reporta {
   padding: 15px 0 100px 0;
 }
@@ -6551,6 +6551,12 @@ body.page-mapa {
   font-size: 14px;
   font-weight: bold;
   height: 44px;
+}
+.box-seleccion input.active {
+  background-color: #D2FFE9;
+  border: 2px solid #86ECB9;
+  font-size: 14px;
+  color: #19CE74;
 }
 .box-seleccion .input-mediun {
   width: 50%;
