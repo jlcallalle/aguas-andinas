@@ -3592,6 +3592,10 @@ a {
   font-weight: bold;
   padding: 0.5rem 1rem;
 }
+.btn-gray-light:hover {
+  color: white;
+  background: #B7C0CE;
+}
 
 .btn-azul-dark {
   background-color: #003287;
@@ -3603,6 +3607,10 @@ a {
   color: white;
   font-weight: bold;
   padding: 0.5rem 1rem;
+}
+.btn-azul-dark:hover {
+  color: white;
+  background: #003287;
 }
 
 .badge-pendiente {
@@ -6788,6 +6796,26 @@ body.page-mapa {
   font-size: 16px;
   font-weight: bold;
   background-color: #2274FF;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.circle-green {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #19CE74;
   width: 32px;
   height: 32px;
   min-width: 32px;

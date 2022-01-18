@@ -281,6 +281,10 @@
     color: white;
     font-weight: bold;
     padding:.5rem  1rem;
+    &:hover {
+        color:white;
+        background: #B7C0CE;
+    }
 }
 
 .btn-azul-dark {
@@ -292,4 +296,8 @@
     color: white;
     font-weight: bold;
     padding:.5rem  1rem;
+    &:hover {
+        color:white;
+        background: $blue-dark;
+    }
 }

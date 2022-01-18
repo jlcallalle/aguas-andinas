@@ -105,6 +105,21 @@
 }
 
 
+.circle-green {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: $green;
+    width: 32px;
+    height: 32px;
+    min-width: 32px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 .fecha-ageda {
     background-color: #F3F4F5;
     color: #5F6268;
