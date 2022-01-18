@@ -7,10 +7,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="css/main-mobil.css">
-  <title>Mapa reporte 5</title>
+  <title>Mapa grifo exito</title>
 </head>
 
-<body class="page page-reporte-2">
+<body class="page page-reporte-1">
   <div class="wrapper">
     <div class="header">
       <div class="container-header">
@@ -446,31 +446,67 @@
           </div>
         </div>
       </div>
+
+      <div class="row-exito row-title-explain">
+        <span>Lectura de medidor ingresada con éxito</span>
+        <img src="images/icon-check-circle.svg" alt="">
+      </div>
       
       <section class="section-reporte">
         <div class="container">
+          
             <div class="content-reporta">
-              <div class="title-number">
-                <div class="circle-title mr-2">4</div>
-                <div class="title-small text-green">Reporte realizado con éxito 
-                  <img class="ml-2" src="images/icon-check-verde-2.svg" alt="">
-                </div>
-             
-              </div>
+              <div class="title-small text-blue-dark">Selecciona el tipo de problema que presentas</div>
 
               <form action="" class="form-reporte">
-                <p>Muchas gracias por indicarnos que el grifo que mencionas está en mal estado, para nosotros es importante que nos ayudes a cuidar los grifoa:</p>
+                <div class="form-group form-group-small">
+                  <select class="form-control form-control-lg">
+                    <option>Tipo de problema</option>
+                    <option>problema 1</option>
+                    <option>problema 2 </option>
+                  </select>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group form-group-small forn-icon col-8">
+                    <input type="text" class="form-control  form-control-lg" placeholder="Dirección">
+                    <img src="images/icon-map-input.svg" alt="">
+                  </div>
+                  <div class="form-group form-group-small col-4">
+                    <input type="text" class="form-control form-control-lg" placeholder="Apartado" >
+                  </div>
+                </div>
               </form>
 
-              <div class="box-button px-5">
-                <a href="" class="btn btn-lg btn-block btn-azul">Ver mi reporte</a>
+              <div class="box-ubicacion border-bottom pb-4">
+                <div class="row-title">
+                  <div class="title-small text-blue-dark mr-5 pr-5">
+                    Utilizar mi ubicación para reportar
+                  </div>
+                </div>
+                <div class="item-switch">
+                  <div class="box-switch inline-switch">
+                    <label class="custom-control-label text-gray pr-3" for="consumoSwitches">
+                      Selecciona esta opción y reportaremos en base 
+                      a tu ubicación de tu GPS
+                    </label>
+                    <label class="switch custom-switch">
+                      <input type="checkbox" id="consumoSwitches">
+                      <span class="slider round"></span>
+                    </label>
+                  </div>
+                </div>
               </div>
 
-              <div class="box-volver">
-                <a href="#" class="link-bold">Volver al inicio</a>
+              <textarea  class="form-control mt-4" name="" id="" cols="30" rows="6" placeholder="Agrega una descripción a tu problema"></textarea>
+
+              
+              <div class="box-button mt-4">
+                <a href="" class="btn btn-lg btn-block btn-outline-verde">Volver al home</a>
               </div>
 
             </div>
+          
         </div>
       </section>
 

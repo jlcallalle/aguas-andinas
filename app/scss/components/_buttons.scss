@@ -34,7 +34,8 @@
     font-weight: bold;
     padding: 1rem;
     &:hover {
-        color: $blue;
+        color:white;
+        background: $blue;
     }
 }
 
@@ -237,5 +238,20 @@
             border-top-right-radius: 5px !important;
             border-bottom-right-radius: 5px!important;
         }
+    }
+}
+
+.btn-outline-verde {
+    border: 1px solid #19CE74;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $green;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color:white;
+        background:$green;
     }
 }

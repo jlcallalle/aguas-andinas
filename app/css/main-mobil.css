@@ -3314,7 +3314,8 @@ a {
   padding: 1rem;
 }
 .btn-blanco:hover {
-  color: #2274FF;
+  color: white;
+  background: #2274FF;
 }
 
 .btn-azul {
@@ -3546,6 +3547,22 @@ a {
   border: 1px solid #004BCB;
   border-top-right-radius: 5px !important;
   border-bottom-right-radius: 5px !important;
+}
+
+.btn-outline-verde {
+  border: 1px solid #19CE74;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #19CE74;
+  font-weight: bold;
+  padding: 1rem;
+}
+.btn-outline-verde:hover {
+  color: white;
+  background: #19CE74;
 }
 
 .badge-pendiente {
@@ -5297,7 +5314,6 @@ label.custom-file-label.icon-galeria:before {
   top: -40px;
   width: 70px;
   height: 70px;
-  border: 1px solid;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6234,6 +6250,10 @@ body.page-mapa {
 
 .section-detalle-lectura {
   padding: 12px 14px 60px 14px;
+}
+
+.border-top {
+  border-top: 1px dashed #B7C0CE;
 }
 
 .border-bottom {

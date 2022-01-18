@@ -66,6 +66,13 @@ var MyApp = {
             $(this).addClass('active');;
         });
     },
+    activeClassMapa : function () {
+        // active filtro reporte mapa
+        $('.box-seleccion input').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    },
 }
 
 $(function () {
@@ -76,9 +83,5 @@ $(function () {
     MyApp.mostrarPanelMapa();
     MyApp.mostrarPassword();
     MyApp.activeClassPago();
-
-    $('.box-seleccion input').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('active');
-    });
+    MyApp.activeClassMapa();
 });
