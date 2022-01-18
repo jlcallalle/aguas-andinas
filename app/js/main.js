@@ -73,6 +73,13 @@ var MyApp = {
             $(this).toggleClass('active');
         });
     },
+    mostrarReporteDetalle : function () {
+        // mostrar reporte Detalle
+        $('.link-ver-detalle').on('click', function(e) {
+            e.preventDefault();
+            $(this).parent().next().toggleClass('active');
+        });
+    },
 }
 
 $(function () {
@@ -84,11 +91,5 @@ $(function () {
     MyApp.mostrarPassword();
     MyApp.activeClassPago();
     MyApp.activeClassMapa();
-
-    $('.link-ver-detalle').on('click', function(e) {
-        e.preventDefault();
-        /* $('.mostrar-resultado-detalle').toggleClass('active'); */
-        $(this).parent().next().toggleClass('active');
-    });
-
+    MyApp.mostrarReporteDetalle();
 });

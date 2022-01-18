@@ -3581,6 +3581,30 @@ a {
   background: #2274FF;
 }
 
+.btn-gray-light {
+  background-color: #B7C0CE;
+  border: 1px solid #B7C0CE;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.btn-azul-dark {
+  background-color: #003287;
+  border: 1px solid #003287;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
 .badge-pendiente {
   color: #FFA300;
   background-color: #FFD58B;
