@@ -3565,6 +3565,22 @@ a {
   background: #19CE74;
 }
 
+.btn-azul-light {
+  background-color: #E7F0FF;
+  border: 1px solid #2274FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #2274FF;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+.btn-azul-light:hover {
+  color: white;
+  background: #2274FF;
+}
+
 .badge-pendiente {
   color: #FFA300;
   background-color: #FFD58B;
@@ -6689,14 +6705,89 @@ body.page-mapa {
   padding: 9px 19px 28px 19px;
   margin-bottom: 16px;
 }
-.box-requerimiento .item-requerimiento {
+
+.item-requerimiento {
   margin-bottom: 17px;
 }
-.box-requerimiento .item-requerimiento .col-6:first-child {
+.item-requerimiento .col-6:first-child {
   text-align: left;
   font-weight: bold;
 }
-.box-requerimiento .item-requerimiento .col-6:last-child {
+.item-requerimiento .col-6:last-child {
   text-align: right;
+}
+
+.mostrar-resultado-detalle {
+  display: none;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+.mostrar-resultado-detalle.active {
+  display: block;
+}
+
+.row-ingreso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.row-ingreso .info-ingreso {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.row-ingreso .info-ingreso .title-ingreso {
+  color: #2274FF;
+  font-size: 13px;
+  font-weight: bold;
+}
+.row-ingreso .info-ingreso p {
+  color: #5F6268;
+  font-size: 11px;
+}
+
+.item-detalle {
+  margin-bottom: 17px;
+  font-size: 14px;
+}
+.item-detalle .col-6:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+.circle-blue {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #2274FF;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.fecha-ageda {
+  background-color: #F3F4F5;
+  color: #5F6268;
+  padding: 8px 13px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: normal;
 }
 /*# sourceMappingURL=main-mobil.css.map */

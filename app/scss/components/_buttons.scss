@@ -255,3 +255,19 @@
         background:$green;
     }
 }
+
+
+.btn-azul-light {
+    background-color: #E7F0FF;
+    border: 1px solid #2274FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    font-size: 16px;
+    color: $blue;
+    font-weight: bold;
+    padding:.5rem  1rem;
+    &:hover {
+        color:white;
+        background: $blue;
+    }
+}

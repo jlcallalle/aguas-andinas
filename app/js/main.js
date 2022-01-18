@@ -84,4 +84,11 @@ $(function () {
     MyApp.mostrarPassword();
     MyApp.activeClassPago();
     MyApp.activeClassMapa();
+
+    $('.link-ver-detalle').on('click', function(e) {
+        e.preventDefault();
+        /* $('.mostrar-resultado-detalle').toggleClass('active'); */
+        $(this).parent().next().toggleClass('active');
+    });
+
 });
