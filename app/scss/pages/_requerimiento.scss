@@ -1,0 +1,53 @@
+
+/* .page-requerimiento {
+    background-image: url(../images/page-requerimientos.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 30px;
+} */
+
+.section-requerimiento {
+    padding-bottom: 50px;
+}
+
+.box-input-busqueda  {
+    margin: 10px auto;
+    .input-busqueda {
+        height: 50px;
+        background-color: white;
+        padding: 0.375rem 1rem;
+        font-size: 16px;
+        color: $gray-dark;
+        border:none;
+    }
+}
+
+.btn-buscar {
+    color: #fff;
+    background-color: white;
+    padding: 0 20px;
+    border-left: 0;
+}
+
+.resultado-requerimiento {
+    margin: 20px 0;
+}
+
+.box-requerimiento {
+    color: $black-light;
+    border: 2px solid #F3F4F5;
+    border-radius: 8px;
+    padding: 9px 19px 28px 19px;
+    margin-bottom: 16px;
+    .item-requerimiento {
+        margin-bottom: 17px;
+        .col-6 {
+            &:first-child {
+               text-align: left;
+               font-weight: bold;
+            }
+            &:last-child {
+                text-align: right;
+            }
+        }
+    }
+}
