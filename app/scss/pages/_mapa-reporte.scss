@@ -89,7 +89,19 @@
         font-weight: bold;
         height: 44px;
         outline: none;
+        cursor: pointer;
         &.active {
+            border:2px solid orange;
+            outline: none;
+            border-color: $blue;
+            color:$blue;
+            background-color: #E7F0FF;
+            &::placeholder {
+                color: $blue;
+            }
+        }
+       
+        /* &.active {
             background-color: #D2FFE9;
             border: 2px solid #86ECB9;
             font-size: 14px;
@@ -97,7 +109,7 @@
             &::placeholder {
                 color: #19CE74;
             }
-        }
+        } */
     }
     .input-mediun {
         width: 50%;
@@ -108,6 +120,35 @@
     .input-small {
         width: 40%;
     }
+
+    &.tipo-reporte  {
+        input {
+            &.active {
+                background-color: #D2FFE9;
+                border: 2px solid #86ECB9;
+                font-size: 14px;
+                color: #19CE74;
+                &::placeholder {
+                    color: #19CE74;
+                }
+        }   }
+    }
+  /*   &.mapa {
+        input {
+            border:1px solid red;
+            &:focus-visible, &:active {
+                border:2px solid orange;
+                outline: none;
+                border-color: $blue;
+                color:$blue;
+                background-color: #E7F0FF;
+                &::placeholder {
+                    color: $blue;
+                }
+            }
+        }
+        
+    } */
 }
 
 .forn-icon-file {

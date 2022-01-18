@@ -76,4 +76,9 @@ $(function () {
     MyApp.mostrarPanelMapa();
     MyApp.mostrarPassword();
     MyApp.activeClassPago();
+
+    $('.box-seleccion input').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('active');
+    });
 });

@@ -6557,6 +6557,22 @@ body.page-mapa {
       flex-wrap: wrap;
   grid-gap: 16px;
   padding: 17px 0;
+  /*   &.mapa {
+        input {
+            border:1px solid red;
+            &:focus-visible, &:active {
+                border:2px solid orange;
+                outline: none;
+                border-color: $blue;
+                color:$blue;
+                background-color: #E7F0FF;
+                &::placeholder {
+                    color: $blue;
+                }
+            }
+        }
+
+    } */
 }
 .box-seleccion input {
   width: auto;
@@ -6568,27 +6584,38 @@ body.page-mapa {
   font-weight: bold;
   height: 44px;
   outline: none;
+  cursor: pointer;
+  /* &.active {
+      background-color: #D2FFE9;
+      border: 2px solid #86ECB9;
+      font-size: 14px;
+      color: #19CE74;
+      &::placeholder {
+          color: #19CE74;
+      }
+  } */
 }
 .box-seleccion input.active {
-  background-color: #D2FFE9;
-  border: 2px solid #86ECB9;
-  font-size: 14px;
-  color: #19CE74;
+  border: 2px solid orange;
+  outline: none;
+  border-color: #2274FF;
+  color: #2274FF;
+  background-color: #E7F0FF;
 }
 .box-seleccion input.active::-webkit-input-placeholder {
-  color: #19CE74;
+  color: #2274FF;
 }
 .box-seleccion input.active::-moz-placeholder {
-  color: #19CE74;
+  color: #2274FF;
 }
 .box-seleccion input.active:-ms-input-placeholder {
-  color: #19CE74;
+  color: #2274FF;
 }
 .box-seleccion input.active::-ms-input-placeholder {
-  color: #19CE74;
+  color: #2274FF;
 }
 .box-seleccion input.active::placeholder {
-  color: #19CE74;
+  color: #2274FF;
 }
 .box-seleccion .input-mediun {
   width: 50%;
@@ -6598,6 +6625,27 @@ body.page-mapa {
 }
 .box-seleccion .input-small {
   width: 40%;
+}
+.box-seleccion.tipo-reporte input.active {
+  background-color: #D2FFE9;
+  border: 2px solid #86ECB9;
+  font-size: 14px;
+  color: #19CE74;
+}
+.box-seleccion.tipo-reporte input.active::-webkit-input-placeholder {
+  color: #19CE74;
+}
+.box-seleccion.tipo-reporte input.active::-moz-placeholder {
+  color: #19CE74;
+}
+.box-seleccion.tipo-reporte input.active:-ms-input-placeholder {
+  color: #19CE74;
+}
+.box-seleccion.tipo-reporte input.active::-ms-input-placeholder {
+  color: #19CE74;
+}
+.box-seleccion.tipo-reporte input.active::placeholder {
+  color: #19CE74;
 }
 
 .forn-icon-file img {
