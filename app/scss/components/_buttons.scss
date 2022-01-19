@@ -12,22 +12,8 @@
     }
 }
 
-.btn-restablecer {
-    color:white;
-    background: $gray-dark;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 1rem;
-    &:hover {
-        color:white;
-        background-color:$gray;
-    }
-}
-
 .btn-blanco {
     border: 1px solid #2274FF;
-    box-sizing: border-box;
     border-radius: 8px;
     font-size: 16px;
     color: $blue;
@@ -47,6 +33,27 @@
     color: white;
     font-weight: bold;
     padding: 1rem;
+    &:hover {
+        color:white;
+        background: $blue;
+    }
+}
+
+.btn-restablecer {
+    color:white;
+    background: $gray-dark;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    &:hover {
+        color:white;
+        background-color:$gray;
+    }
+}
+
+.btn-block + .btn-block {
+    margin-top: 30px;
 }
 
 .btn-redes {
@@ -219,6 +226,7 @@
 }
 
 .input-group-pago {
+    margin-bottom: 20px;
     .input-group-prepend {
         .input-group-text {
             background-color: #19CE74;
@@ -300,4 +308,9 @@
         color:white;
         background: $blue-dark;
     }
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 5px 12px;
 }

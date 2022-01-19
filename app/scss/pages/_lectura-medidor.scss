@@ -46,11 +46,21 @@
     .input-group {
         border: 2px solid #B7C0CE;
         border-radius: 5px;
+        &.active {
+            border: 2px solid #2274FF;
+            .input-group-prepend {
+                background-color: #E7F0FF;
+            }
+            .form-control {
+                background-color: #E7F0FF;
+            }
+        }
     }
     .form-control {
         height: 90px;
         border: none;
         padding: .375rem 1.2rem;
+        border-radius: 5px;
     }
 
     .input-group-prepend .input-group-text {
@@ -58,6 +68,8 @@
         border: none;
         padding: .375rem 1.5rem;
     }
+
+  
 
 }
 

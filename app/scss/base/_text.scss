@@ -13,7 +13,15 @@
     font-weight: bold;
 }
 .second-title {
-    font-size: 14px;
+    font-size: 14px; // 0.875rem
+}
+
+.third-title {
+    font-size: 13px;
+}
+
+.fourth-title {
+    font-size: 12px; // rem 0.75rem
 }
 
 .title-nombre {
@@ -36,38 +44,30 @@
     text-align: center;
 }
 
-/* Tamaño fuente - Taiwind css */
-
+/* Class Size Text */
 .text-xs {
     font-size: 0.75rem; //12px
 }
-
 .text-sm {
     font-size: 0.875rem; //14px
 }
-
 .text-lg {
     font-size: 1.125rem; //18px
 }
-
 .text-base {
     font-size: 1rem;
 }
 
 // Color Texto
-
 .text-green {
     color: $green;
 }
-
 .text-gray {
     color: $gray-dark;
 }
-
 .text-blue {
     color: $blue;
 }
-
 .text-blue-dark {
     color: $blue-dark ;
 }

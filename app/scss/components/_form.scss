@@ -14,7 +14,6 @@
     border-color: $gray-dark;
     font-size: 16px;
     color: $black-light;
-    // height: 60px;
 }
 
 .form-control-lg {
@@ -30,6 +29,13 @@
     border-color: $gray-dark;
     font-size: 14px;
     color: $black-light;
+}
+
+.form-select-sm {
+    font-size: 10px;
+    padding: 5px 12px;
+    border: 1px solid #B7C0CE;
+    border-radius: 5px;
 }
 
 .form-group {
@@ -63,6 +69,11 @@ select.form-control-lg.form-control {
     color: #19CE74;
 }
 
+.group-input {
+    display: block;
+    width: 100%;
+}
+
 // custom input check
 span.bigcheck-target {
     margin-right: 10px;
@@ -89,7 +100,6 @@ input[type='checkbox'].bigcheck:checked + span.bigcheck-target:after {
     border-radius: 0;
     display: block;
 }
-
 
 
  /* style input file*/
@@ -141,3 +151,5 @@ label.custom-file-label:before {
 label.custom-file-label.icon-galeria:before {
    display: none;
 }
+
+

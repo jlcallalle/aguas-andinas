@@ -59,6 +59,13 @@ var MyApp = {
             });
         });
     },
+    activeMetodoBuscar : function () {
+        // active metodo pago
+        $('.metodo-busqueda').on('click', function(e) {
+            e.preventDefault();
+            $(this).toggleClass('active');
+        });
+    },
     activeClassPago : function () {
         // active tipo pago
         $('.slider-pago li').on('click', function(e) {
@@ -89,6 +96,7 @@ $(function () {
     MyApp.toggeNotificaciones();
     MyApp.mostrarPanelMapa();
     MyApp.mostrarPassword();
+    MyApp.activeMetodoBuscar();
     MyApp.activeClassPago();
     MyApp.activeClassMapa();
     MyApp.mostrarReporteDetalle();
