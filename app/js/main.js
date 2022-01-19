@@ -100,4 +100,10 @@ $(function () {
     MyApp.activeClassPago();
     MyApp.activeClassMapa();
     MyApp.mostrarReporteDetalle();
+
+    $('.lista-item-respuesta .item-sub').on('click', function(e) {
+        e.preventDefault();
+        $(this).find('.mostra-item').toggleClass('show');
+    });
+
 });

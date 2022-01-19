@@ -1,0 +1,124 @@
+.content-ayuda {
+    padding: 0 0 80px 0;
+}
+
+.box-busqueda-ayuda {
+    background-color: #E7F0FF;
+    padding: 12px 0;
+    border-radius: 14px 0 12px 0;
+}
+
+.lista-desplegable {
+    margin-top: 20px;
+}
+
+.box-pregunta-item {
+    padding: 15px 12px;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 12%);
+    border-radius: 10px;
+    margin-bottom: 12px;
+    &:last-child {
+        border-bottom: 1px solid #E7F0FF;
+    }
+
+    .item-respuesta {
+        color:#53565A;
+        font-size: 14px;
+    }
+
+    .row-button {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-right: 15px;
+
+        img {
+            margin-right: 10px;
+        }
+        .fa {
+            color:$blue;
+            font-size: 13px;
+        }
+    }
+}
+
+.btn-pregunta-item {
+    background-color: white;
+    border: none;
+    font-size: 14px;
+    color: #5F6268;
+    text-align: left;
+    display: block;
+    width: 100%;
+    &:focus {
+        outline: none;
+    }
+    &:not(.collapsed) {
+        font-weight: bold;
+        + i{
+            &:before {
+                content: "\f077";
+            }
+        }
+    }
+}
+
+.lista-item-respuesta {
+    margin-top: 20px;
+    list-style: none;
+    font-size: 14px;
+    .title-subitem {
+        font-size: 14px;
+        display: flex;
+        align-items: flex-start;
+        span {
+            color:$blue;
+        }
+        img {
+            top: 4px;
+            position: relative;
+            margin-right: 10px;
+        }
+    }
+}
+
+.mostra-item {
+    margin-top: 20px;
+    display: none;
+    &.show {
+        display: block;
+    }
+    p {
+        color:$black-light;
+        font-size: 12px;
+    }
+}
+
+.info-util {
+    border-top: 1px solid #DFE0EB;
+    padding-top: 10px;
+}
+
+.row-btn-util {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn-util {
+    font-size: 14px;
+    border: 1px solid $blue;
+    border-radius: 10px;
+}
+
+.box-visita {
+    background-color: #D6F0FE;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.btn-redes-visita {
+    color: $blue;
+    font-size: 18px;
+    padding: 5px;
+    margin-right: 8px;
+}

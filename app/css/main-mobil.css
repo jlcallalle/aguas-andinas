@@ -6868,4 +6868,139 @@ body.page-mapa {
   font-size: 14px;
   font-weight: normal;
 }
+
+.content-ayuda {
+  padding: 0 0 80px 0;
+}
+
+.box-busqueda-ayuda {
+  background-color: #E7F0FF;
+  padding: 12px 0;
+  border-radius: 14px 0 12px 0;
+}
+
+.lista-desplegable {
+  margin-top: 20px;
+}
+
+.box-pregunta-item {
+  padding: 15px 12px;
+  -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+          box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+.box-pregunta-item:last-child {
+  border-bottom: 1px solid #E7F0FF;
+}
+.box-pregunta-item .item-respuesta {
+  color: #53565A;
+  font-size: 14px;
+}
+.box-pregunta-item .row-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 15px;
+}
+.box-pregunta-item .row-button img {
+  margin-right: 10px;
+}
+.box-pregunta-item .row-button .fa {
+  color: #2274FF;
+  font-size: 13px;
+}
+
+.btn-pregunta-item {
+  background-color: white;
+  border: none;
+  font-size: 14px;
+  color: #5F6268;
+  text-align: left;
+  display: block;
+  width: 100%;
+}
+.btn-pregunta-item:focus {
+  outline: none;
+}
+.btn-pregunta-item:not(.collapsed) {
+  font-weight: bold;
+}
+.btn-pregunta-item:not(.collapsed) + i:before {
+  content: "";
+}
+
+.lista-item-respuesta {
+  margin-top: 20px;
+  list-style: none;
+  font-size: 14px;
+}
+.lista-item-respuesta .title-subitem {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.lista-item-respuesta .title-subitem span {
+  color: #2274FF;
+}
+.lista-item-respuesta .title-subitem img {
+  top: 4px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.mostra-item {
+  margin-top: 20px;
+  display: none;
+}
+.mostra-item.show {
+  display: block;
+}
+.mostra-item p {
+  color: #5F6268;
+  font-size: 12px;
+}
+
+.info-util {
+  border-top: 1px solid #DFE0EB;
+  padding-top: 10px;
+}
+
+.row-btn-util {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.btn-util {
+  font-size: 14px;
+  border: 1px solid #2274FF;
+  border-radius: 10px;
+}
+
+.box-visita {
+  background-color: #D6F0FE;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.btn-redes-visita {
+  color: #2274FF;
+  font-size: 18px;
+  padding: 5px;
+  margin-right: 8px;
+}
 /*# sourceMappingURL=main-mobil.css.map */
