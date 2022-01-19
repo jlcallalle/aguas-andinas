@@ -3138,34 +3138,11 @@ a {
   font-weight: bold;
 }
 
-.main-title {
-  font-size: 16px;
-  font-weight: bold;
-}
-
 .second-title {
   font-size: 14px;
 }
 
-.third-title {
-  font-size: 13px;
-}
-
-.fourth-title {
-  font-size: 12px;
-}
-
-.title-nombre {
-  color: #003287;
-  font-size: 16px;
-  line-height: 25px;
-  text-align: left;
-}
-.title-nombre span {
-  font-weight: bold;
-}
-
-.title-small {
+.main-title {
   font-size: 16px;
   font-weight: bold;
 }
@@ -3175,7 +3152,7 @@ a {
   text-align: center;
 }
 
-/* Class Size Text */
+/* class size text */
 .text-xs {
   font-size: 0.75rem;
 }
@@ -3184,12 +3161,12 @@ a {
   font-size: 0.875rem;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-}
-
 .text-base {
   font-size: 1rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
 }
 
 .text-green {

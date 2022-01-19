@@ -8,33 +8,11 @@
     font-weight: bold;
 }
 
-.main-title {
-    font-size: 16px;
-    font-weight: bold;
-}
 .second-title {
-    font-size: 14px; // 0.875rem
+    font-size: 14px; 
 }
 
-.third-title {
-    font-size: 13px;
-}
-
-.fourth-title {
-    font-size: 12px; // rem 0.75rem
-}
-
-.title-nombre {
-    color: $blue-dark;
-    font-size: 16px;
-    line-height: 25px;
-    text-align: left;
-    span {
-        font-weight: bold;
-    }
-}
-
-.title-small {
+.main-title {
     font-size: 16px;
     font-weight: bold;
 }
@@ -44,30 +22,39 @@
     text-align: center;
 }
 
-/* Class Size Text */
+/* class size text */
+
 .text-xs {
     font-size: 0.75rem; //12px
 }
+
 .text-sm {
     font-size: 0.875rem; //14px
 }
+
+.text-base {
+    font-size: 1rem; //16px
+}
+
 .text-lg {
     font-size: 1.125rem; //18px
 }
-.text-base {
-    font-size: 1rem;
-}
 
-// Color Texto
+
+// color Text
+
 .text-green {
     color: $green;
 }
+
 .text-gray {
     color: $gray-dark;
 }
+
 .text-blue {
     color: $blue;
 }
+
 .text-blue-dark {
     color: $blue-dark ;
 }
