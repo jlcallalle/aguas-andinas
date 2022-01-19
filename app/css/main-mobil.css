@@ -3842,6 +3842,36 @@ label.custom-file-label.icon-galeria:before {
   text-align: center;
 }
 
+.custom-radio {
+  margin-bottom: 20px;
+}
+.custom-radio .custom-control-label:before {
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #B7C0CE;
+  background-color: transparent;
+}
+.custom-radio .custom-control-label:after {
+  width: 2rem;
+  height: 2rem;
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  background-color: transparent;
+}
+.custom-radio .custom-control-input:checked ~ .custom-control-label::after {
+  background-image: url(../images/bullet-green.svg) !important;
+  background-size: 60%;
+}
+.custom-radio .custom-control-input:focus ~ .custom-control-label::before {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+.custom-radio label {
+  color: #5F6268;
+  padding-left: 30px;
+  margin-top: 8px;
+}
+
 .page-login .logo-brand {
   margin-top: 45px;
   text-align: center;
